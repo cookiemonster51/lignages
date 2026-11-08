@@ -2125,7 +2125,7 @@ function goSupport(e){
     const close=()=>{t.classList.remove("on");setTimeout(()=>t.remove(),400);try{localStorage.setItem(KEY,Date.now());}catch(e){}};
     t.querySelector("button").onclick=close;
     t.querySelector("a").addEventListener("click",e=>{goSupport(e);close();});
-  },4*60000);
+  },20*60000);
 })();
 
 /* ============ À propos ============ */
