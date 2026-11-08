@@ -1,10 +1,14 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Lignages — rois de France et maisons d’Europe</title>
+<meta name="description" content="Un arbre généalogique animé des rois de France et des maisons d’Europe, de Clovis aux prétendants actuels : liens de parenté, frise des règnes, récits guidés, films animés et quiz. Gratuit, sans publicité ni inscription.">
+<meta property="og:title" content="Lignages — rois de France et maisons d’Europe">
+<meta property="og:description" content="De Clovis aux prétendants actuels : près de 280 personnages, leurs liens de parenté et la couronne qui passe de tête en tête. Gratuit.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23172040'/%3E%3Cpath fill='%23efc45a' d='M12 3.5c-1.3 1.7-1.6 3.5-.8 5.5-.8-.7-2.4-.9-3.2.3-.9 1.4.2 2.9 1.8 3H8.3v1.3H11c-.5 1.3-1.7 2.2-3 2.3.7.8 2.1.8 3.2.2L12 20l.8-3.9c1.1.6 2.5.6 3.2-.2-1.3-.1-2.5-1-3-2.3h2.7v-1.3h-1.5c1.6-.1 2.7-1.6 1.8-3-.8-1.2-2.4-1-3.2-.3.8-2 .5-3.8-.8-5.5z'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -261,6 +265,29 @@ details.fold[open] summary::after{content:" −"}
   #stage.intro .node .in,#stage.intro .edge,#stage.intro .jn{animation:none!important;stroke-dasharray:none!important}
   .edge,.node{transition:none}
 }
+.aboutgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:22px 30px}
+.aboutgrid article{padding:4px 0 4px 18px;border-left:4px solid var(--c,var(--hi))}
+.aboutgrid h3{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:25px;margin:0 0 8px}
+.aboutgrid p,.aboutgrid li{line-height:1.6;max-width:62ch}
+.aboutgrid ul{padding-left:18px;margin:0}
+.aboutgrid li{margin:0 0 8px}
+.aboutgrid .biblio li{font-size:15px}
+.aboutgrid .sig{font-family:'IM Fell English',Georgia,serif;font-style:italic;font-size:19px}
+.report{margin-top:14px;display:inline-block;text-decoration:none}
+@media (max-width:760px){.aboutgrid{grid-template-columns:1fr}}
+
+.dh .seal.photo{width:78px;height:78px;padding:0;overflow:hidden;cursor:zoom-in;box-shadow:0 0 0 2px var(--c),0 2px 10px rgba(0,0,0,.25);background:var(--panel)}
+.dh .seal.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;display:block;animation:pfade .5s ease}
+@keyframes pfade{from{opacity:0;transform:scale(1.08)}to{opacity:1;transform:none}}
+.facts{list-style:none;margin:0 0 12px;padding:0 0 0 14px;border-left:2px solid var(--c,var(--hi))}
+.facts li{display:grid;grid-template-columns:44px 1fr;gap:8px;padding:4px 0;font-size:14.5px;line-height:1.4;position:relative}
+.facts li::before{content:"";position:absolute;left:-19px;top:10px;width:8px;height:8px;border-radius:50%;background:var(--c,var(--hi))}
+.facts b{font-variant-numeric:tabular-nums;color:var(--hi);font-weight:700}
+.fh{font-family:'IM Fell English',Georgia,serif;font-style:italic;font-weight:400;font-size:17px;margin:4px 0 6px}
+.era-f{margin:8px 0 6px}
+.flink{cursor:pointer;color:inherit;font-weight:700;text-decoration:underline;text-decoration-color:var(--line)}
+.credit{font-size:12px;color:var(--muted);margin:0 0 10px}
+.credit a{color:var(--muted)}
 </style>
 </head>
 <body>
@@ -273,6 +300,7 @@ details.fold[open] summary::after{content:" −"}
     <button role="tab" data-tab="quiz" aria-selected="false">Défi</button>
     <button role="tab" data-tab="kings" aria-selected="false">Rois de France</button>
     <button role="tab" data-tab="lex" aria-selected="false">Lexique</button>
+    <button role="tab" data-tab="about" aria-selected="false">À propos</button>
   </nav>
 </header>
 <main>
@@ -361,6 +389,62 @@ details.fold[open] summary::after{content:" −"}
     </div>
   </section>
 
+  <section id="tab-about" class="scroll" hidden>
+    <div class="wrap">
+      <p class="lead">À propos de Lignages. <em>Un projet personnel, gratuit, sans publicité.</em></p>
+      <div class="aboutgrid">
+        <article style="--c:#2f5cb8">
+          <h3>Pourquoi ce site</h3>
+          <p>Tout est parti d’une lecture des <i>Rois maudits</i> de Maurice Druon. Au fil des tomes, je voulais comprendre ce qui liait Robert d’Artois à Mahaut, pourquoi Philippe de Poitiers pouvait écarter sa nièce, comment la Bourgogne, la Navarre et l’Angleterre s’entremêlaient. Faute de trouver un outil pour naviguer dans ces familles, j’en ai construit un.</p>
+          <p>Lignages est gratuit, sans publicité, sans inscription et sans cookie. Il s’adresse aux curieux, aux élèves, aux étudiants et aux enseignants, qui peuvent le montrer et l’utiliser librement.</p>
+          <p class="sig">Wissam</p>
+        </article>
+        <article style="--c:#9b48cc">
+          <h3>Ce que contient l’arbre</h3>
+          <p id="aboutStats"></p>
+          <ul>
+            <li>Mérovingiens, Carolingiens, Capétiens directs, Valois, Bourbons et Orléans, jusqu’aux prétendants actuels.</li>
+            <li>Les maisons liées à la France : Plantagenêt, Habsbourg, Anjou-Sicile, Bourgogne, Navarre, Luxembourg, Wittelsbach, Tudor, Stuart, Bourbons d’Espagne.</li>
+            <li>Pour chaque personnage : une courte biographie, ses titres datés, ses parents, conjoints et enfants.</li>
+          </ul>
+        </article>
+        <article style="--c:#c8392f">
+          <h3>Méthode et limites</h3>
+          <ul>
+            <li>Les fiches ont été rédigées avec l’aide d’un assistant d’intelligence artificielle, à partir de connaissances historiques générales, puis relues. Elles n’ont pas encore été vérifiées une à une contre les sources : chaque signalement compte.</li>
+            <li>Les dates précédées de « v. » sont approximatives. Pour les premiers siècles, les sources divergent souvent de plusieurs années.</li>
+            <li>L’arbre est une sélection : il suit les lignes qui expliquent les successions et les héritages. Beaucoup de frères, de sœurs et d’enfants morts jeunes n’y figurent pas. Quand un parent manque, la fiche le nomme.</li>
+            <li>L’axe vertical place chacun à son année de naissance. Les colonnes regroupent les familles ; leur position n’a pas de sens en soi.</li>
+            <li>Le calcul de parenté s’appuie uniquement sur les liens présents dans l’arbre.</li>
+            <li>Dans les films, les années de mariage sont estimées : environ dix-huit ans après la naissance du plus jeune des époux, et avant leur premier enfant.</li>
+            <li>Les filiations contestées sont signalées comme telles, de même que les légendes : malédiction du Temple, empoisonnements rapportés mais non prouvés.</li>
+          </ul>
+        </article>
+        <article style="--c:#2fb37a">
+          <h3>Pour aller plus loin</h3>
+          <p>Quelques ouvrages de référence pour vérifier et approfondir. Ils ne sont pas les sources d’une vérification ligne à ligne.</p>
+          <ul class="biblio">
+            <li>Jean Favier, <i>Dictionnaire de la France médiévale</i>, Fayard, 1993.</li>
+            <li>François Menant, Hervé Martin, Bernard Merdrignac, Monique Chauvin, <i>Les Capétiens. Histoire et dictionnaire, 987-1328</i>, Robert Laffont, « Bouquins », 1999.</li>
+            <li>Claude Gauvard, <i>La France au Moyen Âge du V<sup>e</sup> au XV<sup>e</sup> siècle</i>, PUF.</li>
+            <li>Bruno Dumézil, <i>La Reine Brunehaut</i>, Fayard, 2008.</li>
+            <li>Bertrand Schnerb, <i>L’État bourguignon, 1363-1477</i>, Perrin, 1999.</li>
+            <li>Philippe Contamine, <i>La Guerre de Cent Ans</i>, PUF, « Que sais-je ? ».</li>
+            <li>Fanny Cosandey, <i>La Reine de France. Symbole et pouvoir, XV<sup>e</sup>-XVIII<sup>e</sup> siècle</i>, Gallimard, 2000.</li>
+            <li>Detlev Schwennicke (dir.), <i>Europäische Stammtafeln</i>, Klostermann : les tables généalogiques des maisons souveraines.</li>
+            <li>Et le roman qui a tout déclenché : Maurice Druon, <i>Les Rois maudits</i>, 1955-1977.</li>
+          </ul>
+        </article>
+        <article style="--c:#d69a22" id="contact">
+          <h3>Signaler une erreur</h3>
+          <p>Une date fausse, un lien de parenté douteux, un personnage qui manque ? Chaque fiche a un bouton « Signaler une erreur ». Vous pouvez aussi écrire directement :</p>
+          <p><a class="btn report" id="contactLink" href="#">✉ Écrire</a></p>
+          <p>Les corrections apportées grâce à vous pourront être mentionnées ici, si vous le souhaitez.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section id="tab-lex" class="scroll" hidden>
     <div class="wrap">
       <p class="lead">Les mots qui embrouillent. <em>Palatin, apanage, Deux-Siciles…</em></p>
@@ -371,6 +455,181 @@ details.fold[open] summary::after{content:" −"}
 <div class="tip" id="tip"></div>
 
 <script>
+/* Adresse de contact : à remplacer par la vôtre */
+const CONTACT_EMAIL="contact@lignages.fr";
+/* Titres des articles Wikipédia (fr) : source des portraits */
+const WIKI={"childeric1":"Childéric Ier","clovis":"Clovis Ier","clotilde":"Clotilde (épouse de Clovis Ier)","clotaire1":"Clotaire Ier","sigebert1":"Sigebert Ier","brunehaut":"Brunehaut (reine)","chilperic1":"Chilpéric Ier (roi des Francs)","fredegonde":"Frédégonde","childebert2":"Childebert II","clotaire2":"Clotaire II","dagobert1":"Dagobert Ier","clovis2":"Clovis II","bathilde":"Bathilde","thierry3":"Thierry III","childebert3":"Childebert IV","dagobert3":"Dagobert III","thierry4":"Thierry IV","childeric3":"Childéric III","pepinherstal":"Pépin de Herstal","martel":"Charles Martel","pepinbref":"Pépin le Bref","carloman1":"Carloman Ier","charlemagne":"Charlemagne","pepinitalie":"Pépin d'Italie","bernarditalie":"Bernard d'Italie","pepinvermandois":"Pépin (Herbertien)","herbert1":"Herbert Ier de Vermandois","louispieux":"Louis le Pieux","lothaire1":"Lothaire Ier","louisgermanique":"Louis le Germanique","charleschauve":"Charles II le Chauve","louisbegue":"Louis II le Bègue","louis3":"Louis III (roi des Francs)","carloman2":"Carloman II","charlesgros":"Charles III le Gros","charlessimple":"Charles III le Simple","louis4":"Louis IV d'Outremer","lothaire":"Lothaire (roi de France)","louis5":"Louis V (roi de France)","charleslorraine":"Charles de Basse-Lotharingie","robertlefort":"Robert le Fort","eudes":"Eudes (roi des Francs)","robert1":"Robert Ier (roi des Francs)","beatrice":"Béatrice de Vermandois","emma":"Emma de France (894-934)","raoul":"Raoul (roi des Francs)","hugueslegrand":"Hugues le Grand (duc des Francs)","henrioiseleur":"Henri Ier de Germanie","otton1":"Otton Ier du Saint-Empire","hedwige":"Hedwige de Saxe","gerberge":"Gerberge de Saxe","huguescapet":"Hugues Capet","robert2":"Robert II le Pieux","henri1":"Henri Ier (roi des Francs)","robert1bg":"Robert Ier de Bourgogne","annekiev":"Anne de Kiev","philippe1":"Philippe Ier (roi des Francs)","louis6":"Louis VI le Gros","louis7":"Louis VII le Jeune","alienor":"Aliénor d'Aquitaine","henri2plant":"Henri II d'Angleterre","adelechamp":"Adèle de Champagne","henri1champ":"Henri Ier de Champagne","mariefr":"Marie de France (1145-1198)","alphonse8":"Alphonse VIII de Castille","alienorang":"Aliénor d'Angleterre (1162-1214)","richard1":"Richard Cœur de Lion","jeanssterre":"Jean sans Terre","philippe2":"Philippe II Auguste","isabhain":"Isabelle de Hainaut","thibaut3":"Thibaut III de Champagne","thibaut4":"Thibaut IV de Champagne","henri1nav":"Henri Ier de Navarre","blanchedart":"Blanche d'Artois","louis8":"Louis VIII le Lion","blanche":"Blanche de Castille","raymondbp":"Raimond-Bérenger IV de Provence","louis9":"Louis IX","margprov":"Marguerite de Provence","eleonoreprov":"Éléonore de Provence","beatriceprov":"Béatrice de Provence","henri3ang":"Henri III d'Angleterre","robert1art":"Robert Ier d'Artois","charles1anj":"Charles Ier d'Anjou","philippe3":"Philippe III le Hardi","isabellear":"Isabelle d'Aragon (1247-1271)","robclermont":"Robert de Clermont","agnes":"Agnès de France (1260-1325)","robert2bg":"Robert II de Bourgogne","robert2art":"Robert II d'Artois","charles2anj":"Charles II d'Anjou","pierre3ar":"Pierre III d'Aragon","edward1":"Édouard Ier d'Angleterre","margfr3":"Marguerite de France (1279-1318)","philippe4":"Philippe IV le Bel","jeanne1nav":"Jeanne Ire de Navarre","charlesval":"Charles de Valois","louisevr":"Louis d'Évreux","margart":"Marguerite d'Artois","mahaut":"Mahaut d'Artois","philart":"Philippe d'Artois (1269-1298)","othon4":"Othon IV de Bourgogne","jeannebg":"Jeanne II de Bourgogne","blanchebg":"Blanche de Bourgogne (v. 1296-1326)","robert3art":"Robert III d'Artois","margbg":"Marguerite de Bourgogne (1290-1315)","jeanneboit":"Jeanne de Bourgogne (v. 1293-1349)","eudes4":"Eudes IV de Bourgogne","jeanne3":"Jeanne III de Bourgogne","isabellefr5":"Isabelle de France (1312-1348)","guigues8":"Guigues VIII de Viennois","charlesmartel":"Charles Martel (roi de Hongrie)","marganj":"Marguerite d'Anjou (1273-1299)","robertnap":"Robert Ier de Naples","charlescal":"Charles de Calabre","jeanne1nap":"Jeanne Ire de Naples","charobert":"Charles Ier Robert","clemence":"Clémence de Hongrie","louis10":"Louis X le Hutin","jean1":"Jean Ier le Posthume","philippe5":"Philippe V le Long","charles4":"Charles IV le Bel","isabelle":"Isabelle de France (1295-1358)","edward2":"Édouard II d'Angleterre","edward3":"Édouard III d'Angleterre","philippa":"Philippa de Hainaut","guillhain":"Guillaume Ier de Hainaut","jeannevalH":"Jeanne de Valois (1294-1342)","jeannevalA":"Jeanne de Valois (1304-1363)","margHain":"Marguerite II de Hainaut","louisbav":"Louis IV du Saint-Empire","etienne2":"Étienne II de Bavière","etienne3":"Étienne III de Bavière","isabeau":"Isabeau de Bavière","albert1":"Albert Ier de Bavière","guill2":"Guillaume IV de Hainaut","margbav":"Marguerite de Bavière (1363-1424)","margbg2":"Marguerite de Bourgogne (1374-1441)","jacqueline":"Jacqueline de Hainaut","henri7":"Henri VII du Saint-Empire","jeanaveugle":"Jean Ier de Bohême","marielux":"Marie de Luxembourg (1305-1324)","bonnelux":"Bonne de Luxembourg","charles4emp":"Charles IV du Saint-Empire","philevr":"Philippe III de Navarre","jeanne2nav":"Jeanne II de Navarre","charlesmauv":"Charles II de Navarre","jeanneevr":"Jeanne d'Évreux","philippe6":"Philippe VI de Valois","jean2":"Jean II le Bon","louis1anj":"Louis Ier d'Anjou","louis2anj":"Louis II d'Anjou","rene":"René d'Anjou","marieanj":"Marie d'Anjou","margarethanj":"Marguerite d'Anjou (1430-1482)","charles5":"Charles V le Sage","louis1bourbon":"Louis Ier de Bourbon","pierre1bourbon":"Pierre Ier de Bourbon","jeannebourbon":"Jeanne de Bourbon (1338-1378)","jacques1marche":"Jacques Ier de Bourbon-La Marche","jean1marche":"Jean Ier de Bourbon-La Marche","louisvendome":"Louis Ier de Bourbon-Vendôme","jean2vendome":"Jean VIII de Bourbon-Vendôme","francoisvendome":"François de Bourbon-Vendôme","charlesvendome":"Charles IV de Bourbon","antoine":"Antoine de Bourbon","henri2albret":"Henri II de Navarre","margang":"Marguerite de Valois-Angoulême","jeannealbret":"Jeanne d'Albret","henri4":"Henri IV (roi de France)","charles6":"Charles VI (roi de France)","louisorl":"Louis Ier d'Orléans","valentine":"Valentine Visconti (1368-1408)","charlesorl":"Charles Ier d'Orléans","jeanang":"Jean d'Orléans (1399-1467)","charles7":"Charles VII (roi de France)","louis11":"Louis XI","charles8":"Charles VIII (roi de France)","louis12":"Louis XII","francois2bret":"François II de Bretagne","annebret":"Anne de Bretagne","claude":"Claude de France (1499-1524)","charlesang":"Charles d'Orléans (1459-1496)","louisesav":"Louise de Savoie","francois1":"François Ier (roi de France)","henri2":"Henri II (roi de France)","catmedicis":"Catherine de Médicis","eleonoreaut":"Éléonore de Habsbourg","francois2":"François II (roi de France)","elisabethval":"Élisabeth de France (1545-1568)","charles9":"Charles IX (roi de France)","henri3":"Henri III (roi de France)","margot":"Marguerite de France (1553-1615)","mariemedicis":"Marie de Médicis","louis13":"Louis XIII","elisabethfr":"Élisabeth de France (1602-1644)","anneaut":"Anne d'Autriche (1601-1666)","louis14":"Louis XIV","mariethe":"Marie-Thérèse d'Autriche (1638-1683)","philorl":"Philippe d'Orléans (1640-1701)","grandauphin":"Louis de France (1661-1711)","ducbourgogne":"Louis de France (1682-1712)","philippe5esp":"Philippe V (roi d'Espagne)","louis15":"Louis XV","dauphinlouis":"Louis de France (1729-1765)","louis16":"Louis XVI","louis18":"Louis XVIII","charles10":"Charles X (roi de France)","regent":"Philippe d'Orléans (1674-1723)","louisorl2":"Louis d'Orléans (1703-1752)","lpgros":"Louis-Philippe d'Orléans (1725-1785)","egalite":"Louis-Philippe d'Orléans (1747-1793)","louisphilippe":"Louis-Philippe Ier","charles3esp":"Charles III (roi d'Espagne)","charles4esp":"Charles IV (roi d'Espagne)","ferdinand7":"Ferdinand VII","francoisdepaule":"François de Paule de Bourbon (1794-1865)","isabelle2":"Isabelle II","francoisassise":"François d'Assise de Bourbon","alphonse12":"Alphonse XII","alphonse13":"Alphonse XIII","jacquessegovie":"Jacques-Henri de Bourbon","jeanbarcelone":"Jean de Bourbon (1913-1993)","alphonsecadix":"Alphonse de Bourbon (1936-1989)","louisxx":"Louis de Bourbon (1974)","juancarlos":"Juan Carlos Ier","felipe6":"Felipe VI","leonor":"Leonor de Borbón","angouleme":"Louis-Antoine d'Artois","berry":"Charles-Ferdinand d'Artois","chambord":"Henri d'Artois","ferdinandphilippe":"Ferdinand-Philippe d'Orléans","philippecp":"Philippe d'Orléans (1838-1894)","philippe8":"Philippe d'Orléans (1869-1926)","isabelleorl":"Isabelle d'Orléans (1878-1961)","robertchartres":"Robert d'Orléans (1840-1910)","jeanguise":"Jean d'Orléans (1874-1940)","henri1908":"Henri d'Orléans (1908-1999)","henri1933":"Henri d'Orléans (1933-2019)","jean1965":"Jean d'Orléans (1965)","gaston":"Gaston d'Orléans (2009)","henry5":"Henri V (roi d'Angleterre)","catherine":"Catherine de France (1401-1437)","henry6":"Henri VI (roi d'Angleterre)","owentudor":"Owen Tudor","edmundtudor":"Edmond Tudor (1er comte de Richmond)","henry7":"Henri VII (roi d'Angleterre)","henry8":"Henri VIII","catherinear":"Catherine d'Aragon","marytudor":"Marie Ire (reine d'Angleterre)","elizabeth1":"Élisabeth Ire (reine d'Angleterre)","margarettudor":"Marguerite Tudor","jacques4":"Jacques IV (roi d'Écosse)","jacques5":"Jacques V","marieguise":"Marie de Guise (1515-1560)","mariestuart":"Marie Stuart","jacques6":"Jacques Ier (roi d'Angleterre)","louisnevers":"Louis Ier de Flandre","margfr":"Marguerite de France (1310-1382)","louismale":"Louis de Male","margmale":"Marguerite III de Flandre","philhardi":"Philippe II de Bourgogne","jeansp":"Jean sans Peur","philbon":"Philippe le Bon","charlestem":"Charles le Téméraire","mariebg":"Marie de Bourgogne","maximilien":"Maximilien Ier (empereur du Saint-Empire)","philbeau":"Philippe Ier le Beau","ferdinandar":"Ferdinand II d'Aragon","isabellecast":"Isabelle Ire de Castille","jeannefolle":"Jeanne Ire de Castille","charlesquint":"Charles Quint","ferdinand1":"Ferdinand Ier (empereur du Saint-Empire)","philippe2esp":"Philippe II (roi d'Espagne)","philippe3esp":"Philippe III (roi d'Espagne)","philippe4esp":"Philippe IV (roi d'Espagne)"};
+const NOIMG=new Set(["francoisvendome","pierre1bourbon","gaston"]);
+const FACTS={
+childeric1:[[457,"Chef des Francs saliens, installé à Tournai"],[481,"Meurt ; son tombeau, retrouvé à Tournai en 1653, livre un trésor orné d’abeilles d’or"]],
+clovis:[[486,"Bat Syagrius à Soissons, dernier pouvoir romain en Gaule (épisode du vase)"],[493,"Épouse Clotilde, princesse burgonde catholique"],[496,"Vers cette date (débattue, jusqu’à 508) : baptême à Reims par saint Remi"],[507,"Victoire de Vouillé sur les Wisigoths d’Alaric II"],[511,"Concile d’Orléans ; à sa mort, le royaume est partagé entre ses quatre fils"]],
+clotilde:[[493,"Épouse Clovis ; on lui attribue sa conversion au catholicisme"],[511,"Veuve, se retire à Tours auprès du tombeau de saint Martin"]],
+brunehaut:[[567,"Princesse wisigothe, épouse Sigebert Ier, roi d’Austrasie"],[575,"Sigebert est assassiné, sans doute sur ordre de Frédégonde"],[613,"Livrée à Clotaire II, elle est suppliciée, attachée à un cheval"]],
+fredegonde:[[568,"Galswinthe, épouse de Chilpéric et sœur de Brunehaut, est étranglée ; Frédégonde est soupçonnée"],[584,"Chilpéric est assassiné ; elle gouverne pour son fils Clotaire II"]],
+chilperic1:[[561,"Reçoit la Neustrie au partage du royaume de Clotaire Ier"],[584,"Assassiné à Chelles au retour d’une chasse"]],
+clotaire2:[[613,"Seul roi des Francs après l’élimination de Brunehaut"],[614,"Édit de Paris, qui reconnaît le pouvoir des grands du royaume"]],
+dagobert1:[[629,"Roi de tous les Francs, conseillé par saint Éloi"],[639,"Inhumé à Saint-Denis, abbaye qu’il a richement dotée"]],
+bathilde:[[648,"Esclave anglo-saxonne, devient l’épouse de Clovis II"],[657,"Régente ; fonde les abbayes de Corbie et de Chelles"]],
+childeric3:[[743,"Placé sur le trône par les maires du palais Pépin et Carloman"],[751,"Déposé et tondu, envoyé au monastère de Saint-Bertin : fin des Mérovingiens"]],
+pepinherstal:[[687,"Victoire de Tertry : maître de toute la Francie"]],
+martel:[[732,"Vainc l’armée omeyyade près de Poitiers (date parfois placée en 733)"],[737,"Gouverne sans roi à la mort de Thierry IV"]],
+pepinbref:[[751,"Élu roi des Francs à Soissons ; Childéric III est déposé"],[754,"Sacré à Saint-Denis par le pape Étienne II"],[756,"Donne au pape des terres d’Italie : naissance des États pontificaux"]],
+charlemagne:[[774,"Prend Pavie et devient roi des Lombards"],[778,"Désastre de Roncevaux, matière de la Chanson de Roland"],[800,"Couronné empereur à Rome le jour de Noël"],[814,"Meurt à Aix-la-Chapelle"]],
+louispieux:[[814,"Empereur à la mort de Charlemagne"],[817,"Ordinatio imperii : règle le partage entre ses fils"],[833,"Déposé par ses fils au « Champ du mensonge », rétabli l’année suivante"]],
+lothaire1:[[843,"Traité de Verdun : reçoit la Francie médiane et le titre impérial"]],
+louisgermanique:[[842,"Serments de Strasbourg, premier texte en langue romane et germanique"],[843,"Traité de Verdun : reçoit la Francie orientale"]],
+charleschauve:[[842,"Serments de Strasbourg avec Louis le Germanique contre Lothaire"],[843,"Traité de Verdun : reçoit la Francie occidentale, ancêtre de la France"],[875,"Couronné empereur à Rome"],[877,"Capitulaire de Quierzy, étape vers l’hérédité des fiefs"]],
+charlesgros:[[885,"Siège de Paris par les Vikings ; il achète leur départ (886)"],[887,"Déposé ; l’empire carolingien ne sera plus réuni"]],
+robertlefort:[[866,"Tué à Brissarthe en combattant les Vikings ; ancêtre des Capétiens"]],
+eudes:[[885,"Comte de Paris, défend la ville contre les Vikings"],[888,"Élu roi : premier Robertien sur le trône"]],
+charlessimple:[[911,"Traité de Saint-Clair-sur-Epte : cède à Rollon ce qui deviendra la Normandie"],[922,"Déposé par les grands"],[929,"Meurt prisonnier à Péronne"]],
+louis4:[[936,"Rappelé d’Angleterre pour être roi, d’où son surnom d’Outremer"]],
+louis5:[[987,"Meurt d’une chute de chasse : dernier roi carolingien"]],
+hugueslegrand:[[936,"Duc des Francs, fait rappeler Louis IV d’Outremer"],[956,"Meurt ; son fils Hugues sera roi"]],
+otton1:[[955,"Victoire du Lechfeld sur les Hongrois"],[962,"Couronné empereur : naissance du Saint-Empire"]],
+huguescapet:[[987,"Élu roi à Senlis, sacré à Noyon"],[987,"Fait sacrer son fils Robert dès décembre pour assurer la succession"]],
+robert2:[[996,"Épouse sa cousine Berthe de Bourgogne et est excommunié"],[1003,"Se sépare de Berthe et épouse Constance d’Arles"]],
+henri1:[[1051,"Épouse Anne de Kiev, princesse de la Rus’"]],
+annekiev:[[1051,"Épouse Henri Ier à Reims"],[1063,"Signe un acte royal en caractères cyrilliques"]],
+philippe1:[[1092,"Enlève Bertrade de Montfort ; sera excommunié"],[1095,"Le pape prêche la première croisade à Clermont, sous son règne"]],
+louis6:[[1124,"Lève l’oriflamme de Saint-Denis contre l’empereur Henri V"],[1137,"Marie son fils à Aliénor d’Aquitaine"]],
+louis7:[[1137,"Épouse Aliénor d’Aquitaine"],[1147,"Part pour la deuxième croisade"],[1152,"Mariage annulé à Beaugency ; l’Aquitaine passe aux Plantagenêts"]],
+alienor:[[1137,"Duchesse d’Aquitaine, épouse Louis VII"],[1152,"Épouse Henri Plantagenêt deux mois après l’annulation"],[1173,"Soutient la révolte de ses fils ; captive de son mari pendant quinze ans"],[1204,"Meurt ; gisant à Fontevraud"]],
+henri2plant:[[1152,"Épouse Aliénor : son domaine en France dépasse celui du roi"],[1154,"Roi d’Angleterre"],[1170,"Assassinat de Thomas Becket dans sa cathédrale"]],
+adelechamp:[[1160,"Épouse Louis VII"],[1165,"Donne naissance à Philippe Auguste"],[1190,"Régente pendant la croisade de son fils"]],
+mariefr:[[1159,"Fille de Louis VII et d’Aliénor, épouse Henri de Champagne"],[1170,"Protectrice de Chrétien de Troyes"]],
+alphonse8:[[1212,"Victoire de Las Navas de Tolosa sur les Almohades"]],
+alienorang:[[1170,"Épouse Alphonse VIII de Castille ; mère de Blanche de Castille"]],
+richard1:[[1189,"Roi d’Angleterre"],[1191,"Prend Acre pendant la troisième croisade"],[1192,"Captif de l’empereur au retour ; libéré contre rançon en 1194"],[1199,"Meurt d’un carreau d’arbalète devant Châlus"]],
+jeanssterre:[[1204,"Perd la Normandie face à Philippe Auguste"],[1214,"Défait à La Roche-aux-Moines ; ses alliés battus à Bouvines"],[1215,"Contraint de signer la Magna Carta"]],
+philippe2:[[1180,"Roi à 15 ans ; épouse Isabelle de Hainaut"],[1191,"Prend Acre avec Richard Cœur de Lion"],[1204,"Conquiert la Normandie après la chute de Château-Gaillard"],[1214,"Victoire de Bouvines"]],
+isabhain:[[1180,"Épouse Philippe Auguste, apportant des droits sur l’Artois"],[1187,"Mère du futur Louis VIII"]],
+thibaut4:[[1234,"Roi de Navarre par héritage de sa mère"],[1239,"Mène la croisade des barons ; trouvère célèbre"]],
+louis8:[[1216,"Débarque en Angleterre et est proclamé roi à Londres"],[1226,"Croisade contre les Albigeois ; meurt au retour"]],
+blanche:[[1200,"Épouse le futur Louis VIII"],[1226,"Régente pour Louis IX, 12 ans"],[1248,"Régente de nouveau pendant la croisade de son fils"]],
+louis9:[[1226,"Roi à 12 ans sous la régence de sa mère"],[1248,"Sainte-Chapelle consacrée ; part en croisade"],[1250,"Capturé en Égypte, libéré contre rançon"],[1259,"Traité de Paris avec Henri III d’Angleterre"],[1270,"Meurt devant Tunis"],[1297,"Canonisé"]],
+margprov:[[1234,"Épouse Louis IX"],[1250,"Négocie la rançon du roi à Damiette"]],
+eleonoreprov:[[1236,"Épouse Henri III : les quatre sœurs de Provence deviennent reines"]],
+beatriceprov:[[1246,"Héritière de Provence, épouse Charles d’Anjou"]],
+henri3ang:[[1259,"Traité de Paris : renonce à la Normandie, garde la Guyenne"]],
+robert1art:[[1237,"Reçoit l’Artois en apanage"],[1250,"Tué à Mansourah en Égypte"]],
+charles1anj:[[1266,"Victoire de Bénévent : roi de Sicile"],[1268,"Fait exécuter Conradin, dernier Hohenstaufen"],[1282,"Vêpres siciliennes : perd la Sicile"]],
+philippe3:[[1271,"Rentre de Tunis avec les dépouilles de sa famille"],[1285,"Croisade d’Aragon ; meurt à Perpignan"]],
+robclermont:[[1272,"Épouse Béatrice de Bourbon : naissance de la maison de Bourbon"],[1279,"Blessé à la tête dans un tournoi, en garde des séquelles"]],
+agnes:[[1279,"Épouse Robert II de Bourgogne"],[1306,"Régente du duché"]],
+pierre3ar:[[1282,"Roi de Sicile après les Vêpres siciliennes"],[1285,"Repousse la croisade de Philippe III"]],
+edward1:[[1294,"Guerre de Guyenne contre Philippe le Bel"],[1299,"Épouse Marguerite de France, sœur du roi"]],
+philippe4:[[1284,"Épouse Jeanne de Navarre"],[1302,"Défaite de Courtrai face aux Flamands"],[1303,"Attentat d’Anagni contre le pape Boniface VIII"],[1307,"Fait arrêter les Templiers"],[1314,"Scandale de la tour de Nesle ; mort du roi"]],
+jeanne1nav:[[1284,"Épouse Philippe le Bel"],[1305,"Fonde le collège de Navarre à Paris ; meurt"]],
+charlesval:[[1301,"Intervient à Florence pour le pape"],[1324,"Commande l’armée en Guyenne"],[1325,"Meurt : fils, frère, oncle et père de roi, jamais roi"]],
+louisevr:[[1307,"Comte d’Évreux, demi-frère de Philippe le Bel"]],
+mahaut:[[1302,"Hérite de l’Artois à la mort de son père à Courtrai"],[1309,"Gagne son procès contre son neveu Robert"],[1314,"Ses filles sont compromises dans l’affaire de la tour de Nesle"],[1316,"Druon en fait l’empoisonneuse de Louis X (rumeur jamais prouvée)"]],
+robert3art:[[1309,"Perd son procès pour l’Artois face à sa tante Mahaut"],[1331,"Convaincu d’avoir produit de faux actes"],[1336,"Réfugié auprès d’Édouard III, l’encourage à revendiquer la France"],[1342,"Meurt de ses blessures après le siège de Vannes"]],
+jeannebg:[[1314,"Enfermée à Dourdan dans l’affaire de la tour de Nesle"],[1315,"Reconnue innocente, retrouve son mari"],[1316,"Reine de France"]],
+blanchebg:[[1314,"Condamnée dans l’affaire de la tour de Nesle, enfermée à Château-Gaillard"],[1322,"Mariage annulé ; finit religieuse à Maubuisson"]],
+margbg:[[1314,"Condamnée dans l’affaire de la tour de Nesle"],[1315,"Meurt à Château-Gaillard"]],
+jeanneboit:[[1313,"Épouse Philippe de Valois"],[1328,"Reine de France ; réputée dure, « la male royne boiteuse »"]],
+eudes4:[[1318,"Épouse Jeanne, fille de Philippe V et héritière de l’Artois"]],
+jeanne3:[[1330,"Hérite de l’Artois et de la Franche-Comté"]],
+isabellefr5:[[1316,"Promise enfant au petit Guigues de Viennois"],[1323,"Mariage célébré"]],
+guigues8:[[1319,"Dauphin de Viennois à dix ans"],[1333,"Tué au siège de La Perrière"]],
+charlesmartel:[[1290,"Couronné roi de Hongrie par le pape, sans régner sur place"]],
+charobert:[[1308,"Roi de Hongrie, fonde la lignée angevine de Hongrie"]],
+clemence:[[1315,"Épouse Louis X après la mort de Marguerite"],[1316,"Met au monde Jean Ier, qui vit cinq jours"]],
+robertnap:[[1309,"Roi de Naples ; protecteur de Pétrarque et de Giotto"]],
+jeanne1nap:[[1348,"Vend Avignon au pape"],[1382,"Assassinée"]],
+louis10:[[1315,"Fait pendre Enguerrand de Marigny ; ordonnance d’affranchissement des serfs du domaine"],[1316,"Meurt après une partie de jeu de paume, peut-être empoisonné"]],
+jean1:[[1316,"Né roi, meurt cinq jours plus tard"]],
+philippe5:[[1316,"Régent, puis roi en écartant sa nièce Jeanne"],[1317,"Une assemblée déclare que les femmes ne succèdent pas au trône"],[1322,"Meurt sans fils"]],
+charles4:[[1322,"Fait annuler son mariage avec Blanche"],[1324,"Guerre de Saint-Sardos en Guyenne"],[1328,"Meurt sans fils : fin des Capétiens directs"]],
+isabelle:[[1308,"Épouse Édouard II"],[1314,"Dénonce ses belles-sœurs : affaire de la tour de Nesle"],[1326,"Débarque en Angleterre avec Mortimer"],[1327,"Édouard II est déposé, puis tué"],[1330,"Écartée par son fils Édouard III"]],
+edward2:[[1308,"Épouse Isabelle de France"],[1314,"Écrasé par les Écossais à Bannockburn"],[1327,"Déposé"]],
+edward3:[[1328,"Revendique la couronne de France"],[1340,"Prend le titre de roi de France ; victoire navale de L’Écluse"],[1346,"Victoire de Crécy"],[1347,"Prend Calais"],[1360,"Traité de Brétigny"]],
+philippa:[[1328,"Épouse Édouard III"],[1347,"Obtient la grâce des bourgeois de Calais"]],
+philippe6:[[1328,"Choisi roi par les barons : premier Valois"],[1328,"Victoire de Cassel sur les Flamands"],[1346,"Défaite de Crécy"],[1349,"Achète le Dauphiné"]],
+jean2:[[1350,"Roi"],[1356,"Capturé à Poitiers"],[1360,"Traité de Brétigny ; création du franc pour sa rançon"],[1364,"Meurt captif à Londres"]],
+bonnelux:[[1332,"Épouse le futur Jean II"],[1349,"Emportée par la Peste noire"]],
+jeanaveugle:[[1346,"Aveugle, se fait conduire au combat à Crécy, où il est tué"]],
+charles4emp:[[1356,"Bulle d’or : règle l’élection impériale"],[1378,"Visite son neveu Charles V à Paris"]],
+jeanne2nav:[[1316,"Écartée du trône de France"],[1328,"Reine de Navarre"]],
+charlesmauv:[[1354,"Fait assassiner le connétable Charles de La Cerda"],[1356,"Arrêté à Rouen par Jean II"],[1358,"Écrase la Jacquerie"]],
+charles5:[[1358,"Dauphin, affronte Étienne Marcel"],[1364,"Roi ; victoire de Cocherel par Du Guesclin"],[1368,"Fonde la librairie royale du Louvre"],[1380,"Meurt après avoir repris presque tout le terrain perdu"]],
+jeannebourbon:[[1350,"Épouse le futur Charles V"]],
+philhardi:[[1356,"À Poitiers, aux côtés de son père : « Père, gardez-vous à droite ! »"],[1363,"Reçoit la Bourgogne"],[1369,"Épouse Marguerite de Male"]],
+margmale:[[1369,"Épouse Philippe le Hardi"],[1384,"Hérite de la Flandre et de l’Artois"]],
+louismale:[[1382,"Les Flamands révoltés sont écrasés à Roosebeke"]],
+charles6:[[1380,"Roi à 11 ans"],[1392,"Première crise de folie, en forêt du Mans"],[1393,"Bal des ardents"],[1415,"Désastre d’Azincourt"],[1420,"Traité de Troyes : déshérite son fils"]],
+isabeau:[[1385,"Épouse Charles VI"],[1420,"Signe le traité de Troyes"]],
+louisorl:[[1407,"Assassiné rue Vieille-du-Temple par les hommes de Jean sans Peur"]],
+valentine:[[1389,"Épouse Louis d’Orléans ; ses droits sur Milan mèneront aux guerres d’Italie"]],
+charlesorl:[[1415,"Capturé à Azincourt, 25 ans de captivité en Angleterre"],[1440,"Libéré ; poète de Blois"]],
+jeansp:[[1396,"Croisade de Nicopolis, capturé par les Ottomans"],[1407,"Fait assassiner Louis d’Orléans"],[1419,"Assassiné sur le pont de Montereau"]],
+philbon:[[1420,"S’allie aux Anglais par le traité de Troyes"],[1430,"Fonde l’ordre de la Toison d’or"],[1435,"Paix d’Arras avec Charles VII"]],
+charlestem:[[1468,"Retient Louis XI à Péronne"],[1476,"Battu par les Suisses à Grandson et Morat"],[1477,"Tué devant Nancy"]],
+mariebg:[[1477,"Épouse Maximilien de Habsbourg"],[1482,"Meurt d’une chute de cheval"]],
+maximilien:[[1477,"Épouse Marie de Bourgogne"],[1493,"Empereur"]],
+henry5:[[1415,"Victoire d’Azincourt"],[1420,"Traité de Troyes ; épouse Catherine de France"]],
+catherine:[[1420,"Épouse Henri V"],[1430,"Remariée vers cette date à Owen Tudor ; grand-mère d’Henri VII"]],
+henry6:[[1431,"Couronné roi de France à Notre-Dame de Paris"],[1461,"Déposé pendant la guerre des Deux-Roses"]],
+charles7:[[1422,"« Roi de Bourges », contesté"],[1429,"Jeanne d’Arc délivre Orléans ; sacre à Reims"],[1435,"Paix d’Arras avec la Bourgogne"],[1453,"Victoire de Castillon, fin de la guerre de Cent Ans"]],
+marieanj:[[1422,"Épouse Charles VII"]],
+rene:[[1431,"Prisonnier du duc de Bourgogne jusqu’en 1437"],[1434,"Duc d’Anjou, comte de Provence : le « bon roi René »"]],
+margarethanj:[[1445,"Épouse Henri VI d’Angleterre"],[1471,"Vaincue à Tewkesbury"]],
+louis11:[[1465,"Affronte la ligue du Bien public"],[1468,"Retenu à Péronne par Charles le Téméraire"],[1475,"Traité de Picquigny"],[1477,"S’empare de la Bourgogne"]],
+charles8:[[1491,"Épouse Anne de Bretagne"],[1494,"Part conquérir Naples"],[1498,"Meurt après s’être heurté à un linteau à Amboise"]],
+annebret:[[1491,"Épouse Charles VIII"],[1499,"Épouse Louis XII : deux fois reine"]],
+louis12:[[1498,"Fait annuler son mariage et épouse Anne de Bretagne"],[1499,"Conquiert le Milanais"],[1506,"Surnommé « Père du peuple »"]],
+claude:[[1514,"Épouse François d’Angoulême"],[1515,"Reine ; la prune « reine-claude » porte son nom"]],
+louisesav:[[1515,"Régente pendant Marignan"],[1525,"Régente pendant la captivité du roi"],[1529,"Négocie la paix des Dames"]],
+francois1:[[1515,"Victoire de Marignan"],[1520,"Camp du Drap d’or"],[1525,"Capturé à Pavie"],[1539,"Ordonnance de Villers-Cotterêts : le français dans les actes"]],
+margang:[[1527,"Épouse Henri d’Albret, roi de Navarre"],[1559,"L’Heptaméron paraît après sa mort"]],
+henri2:[[1533,"Épouse Catherine de Médicis"],[1552,"Prend Metz, Toul et Verdun"],[1559,"Paix du Cateau-Cambrésis ; blessé à mort en tournoi"]],
+catmedicis:[[1533,"Épouse le futur Henri II"],[1560,"Régente pour Charles IX"],[1572,"Massacre de la Saint-Barthélemy"]],
+francois2:[[1558,"Épouse Marie Stuart"],[1560,"Conjuration d’Amboise ; meurt à 16 ans"]],
+elisabethval:[[1559,"Épouse Philippe II d’Espagne"]],
+charles9:[[1562,"Début des guerres de Religion"],[1572,"Massacre de la Saint-Barthélemy"]],
+henri3:[[1573,"Élu roi de Pologne"],[1588,"Fait assassiner le duc de Guise à Blois"],[1589,"Assassiné par Jacques Clément"]],
+margot:[[1572,"Épouse Henri de Navarre, six jours avant la Saint-Barthélemy"],[1599,"Mariage annulé"]],
+jeannealbret:[[1560,"Se convertit au calvinisme"],[1572,"Meurt à Paris avant les noces de son fils"]],
+antoine:[[1548,"Épouse Jeanne d’Albret"],[1562,"Tué au siège de Rouen"]],
+henri4:[[1572,"Épouse Marguerite de Valois"],[1589,"Roi de France à la mort d’Henri III"],[1593,"Abjure le protestantisme à Saint-Denis"],[1598,"Édit de Nantes"],[1610,"Assassiné par Ravaillac"]],
+mariemedicis:[[1600,"Épouse Henri IV"],[1610,"Régente"],[1630,"Journée des Dupes, puis exil"]],
+louis13:[[1617,"Fait assassiner Concini et prend le pouvoir"],[1624,"Appelle Richelieu"],[1628,"Siège de La Rochelle"]],
+anneaut:[[1615,"Épouse Louis XIII"],[1638,"Naissance de Louis XIV"],[1643,"Régente avec Mazarin"],[1648,"La Fronde éclate"]],
+louis14:[[1643,"Roi à 4 ans"],[1660,"Épouse Marie-Thérèse d’Autriche"],[1661,"Gouverne seul"],[1682,"S’installe à Versailles"],[1685,"Révoque l’édit de Nantes"],[1700,"Son petit-fils devient roi d’Espagne"]],
+mariethe:[[1660,"Épouse Louis XIV à Saint-Jean-de-Luz"]],
+philorl:[[1661,"Épouse Henriette d’Angleterre ; « Monsieur », frère du roi"]],
+grandauphin:[[1711,"Meurt de la variole avant son père"]],
+ducbourgogne:[[1712,"Meurt de la rougeole, avec sa femme et son fils aîné"]],
+philippe5esp:[[1700,"Roi d’Espagne par testament de Charles II"],[1713,"Traité d’Utrecht : renonce au trône de France"]],
+regent:[[1715,"Régent pour Louis XV"],[1720,"Faillite du système de Law"]],
+louis15:[[1715,"Roi à 5 ans"],[1763,"Traité de Paris : perte du Canada"],[1768,"Rattachement de la Corse"]],
+louis16:[[1770,"Épouse Marie-Antoinette"],[1789,"Réunit les États généraux"],[1791,"Fuite à Varennes"],[1793,"Guillotiné"]],
+egalite:[[1793,"Vote la mort de son cousin Louis XVI ; guillotiné à son tour"]],
+louis18:[[1814,"Restauration ; octroie la Charte"],[1815,"S’enfuit à Gand pendant les Cent-Jours"]],
+charles10:[[1825,"Sacré à Reims"],[1830,"Prise d’Alger ; révolution de Juillet et abdication"]],
+angouleme:[[1830,"Roi en titre quelques minutes, entre l’abdication de son père et la sienne"]],
+berry:[[1820,"Assassiné par Louvel à la sortie de l’Opéra"]],
+chambord:[[1820,"« L’enfant du miracle », né après l’assassinat de son père"],[1873,"Refuse le drapeau tricolore : la restauration échoue"]],
+louisphilippe:[[1830,"Roi des Français"],[1848,"Abdique et s’exile"]],
+alphonse13:[[1931,"Quitte l’Espagne à la proclamation de la République"],[1936,"Devient l’aîné des Capétiens pour les légitimistes"]],
+juancarlos:[[1975,"Roi à la mort de Franco"],[1981,"Fait échouer un coup d’État"],[2014,"Abdique"]],
+felipe6:[[2014,"Roi d’Espagne"]],
+louisxx:[[1989,"Aîné des Capétiens selon les légitimistes"]],
+jean1965:[[2019,"Chef de la maison d’Orléans"]],
+henry7:[[1485,"Victoire de Bosworth : premier roi Tudor"]],
+henry8:[[1520,"Camp du Drap d’or"],[1534,"Rompt avec Rome, chef de l’Église d’Angleterre"]],
+elizabeth1:[[1558,"Reine d’Angleterre"],[1587,"Fait exécuter Marie Stuart"],[1588,"Défaite de l’Invincible Armada"]],
+mariestuart:[[1558,"Épouse le dauphin François"],[1567,"Contrainte d’abdiquer"],[1587,"Exécutée à Fotheringhay"]],
+jacques6:[[1603,"Union des couronnes d’Écosse et d’Angleterre"]],
+isabellecast:[[1469,"Épouse Ferdinand d’Aragon"],[1492,"Prise de Grenade ; premier voyage de Colomb"]],
+ferdinandar:[[1492,"Prise de Grenade"]],
+jeannefolle:[[1506,"Veuve de Philippe le Beau"],[1509,"Enfermée à Tordesillas jusqu’à sa mort"]],
+philbeau:[[1496,"Épouse Jeanne de Castille"],[1506,"Meurt à Burgos"]],
+charlesquint:[[1516,"Roi d’Espagne"],[1519,"Élu empereur"],[1525,"Capture François Ier à Pavie"],[1556,"Abdique"]],
+philippe2esp:[[1559,"Épouse Élisabeth de Valois"],[1571,"Victoire de Lépante"],[1588,"Échec de l’Invincible Armada"]]
+};
+
 /* ============ Maisons ============ */
 const H={
  mero:{n:"Mérovingiens",c:"#8d6e4f"},
@@ -1156,13 +1415,16 @@ function select(id,keepCam){
   const reigns=p.R.length?`<h4>Titres</h4><ul class="reignlist">${p.R.map(([l,a,b])=>`<li><span>${l}</span><span>${a===b?a:a+"–"+b}</span></li>`).join("")}</ul>`:"";
   drawer.innerHTML=`<button class="x" aria-label="Fermer">×</button>
    ${year!==null?`<button class="back" data-era="1">← Retour à ${year}</button>`:""}
-   <div class="dh" style="--c:${col(p)}"><div class="seal">${p.k?"♛":p.n[0]}</div><div><h3>${p.n}</h3><p>${yrs(p)} · ${H[p.h].n}</p>${p.al?`<p>Dit aussi : ${p.al.join(", ")}</p>`:""}</div></div>
+   <div class="dh" style="--c:${col(p)}"><div class="seal" id="pSeal">${p.k?"♛":p.n[0]}</div><div><h3>${p.n}</h3><p>${yrs(p)} · ${H[p.h].n}</p>${p.al?`<p>Dit aussi : ${p.al.join(", ")}</p>`:""}</div></div>
    <div class="title">${p.t||""}</div>
    <p class="bio">${p.bio}</p>
+   ${factsHtml(p)}
+   <p class="credit" id="pCredit"></p>
    <div class="row"><button class="btn ghost" data-asc="${id}" ${nA?"":"disabled"}>Ascendance (${nA})</button><button class="btn ghost" data-desc="${id}" ${nD?"":"disabled"}>Descendance (${nD})</button></div>
    <div class="rel">${reigns}${sec("Parents",p.p)}${momTxt}${dadTxt}${sec(p.sp.length>1?"Conjoints":"Conjoint",p.sp)}${sec("Enfants",p.ch)}${sec("Frères et sœurs",sib)}</div>
-   <div class="row" style="margin-top:16px"><button class="btn ghost" data-a="${id}">Comparer : personne 1</button><button class="btn ghost" data-b="${id}">Personne 2</button></div>`;
-  drawer.hidden=false;drawer.scrollTop=0;drawerMode="person";
+   <div class="row" style="margin-top:16px"><button class="btn ghost" data-a="${id}">Comparer : personne 1</button><button class="btn ghost" data-b="${id}">Personne 2</button></div>
+   <a class="btn ghost report" href="${mailtoFor(p)}">✉ Signaler une erreur sur cette fiche</a>`;
+  drawer.hidden=false;drawer.scrollTop=0;drawerMode="person";loadPortrait(p);
   if(!wide())tools.classList.remove("open");
   if(!keepCam)requestAnimationFrame(()=>fit([...set],{max:1.1}));
 }
@@ -1327,7 +1589,7 @@ function showEra(){
   const y=year;const alive=P.filter(p=>p.b<=y&&y<=p.d).length;
   const rows=[],empty=[];
   LANDS.forEach(l=>{const hs=holdersAt(l,y);if(hs.length)rows.push(`<div class="land"><span>${l==="France"&&y<987?"Royaume des Francs":l}</span><div class="chips">${hs.map(p=>chipFor(p.id)).join("")}</div></div>`);else if(P.some(p=>p.R.some(([L,a,b])=>L===l&&a<=y+40&&b>=y-40)))empty.push(l);});
-  drawer.innerHTML=`<button class="x" aria-label="Fermer">×</button><div class="era"><h3>${y}</h3><p class="hint">${alive} personnages vivants dans l’arbre. Les titulaires brillent sur l’arbre.</p>${rows.join("")||'<p class="hint">Aucun titulaire dans l’arbre cette année-là.</p>'}${empty.length?`<p class="hint" style="margin-top:10px">Titulaire hors de l’arbre : ${empty.join(", ")}.</p>`:""}</div>`;
+  drawer.innerHTML=`<button class="x" aria-label="Fermer">×</button><div class="era"><h3>${y}</h3>${eraFacts(y)}<p class="hint">${alive} personnages vivants dans l’arbre. Les titulaires brillent sur l’arbre.</p>${rows.join("")||'<p class="hint">Aucun titulaire dans l’arbre cette année-là.</p>'}${empty.length?`<p class="hint" style="margin-top:10px">Titulaire hors de l’arbre : ${empty.join(", ")}.</p>`:""}</div>`;
   drawer.hidden=false;drawerMode="era";
 }
 function timeOff(){
@@ -1697,6 +1959,41 @@ document.getElementById("filmList").innerHTML=FILMS.map(f=>{const n=successionsO
 document.getElementById("filmList").addEventListener("click",e=>{const b=e.target.closest("[data-film]");if(b)filmOpen(b.dataset.film);});
 document.getElementById("filmsBtn").onclick=()=>showTab("films");
 
+
+
+/* ============ Portraits et faits marquants ============ */
+const PORT={};
+const wikiUrl=t=>"https://fr.wikipedia.org/wiki/"+encodeURIComponent(t.replace(/ /g,"_"));
+function factsHtml(p){const f=FACTS[p.id];if(!f)return "";return `<h4 class="fh">Faits marquants</h4><ol class="facts" style="--c:${col(p)}">${f.map(([y,t])=>`<li><b>${y}</b><span>${t}</span></li>`).join("")}</ol>`;}
+function eraFacts(y){const L=[];for(const id in FACTS)for(const [fy,t] of FACTS[id])if(fy<=y&&fy>y-6&&byId[id])L.push([fy,id,t]);if(!L.length)return "";L.sort((a,b)=>b[0]-a[0]);
+  return `<ol class="facts era-f">${L.slice(0,3).map(([fy,id,t])=>`<li><b>${fy}</b><span><a class="flink" data-go="${id}">${byId[id].n}</a> — ${t}</span></li>`).join("")}</ol>`;}
+function paintPortrait(p,r){
+  const seal=document.getElementById("pSeal"),cr=document.getElementById("pCredit");
+  if(!seal||seal.dataset.for&&seal.dataset.for!==p.id)return;
+  const art=WIKI[p.id];
+  if(r&&r.src){seal.classList.add("photo");seal.innerHTML=`<img src="${r.src}" alt="${p.n}" loading="lazy">`;seal.onclick=()=>window.open(r.file,"_blank","noopener");seal.title="Voir l’image sur Wikimédia";}
+  if(cr&&art)cr.innerHTML=`${r&&r.src?`Image : <a href="${r.file}" target="_blank" rel="noopener">Wikimédia Commons</a> · `:""}<a href="${wikiUrl(art)}" target="_blank" rel="noopener">Article Wikipédia</a>`;
+}
+async function loadPortrait(p){
+  const seal=document.getElementById("pSeal");if(seal)seal.dataset.for=p.id;
+  const t=WIKI[p.id];if(!t)return;
+  if(NOIMG.has(p.id)){paintPortrait(p,null);return;}
+  if(PORT[p.id]!==undefined){paintPortrait(p,PORT[p.id]);return;}
+  paintPortrait(p,null);
+  try{
+    const u="https://fr.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=pageimages&piprop=thumbnail|name&pithumbsize=240&origin=*&titles="+encodeURIComponent(t);
+    const j=await fetch(u).then(r=>r.json());const pg=j.query&&j.query.pages&&j.query.pages[0];
+    PORT[p.id]=pg&&pg.thumbnail?{src:pg.thumbnail.source,file:"https://fr.wikipedia.org/wiki/Fichier:"+encodeURIComponent(pg.pageimage)}:null;
+  }catch(e){PORT[p.id]=null;}
+  paintPortrait(p,PORT[p.id]);
+}
+
+/* ============ À propos ============ */
+function mailtoFor(p){const sub=p?`Lignages – erreur sur « ${p.n} »`:"Lignages – suggestion";const body=p?`Fiche : ${p.n} (${yrs(p)})\n\nCe qui me semble inexact :\n\n\nCe qui serait juste, avec une source si possible :\n\n`:"Bonjour,\n\n";return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(sub)}&body=${encodeURIComponent(body)}`;}
+document.getElementById("contactLink").href=mailtoFor(null);
+document.getElementById("contactLink").textContent="✉ "+CONTACT_EMAIL;
+document.getElementById("aboutStats").textContent=`${P.length} personnages, ${Object.keys(H).length} maisons, de ${Math.min(...P.map(p=>p.b))} à aujourd’hui ; ${STORIES.length} récits guidés et ${FILMS.length} films animés.`;
+
 /* ============ Lancement ============ */
 fitText();
 document.fonts&&document.fonts.ready.then(fitText);
@@ -1707,5 +2004,3 @@ addEventListener("resize",updMini);
 </script>
 </body>
 </html>
-
-</body></html>
