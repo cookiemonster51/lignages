@@ -299,6 +299,41 @@ details.fold[open] summary::after{content:" −"}
 .tiptoast.on{opacity:1;transform:translate(-50%,0)}
 .tiptoast p{margin:0 0 10px;font-size:14.5px;line-height:1.45}
 .tiptoast div{display:flex;gap:8px;flex-wrap:wrap}
+
+#tab-map{background:var(--bg)}
+.mapwrap{position:absolute;inset:0;display:grid;grid-template-columns:1fr 360px;gap:14px;padding:14px}
+.mapview{position:relative;min-height:0;display:flex;flex-direction:column;gap:10px}
+#mapsvg{flex:1 1 auto;min-height:0;width:100%;background:color-mix(in srgb,var(--bg) 70%,#7fa7c9);border-radius:16px;border:1px solid var(--line)}
+.mbg{fill:var(--chip);stroke:var(--line);stroke-width:2}
+#mapRegs path{fill:url(#hatch);stroke:var(--panel);stroke-width:3;stroke-linejoin:round;transition:fill .6s ease;cursor:pointer}
+#mapRegs path:not(.none){fill-opacity:.85}
+#mapRegs path:hover{fill-opacity:1;stroke:var(--ink)}
+#mapRegs path.pulse{animation:mpulse 1.2s ease}
+@keyframes mpulse{0%{stroke:var(--hi);stroke-width:14}100%{stroke:var(--panel);stroke-width:3}}
+.mlabs{pointer-events:none}
+.mlabs text{text-anchor:middle;paint-order:stroke;stroke:rgba(255,255,255,.85);stroke-width:7px;stroke-linejoin:round;fill:#172040}
+.mlabs .rn{font:italic 40px 'IM Fell English',Georgia,serif}
+.mlabs .hn{font:700 38px 'Alegreya Sans',system-ui,sans-serif}
+.mapbar input{accent-color:var(--hi)}
+.mlabs g.none .rn{fill:#56607a}
+.mapbar{display:flex;align-items:center;gap:10px;padding:8px 12px;flex:0 0 auto}
+.mapbar input{flex:1}
+.mapside{display:flex;flex-direction:column;gap:10px;min-height:0}
+.mmoments{flex:0 0 auto}
+.mmoments .chip{cursor:pointer;font-size:13px}
+.mappanel{flex:1 1 auto;overflow:auto;padding:16px 18px}
+.mappanel h3{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:40px;line-height:1;margin:0 0 8px;color:var(--hi)}
+.mappanel h4{font-family:'IM Fell English',Georgia,serif;font-style:italic;font-weight:400;font-size:17px;margin:14px 0 6px}
+.mrow{display:grid;gap:2px;padding:7px 0 7px 10px;border-left:4px solid var(--c);margin-bottom:6px}
+.mrow a,.mlog a{font-weight:700;cursor:pointer;text-decoration:underline;text-decoration-color:var(--line)}
+.mrow span{font-size:13.5px;color:var(--muted)}
+.mlog{list-style:none;padding:0;margin:0;font-size:14px}.mlog li{padding:3px 0}.mlog b{color:var(--hi)}
+.mnote{font-size:12.5px;margin-top:14px}
+.sharebtn{margin-top:10px}
+@media (max-width:900px){.mapwrap{position:static;grid-template-columns:1fr;padding:10px}#tab-map{overflow:auto}#mapsvg{height:62vh;flex:none}.mappanel{max-height:none}}
+.srcs{margin:4px 0 12px;font-size:13.5px}
+.srcs summary{cursor:pointer;font-family:'IM Fell English',Georgia,serif;font-style:italic;font-size:16px}
+.srcs ul{margin:6px 0;padding-left:18px;line-height:1.45}.srcs a{color:inherit}
 </style>
 </head>
 <body>
@@ -306,6 +341,7 @@ details.fold[open] summary::after{content:" −"}
   <div class="brand"><h1>Lignages</h1><span>France et Europe, 481 à aujourd’hui</span></div>
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="tree" aria-selected="true">L’arbre</button>
+    <button role="tab" data-tab="map" aria-selected="false">Carte</button>
     <button role="tab" data-tab="films" aria-selected="false">Films</button>
     <button role="tab" data-tab="stories" aria-selected="false">Récits</button>
     <button role="tab" data-tab="quiz" aria-selected="false">Défi</button>
@@ -360,6 +396,30 @@ details.fold[open] summary::after{content:" −"}
     </div>
     <div class="story panel" id="story" hidden></div>
     <div class="film panel" id="film" hidden></div>
+  </section>
+
+  <section id="tab-map" hidden>
+    <div class="mapwrap">
+      <div class="mapview">
+        <svg id="mapsvg" viewBox="-1180 -1230 2440 2470" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Carte des royaumes et principautés selon l’année">
+          <defs><pattern id="hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="14" height="14" fill="var(--chip)"/><line x1="0" y1="0" x2="0" y2="14" stroke="var(--line)" stroke-width="6"/></pattern></defs>
+          <path id="mapBg" class="mbg"/>
+          <g id="mapRegs"></g>
+          <g id="mapLabs" class="mlabs"></g>
+        </svg>
+        <div class="mapbar panel">
+          <button class="tbtn play" id="mPlay" aria-label="Lire">▶</button>
+          <div class="tyear" id="mYear">1328</div>
+          <input type="range" id="mRange" min="450" max="2026" value="1328" aria-label="Année de la carte">
+          <button class="tbtn" id="mSpeed" aria-label="Vitesse">1×</button>
+          <button class="tbtn" data-share aria-label="Copier le lien de cette carte" title="Copier le lien">🔗</button>
+        </div>
+      </div>
+      <aside class="mapside">
+        <div class="chips mmoments" id="mapMoments"></div>
+        <div class="mappanel panel" id="mapPanel"></div>
+      </aside>
+    </div>
   </section>
 
   <section id="tab-films" class="scroll" hidden>
@@ -423,7 +483,9 @@ details.fold[open] summary::after{content:" −"}
         <article style="--c:#c8392f">
           <h3>Méthode et limites</h3>
           <ul>
-            <li>Les fiches ont été rédigées avec l’aide d’un assistant d’intelligence artificielle, à partir de connaissances historiques générales, puis relues. Elles n’ont pas encore été vérifiées une à une contre les sources : chaque signalement compte.</li>
+            <li>Les fiches ont été rédigées avec l’aide d’un assistant d’intelligence artificielle, à partir de connaissances historiques générales, puis relues. Chaque fiche indique où vérifier : article de Wikipédia, notice Wikidata, ouvrages de référence.</li>
+            <li>Contrôle croisé du 8 novembre 2026 : les 334 liens parent-enfant et les 78 mariages de l’arbre ont été comparés à Wikidata, la base de connaissances liée à Wikipédia. Tous concordent. Les dates de naissance diffèrent pour 19 personnages, presque tous nés à une date incertaine. Wikidata n’est pas une source savante : cette concordance rassure, elle ne remplace pas la relecture par des spécialistes.</li>
+            <li>Corrections apportées grâce aux lecteurs : Murielle Gaude-Ferragu (surnoms dépréciatifs des reines, succession en Navarre), novembre 2026.</li>
             <li>Les dates précédées de « v. » sont approximatives. Pour les premiers siècles, les sources divergent souvent de plusieurs années.</li>
             <li>L’arbre est une sélection : il suit les lignes qui expliquent les successions et les héritages. Beaucoup de frères, de sœurs et d’enfants morts jeunes n’y figurent pas. Quand un parent manque, la fiche le nomme.</li>
             <li>L’axe vertical place chacun à son année de naissance. Les colonnes regroupent les familles ; leur position n’a pas de sens en soi.</li>
@@ -1439,13 +1501,16 @@ function select(id,keepCam){
    <p class="bio">${p.bio}</p>
    ${factsHtml(p)}
    <p class="credit" id="pCredit"></p>
+   ${sourcesHtml(p)}
    <div class="row"><button class="btn ghost" data-asc="${id}" ${nA?"":"disabled"}>Ascendance (${nA})</button><button class="btn ghost" data-desc="${id}" ${nD?"":"disabled"}>Descendance (${nD})</button></div>
    <div class="rel">${reigns}${sec("Parents",p.p)}${momTxt}${dadTxt}${sec(p.sp.length>1?"Conjoints":"Conjoint",p.sp)}${sec("Enfants",p.ch)}${sec("Frères et sœurs",sib)}</div>
    <div class="row" style="margin-top:16px"><button class="btn ghost" data-a="${id}">Comparer : personne 1</button><button class="btn ghost" data-b="${id}">Personne 2</button></div>
+   <div class="row"><button class="btn ghost" data-share>🔗 Copier le lien de cette fiche</button></div>
    <a class="btn ghost report" href="${mailtoFor(p)}">✉ Signaler une erreur sur cette fiche</a>`;
   drawer.hidden=false;drawer.scrollTop=0;drawerMode="person";loadPortrait(p);
   if(!wide())tools.classList.remove("open");
   if(!keepCam)requestAnimationFrame(()=>fit([...set],{max:1.1}));
+  setHash("fiche/"+slugOf(id));
 }
 drawer.addEventListener("click",e=>{
   if(e.target.closest(".x")){if(year!==null&&drawerMode==="person")showEra();else{focus(null);drawer.hidden=true;drawerMode=null;}return;}
@@ -1556,7 +1621,8 @@ function explain(a,b,why){
   storyStop();
   if(a===b){result.innerHTML=`<div class="verdict">Choisissez deux personnes différentes.</div>`;return;}
   const ids=new Set([a,b]);
-  result.innerHTML=explainHTML(a,b,ids)+(why?`<div class="why">${why}</div>`:"");
+  result.innerHTML=explainHTML(a,b,ids)+(why?`<div class="why">${why}</div>`:"")+`<button class="btn ghost sharebtn" data-share>🔗 Copier le lien de cette comparaison</button>`;
+  setHash("lien/"+slugOf(a)+"/"+slugOf(b));
   clearChips();if(drawerMode==="person"){drawer.hidden=true;drawerMode=null;}
   focus(ids,[a,b]);
   if(!wide())tools.classList.remove("open");
@@ -1593,7 +1659,7 @@ let year=null,playT=null,speed=1,lastFollow="";
 const tRange=document.getElementById("tRange"),tYear=document.getElementById("tYear"),tPlay=document.getElementById("tPlay"),tFollow=document.getElementById("tFollow"),tSpeed=document.getElementById("tSpeed"),tOff=document.getElementById("tOff");
 tFollow.innerHTML+=FOLLOW.map(l=>`<option value="${l}">Suivre : ${l}</option>`).join("");
 function setYear(y,fromPlay){
-  year=y;tRange.value=y;tYear.textContent=y;tYear.classList.remove("idle");tOff.hidden=false;
+  year=y;tRange.value=y;setHash("annee/"+y);tYear.textContent=y;tYear.classList.remove("idle");tOff.hidden=false;
   svg.classList.add("timeMode");
   yearLine.setAttribute("y1",Y(y));yearLine.setAttribute("y2",Y(y));
   const land=tFollow.value||null;
@@ -1630,7 +1696,7 @@ tOff.onclick=timeOff;
 
 /* ============ Récits ============ */
 let story=null,si=0;
-function storyPlay(id){filmStop();timeOff();story=STORIES.find(s=>s.id===id);si=0;showTab("tree");drawer.hidden=true;drawerMode=null;clearChips();tools.classList.remove("open");storyEl.hidden=false;timebar.hidden=true;storyStep();}
+function storyPlay(id){filmStop();timeOff();story=STORIES.find(s=>s.id===id);si=0;showTab("tree");drawer.hidden=true;drawerMode=null;clearChips();tools.classList.remove("open");storyEl.hidden=false;timebar.hidden=true;storyStep();setHash("recit/"+id);}
 function storyStop(){if(!story)return;story=null;storyEl.hidden=true;timebar.hidden=false;}
 function storyStep(){
   const st=story.steps[si],n=story.steps.length;
@@ -1749,6 +1815,9 @@ function showTab(t){
   document.querySelectorAll("main>section").forEach(s=>s.hidden=s.id!=="tab-"+t);
   if(t!=="tree"){storyStop();stopPlay();filmStop();}
   if(t==="kings")requestAnimationFrame(centerKing);
+  if(t!=="map"&&typeof mapStop==="function")mapStop();
+  if(t==="map"&&typeof mapSet==="function")mapSet(mapYear);
+  if(t!=="tree"&&TABSLUG)setHash(TABSLUG[t]);
 }
 document.querySelector(".tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-tab]");if(b)showTab(b.dataset.tab);});
 
@@ -1957,7 +2026,7 @@ function filmToggle(){if(!film)return;if(film.ended||film.y>=film.def.y1){filmSe
 function filmStop(){if(!film)return;cancelAnimationFrame(film.raf);film.gen++;film=null;
   gTok.innerHTML="";svg.classList.remove("film");P.forEach(p=>nodeEl[p.id].classList.remove("unborn","dead","pop","crowned"));edges.forEach(e=>e.el.classList.remove("shown"));
   filmEl.hidden=true;timebar.hidden=false;focus(null);}
-function filmOpen(id){const def=FILMS.find(f=>f.id===id);const sp=film?film.speed:1;
+function filmOpen(id){setHash("film/"+id);const def=FILMS.find(f=>f.id===id);const sp=film?film.speed:1;
   filmStop();showTab("tree");timeOff();storyStop();drawer.hidden=true;drawerMode=null;clearChips();focus(null);tools.classList.remove("open");timebar.hidden=true;
   film={def,y:def.y0,yf:def.y0,playing:false,busy:false,ended:false,speed:sp,gen:0,toks:{},moving:[],succ:successionsOf(def),lastCam:def.y0,skipAll:false,last:0};
   filmEl.innerHTML=`<div class="fhead"><span class="fyear"></span><span class="ftitle">${def.t} · ${def.per}</span><button class="btn ghost fx" id="fQuit" aria-label="Quitter le film">×</button></div><div class="fcap"></div><div class="fctrl"><button class="tbtn play" id="fPlay" aria-label="Lecture ou pause">▶</button><input type="range" id="fRange" min="${def.y0}" max="${def.y1}" value="${def.y0}" aria-label="Année"><button class="tbtn" id="fSpeed" aria-label="Vitesse">${sp}×</button><button class="tbtn" id="fSkip" aria-label="Passer l’événement">⏭</button></div>`;
@@ -1980,8 +2049,36 @@ document.getElementById("filmsBtn").onclick=()=>showTab("films");
 
 
 
+
+/* ============ Sources par fiche ============ */
+const BK={
+ favier:"Jean Favier, <i>Dictionnaire de la France médiévale</i>, Fayard",
+ menant:"F. Menant, H. Martin, B. Merdrignac, M. Chauvin, <i>Les Capétiens, 987-1328</i>, Robert Laffont",
+ gauvard:"Claude Gauvard, <i>La France au Moyen Âge du V<sup>e</sup> au XV<sup>e</sup> siècle</i>, PUF",
+ dumezil:"Bruno Dumézil, <i>La Reine Brunehaut</i>, Fayard",
+ schnerb:"Bertrand Schnerb, <i>L’État bourguignon, 1363-1477</i>, Perrin",
+ contamine:"Philippe Contamine, <i>La Guerre de Cent Ans</i>, PUF",
+ cosandey:"Fanny Cosandey, <i>La Reine de France. Symbole et pouvoir</i>, Gallimard",
+ schwen:"Detlev Schwennicke (dir.), <i>Europäische Stammtafeln</i>, Klostermann",
+ druon:"Maurice Druon, <i>Les Rois maudits</i> (roman : à lire comme tel)"};
+const MAUDITS=new Set(["philippe4","louis10","philippe5","charles4","isabelle","margbg","blanchebg","jeannebg","mahaut","robert3art","charlesval","louisevr","clemence","jean1","jeanne2nav","philippe6","edward2","edward3","philippa","guillhain","jeanneboit","isabellefr5","guigues8","philevr","charlesmauv","jean2","eudes4","jeanne3"]);
+function sourcesHtml(p){
+  const b=[],h=p.h,mid=(p.b+Math.min(p.d,2026))/2;
+  if(["brunehaut","fredegonde","sigebert1","chilperic1","childebert2","clotaire2"].includes(p.id))b.push("dumezil");
+  if(mid<1000)b.push("gauvard");
+  if(mid>=960&&mid<1340&&["capet","valois","evreux","artois","anjou","bourbon","bgduc","navarre"].includes(h))b.push("menant");
+  if(p.d>=1337&&p.b<=1453&&["plant","valois","valorl","valbg","valanj","evreux","flandre","hainaut","witt","lux"].includes(h))b.push("contamine");
+  if(["valbg","flandre"].includes(h)||(h==="bgduc"&&p.d>1363)||["mariebg","maximilien","philbeau","jacqueline","margbav","margbg2"].includes(p.id))b.push("schnerb");
+  if(p.s==="f"&&p.b>=1380&&p.b<1800&&p.sp.some(x=>byId[x].R.some(r=>r[0]==="France")))b.push("cosandey");
+  if(p.d<1500)b.push("favier");
+  b.push("schwen");
+  if(MAUDITS.has(p.id))b.push("druon");
+  const w=WIKI[p.id];
+  return `<details class="srcs"><summary>Sources et vérification</summary><ul>${w?`<li><a href="${wikiUrl(w)}" target="_blank" rel="noopener">Wikipédia : ${w}</a></li><li id="pWd">Wikidata</li>`:""}${[...new Set(b)].map(k=>`<li>${BK[k]}</li>`).join("")}</ul><p class="hint">Filiation et mariages comparés à Wikidata le 8 novembre 2026 : concordants.</p></details>`;
+}
+
 /* ============ Portraits et faits marquants ============ */
-const PORT={};
+const PORT={},QID={};
 const wikiUrl=t=>"https://fr.wikipedia.org/wiki/"+encodeURIComponent(t.replace(/ /g,"_"));
 function factsHtml(p){const f=FACTS[p.id];if(!f)return "";return `<h4 class="fh">Faits marquants</h4><ol class="facts" style="--c:${col(p)}">${f.map(([y,t])=>`<li><b>${y}</b><span>${t}</span></li>`).join("")}</ol>`;}
 function eraFacts(y){const L=[];for(const id in FACTS)for(const [fy,t] of FACTS[id])if(fy<=y&&fy>y-6&&byId[id])L.push([fy,id,t]);if(!L.length)return "";L.sort((a,b)=>b[0]-a[0]);
@@ -1991,6 +2088,7 @@ function paintPortrait(p,r){
   if(!seal||seal.dataset.for&&seal.dataset.for!==p.id)return;
   const art=WIKI[p.id];
   if(r&&r.src){seal.classList.add("photo");seal.innerHTML=`<img src="${r.src}" alt="${p.n}" loading="lazy">`;seal.onclick=()=>window.open(r.file,"_blank","noopener");seal.title="Voir l’image sur Wikimédia";}
+  const wd=document.getElementById("pWd");if(wd&&QID[p.id])wd.innerHTML=`<a href="https://www.wikidata.org/wiki/${QID[p.id]}" target="_blank" rel="noopener">Wikidata : ${QID[p.id]}</a>`;
   if(cr&&art)cr.innerHTML=`${r&&r.src?`Image : <a href="${r.file}" target="_blank" rel="noopener">Wikimédia Commons</a> · `:""}<a href="${wikiUrl(art)}" target="_blank" rel="noopener">Article Wikipédia</a>`;
 }
 async function loadPortrait(p){
@@ -2000,9 +2098,10 @@ async function loadPortrait(p){
   if(PORT[p.id]!==undefined){paintPortrait(p,PORT[p.id]);return;}
   paintPortrait(p,null);
   try{
-    const u="https://fr.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=pageimages&piprop=thumbnail|name&pithumbsize=240&origin=*&titles="+encodeURIComponent(t);
+    const u="https://fr.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&redirects=1&prop=pageimages|pageprops&ppprop=wikibase_item&piprop=thumbnail|name&pithumbsize=240&origin=*&titles="+encodeURIComponent(t);
     const j=await fetch(u).then(r=>r.json());const pg=j.query&&j.query.pages&&j.query.pages[0];
     PORT[p.id]=pg&&pg.thumbnail?{src:pg.thumbnail.source,file:"https://fr.wikipedia.org/wiki/Fichier:"+encodeURIComponent(pg.pageimage)}:null;
+    if(pg&&pg.pageprops&&pg.pageprops.wikibase_item)QID[p.id]=pg.pageprops.wikibase_item;
   }catch(e){PORT[p.id]=null;}
   paintPortrait(p,PORT[p.id]);
 }
@@ -2035,12 +2134,107 @@ document.getElementById("contactLink").href=mailtoFor(null);
 document.getElementById("contactLink").textContent="✉ "+CONTACT_EMAIL;
 document.getElementById("aboutStats").textContent=`${P.length} personnages, ${Object.keys(H).length} maisons, de ${Math.min(...P.map(p=>p.b))} à aujourd’hui ; ${STORIES.length} récits guidés et ${FILMS.length} films animés.`;
 
+const MAP={"R":{"boheme":"M494,-290 462,-285 451,-270 435,-272 447,-246 468,-232 460,-213 493,-170 508,-167 523,-149 547,-131 556,-133 594,-97 612,-95 621,-105 640,-102 654,-123 655,-150 676,-150 735,-132 759,-132 764,-140 797,-136 804,-124 816,-155 843,-154 865,-169 880,-191 883,-212 904,-239 924,-245 907,-264 898,-286 880,-283 862,-292 845,-285 792,-322 773,-326 779,-304 763,-286 733,-313 728,-343 694,-342 687,-349 658,-350 646,-370 630,-372 619,-354 595,-369 588,-357 552,-331 536,-328 526,-314 512,-311 494,-290Z","empire":"M494,-290 512,-311 526,-314 536,-328 552,-331 588,-357 595,-369 619,-354 628,-401 620,-420 605,-426 591,-456 600,-488 580,-524 585,-542 553,-566 547,-581 559,-592 560,-617 545,-669 526,-670 502,-711 489,-705 447,-728 422,-738 399,-704 370,-697 359,-671 339,-681 321,-674 312,-682 331,-699 330,-716 311,-712 273,-726 260,-735 256,-759 229,-767 171,-770 174,-752 195,-727 171,-713 173,-701 198,-682 189,-652 170,-654 164,-635 144,-620 129,-638 81,-631 68,-606 49,-607 -1,-601 -27,-590 -42,-567 -73,-546 -84,-553 -102,-483 -128,-447 -137,-444 -130,-405 -169,-402 -171,-387 -151,-379 -125,-380 -119,-365 -118,-350 -149,-306 -120,-287 -101,-284 -101,-259 -118,-249 -113,-216 -87,-220 -73,-200 -44,-179 -38,-166 -18,-172 -3,-160 10,-166 36,-160 53,-129 62,-135 93,-124 101,-131 121,-116 141,-117 160,-110 154,-93 134,-70 130,-41 117,-12 114,23 119,45 104,62 86,56 79,73 51,109 34,117 33,138 10,156 4,176 16,187 37,172 59,174 66,208 79,230 92,235 119,223 142,230 163,206 160,191 188,171 187,192 201,205 232,214 249,192 250,163 283,183 318,168 329,152 339,120 353,116 381,125 388,108 404,99 464,94 489,125 554,135 590,135 625,141 652,140 692,110 723,110 736,98 760,91 767,76 790,54 785,19 802,-2 808,-20 826,-26 822,-70 800,-97 804,-124 797,-136 764,-140 759,-132 735,-132 676,-150 655,-150 654,-123 640,-102 621,-105 612,-95 594,-97 556,-133 547,-131 523,-149 508,-167 493,-170 460,-213 468,-232 447,-246 435,-272 451,-270 462,-285 494,-290ZM-182,-364 -165,-368 -145,-358 -124,-376 -156,-375 -185,-378 -182,-364ZM500,-736 491,-744 464,-750 479,-717 500,-736Z","flandre":"M-200,-310 -164,-311 -149,-306 -118,-350 -119,-365 -124,-376 -145,-358 -165,-368 -182,-364 -185,-378 -200,-374 -248,-347 -276,-342 -256,-304 -226,-295 -214,-282 -204,-255 -208,-232 -183,-227 -166,-232 -134,-221 -128,-231 -141,-262 -160,-263 -180,-283 -194,-284 -200,-310Z","hainaut":"M-200,-310 -194,-284 -180,-283 -160,-263 -141,-262 -128,-231 -134,-221 -128,-219 -113,-216 -118,-249 -101,-259 -101,-284 -120,-287 -149,-306 -164,-311 -200,-310Z","champagne":"M-113,-216 -128,-219 -128,-194 -141,-183 -143,-153 -171,-148 -171,-115 -192,-88 -185,-68 -193,-49 -157,-1 -133,2 -90,0 -76,20 -77,34 -47,43 -22,34 -8,8 -25,-11 -21,-24 -48,-54 -71,-69 -79,-98 -76,-130 -64,-158 -65,-174 -44,-179 -73,-200 -87,-220 -113,-216Z","france":"M-134,-221 -166,-232 -183,-227 -208,-232 -238,-236 -277,-252 -297,-270 -313,-273 -330,-241 -346,-229 -382,-222 -415,-208 -428,-188 -416,-178 -452,-161 -465,-169 -512,-179 -528,-198 -532,-216 -548,-211 -563,-217 -570,-200 -553,-163 -554,-110 -558,-99 -550,-78 -522,-79 -526,-54 -524,-24 -542,-1 -528,20 -523,42 -554,49 -542,66 -542,83 -504,90 -497,83 -440,83 -423,104 -405,101 -390,127 -389,141 -376,151 -348,198 -340,229 -329,230 -289,252 -273,246 -275,283 -299,301 -305,327 -332,332 -346,320 -373,354 -396,371 -394,391 -420,420 -418,435 -398,469 -402,490 -438,506 -470,497 -513,536 -515,554 -495,572 -442,575 -437,559 -384,576 -375,590 -353,601 -326,619 -306,612 -292,622 -252,610 -232,614 -242,600 -242,557 -235,540 -212,520 -167,494 -145,503 -109,458 -92,442 -102,433 -107,407 -97,355 -87,338 -97,283 -52,237 -44,240 -20,283 -7,290 10,285 13,316 36,327 50,320 83,309 91,287 77,276 62,241 79,230 66,208 59,174 37,172 16,187 4,176 -9,192 -27,184 -38,193 -53,172 -82,166 -93,201 -123,189 -132,202 -162,196 -155,169 -173,159 -168,142 -149,133 -148,99 -136,92 -142,74 -178,58 -226,44 -237,23 -225,18 -215,-7 -227,-27 -219,-44 -193,-49 -185,-68 -192,-88 -171,-115 -171,-148 -143,-153 -141,-183 -128,-194 -128,-219 -134,-221ZM-44,-179 -65,-174 -64,-158 -76,-130 -79,-98 -71,-69 -48,-54 -21,-24 -25,-11 -8,8 11,0 18,8 46,6 79,31 86,56 104,62 119,45 114,23 117,-12 130,-41 134,-70 154,-93 160,-110 141,-117 121,-116 101,-131 93,-124 62,-135 53,-129 36,-160 10,-166 -3,-160 -18,-172 -38,-166 -44,-179ZM285,571 223,602 234,708 294,646 285,571Z","hongrie":"M1186,-170 1181,-190 1191,-205 1193,-236 1186,-249 1157,-256 1139,-271 1099,-271 1084,-264 1079,-249 1058,-257 1033,-252 1019,-225 996,-225 966,-263 950,-238 936,-234 924,-245 904,-239 883,-212 880,-191 865,-169 843,-154 816,-155 804,-124 800,-97 822,-70 826,-26 808,-20 802,-2 785,19 790,54 767,76 780,75 792,99 804,112 830,122 844,139 866,151 876,163 895,163 920,175 961,174 986,154 1022,137 1040,113 1059,114 1125,101 1134,84 1152,84 1159,73 1164,38 1175,28 1179,-11 1198,-57 1194,-68 1209,-96 1230,-106 1247,-126 1246,-140 1225,-144 1186,-170Z","italie":"M79,230 62,241 77,276 91,287 83,309 50,320 58,341 78,350 74,371 69,403 83,417 111,430 130,423 136,434 119,458 121,466 158,459 172,447 179,430 197,408 220,393 258,400 302,428 329,434 343,456 350,493 370,529 367,552 382,550 387,566 409,575 426,595 467,619 483,645 510,657 519,675 537,686 553,703 576,708 591,726 613,716 649,719 668,685 656,664 588,638 604,617 590,602 586,580 604,573 615,548 645,534 637,510 615,467 584,450 558,431 538,423 508,396 495,341 515,318 502,309 494,288 484,285 490,262 507,262 541,240 554,223 584,226 590,197 567,163 590,135 554,135 489,125 464,94 404,99 388,108 381,125 353,116 339,120 329,152 318,168 283,183 250,163 249,192 232,214 201,205 187,192 188,171 160,191 163,206 142,230 119,223 92,235 79,230Z","provence":"M74,371 41,394 29,385 6,393 -16,421 -42,430 -76,411 -92,417 -107,407 -102,433 -92,442 -109,458 -145,503 -120,504 -116,513 -54,518 -38,532 2,547 55,533 59,510 72,508 93,482 121,466 119,458 136,434 130,423 111,430 83,417 69,403 74,371Z","dauphine":"M50,320 36,327 13,316 10,285 -7,290 -20,283 -44,240 -52,237 -97,283 -87,338 -97,355 -107,407 -92,417 -76,411 -42,430 -16,421 6,393 29,385 41,394 74,371 78,350 58,341 50,320Z","aquitaine":"M-628,492 -601,500 -605,523 -592,523 -550,541 -537,558 -515,554 -513,536 -470,497 -438,506 -402,490 -398,469 -418,435 -420,420 -394,391 -396,371 -373,354 -346,320 -332,332 -305,327 -299,301 -275,283 -273,246 -289,252 -329,230 -340,229 -348,198 -376,151 -389,141 -390,127 -405,101 -423,104 -440,83 -497,83 -504,90 -542,83 -573,81 -587,95 -606,76 -618,99 -600,121 -598,136 -576,148 -553,171 -545,193 -559,229 -534,253 -557,254 -566,294 -576,362 -588,415 -603,462 -620,481 -631,482 -628,492Z","navarre":"M-628,492 -643,502 -655,523 -673,531 -679,557 -690,575 -664,584 -635,612 -650,634 -615,648 -606,634 -612,613 -604,592 -586,569 -562,557 -550,541 -592,523 -605,523 -601,500 -628,492Z","castille":"M-631,482 -656,488 -678,484 -708,466 -737,474 -771,451 -793,451 -823,457 -867,450 -920,426 -983,413 -1064,403 -1072,388 -1103,376 -1127,376 -1150,390 -1169,410 -1196,405 -1230,419 -1229,482 -1210,489 -1216,506 -1214,524 -1225,539 -1227,561 -1204,549 -1169,544 -1163,561 -1175,573 -1162,584 -1133,579 -1124,589 -1096,590 -1085,578 -1046,590 -1036,599 -1042,620 -1015,636 -1043,662 -1056,663 -1074,684 -1087,751 -1084,762 -1107,777 -1096,798 -1115,831 -1159,825 -1142,853 -1146,865 -1136,893 -1121,906 -1131,923 -1151,932 -1164,963 -1142,1014 -1164,1019 -1193,1057 -1190,1100 -1156,1104 -1113,1138 -1103,1159 -1109,1175 -1095,1184 -1096,1203 -1084,1229 -1073,1231 -1048,1255 -1032,1251 -1004,1216 -978,1209 -962,1212 -943,1205 -934,1192 -900,1192 -859,1198 -843,1205 -826,1200 -800,1203 -784,1213 -767,1200 -748,1200 -735,1212 -722,1209 -705,1191 -695,1164 -681,1148 -649,1129 -613,1132 -596,1102 -609,1091 -618,1070 -611,1053 -620,1044 -612,1010 -601,986 -618,979 -629,962 -620,938 -648,920 -644,906 -626,896 -615,866 -630,857 -661,809 -642,794 -636,768 -642,752 -667,726 -683,721 -676,694 -666,678 -650,671 -650,634 -635,612 -664,584 -690,575 -679,557 -673,531 -655,523 -643,502 -628,492 -631,482Z","aragon":"M-550,541 -562,557 -586,569 -604,592 -612,613 -606,634 -615,648 -650,634 -650,671 -666,678 -676,694 -683,721 -667,726 -642,752 -636,768 -642,794 -661,809 -630,857 -615,866 -626,896 -644,906 -648,920 -620,938 -629,962 -618,979 -601,986 -612,1010 -620,1044 -611,1053 -618,1070 -609,1091 -596,1102 -580,1066 -554,1036 -532,1030 -502,1008 -522,994 -538,969 -544,920 -532,899 -494,851 -481,840 -462,809 -434,796 -446,783 -422,760 -375,746 -330,739 -310,719 -269,700 -237,679 -229,666 -238,647 -232,614 -252,610 -292,622 -306,612 -326,619 -353,601 -375,608 -375,590 -384,576 -437,559 -442,575 -495,572 -515,554 -537,558 -550,541ZM-381,978 -403,979 -416,997 -390,996 -381,978ZM-227,908 -247,905 -263,893 -313,924 -302,940 -288,930 -280,949 -254,964 -240,955 -218,914 -227,908ZM-145,895 -162,879 -186,880 -150,907 -145,895Z","bgcomte":"M-8,8 -22,34 -47,43 -36,79 -57,113 -44,152 -53,172 -38,193 -27,184 -9,192 4,176 10,156 33,138 34,117 51,109 79,73 86,56 79,31 46,6 18,8 11,0 -8,8Z","angleterre":"M-622,-634 -650,-634 -676,-627 -693,-607 -680,-589 -680,-550 -694,-522 -718,-510 -774,-493 -764,-485 -755,-454 -733,-466 -715,-463 -710,-443 -690,-441 -662,-419 -622,-412 -632,-394 -654,-395 -680,-405 -707,-404 -723,-382 -736,-386 -741,-364 -761,-342 -813,-305 -801,-277 -784,-300 -763,-313 -745,-310 -724,-317 -713,-302 -686,-291 -672,-310 -669,-329 -653,-337 -624,-340 -596,-326 -564,-318 -560,-331 -515,-336 -480,-326 -463,-332 -434,-332 -404,-321 -378,-331 -349,-350 -325,-358 -318,-387 -350,-384 -379,-393 -352,-411 -353,-432 -336,-431 -303,-463 -287,-507 -294,-540 -318,-558 -365,-566 -379,-547 -402,-562 -380,-580 -384,-617 -401,-635 -388,-642 -408,-686 -400,-698 -417,-715 -426,-739 -459,-758 -468,-773 -481,-834 -481,-868 -503,-895 -522,-872 -518,-858 -536,-849 -579,-811 -602,-803 -623,-764 -603,-717 -574,-715 -591,-695 -590,-670 -602,-656 -601,-640 -622,-634ZM-672,-635 -682,-647 -700,-649 -703,-636 -690,-618 -672,-635Z","ecosse":"M-503,-895 -510,-908 -538,-927 -558,-919 -580,-923 -556,-946 -502,-1014 -481,-1062 -466,-1077 -469,-1093 -484,-1105 -504,-1103 -566,-1116 -588,-1105 -605,-1107 -590,-1129 -594,-1146 -541,-1179 -532,-1190 -535,-1218 -605,-1212 -638,-1228 -645,-1210 -664,-1189 -668,-1160 -681,-1148 -700,-1150 -710,-1096 -699,-1086 -718,-1057 -714,-1045 -735,-1017 -717,-1001 -714,-963 -730,-937 -725,-919 -738,-899 -737,-869 -708,-919 -704,-944 -686,-925 -685,-907 -670,-881 -713,-832 -713,-814 -696,-814 -666,-791 -664,-803 -640,-795 -613,-814 -579,-811 -536,-849 -518,-858 -522,-872 -503,-895ZM-698,-886 -701,-906 -712,-909 -716,-886 -698,-886ZM-754,-920 -756,-943 -775,-938 -767,-910 -754,-920ZM-720,-994 -734,-1006 -746,-1003 -762,-983 -723,-985 -720,-994ZM-755,-1103 -744,-1080 -726,-1081 -726,-1125 -733,-1139 -760,-1122 -755,-1103ZM-770,-1150 -728,-1176 -720,-1223 -772,-1194 -770,-1150Z","naples":"M645,534 615,548 604,573 586,580 590,602 604,617 588,638 656,664 668,685 649,719 679,761 699,759 723,781 740,772 764,801 758,819 777,825 803,842 819,831 836,852 848,884 860,897 872,936 886,954 880,974 857,984 865,1004 857,1027 845,1032 850,1062 887,1060 892,1037 923,1001 916,969 939,944 964,940 960,887 922,868 901,863 898,851 907,831 903,819 924,776 935,766 950,776 977,784 1005,781 1020,798 1023,813 1043,826 1058,827 1064,792 1055,776 1013,740 966,726 927,704 887,695 836,677 826,655 846,635 830,620 782,630 756,630 722,617 662,566 645,534Z","bretagne":"M-606,76 -587,95 -573,81 -542,83 -542,66 -554,49 -523,42 -528,20 -542,-1 -524,-24 -526,-54 -522,-79 -550,-78 -558,-99 -586,-107 -605,-99 -611,-109 -636,-96 -665,-131 -696,-137 -706,-120 -731,-129 -776,-123 -792,-113 -796,-98 -774,-80 -769,-64 -776,-50 -763,-29 -752,-35 -736,-25 -699,-11 -681,7 -656,3 -639,18 -634,45 -606,76Z","artois":"M-313,-273 -297,-270 -277,-252 -238,-236 -208,-232 -204,-255 -214,-282 -226,-295 -256,-304 -276,-342 -311,-328 -313,-273Z","sicile":"M610,1131 636,1138 662,1156 704,1175 720,1171 738,1177 759,1203 786,1211 813,1212 819,1180 832,1169 809,1139 806,1120 812,1091 834,1051 840,1033 810,1039 798,1050 781,1046 758,1060 728,1070 705,1069 686,1079 641,1056 623,1061 607,1080 591,1071 572,1085 568,1109 574,1122 593,1133 610,1131Z","bgduc":"M-193,-49 -219,-44 -227,-27 -215,-7 -225,18 -237,23 -226,44 -178,58 -142,74 -136,92 -148,99 -149,133 -168,142 -173,159 -155,169 -162,196 -132,202 -123,189 -93,201 -82,166 -53,172 -44,152 -57,113 -36,79 -47,43 -77,34 -76,20 -90,0 -133,2 -157,-1 -193,-49Z"},"B":"M534,656 534,655 534,656ZM-583,-167 -597,-173 -599,-163 -583,-167ZM-615,-200 -625,-198 -619,-193 -615,-200ZM-678,-735 -681,-757 -701,-730 -678,-735ZM1473,-190 1358,-614 1309,-605 1251,-582 1231,-545 1210,-532 1219,-510 1261,-467 1264,-418 1247,-410 1212,-347 1194,-301 1207,-262 1197,-249 1181,-188 1203,-157 1237,-147 1249,-131 1269,-152 1344,-149 1372,-159 1401,-141 1436,-173 1473,-190ZM1684,660 1678,650 1664,659 1666,668 1684,660ZM206,1328 410,1319 408,1284 432,1263 459,1220 451,1198 409,1222 374,1207 374,1188 328,1175 280,1193 230,1223 201,1268 212,1287 206,1328ZM775,-1162 743,-1155 725,-1121 743,-1071 765,-1093 762,-1145 775,-1162ZM310,-1238 297,-1231 322,-1136 392,-1007 423,-977 422,-938 410,-923 439,-876 436,-844 465,-839 527,-866 515,-899 546,-939 620,-956 638,-1053 638,-1102 627,-1135 633,-1181 622,-1204 661,-1258 703,-1293 703,-1337 325,-1290 332,-1267 310,-1238ZM804,112 782,75 721,108 688,113 652,140 590,135 569,160 587,212 609,227 591,247 615,255 681,239 728,238 720,209 746,195 742,154 804,112ZM1323,276 1302,258 1269,253 1207,229 1210,199 1147,171 1142,142 1094,110 1039,114 996,147 1014,190 1022,263 1050,259 1040,298 1044,323 1083,346 1059,361 1082,384 1061,407 1096,437 1129,446 1166,468 1185,441 1218,428 1252,460 1282,464 1276,513 1338,493 1349,476 1336,433 1354,424 1368,386 1329,364 1311,340 1306,306 1323,276ZM521,434 522,428 516,425 513,431 521,434ZM945,-904 941,-904 924,-867 892,-853 878,-798 917,-801 1081,-828 1072,-881 1050,-901 1019,-895 962,-906 967,-869 929,-867 945,-904ZM1587,251 1473,-190 1436,-173 1401,-141 1372,-159 1344,-149 1269,-152 1249,-131 1211,-98 1195,-69 1188,-26 1165,39 1158,75 1121,102 1094,110 1142,142 1147,171 1210,199 1207,229 1269,253 1302,258 1323,276 1372,307 1453,301 1468,294 1554,287 1587,251ZM-1218,559 -1227,590 -1226,660 -1262,750 -1259,758 -1296,816 -1319,834 -1340,899 -1296,932 -1293,970 -1304,993 -1308,1052 -1331,1092 -1294,1089 -1230,1114 -1189,1101 -1191,1055 -1156,1014 -1141,1012 -1162,962 -1152,935 -1129,917 -1152,842 -1115,829 -1085,763 -1084,688 -1016,640 -1041,620 -1042,590 -1076,583 -1108,591 -1150,578 -1169,546 -1218,559ZM1210,-532 1199,-589 1163,-606 1174,-642 1195,-660 1188,-700 1137,-793 1130,-815 1081,-828 917,-801 878,-798 840,-778 819,-784 789,-825 724,-802 682,-777 662,-744 571,-702 560,-662 560,-619 546,-572 584,-537 599,-488 592,-460 628,-399 630,-372 658,-353 706,-337 761,-286 790,-322 848,-285 898,-283 903,-270 949,-237 966,-262 1000,-223 1053,-255 1126,-272 1157,-256 1197,-249 1207,-262 1194,-301 1212,-347 1247,-410 1264,-418 1261,-467 1219,-510 1210,-532ZM325,-1290 264,-1286 278,-1252 310,-1238 332,-1267 325,-1290ZM250,-1285 17,-1278 -3,-1255 -8,-1218 -28,-1192 -17,-1169 60,-1114 87,-1114 128,-1129 148,-1147 209,-1221 241,-1230 254,-1261 250,-1285ZM11,-1278 -45,-1278 -25,-1255 11,-1278ZM1061,407 1042,414 1011,479 1017,524 1026,537 1060,552 1103,588 1092,555 1114,500 1149,503 1143,483 1166,468 1129,446 1096,437 1061,407ZM116,471 114,469 111,471 111,473 116,471ZM752,1289 747,1284 739,1287 746,1291 752,1289ZM1276,513 1254,534 1237,529 1203,569 1200,610 1208,636 1236,673 1255,675 1305,663 1330,631 1376,621 1405,589 1404,546 1384,519 1338,493 1276,513ZM1081,-828 1130,-815 1137,-793 1218,-817 1256,-868 1256,-913 1266,-943 1235,-1049 1204,-1063 1171,-1062 1155,-1081 1112,-1054 1092,-1057 986,-1041 932,-991 962,-906 1019,-895 1050,-901 1072,-881 1081,-828ZM1235,-1049 1175,-1252 1117,-1263 1078,-1231 1099,-1173 1096,-1155 1064,-1124 1040,-1132 1025,-1155 980,-1190 936,-1163 927,-1098 915,-1074 932,-991 986,-1041 1092,-1057 1112,-1054 1155,-1081 1171,-1062 1204,-1063 1235,-1049ZM1166,468 1143,483 1149,503 1189,532 1203,569 1237,529 1254,534 1276,513 1282,464 1252,460 1218,428 1185,441 1166,468ZM-840,-863 -837,-892 -905,-881 -918,-854 -947,-836 -917,-810 -945,-798 -1034,-808 -1032,-777 -1043,-709 -1018,-670 -1049,-615 -1074,-603 -1084,-574 -1118,-551 -1069,-520 -1054,-495 -1020,-498 -933,-527 -922,-538 -855,-537 -825,-572 -806,-612 -801,-685 -807,-732 -825,-743 -837,-781 -869,-758 -899,-774 -912,-799 -891,-824 -868,-831 -840,-863ZM1500,840 1490,860 1541,894 1566,889 1564,858 1507,850 1500,840ZM1670,590 1656,530 1597,555 1539,546 1494,548 1463,571 1405,589 1376,621 1330,631 1305,663 1255,675 1265,695 1250,722 1244,760 1218,781 1215,818 1196,815 1229,852 1275,880 1279,902 1316,943 1348,944 1427,914 1494,941 1468,957 1445,948 1378,937 1344,958 1327,993 1371,1027 1386,1050 1381,1077 1415,1109 1426,1074 1471,1117 1477,1092 1518,1084 1478,1022 1514,1021 1503,952 1535,940 1582,963 1562,903 1536,900 1493,875 1449,869 1460,840 1443,776 1407,737 1400,686 1463,704 1492,697 1502,658 1535,608 1570,606 1592,585 1670,590ZM1175,-1252 1122,-1431 1034,-1404 1023,-1381 993,-1362 1009,-1304 1032,-1276 1055,-1270 1076,-1286 1078,-1231 1117,-1263 1175,-1252ZM960,-1288 933,-1266 927,-1240 947,-1228 978,-1251 1002,-1282 960,-1288ZM412,-884 410,-914 387,-919 343,-896 313,-869 337,-813 360,-813 368,-783 389,-773 393,-846 412,-884ZM241,-765 227,-838 262,-882 268,-921 301,-932 299,-957 264,-966 262,-1008 273,-1058 238,-1071 215,-1031 159,-1016 133,-959 135,-847 166,-828 172,-771 241,-765ZM293,-855 244,-842 255,-803 284,-792 306,-803 293,-855ZM591,247 599,292 629,320 656,260 696,285 703,326 737,358 727,374 761,409 800,432 881,451 942,493 944,481 814,368 804,340 769,312 767,265 809,279 824,254 854,243 871,252 926,255 939,245 992,244 1022,263 1014,190 996,147 963,171 926,177 873,159 823,119 804,112 742,154 746,195 720,209 728,238 681,239 615,255 591,247ZM1017,524 950,496 1026,537 1017,524ZM1656,530 1587,251 1554,287 1468,294 1453,301 1372,307 1323,276 1306,306 1311,340 1329,364 1368,386 1354,424 1336,433 1349,476 1338,493 1384,519 1404,546 1405,589 1463,571 1494,548 1539,546 1597,555 1656,530ZM1061,407 1082,384 1059,361 1083,346 1044,323 1040,298 1050,259 1022,263 992,244 939,245 926,255 871,252 854,243 824,254 809,279 767,265 769,312 804,340 814,368 944,481 942,493 950,496 1017,524 1011,479 1042,414 1061,407ZM1358,-614 1266,-943 1256,-913 1256,-868 1218,-817 1137,-793 1188,-700 1195,-660 1174,-642 1163,-606 1199,-589 1210,-532 1231,-545 1251,-582 1309,-605 1358,-614ZM-353,601 -352,590 -375,590 -372,608 -353,601ZM230,1223 171,1234 144,1219 83,1229 43,1211 6,1235 -52,1256 -72,1256 -111,1231 -199,1229 -222,1239 -271,1239 -306,1258 -427,1261 -495,1285 -533,1311 206,1328 212,1287 201,1268 230,1223ZM1103,588 1124,593 1119,635 1129,689 1125,725 1135,761 1178,781 1196,815 1215,818 1218,781 1244,760 1250,722 1265,695 1255,675 1236,673 1208,636 1200,610 1203,569 1189,532 1149,503 1114,500 1092,555 1103,588Z","C":{"boheme":[665,-250],"empire":[187,-376],"flandre":[-188,-336],"hainaut":[-152,-283],"champagne":[-128,-62],"france":[-371,-48],"hongrie":[996,-52],"italie":[353,307],"provence":[2,479],"dauphine":[-31,349],"aquitaine":[-439,279],"navarre":[-630,558],"castille":[-876,821],"aragon":[-517,697],"bgcomte":[15,70],"angleterre":[-529,-522],"ecosse":[-623,-1014],"naples":[819,749],"bretagne":[-604,-36],"artois":[-263,-276],"sicile":[721,1121],"bgduc":[-92,80]}};
+/* ============ Carte des territoires ============ */
+const MREG=[
+ ["angleterre","Angleterre",["Angleterre"]],["ecosse","Écosse",["Écosse"]],
+ ["france","Royaume de France",["France"]],["bretagne","Bretagne",["Bretagne"],1491],
+ ["aquitaine","Aquitaine",["Aquitaine"],1453],["champagne","Champagne",["Champagne"],1328],
+ ["bgduc","Duché de Bourgogne",["Duché de Bourgogne"],1477],["bgcomte","Comté de Bourgogne",["Comté de Bourgogne"],1678],
+ ["artois","Artois",["Artois"],1659],["flandre","Flandre",["Flandre"]],["hainaut","Hainaut",["Hainaut"]],
+ ["dauphine","Dauphiné",["Dauphiné"],1349],["provence","Provence",["Provence"],1481],
+ ["navarre","Navarre",["Navarre"]],["castille","Castille",["Castille","Espagne"]],["aragon","Aragon",["Aragon","Espagne"]],
+ ["naples","Naples",["Naples"]],["sicile","Sicile",["Sicile"]],["italie","Italie",["Italie","Empire"]],
+ ["empire","Saint-Empire",["Empire","Germanie"]],["boheme","Bohême",["Bohême"]],["hongrie","Hongrie",["Hongrie"]]];
+const MOMENTS=[[511,"Mort de Clovis"],[768,"Charlemagne"],[843,"Verdun"],[987,"Hugues Capet"],[1160,"Empire Plantagenêt"],[1214,"Bouvines"],[1285,"Philippe le Bel"],[1328,"Les Valois"],[1360,"Brétigny"],[1429,"Jeanne d’Arc"],[1467,"Charles le Téméraire"],[1477,"Mort du Téméraire"],[1491,"Bretagne"],[1519,"Charles Quint"],[1589,"Henri IV"],[1700,"Un Bourbon en Espagne"]];
+let mapYear=1328,mapT=null,mapSpeed=1,mapPrev={},mapLog=[],mapBuilt=false;
+function regionHolders(r,y){
+  for(const l of r[2]){if(l==="Espagne"&&y<1700)continue;const hs=holdersAt(l,y);if(hs.length)return {hs,land:l};}
+  if(r[3]&&y>=r[3]){const hs=holdersAt("France",y);if(hs.length)return {hs,land:"France",merged:true};}
+  return {hs:[]};
+}
+function regName(r,y){return r[0]==="france"&&y<987?"Royaume des Francs":r[0]==="empire"&&y<962?"Germanie":r[1];}
+function buildMap(){
+  if(mapBuilt)return;mapBuilt=true;
+  const g=document.getElementById("mapRegs"),lab=document.getElementById("mapLabs");
+  document.getElementById("mapBg").setAttribute("d",MAP.B);
+  g.innerHTML=MREG.map(r=>`<path id="mr-${r[0]}" data-r="${r[0]}" d="${MAP.R[r[0]]}"><title></title></path>`).join("");
+  const OFF={france:[-230,235],flandre:[-250,-400],artois:[-400,-300],hainaut:[-40,-290],bgduc:[-130,45],bgcomte:[110,100],champagne:[-150,-95],dauphine:[-40,330],provence:[20,500],navarre:[-640,535],bretagne:[-640,-40]};
+  lab.innerHTML=MREG.map(r=>{const [x,y]=OFF[r[0]]||MAP.C[r[0]];return `<g id="ml-${r[0]}" transform="translate(${x},${y})"><text class="rn" y="-6">${r[1]}</text><text class="hn" y="38"></text></g>`;}).join("");
+  MREG.forEach(r=>{const b=document.getElementById("mr-"+r[0]).getBBox();r.area=b.width*b.height;});
+  document.getElementById("mapMoments").innerHTML=MOMENTS.map(([y,t])=>`<button class="chip" data-my="${y}"><b>${y}</b> ${t}</button>`).join("");
+}
+function mapSet(y,fromPlay){
+  buildMap();mapYear=y;document.getElementById("mRange").value=y;document.getElementById("mYear").textContent=y;
+  const rows=[],changes=[];
+  const H0=MREG.map(r=>regionHolders(r,y)),cnt={};H0.forEach(o=>o.hs.forEach(p=>cnt[p.id]=(cnt[p.id]||0)+1));
+  H0.forEach(o=>{if(o.hs.length>1)o.hs=[...o.hs].sort((a,b)=>(cnt[b.id]||0)-(cnt[a.id]||0));});
+  const shown=new Set(),showName={};
+  MREG.map((r,i)=>[r,i]).sort((a,b)=>(b[0].area||0)-(a[0].area||0)).forEach(([r,i])=>{const h=H0[i].hs[0];if(h&&!shown.has(h.id)){shown.add(h.id);showName[r[0]]=1;}});
+  MREG.forEach((r,i)=>{
+    const {hs,merged}=H0[i],el=document.getElementById("mr-"+r[0]),lb=document.getElementById("ml-"+r[0]);
+    const key=hs.map(p=>p.id).join(",");
+    el.style.fill=hs.length?col(hs[0]):"";el.classList.toggle("none",!hs.length);
+    const nm=hs.length?hs[0].n+(hs.length>1?` +${hs.length-1}`:""):"";
+    lb.querySelector(".rn").textContent=regName(r,y);lb.querySelector(".hn").textContent=showName[r[0]]?nm:"";lb.classList.toggle("none",!hs.length);
+    el.querySelector("title").textContent=regName(r,y)+" — "+(hs.length?hs.map(p=>p.n).join(", ")+(merged?" (uni à la couronne)":""):"titulaire hors de l’arbre");
+    if(fromPlay&&mapPrev[r[0]]!==undefined&&mapPrev[r[0]]!==key&&hs.length){changes.push([y,r,hs[0]]);el.classList.remove("pulse");void el.getBBox();el.classList.add("pulse");}
+    mapPrev[r[0]]=key;
+    if(hs.length)rows.push([r,hs,merged]);
+  });
+  changes.forEach(c=>mapLog.unshift(c));mapLog=mapLog.slice(0,6);
+  // regrouper par titulaire : qui tient quoi
+  const by=new Map();rows.forEach(([r,hs])=>{const k=hs[0].id;if(!by.has(k))by.set(k,[]);by.get(k).push(regName(r,y));});
+  const list=[...by].sort((a,b)=>b[1].length-a[1].length).map(([id,regs])=>`<div class="mrow" style="--c:${col(byId[id])}"><a data-go="${id}">${byId[id].n}</a><span>${regs.join(" · ")}</span></div>`).join("");
+  document.getElementById("mapPanel").innerHTML=`<h3>${y}</h3>${eraFacts(y)}<h4>Qui tient quoi</h4>${list||'<p class="hint">Aucun titulaire dans l’arbre cette année-là.</p>'}${mapLog.length?`<h4>Derniers changements</h4><ul class="mlog">${mapLog.map(([yy,r,p])=>`<li><b>${yy}</b> ${regName(r,yy)} → <a data-go="${p.id}">${p.n}</a></li>`).join("")}</ul>`:""}<p class="hint mnote">Carte schématique : les grands royaumes et principautés, dessinés sur leurs contours approximatifs, pas leurs frontières exactes à chaque date. Une région grise a un titulaire absent de l’arbre.</p>`;
+  if(!fromPlay)setHash("carte/"+y);
+}
+function mapStop(){if(mapT){clearInterval(mapT);mapT=null;}const b=document.getElementById("mPlay");if(b){b.textContent="▶";b.setAttribute("aria-label","Lire");}}
+function mapPlay(){if(mapYear>=2026)mapSet(481);mapLog=[];document.getElementById("mPlay").textContent="❚❚";document.getElementById("mPlay").setAttribute("aria-label","Pause");
+  mapT=setInterval(()=>{if(mapYear>=2026){mapStop();return;}mapSet(mapYear+1,true);},Math.round(160/mapSpeed));}
+document.getElementById("mPlay").onclick=()=>{if(mapT){mapStop();setHash("carte/"+mapYear);}else mapPlay();};
+document.getElementById("mSpeed").onclick=e=>{mapSpeed=mapSpeed===1?3:mapSpeed===3?8:1;e.target.textContent=mapSpeed+"×";if(mapT){mapStop();mapPlay();}};
+document.getElementById("mRange").addEventListener("input",e=>{mapStop();mapLog=[];mapSet(+e.target.value);});
+document.getElementById("tab-map").addEventListener("click",e=>{
+  const m=e.target.closest("[data-my]");if(m){mapStop();mapLog=[];mapSet(+m.dataset.my);return;}
+  const g=e.target.closest("[data-go]");if(g){mapStop();showTab("tree");select(g.dataset.go);return;}
+  const r=e.target.closest("[data-r]");if(r){const reg=MREG.find(x=>x[0]===r.dataset.r);const {hs}=regionHolders(reg,mapYear);if(hs.length){mapStop();showTab("tree");select(hs[0].id);}}
+});
+
+/* ============ Liens directs ============ */
+var SLUG={},UNSLUG={};function slugOf(id){return (SLUG&&SLUG[id])||id;}
+(function(){const base=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[’']/g,"-").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
+  const cnt={};P.forEach(p=>{const b=base(p.n);cnt[b]=(cnt[b]||0)+1;});
+  P.forEach(p=>{let s=base(p.n);if(cnt[s]>1)s+="-"+p.b;SLUG[p.id]=s;UNSLUG[s]=p.id;UNSLUG[p.id]=p.id;});})();
+var TABSLUG={tree:"arbre",films:"films",stories:"recits",quiz:"defi",kings:"rois",map:"carte",lex:"lexique",about:"a-propos"};
+var routing=false,hashT=null;
+function setHash(h){if(routing)return;clearTimeout(hashT);hashT=setTimeout(()=>{const n="#"+h;if(location.hash!==n)history.replaceState(null,"",n);},250);}
+function shareUrl(){return location.origin+location.pathname+location.hash;}
+function copyLink(btn){const u=shareUrl();const done=()=>{const t=btn.textContent;btn.textContent="✓ Lien copié";setTimeout(()=>btn.textContent=t,1600);};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(u).then(done,()=>prompt("Copiez ce lien :",u));else{const ta=document.createElement("textarea");ta.value=u;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");done();}catch(e){}ta.remove();}}
+document.addEventListener("click",e=>{const b=e.target.closest("[data-share]");if(b){e.preventDefault();copyLink(b);}});
+function route(){
+  const h=decodeURIComponent(location.hash.slice(1));if(!h)return false;
+  const [k,a,b]=h.split("/");routing=true;let ok=true;
+  try{
+    if(k==="fiche"&&UNSLUG[a]){showTab("tree");select(UNSLUG[a]);}
+    else if(k==="lien"&&UNSLUG[a]&&UNSLUG[b]){showTab("tree");selA.value=UNSLUG[a];selB.value=UNSLUG[b];explain(UNSLUG[a],UNSLUG[b]);if(!wide())tools.classList.add("open");}
+    else if(k==="annee"&&+a){showTab("tree");drawerMode=null;setYear(Math.max(450,Math.min(2026,+a)));const ids=P.filter(p=>reignsAt(p,year)).map(p=>p.id);if(ids.length)fit(ids,{max:.9});}
+    else if(k==="carte"){showTab("map");mapSet(+a||1328);}
+    else if(k==="film"&&FILMS.find(f=>f.id===a)){showTab("tree");filmOpen(a);}
+    else if(k==="recit"&&STORIES.find(s=>s.id===a)){storyPlay(a);}
+    else{const t=Object.keys(TABSLUG).find(t=>TABSLUG[t]===k);if(t){showTab(t);if(t==="map")mapSet(mapYear);}else ok=false;}
+  }catch(e){ok=false;}
+  routing=false;return ok;
+}
+addEventListener("hashchange",()=>route());
+
 /* ============ Lancement ============ */
 fitText();
 document.fonts&&document.fonts.ready.then(fitText);
 fit(null,{dur:0,pad:20});
 if(!reduce){svg.classList.add("intro");setTimeout(()=>svg.classList.remove("intro"),3600);}
-setTimeout(()=>fit(VIEWS.find(v=>v[0]==="Les Rois maudits")[1],{max:1,dur:1400}),reduce?0:3000);
+if(!route())setTimeout(()=>{if(!location.hash)fit(VIEWS.find(v=>v[0]==="Les Rois maudits")[1],{max:1,dur:1400});},reduce?0:3000);
 addEventListener("resize",updMini);
 </script>
 </body>
