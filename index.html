@@ -334,11 +334,63 @@ details.fold[open] summary::after{content:" −"}
 .srcs{margin:4px 0 12px;font-size:13.5px}
 .srcs summary{cursor:pointer;font-family:'IM Fell English',Georgia,serif;font-style:italic;font-size:16px}
 .srcs ul{margin:6px 0;padding-left:18px;line-height:1.45}.srcs a{color:inherit}
+
+.brand{cursor:pointer;flex:0 0 auto}
+.tabs{min-width:0}
+.home.scroll{padding:0}
+.hguide li{align-content:start}
+.home{background:var(--bg)}
+.hwrap{max-width:1120px;margin:0 auto;padding:28px 22px 56px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;padding:18px 0 8px}
+.kicker{font-size:13.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--hi);font-weight:700;margin:0 0 10px}
+.hero h2{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:clamp(40px,6.2vw,74px);line-height:1.02;margin:0 0 18px;letter-spacing:-.01em}
+.hlead{font-size:clamp(17px,1.5vw,20px);line-height:1.5;color:var(--muted);max-width:34em;margin:0 0 22px}
+.hcta{display:flex;flex-wrap:wrap;gap:10px}
+.hcta .btn{text-decoration:none;font-size:17px;padding:12px 20px}
+.hprimary{background:var(--ink);color:var(--panel);border-color:var(--ink);font-weight:700}
+.hfree{font-size:14px;color:var(--muted);margin:16px 0 0}
+.hfig{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:14px 16px 16px;box-shadow:var(--shadow)}
+.hfig svg{width:100%;height:auto;display:block}
+.hfig figcaption{font-size:14.5px;line-height:1.45;color:var(--muted);border-top:1px solid var(--line);padding-top:10px;margin-top:4px}
+.hfig figcaption b{color:var(--hi)}.hfig a{color:inherit;font-weight:700}
+.hl{fill:none;stroke-width:2.5;stroke-linecap:round;opacity:.55}
+.hd{animation:hpop .5s ease both}
+@keyframes hpop{from{opacity:0;transform:scale(.2)}to{opacity:1;transform:none}}
+.hd{transform-box:fill-box;transform-origin:center}
+.ht{font:italic 17px 'IM Fell English',Georgia,serif;fill:var(--ink)}
+.hs{font:12.5px 'Alegreya Sans',sans-serif;fill:var(--muted)}
+.hcrown text{font-size:19px;fill:var(--hi)}
+.hstats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin:34px 0 8px}
+.hstats div{background:var(--panel);padding:16px 10px;text-align:center}
+.hstats b{display:block;font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:38px;line-height:1;color:var(--hi)}
+.hstats span{font-size:14px;color:var(--muted)}
+.hh{font-family:'IM Fell English',Georgia,serif;font-style:italic;font-weight:400;font-size:28px;margin:44px 0 16px}
+.hcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.hcard{display:flex;flex-direction:column;gap:6px;background:var(--panel);border:1px solid var(--line);border-top:4px solid var(--c);border-radius:16px;padding:18px 18px 20px;text-decoration:none;color:inherit;transition:transform .18s ease,box-shadow .18s ease}
+.hcard:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.hcard svg{width:30px;height:30px;fill:none;stroke:var(--c);stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-bottom:4px}
+.hcard b{font-size:18.5px;line-height:1.25}.hcard span{font-size:15px;color:var(--muted);line-height:1.45}
+.htry{display:flex;flex-wrap:wrap;gap:9px}
+.htry a{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:9px 15px;text-decoration:none;color:inherit;font-size:15.5px}
+.htry a:hover{border-color:var(--hi)}
+.hguide{list-style:none;counter-reset:g;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.hguide li{counter-increment:g;position:relative;padding:4px 0 0 52px;display:grid;gap:3px}
+.hguide li::before{content:counter(g);position:absolute;left:0;top:0;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-family:'IM Fell English',Georgia,serif;font-size:22px;background:var(--ink);color:var(--panel)}
+.hguide b{font-size:17.5px}.hguide span{font-size:15px;color:var(--muted);line-height:1.45}
+.hfor{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-top:44px}
+.hfor article{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--c);border-radius:14px;padding:16px 18px}
+.hfor h4{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:21px;margin:0 0 6px}
+.hfor p{margin:0 0 10px;font-size:15px;color:var(--muted);line-height:1.45}.hfor a{font-weight:700;color:inherit}
+.htrust{margin-top:30px;padding:16px 18px;border:1px dashed var(--edge);border-radius:14px;font-size:15.5px}
+.htrust p{margin:0}.htrust a,.hfoot a{color:inherit;font-weight:700}
+.hfoot{margin:26px 0 0;font-size:14px;color:var(--muted);text-align:center}
+@media (max-width:860px){.hero{grid-template-columns:1fr;gap:22px}.hstats{grid-template-columns:repeat(2,1fr)}.hwrap{padding:18px 16px 44px}.hh{font-size:24px;margin-top:34px}}
+@media (prefers-reduced-motion:reduce){.hd{animation:none}.hcard{transition:none}}
 </style>
 </head>
 <body>
 <header class="top">
-  <div class="brand"><h1>Lignages</h1><span>France et Europe, 481 à aujourd’hui</span></div>
+  <div class="brand" id="brandHome" role="link" tabindex="0" title="Accueil"><h1>Lignages</h1><span>France et Europe, 481 à aujourd’hui</span></div>
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="tree" aria-selected="true">L’arbre</button>
     <button role="tab" data-tab="map" aria-selected="false">Carte</button>
@@ -352,6 +404,70 @@ details.fold[open] summary::after{content:" −"}
   <a class="tipbtn" id="tipTop" href="#" title="Soutenir Lignages">☕ <span>Soutenir</span></a>
 </header>
 <main>
+  <section id="tab-home" class="scroll home" hidden>
+    <div class="hwrap">
+      <div class="hero">
+        <div class="htext">
+          <p class="kicker">Rois de France et maisons d’Europe, de Clovis à aujourd’hui</p>
+          <h2>Qui hérite,<br>et pourquoi&nbsp;?</h2>
+          <p class="hlead">Lignages rend visibles les liens de famille qui ont fait et défait les royaumes. Un arbre vivant, une carte qui change d’année en année, des films où la couronne voyage de tête en tête.</p>
+          <div class="hcta">
+            <a class="btn hprimary" href="#arbre">Entrer dans l’arbre</a>
+            <a class="btn ghost" href="#film/maudits">▶ Voir un film de deux minutes</a>
+          </div>
+          <p class="hfree">Gratuit · sans publicité · sans inscription</p>
+        </div>
+        <figure class="hfig">
+          <svg id="heroSvg" viewBox="0 0 420 372" role="img" aria-label="En 1589, la couronne remonte de Henri III jusqu’à Saint Louis, puis redescend jusqu’à Henri IV"></svg>
+          <figcaption><b>1589.</b> Henri III meurt sans fils. Pour trouver l’héritier, il faut remonter onze générations jusqu’à Saint Louis, puis en redescendre dix&nbsp;: Henri IV. <a href="#lien/henri-iii/henri-iv">Voir le chemin</a></figcaption>
+        </figure>
+      </div>
+
+      <div class="hstats" id="homeStats"></div>
+
+      <h3 class="hh">Ce que vous pouvez faire</h3>
+      <div class="hcards">
+        <a class="hcard" href="#arbre" style="--c:#3a62b5"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><circle cx="6" cy="18" r="2.2"/><circle cx="18" cy="18" r="2.2"/><path d="M12 7.2v4M6 15.8V13a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2.8"/></svg><b>Explorer l’arbre</b><span>Près de 280 personnages. Une fiche pour chacun&nbsp;: portrait, faits marquants, titres, parents, sources.</span></a>
+        <a class="hcard" href="#lien/louis-xiv/hugues-capet" style="--c:#b07d0c"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="5.5" cy="12" r="2.5"/><circle cx="18.5" cy="12" r="2.5"/><path d="M8 12h8M13.5 9.5 16 12l-2.5 2.5"/></svg><b>Trouver le lien entre deux personnages</b><span>Cousins issus de germains, oncle à la mode de Bretagne… avec le chemin, génération par génération.</span></a>
+        <a class="hcard" href="#carte/1477" style="--c:#2e8b57"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5 9 4l6 2.5L21 4v13.5L15 20l-6-2.5L3 20z"/><path d="M9 4v13.5M15 6.5V20"/></svg><b>Voir qui tient quoi</b><span>La carte de l’Europe se recolore année après année, au fil des héritages et des mariages.</span></a>
+        <a class="hcard" href="#films" style="--c:#c0392b"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l6-3.5z"/></svg><b>Regarder un film</b><span>Les familles naissent, se marient, s’éteignent. La couronne passe sous vos yeux.</span></a>
+        <a class="hcard" href="#recits" style="--c:#9b48cc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M9 8.5h6M9 12h6"/></svg><b>Suivre un récit guidé</b><span>Les Rois maudits, la guerre de Cent Ans, l’État bourguignon, pas à pas.</span></a>
+        <a class="hcard" href="#annee/1328" style="--c:#16a085"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18"/><path d="M6 9v6M11 7v10M16 9v6M20 10.5v3"/></svg><b>Remonter le temps</b><span>Choisissez une année&nbsp;: qui règne en France, en Angleterre, en Navarre, dans l’Empire&nbsp;?</span></a>
+        <a class="hcard" href="#defi" style="--c:#e67e22"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.1 1-1.1 1.8"/><circle cx="12" cy="16.6" r=".6"/></svg><b>Se tester</b><span>Un quiz tiré de l’arbre, pour vérifier ce qu’on a retenu.</span></a>
+      </div>
+
+      <h3 class="hh">Essayez tout de suite</h3>
+      <div class="htry">
+        <a href="#lien/charles-quint/mahaut-d-artois">Charles Quint descend-il de Mahaut d’Artois&nbsp;?</a>
+        <a href="#carte/1160">L’empire Plantagenêt en 1160</a>
+        <a href="#fiche/philippe-iv-le-bel">Philippe le Bel, le roi de fer</a>
+        <a href="#carte/1519">L’Europe de Charles Quint</a>
+        <a href="#recit/maudits">La malédiction des Capétiens</a>
+        <a href="#fiche/alienor-d-aquitaine">Aliénor, reine de deux rois</a>
+        <a href="#film/pretendants">Qui serait roi aujourd’hui&nbsp;?</a>
+      </div>
+
+      <h3 class="hh">Le guide en quatre gestes</h3>
+      <ol class="hguide">
+        <li><b>Cherchez un nom.</b><span>Tapez «&nbsp;Mahaut&nbsp;» ou «&nbsp;Henri IV&nbsp;» dans la recherche. Les surnoms de Druon fonctionnent aussi.</span></li>
+        <li><b>Ouvrez la fiche.</b><span>Un clic sur un personnage affiche sa vie, ses titres et sa famille. Glissez pour vous déplacer, pincez ou utilisez la molette pour zoomer.</span></li>
+        <li><b>Comparez.</b><span>Depuis une fiche, choisissez un second personnage&nbsp;: le site nomme leur lien et trace le chemin.</span></li>
+        <li><b>Partagez.</b><span>Chaque fiche, chaque carte et chaque comparaison a son lien. Copiez-le, envoyez-le à vos élèves ou à vos amis.</span></li>
+      </ol>
+
+      <div class="hfor">
+        <article style="--c:#2f5cb8"><h4>Vous lisez Les Rois maudits</h4><p>Retrouvez Mahaut, Robert d’Artois et Isabelle de France, et distinguez ce que Druon raconte de ce que disent les historiens.</p><a href="#recit/maudits">Commencer par le récit</a></article>
+        <article style="--c:#2e8b57"><h4>Vous enseignez</h4><p>Projetez la carte ou un film, puis envoyez à la classe le lien exact de ce que vous montrez. Rien à installer, aucun compte.</p><a href="#carte/1328">Ouvrir la carte de 1328</a></article>
+        <article style="--c:#b07d0c"><h4>Vous êtes curieux</h4><p>Sept siècles séparent Louis XIV de Hugues Capet. Sont-ils vraiment de la même famille&nbsp;?</p><a href="#lien/louis-xiv/hugues-capet">Voir la réponse</a></article>
+      </div>
+
+      <div class="htrust">
+        <p><b>Peut-on s’y fier&nbsp;?</b> Chaque fiche indique ses sources. Les filiations et les mariages ont été comparés à Wikidata, et des historiens signalent les erreurs, que nous corrigeons. <a href="#a-propos">Méthode et limites</a></p>
+      </div>
+      <p class="hfoot">Lignages est un projet personnel, né d’une lecture des Rois maudits. <a href="#a-propos">À propos</a> · <a id="homeContact" href="#">Contact</a> · <a id="homeTip" href="#a-propos">Soutenir</a></p>
+    </div>
+  </section>
+
   <section id="tab-tree">
     <svg id="stage" aria-label="Arbre généalogique interactif"></svg>
     <button id="toolsBtn" class="btn">Chercher et comparer</button>
@@ -2206,7 +2322,7 @@ var SLUG={},UNSLUG={};function slugOf(id){return (SLUG&&SLUG[id])||id;}
 (function(){const base=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[’']/g,"-").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
   const cnt={};P.forEach(p=>{const b=base(p.n);cnt[b]=(cnt[b]||0)+1;});
   P.forEach(p=>{let s=base(p.n);if(cnt[s]>1)s+="-"+p.b;SLUG[p.id]=s;UNSLUG[s]=p.id;UNSLUG[p.id]=p.id;});})();
-var TABSLUG={tree:"arbre",films:"films",stories:"recits",quiz:"defi",kings:"rois",map:"carte",lex:"lexique",about:"a-propos"};
+var TABSLUG={home:"accueil",tree:"arbre",films:"films",stories:"recits",quiz:"defi",kings:"rois",map:"carte",lex:"lexique",about:"a-propos"};
 var routing=false,hashT=null;
 function setHash(h){if(routing)return;clearTimeout(hashT);hashT=setTimeout(()=>{const n="#"+h;if(location.hash!==n)history.replaceState(null,"",n);},250);}
 function shareUrl(){return location.origin+location.pathname+location.hash;}
@@ -2229,12 +2345,38 @@ function route(){
 }
 addEventListener("hashchange",()=>route());
 
+
+/* ============ Accueil ============ */
+(function(){
+  const b=document.getElementById("brandHome");const go=()=>showTab("home");
+  b.addEventListener("click",go);b.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});
+  document.getElementById("homeStats").innerHTML=[[P.length,"personnages"],[Object.keys(H).length,"maisons"],[Math.round((2026-Math.min(...P.map(p=>p.b)))/100),"siècles"],[STORIES.length+FILMS.length,"récits et films"]].map(([n,l])=>`<div><b>${n}</b><span>${l}</span></div>`).join("");
+  document.getElementById("homeContact").href=mailtoFor(null);
+  if(DON_URL){const t=document.getElementById("homeTip");t.href=DON_URL;t.target="_blank";t.rel="noopener";}
+  // Illustration : de Henri III à Henri IV par Saint Louis
+  const top=[210,44],L=[],R=[];for(let i=1;i<=11;i++)L.push([200-i*10.2,44+i*25.4]);for(let j=1;j<=10;j++)R.push([220+j*11.2,44+j*27.9]);
+  const pl=a=>a.map(p=>p.join(",")).join(" ");
+  const up=[...L].reverse().concat([top]),down=[top].concat(R);
+  const dots=(a,c)=>a.map(([x,y],i)=>`<circle cx="${x}" cy="${y}" r="${i===a.length-1?7:4}" fill="${c}" class="hd" style="animation-delay:${i*60}ms"/>`).join("");
+  const svg=document.getElementById("heroSvg");
+  svg.innerHTML=`<polyline class="hl" points="${pl([top].concat(L))}" stroke="#3a62b5"/><polyline class="hl" points="${pl(down)}" stroke="#6c63d9"/>
+   ${dots(L,"#3a62b5")}${dots(R,"#6c63d9")}<circle cx="${top[0]}" cy="${top[1]}" r="9" fill="var(--hi)"/>
+   <text x="${top[0]}" y="22" class="ht" text-anchor="middle">Saint Louis</text>
+   <text x="${L[10][0]}" y="${L[10][1]+26}" class="ht" text-anchor="middle">Henri III</text><text x="${L[10][0]}" y="${L[10][1]+43}" class="hs" text-anchor="middle">Valois, † 1589</text>
+   <text x="${R[9][0]}" y="${R[9][1]+26}" class="ht" text-anchor="middle">Henri IV</text><text x="${R[9][0]}" y="${R[9][1]+43}" class="hs" text-anchor="middle">Bourbon</text>
+   <text x="${L[5][0]-14}" y="${L[5][1]}" class="hs" text-anchor="end">11 générations</text><text x="${R[4][0]+14}" y="${R[4][1]}" class="hs">10 générations</text>
+   <path id="heroPath" d="M${pl(up.concat(R))}" fill="none"/>
+   <g class="hcrown"><circle r="15" fill="var(--panel)" stroke="var(--hi)" stroke-width="2.5"/><text y="6.5" text-anchor="middle">♛</text>${reduce?"":`<animateMotion dur="9s" repeatCount="indefinite" calcMode="linear" keyPoints="0;0;0.5;0.5;1;1" keyTimes="0;0.12;0.48;0.56;0.9;1"><mpath href="#heroPath"/></animateMotion>`}</g>`;
+  if(reduce)svg.querySelector(".hcrown").setAttribute("transform",`translate(${R[9][0]},${R[9][1]})`);
+})();
+
 /* ============ Lancement ============ */
 fitText();
 document.fonts&&document.fonts.ready.then(fitText);
 fit(null,{dur:0,pad:20});
 if(!reduce){svg.classList.add("intro");setTimeout(()=>svg.classList.remove("intro"),3600);}
-if(!route())setTimeout(()=>{if(!location.hash)fit(VIEWS.find(v=>v[0]==="Les Rois maudits")[1],{max:1,dur:1400});},reduce?0:3000);
+if(!route()){showTab("home");}
+if(false)setTimeout(()=>{if(!location.hash)fit(VIEWS.find(v=>v[0]==="Les Rois maudits")[1],{max:1,dur:1400});},reduce?0:3000);
 addEventListener("resize",updMini);
 </script>
 </body>
