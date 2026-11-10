@@ -1,0 +1,356 @@
+90|Paris|48.857,2.352
+457|Poissy|48.929,2.045
+1017|Aix-la-Chapelle|50.776,6.084
+1476|Le Mans|48.004,0.197
+1726|Munich|48.138,11.575
+1794|Francfort-sur-le-Main|50.111,8.682
+3572|Tunis|36.801,10.18
+3974|Landshut|48.54,12.151
+3992|Liège|50.64,5.571
+5933|abbaye de Westminster|51.499,-0.127
+8378|Palencia|42.017,-4.533
+36600|La Haye|52.08,4.31
+41139|Melun|48.54,2.659
+42646|château de Windsor|51.484,-0.604
+42716|Saint-Étienne|45.434,4.39
+47261|duché de Bavière|
+62408|palais de Westminster|51.499,-0.124
+81138|Nocera Inferiore|40.75,14.633
+146246|royaume des Francs|47.24,6.02
+159548|Ingelheim am Rhein|49.975,8.056
+160506|Saint-Denis|48.936,2.354
+163795|Valenciennes|50.358,3.523
+167152|Soissons|49.381,3.322
+167193|cathédrale Notre-Dame de Munich|48.139,11.574
+176873|Quierzy|49.571,3.144
+182872|Fontainebleau|48.409,2.702
+184407|basilique Saint-Denis|48.936,2.36
+193819|Vincennes|48.848,2.439
+207253|Mantes-la-Jolie|48.991,1.717
+211033|Herstal|50.664,5.63
+236736|Vernon|49.092,1.485
+262500|cathédrale de Gloucester|51.867,-2.247
+275128|château de Caernarfon|53.139,-4.277
+283254|abbaye de Fontevraud|47.181,0.052
+333995|abbaye royale de Longchamp|48.858,2.234
+334264|abbaye de Saint-Arnould|49.118,6.172
+564351|Wallhausen|51.467,11.183
+622720|Châlus|45.655,0.981
+632348|Bouchain|50.284,3.317
+635084|palais de Beaumont|51.755,-1.263
+663673|château de Vincennes|48.843,2.436
+668341|cathédrale Saint-Maurice-et-Sainte-Catherine de Magdebourg|52.125,11.634
+703786|Memleben|51.265,11.49
+731486|Avrieux|45.215,6.721
+741010|Choisy-au-Bac|49.439,2.877
+845994|Chasseneuil-du-Poitou|46.651,0.372
+912447|forteresse royale de Chinon|47.168,0.236
+915291|abbaye de Maubuisson|49.046,2.117
+956741|abbaye de Saint-Benoît-sur-Loire|47.81,2.306
+1011912|Champagne-et-Fontaine|45.422,0.317
+1015005|Burgh by Sands|54.923,-3.051
+1059945|palais de Richmond|51.46,-0.31
+1090492|Château-Gaillard|49.238,1.403
+1630367|cathédrale de Worcester|52.189,-2.221
+1645984|Puch|48.189,11.221
+1713746|Jupille-sur-Meuse|50.647,5.633
+1766069|abbaye Sainte-Geneviève de Paris|48.846,2.348
+2458522|chapelle palatine d'Aix-la-Chapelle|50.775,6.084
+2634315|église Saint-Jean-de-Malte d'Aix-en-Provence|43.526,5.453
+2750919|monastère de Niederschönenfeld|48.72,10.931
+2970132|château de Newark|53.078,-0.812
+4891993|château de Berkeley|51.689,-2.457
+4989639|basilique Notre-Dame de Chèvremont|50.598,5.641
+456|Lyon|45.767,4.835
+2634|Naples|40.836,14.249
+6548|Orléans|47.902,1.904
+6616|Poitiers|46.581,0.335
+6730|Perpignan|42.697,2.895
+7033|Nordhausen|51.505,10.791
+13464|Foggia|41.458,15.552
+38380|Angers|47.471,-0.552
+41876|Reims|49.265,4.029
+47465|Aix-en-Provence|43.528,5.446
+91119|Buonconvento|43.133,11.483
+106577|Neustrie|
+130212|Székesfehérvár|47.191,18.411
+157550|abbaye et Altenmünster de Lorsch|49.654,8.569
+167141|Laon|49.564,3.621
+173219|Tournai|50.606,3.388
+180871|Compiègne|49.414,2.822
+209770|Les Andelys|49.246,1.412
+217768|Péronne|49.929,2.933
+253696|Prüm|50.208,6.424
+256486|cathédrale Notre-Dame-de-l'Assomption de Naples|40.853,14.26
+325777|Samoussy|49.585,3.734
+328309|Bar-sur-Seine|48.114,4.376
+331087|Creil|49.258,2.483
+332034|La Fère|49.662,3.366
+334114|abbaye de Prüm|50.206,6.426
+334139|abbaye Royale de Saint-Corneille|49.417,2.825
+334186|abbaye Royale de Saint-Germain-des-Prés|48.854,2.334
+334233|basilique Saint-Remi de Reims|49.243,4.042
+435221|Altdorf|48.567,12.117
+470299|Amesbury|51.173,-1.78
+506947|Vitry-aux-Loges|47.94,2.266
+548097|Visegrád|47.786,18.97
+646609|Dourdan|48.529,2.011
+679114|abbaye de Reichenau|47.699,9.062
+746675|cathédrale de Székesfehérvár|47.192,18.411
+810104|basilique Sainte-Claire de Naples|40.847,14.253
+829708|abbaye de Quedlinbourg|51.786,11.137
+845814|Montpensier|46.036,3.22
+1013511|château de Poissy|48.929,2.042
+1077970|Christ Church Greyfriars|51.516,-0.099
+1704670|château de Winchester|51.062,-1.32
+1754247|Dôme de Pise|43.723,10.396
+1820536|Les Juifs|48.277,1.712
+1979386|Neudingen|47.912,8.57
+2212413|collégiale Saint-Fursy de Péronne|49.929,2.935
+4218940|Castle Rising|52.794,0.469
+4745900|abbaye d'Amesbury|51.172,-1.784
+48622322|château de la Douye|49.302,2.807
+131825304|Henry VII's tomb|
+288|Tours|47.393,0.688
+490|Milan|45.467,9.19
+648|Lille|50.632,3.058
+1899|Kiev|50.45,30.524
+2981|cathédrale Notre-Dame de Paris|48.853,2.35
+5489|Troyes|48.299,4.078
+5836|Tolède|39.867,-4.033
+7003|Dijon|47.323,5.042
+9580|Burgos|42.341,-3.7
+12155|Soria|41.767,-2.467
+12995|Courtrai|50.828,3.266
+13619|Cosenza|39.3,16.25
+23930|Lantenay|47.342,4.867
+52613|Muro Lucano|40.75,15.483
+55663|Renève|47.404,5.406
+58894|Santa Maria Capua Vetere|41.083,14.25
+70972|royaume de France|47,2
+74308|Montdidier|49.648,2.57
+104431|Forcalquier|43.959,5.78
+131329|Arras|50.289,2.78
+167600|Auxerre|47.797,3.567
+207584|Brignoles|43.406,6.062
+207620|Meaux|48.959,2.888
+223587|Mansourah|31.05,31.383
+272916|Chelles|48.879,2.589
+333867|abbaye Royale de Chelles|48.878,2.59
+334144|abbaye Saint-Bertin|50.751,2.264
+464918|abbaye de Fontenay|47.64,4.389
+501821|Nogent-le-Roi|48.649,1.529
+544046|Bracon|46.931,5.881
+547646|Angicourt|49.312,2.504
+586471|cathédrale Saint-Étienne de Meaux|48.96,2.879
+591296|abbaye de Pontigny|47.909,3.714
+659992|Domfront|48.59,-0.64
+711557|Roye|49.7,2.79
+843261|abbaye de Cîteaux|47.128,5.093
+853703|couvent des Cordeliers de Paris|48.851,2.341
+922303|chartreuse de Champmol|47.322,5.017
+1539949|abbaye de las Huelgas de Burgos|42.336,-3.72
+1552859|couvent des Jacobins de Paris de la rue Saint-Honoré|48.867,2.332
+1607033|Gutierre-Muñoz|40.983,-4.639
+1763642|basilique San Zeno de Vérone|45.443,10.979
+2820382|abbaye Royale de Saint-Jean-Baptiste du Moncel|49.302,2.615
+3001726|couvent des Jacobins de la rue Saint-Jacques|48.847,2.343
+6771659|Marlborough Castle|51.417,-1.737
+21810716|collégiale Saint-Étienne de Troyes|48.298,4.079
+84|Londres|51.507,-0.128
+142|France|47,2
+8818|Valence|39.47,-0.376
+10282|Pampelune|42.817,-1.65
+23928|Fleurey-sur-Ouche|47.312,4.859
+26385|Vermandois|49.85,3.283
+89810|Saint-Seine-l'Abbaye|47.441,4.789
+159615|abbaye de Santes Creus|41.347,1.363
+173882|cathédrale Saint-Paul de Londres|51.514,-0.098
+180067|Le Quesnoy|50.249,3.638
+209838|Montbard|47.623,4.337
+212420|Sens|48.197,3.283
+253935|basilique Saint-Servais|50.849,5.687
+323593|Vitry-en-Artois|50.326,2.983
+333989|abbaye du Lys|48.518,2.632
+389210|cathédrale Santa Maria de Pampelune|42.82,-1.641
+473977|Longpont|49.273,3.221
+499537|Ornans|47.105,6.143
+506707|Furnes|51.072,2.662
+674566|Vitry-en-Perthois|48.747,4.625
+834831|abbaye Notre-Dame de Longpont|49.272,3.222
+835012|Vilafranca del Penedès|41.345,1.699
+863935|Binnenhof|52.08,4.313
+1068413|Saint-Julien-de-Raz|45.35,5.662
+1071570|basilique Saint-Ambroise|45.462,9.176
+1104304|Brissarthe|47.701,-0.45
+1368003|Teylingen|52.215,4.51
+1717300|abbaye de Cherlieu|47.781,5.825
+1753377|église des Cordeliers|48.851,2.341
+2820592|abbaye de Fontenelle|50.322,3.491
+18677767|Hauts-de-France|49.917,2.7
+38595334|église Saint-Géry de Maing|50.306,3.478
+220|Rome|41.893,12.483
+365|Cologne|50.942,6.958
+621|Versailles|48.805,2.135
+1085|Prague|50.087,14.421
+1741|Vienne|48.208,16.372
+1842|Luxembourg|49.611,6.13
+2044|Florence|43.771,11.254
+2807|Madrid|40.417,-3.703
+5949|cathédrale Saint-Guy de Prague|50.091,14.401
+8356|Valladolid|41.652,-4.729
+12994|Bruges|51.209,3.224
+28471|monastère royal de San Lorenzo de El Escorial|40.589,-4.148
+40898|Nancy|48.693,6.184
+46940|Alcalá de Henares|40.482,-3.364
+61765|Crécy-en-Ponthieu|50.252,1.883
+62378|tour de Londres|51.508,-0.076
+72414|Portici|40.82,14.341
+118958|Louvain|50.877,4.704
+131612|Wiener Neustadt|47.817,16.25
+134346|Angoulême|45.649,0.159
+160927|Blois|47.593,1.327
+171517|palais royal de Madrid|40.418,-3.714
+178582|Wels|48.15,14.017
+185075|Saint-Germain-en-Laye|48.896,2.091
+191085|Gascogne|44,-0.5
+205116|Amboise|47.411,0.983
+214600|Romorantin-Lanthenay|47.358,1.743
+286004|Tordesillas|41.501,-5
+429192|chapelle royale de Grenade|37.176,-3.599
+486792|Aranjuez|40.033,-3.603
+501080|château de Kimbolton|52.296,-0.387
+564868|palais de Linlithgow|55.978,-3.601
+565345|palais de Falkland|56.255,-3.206
+662491|château de Saint-Cloud|48.837,2.216
+822030|Abbaye de Bermondsey|51.498,-0.081
+917183|église Notre-Dame de Bruges|51.205,3.224
+966862|abbaye de Holyrood|55.953,-3.172
+1131821|palais du Coudenberg|50.843,4.361
+1191209|cathédrale Saint-Maurice d'Angers|47.471,-0.555
+1259104|cathédrale de Peterborough|52.572,-0.239
+1289258|château des ducs de Bretagne|47.216,-1.549
+1348719|cathédrale Notre-Dame de Luxembourg|49.61,6.132
+1387075|Talavera la Real|38.876,-6.774
+1424085|Crypte du monastère de l'Escorial|40.589,-4.147
+1476690|hôtel Saint-Pol|48.853,2.361
+1540732|palais royal de la Granja de San Ildefonso|40.898,-4.005
+1863571|Branxton|55.631,-2.168
+2318602|cathédrale Saint-Georges|47.81,16.245
+2449634|chapelle Saint-Georges de Windsor|51.484,-0.607
+2762952|cathédrale Notre-Dame-de-l'Assomption de Lescar|43.333,-0.433
+3893448|Panthéon des Infants|40.589,-4.147
+59142398|Mausolée de Felipe V d'Espagne|40.898,-4.005
+25|pays de Galles|52.35,-3.633
+2946|château de Versailles|48.805,2.12
+7880|Toulouse|43.604,1.443
+23178|Bisceglie|41.241,16.502
+171800|Évreux|49.023,1.153
+185721|Bar-le-Duc|48.772,5.167
+189153|Saint-Cloud|48.846,2.215
+201352|Pontoise|49.051,2.101
+204720|Hereford|52.056,-2.716
+206961|Épinay-sur-Seine|48.955,2.308
+210003|Hal|50.736,4.237
+210772|Issoudun|46.948,1.993
+211593|Eu|50.047,1.42
+212065|château d'Édimbourg|55.949,-3.201
+212507|Conflans-Sainte-Honorine|48.997,2.094
+212793|Charenton-le-Pont|48.821,2.412
+242191|Montereau-Fault-Yonne|48.383,2.948
+250399|Brie-Comte-Robert|48.693,2.611
+251748|Grez-sur-Loing|48.315,2.689
+254398|Seine-Port|48.556,2.553
+269706|Pont-d'Ain|46.048,5.336
+461413|Pont-à-Mousson|48.904,6.054
+474929|Hagetmau|43.655,-0.594
+606775|Larache|35.195,-6.154
+631274|Couëron|47.215,-1.724
+736211|chapelle royale de Dreux|48.738,1.364
+749573|Le Marais|48.86,2.361
+835247|Souzay-Champigny|47.236,-0.007
+835835|Carmarthen|51.857,-4.316
+842228|Sangüesa-Zangoza|42.576,-1.283
+1003761|Stowe|52.018,-1.017
+1011390|château de Clisson|47.087,-1.281
+1048155|Château d'Angers|47.47,-0.56
+1152786|cimetière de la Madeleine|48.874,2.323
+1300003|cathédrale Saint-David de St Davids|51.882,-5.268
+1339583|hôpital d'instruction des armées du Val-de-Grâce|48.839,2.344
+1423005|cathédrale Saint-Pierre-et-Saint-Paul|47.218,-1.55
+1775512|abbaye des Châtelliers|46.488,-0.133
+2184754|basilique Saint-Martin de Hal|50.737,4.237
+2212738|abbaye Saint-Pierre-les-Dames|49.253,4.038
+2601262|église du Val-de-Grâce|48.841,2.342
+4285968|Much Hadham Hall|51.854,0.072
+12029517|cloître de Montargis|
+21525871|collégiale Saint-Georges de Vendôme|
+1296|Gand|51.054,3.725
+4055|château de Blois|47.586,1.331
+6259|Pavie|45.185,9.155
+6596|Gorizia|45.935,13.619
+132404|Bourges|47.079,2.396
+189503|place de la Concorde|48.866,2.321
+201428|château de Fontainebleau|48.402,2.701
+234364|palais des Tuileries|48.862,2.331
+272162|palais Saint James|51.505,-0.138
+391620|palais de Whitehall|51.504,-0.126
+512922|Theobalds House|51.689,-0.056
+525635|château de Monmouth|51.812,-2.717
+606352|Mehun-sur-Yèvre|47.145,2.216
+638089|château de Plessis-lès-Tours|47.383,0.661
+648534|château de Rambouillet|48.646,1.818
+671681|château de Frohsdorf|47.745,16.256
+936453|monastère de Yuste|40.114,-5.739
+1095337|Claremont House|51.359,-0.368
+1368571|palais du Pardo|40.521,-3.775
+1424839|palais de Placentia|51.482,-0.007
+1439593|château de Fotheringhay|52.524,-0.436
+1476769|hôtel des Tournelles|48.854,2.365
+1520841|château de Saint-Germain-en-Laye|48.898,2.096
+1887973|église Santa Maria in Monserrato degli Spagnoli|41.896,12.469
+2002393|basilique Notre-Dame de Cléry|47.82,1.755
+2240557|château de Cognac|45.698,-0.33
+6021277|Monasterio de Nuestra Señora de Gracia|41.087,-4.996
+6057812|Palacio Testamentario|41.308,-4.916
+6121883|Sepulcher of Isabella I of Castile and Ferdinand II of Aragon|
+11697419|palais de Pimentel|41.656,-4.724
+11930644|Navarreria|42.819,-1.642
+22340883|église de l'Annonciation de Kostanjevica|45.95,13.636
+29345592|Palacio de los Sada|42.495,-1.216
+43114927|Casa de Santa María|
+285|Cognac|45.696,-0.329
+2656|Palerme|38.116,13.361
+5990|Verceil|45.326,8.423
+12303|Jerez de la Frontera|36.7,-6.117
+25607|Saint-Gall|47.423,9.377
+27759|bataille de Crécy|50.256,1.888
+41604|Amiens|49.892,2.298
+48958|Neuilly-sur-Seine|48.887,2.268
+166997|Nevers|46.992,3.157
+172455|Boulogne-Billancourt|48.835,2.241
+187153|14e arrondissement de Paris|48.833,2.327
+214575|Vendôme|47.793,1.066
+242393|Woluwe-Saint-Pierre|50.837,4.428
+258911|Lavardin|47.742,0.886
+270230|8e arrondissement de Paris|48.874,2.311
+462534|Clermont|49.379,2.413
+489014|cathédrale Saint-Étienne de Sens|48.198,3.284
+656505|Marly-le-Roi|48.867,2.094
+813483|Beaver Creek|39.631,-106.522
+856170|Le Nouvion-en-Thiérache|50.017,3.785
+1020886|Saint-Firmin|44.781,6.029
+1143278|Twickenham|51.449,-0.337
+1344560|Cherisy|48.748,1.424
+1422235|château de Pembroke|51.677,-4.921
+1480604|château de Pau|43.295,-0.375
+1626747|château de Meudon|48.805,2.231
+1736169|cathédrale Saint-Pierre d'Angoulême|45.649,0.152
+1887100|Male|51.21,3.283
+1964681|château de Methven|56.417,-3.555
+2268271|monastère des Déchaussées royales|40.418,-3.706
+2534168|palais royal de Valladolid|41.656,-4.726
+2984019|collégiale Saint-Pierre de Lille|50.642,3.062
+7170831|chartreuse de Perth|56.395,-3.435
+109692165|palais de San Juan|
+120227728|Cuarto bajo del Rey|40.418,-3.714

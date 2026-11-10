@@ -12,16 +12,22 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
     houses:Object.fromEntries(Object.entries(H).map(([k,v])=>[k,{n:v.n,c:v.c}])),
     kings:KINGS.map(k=>({n:k[0],a:k[1],z:k[2],h:k[3],id:k[4],x:k[5],solo:!!k[4]&&!/^(Les |Derniers |République)/.test(k[0])})),
     stories:STORIES.map(s=>({id:s.id,t:s.t,per:s.per,ids:[...new Set(s.steps.flatMap(e=>e.f||[]))]})),
-    maudits:[...MAUDITS]}));
+    maudits:[...MAUDITS],lx:LX}));
   D.kings.forEach((k,i)=>{k.kin='';const q=D.kings[i-1];});
   const kin=await pg.evaluate(ks=>ks.map((k,i)=>{const q=ks[i-1];if(!q||!q.solo||!k.solo)return '';const r=blood(q.id,k.id);return r?kinSentence(byId[q.id],byId[k.id],r):(alliance(q.id,k.id)||'')}),D.kings);
   D.kings.forEach((k,i)=>k.kin=kin[i].replace(/<[^>]+>/g,''));
-  const by={};D.people.forEach(p=>by[p.id]=p);
   const kids=p=>D.people.filter(c=>c.p.includes(p.id)).sort((a,b)=>a.b-b.b);
   const url=p=>`/personnage/${p.slug}/`;
+  const by={};D.people.forEach(p=>by[p.id]=p);
   const hslug=k=>D.houses[k].n.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const hurl=k=>`/maison/${hslug(k)}/`;
   const maud=new Set(D.maudits);
+  const LX=D.lx,LXI={};Object.keys(LX.P).forEach(k=>LXI[k]={t:[],s:[],b:[],d:[]});
+  Object.entries(LX.W).forEach(([id,v])=>['b','d','t'].forEach((k,i)=>{if(v[i]&&by[id])LXI[v[i]][k].push(id)}));
+  Object.entries(LX.S).forEach(([id,[sl]])=>{if(by[id])LXI[sl].s.push(id)});
+  const lxN=sl=>new Set([].concat(...Object.values(LXI[sl]))).size;
+  const lxPage=sl=>lxN(sl)>=2;
+  const lxLink=sl=>lxPage(sl)?`<a href="/lieu/${sl}/">${esc(LX.P[sl][0])}</a>`:esc(LX.P[sl][0]);
   const link=p=>`<a href="${url(p)}">${esc(p.n)}</a> <span class="y">${esc(p.yrs)}</span>`;
   const list=(t,a)=>a.length?`<h2>${t}</h2><ul class="rel">${a.map(x=>`<li>${typeof x==='string'?esc(x):link(x)}</li>`).join('')}</ul>`:'';
   const clean=s=>s.replace(/<[^>]+>/g,'');
@@ -31,7 +37,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="article"><meta property="og:url" content="${SITE}${canon}"><meta property="og:image" content="${SITE}${img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Lignages"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/pages.css">${extra}</head><body>
 <header class="top"><a class="brand" href="/">Lignages</a><span>Rois de France et maisons d’Europe</span><a class="cta" href="/">Ouvrir l’arbre interactif</a></header><main>`;
-  const foot=`</main><footer><p>Lignages est un site gratuit, sans publicité ni inscription. <a href="/#a-propos">Méthode et limites</a> · <a href="/personnages/">Tous les personnages</a> · <a href="/rois/">Liste des rois</a> · <a href="/data/lignages.json">Données ouvertes</a> · <a href="mailto:contact@lignages.org">Signaler une erreur</a></p></footer></body></html>`;
+  const foot=`</main><footer><p>Lignages est un site gratuit, sans publicité ni inscription. <a href="/#a-propos">Méthode et limites</a> · <a href="/personnages/">Tous les personnages</a> · <a href="/rois/">Liste des rois</a> · <a href="/lieux/">Lieux</a> · <a href="/data/lignages.json">Données ouvertes</a> · <a href="mailto:contact@lignages.org">Signaler une erreur</a></p></footer></body></html>`;
   let n=0;
   for(const p of D.people){
     const H=D.houses[p.h],par=p.p.map(i=>by[i]),sp=p.sp.map(i=>by[i]).filter(Boolean),ch=kids(p);
@@ -50,6 +56,9 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
     const succ=K?`<h2>Succession</h2><ul class="rel"><li>Règne : ${K.a}–${K.z}. ${esc(K.x)}</li>${prev?`<li>Avant : ${kl(prev)} <span class="y">${prev.a}–${prev.z}</span>${K.kin?'. '+esc(K.kin):''}</li>`:''}${next?`<li>Après : ${kl(next)} <span class="y">${next.a}–${next.z}</span>${next.kin?'. '+esc(next.kin):''}</li>`:''}<li><a href="/rois/">Toute la liste des rois de France</a></li></ul>`:'';
     const sts=D.stories.filter(s=>s.ids.includes(p.id));
     const recits=sts.length||maud.has(p.id)?`<h2>Dans les récits</h2><ul class="rel">${maud.has(p.id)?'<li>Personnage des <i>Rois maudits</i> de Maurice Druon.</li>':''}${sts.map(s=>`<li><a href="/#recit/${s.id}">${esc(s.t)}</a> <span class="y">${esc(s.per)}</span></li>`).join('')}</ul>`:'';
+    const w=LX.W[p.id]||[],sc=LX.S[p.id];
+    const lrows=[['Naissance',w[0]],['Sacre',sc&&sc[0],sc&&sc[1]],['Mort',w[1]],['Sépulture',w[2]]].filter(r=>r[1]);
+    const lieux=lrows.length?`<h2>Lieux</h2><ul class="titles">${lrows.map(([t,sl,y])=>`<li><span>${t}</span><span>${lxLink(sl)}${y?', '+y:''}</span></li>`).join('')}</ul>`:'';
     const parents=[...par, ...(p.fa?['Père : '+clean(p.fa)]:[]), ...(p.m?['Mère : '+clean(p.m)]:[])];
     const html=head(title,desc,url(p),`<script type="application/ld+json">${JSON.stringify(ld)}</script><script type="application/ld+json">${JSON.stringify(bc)}</script>`,`/og/${p.slug}.jpg`)+`
 <nav class="crumb"><a href="/">Lignages</a> › <a href="/personnages/">Personnages</a> › ${esc(p.n)}</nav>
@@ -62,7 +71,7 @@ ${p.al.length?`<p class="al">Aussi : ${p.al.map(a=>esc(clean(a))).join(', ')}</p
 <p><a class="btn" href="/#fiche/${p.slug}">Voir dans l’arbre interactif</a></p>
 ${p.facts.length?`<h2>Faits marquants</h2><ol class="facts">${p.facts.map(([y,t])=>`<li><b>${y}</b><span>${t}</span></li>`).join('')}</ol>`:''}
 ${p.R.length?`<h2>Titres</h2><ul class="titles">${p.R.map(([l,a,z])=>`<li><span>${esc(l)}</span><span class="y">${a}–${z>=2026?'':z}</span></li>`).join('')}</ul>`:''}
-${succ}${list('Parents',parents)}${list(sp.length>1?'Conjoints':'Conjoint',sp)}${list('Enfants',ch)}${list('Frères et sœurs',sib)}${recits}
+${succ}${lieux}${list('Parents',parents)}${list(sp.length>1?'Conjoints':'Conjoint',sp)}${list('Enfants',ch)}${list('Frères et sœurs',sib)}${recits}
 <h2>Sources et vérification</h2><ul class="rel">${p.wiki?`<li><a href="${ld.sameAs[0]}" rel="noopener">Wikipédia : ${esc(p.wiki)}</a></li>`:''}<li>Filiation et mariages comparés à Wikidata le 8 novembre 2026. <a href="/#a-propos">Méthode et limites</a></li></ul>
 </article>`+foot;
     const dir=path.join(ROOT,'personnage',p.slug);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html);n++;
@@ -83,6 +92,24 @@ ${succ}${list('Parents',parents)}${list(sp.length>1?'Conjoints':'Conjoint',sp)}$
 ${ks.length?`<h2>Rois de France</h2><ul class="titles">${ks.map(x=>`<li><span><a href="${url(by[x.id])}">${esc(x.n)}</a></span><span class="y">${x.a}–${x.z}</span></li>`).join('')}</ul>`:''}
 <h2>Personnages</h2><ul class="rel">${a.map(p=>`<li>${link(p)}${p.t?' · '+esc(p.t):''}</li>`).join('')}</ul></article>`+foot);
   }
+  // lieux
+  const LK=[['t','Reposent ici'],['s','Sacrés ici'],['b','Nés ici'],['d','Morts ici']];
+  const yr=(k,id)=>k==='s'?LX.S[id][1]:k==='b'?by[id].b:by[id].d;
+  const lsl=Object.keys(LX.P).sort((a,b)=>lxN(b)-lxN(a)||LX.P[a][0].localeCompare(LX.P[b][0],'fr'));
+  for(const sl of lsl.filter(lxPage)){const L=LX.P[sl],n=lxN(sl);
+    const parts=LK.filter(([k])=>LXI[sl][k].length).map(([k,t])=>`${LXI[sl][k].length} ${t.toLowerCase().replace(' ici','')}`);
+    const desc=`${L[0]} : ${n} personnages de l’arbre de Lignages y sont nés, sacrés, morts ou enterrés. Qui, et quand.`;
+    const ld={"@context":"https://schema.org","@type":"Place",name:L[0],url:`${SITE}/lieu/${sl}/`,geo:{"@type":"GeoCoordinates",latitude:L[1],longitude:L[2]}};
+    const dir=path.join(ROOT,'lieu',sl);fs.mkdirSync(dir,{recursive:true});
+    fs.writeFileSync(path.join(dir,'index.html'),head(`${L[0]} : qui y est né, sacré, mort ou enterré | Lignages`,desc,`/lieu/${sl}/`,`<script type="application/ld+json">${JSON.stringify(ld)}</script>`)+`<nav class="crumb"><a href="/">Lignages</a> › <a href="/lieux/">Lieux</a> › ${esc(L[0])}</nav>
+<article><p class="house">Lieu</p><h1>${esc(L[0])}</h1><p class="dates">${n} personnages de l’arbre</p>
+<p><a class="btn" href="/#lieu/${sl}">Ouvrir le mode visite</a></p>
+${LK.map(([k,t])=>{const a=LXI[sl][k].slice().sort((x,y)=>yr(k,x)-yr(k,y));return a.length?`<h2>${t} (${a.length})</h2><ul class="titles">${a.map(id=>`<li><span><a href="${url(by[id])}">${esc(by[id].n)}</a></span><span class="y">${yr(k,id)}</span></li>`).join('')}</ul>`:''}).join('')}
+<h2>Y aller</h2><ul class="rel"><li><a href="https://www.openstreetmap.org/?mlat=${L[1]}&amp;mlon=${L[2]}#map=15/${L[1]}/${L[2]}" rel="noopener">Voir sur une carte</a></li><li>Certains monuments ont disparu ou ne se visitent pas : vérifiez avant de vous déplacer.</li><li>Naissances, morts et sépultures : Wikidata, relevé du 10 novembre 2026. Sacres saisis à la main.</li></ul></article>`+foot);}
+  fs.mkdirSync(path.join(ROOT,'lieux'),{recursive:true});
+  fs.writeFileSync(path.join(ROOT,'lieux','index.html'),head(`Les lieux des rois de France : naissances, sacres, sépultures | Lignages`,`${lsl.length} lieux où les personnages de Lignages sont nés, ont été sacrés, sont morts ou reposent : Saint-Denis, Reims, Fontainebleau, Westminster, l’Escorial…`,'/lieux/')+
+   `<nav class="crumb"><a href="/">Lignages</a> › Lieux</nav><article><h1>Les lieux</h1><p class="bio">${lsl.length} lieux de naissance, de sacre, de mort et de sépulture.</p><p><a class="btn" href="/#lieux">Ouvrir le mode visite</a></p>
+<ul class="titles">${lsl.map(sl=>`<li><span>${lxLink(sl)}</span><span class="y">${lxN(sl)}</span></li>`).join('')}</ul></article>`+foot);
   // liste des rois
   fs.mkdirSync(path.join(ROOT,'rois'),{recursive:true});
   const kld={"@context":"https://schema.org","@type":"ItemList",name:"Rois de France",itemListElement:D.kings.filter(k=>k.solo).map((k,i)=>({"@type":"ListItem",position:i+1,name:k.n,url:SITE+url(by[k.id])}))};
@@ -107,7 +134,7 @@ ${ks.length?`<h2>Rois de France</h2><ul class="titles">${ks.map(x=>`<li><span><a
   }
   await b.close();
   // plan du site, robots, données ouvertes
-  const urls=['/','/personnages/','/rois/',...groups.map(g=>hurl(g[2])),...D.people.map(url)];
+  const urls=['/','/personnages/','/rois/','/lieux/',...lsl.filter(lxPage).map(sl=>`/lieu/${sl}/`),...groups.map(g=>hurl(g[2])),...D.people.map(url)];
   fs.writeFileSync(path.join(ROOT,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`<url><loc>${SITE}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}\n</urlset>\n`);
   fs.writeFileSync(path.join(ROOT,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
   fs.mkdirSync(path.join(ROOT,'data'),{recursive:true});
