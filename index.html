@@ -437,6 +437,31 @@ button.tipbtn{background:none;cursor:pointer}
 }
 
 .eswrap{max-width:980px;margin:0 auto}
+.pcgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:18px 0}
+.pccard{text-align:left;background:var(--panel);border:1px solid var(--line);border-top:6px solid var(--c);border-radius:14px;padding:16px 18px;cursor:pointer;color:inherit;display:flex;flex-direction:column;gap:6px;font-size:15px}
+.pccard b{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:25px;line-height:1.12}.pccard .kicker{margin:0}
+.pchead{background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:14px;padding:16px 20px;margin:16px 0}
+.pchead h3{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:32px;line-height:1.1;margin:0 0 8px}.pchead .hint{margin:4px 0}.pchead .row{margin-top:12px}
+.pcsteps{list-style:none;counter-reset:pc;margin:0;padding:0}
+.pcsteps li{counter-increment:pc;position:relative;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 62px;margin:0 0 10px}
+.pcsteps li::before{content:counter(pc);position:absolute;left:16px;top:14px;width:32px;height:32px;border-radius:50%;background:var(--c);color:#fff;font-weight:700;display:grid;place-items:center}
+.pcsteps h4{font-size:19px;margin:3px 0 4px}.pcsteps p{margin:6px 0}
+.pcq{border-top:1px dashed var(--line);padding-top:10px;margin-top:12px!important}
+.pcsteps details{margin-top:6px}.pcsteps summary{cursor:pointer;color:var(--hi);font-weight:700}
+#pcBackBtn{position:fixed;left:50%;transform:translateX(-50%);bottom:18px;z-index:60;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+@media print{#pcBackBtn,#pcList,.pchead .row,.pcsteps .btn,.pcsteps details:not([open]){display:none!important}.pcsteps li{break-inside:avoid}}
+.drban{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;background:var(--panel);border:1px solid var(--line);border-left:6px solid #b03a2e;border-radius:14px;padding:14px 18px;margin:0 0 22px;text-decoration:none;color:inherit}
+.drcard{background:var(--panel);border:1px solid var(--line);border-left:6px solid #b03a2e;border-radius:14px;padding:18px 20px;margin:16px 0}
+.drcard h3{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:34px;line-height:1.1;margin:0 0 6px}
+.drcard h4{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:20px 0 8px}
+.drcard .lead{margin:0 0 6px;max-width:46em}
+.drcast,.drext,.drrh{list-style:none;margin:0;padding:0}
+.drcast li{display:flex;gap:9px;align-items:baseline;padding:3px 0}.drcast i{flex:0 0 10px;height:10px;border-radius:50%;background:var(--c);transform:translateY(-1px)}
+.drcast button{background:none;border:0;padding:0;font:inherit;font-weight:700;color:inherit;text-decoration:underline;cursor:pointer}
+.drext li{padding:3px 0 3px 19px}
+.drrh li{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:10px 0;border-top:1px solid var(--line)}.drrh p{margin:3px 0 0;color:var(--muted)}
+.drv{align-self:start;justify-self:start;border:1.5px solid var(--c);color:var(--c);border-radius:999px;font-size:12.5px;font-weight:700;padding:2px 9px;letter-spacing:.03em}
+@media (max-width:560px){.drrh li{grid-template-columns:1fr;gap:5px}}
 #repDlg{border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--ink);padding:22px 22px 14px;width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px);box-shadow:0 20px 60px rgba(0,0,0,.4)}
 #repDlg::backdrop{background:rgba(8,14,34,.6)}
 #repDlg h3{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:28px;margin:0 0 2px}
@@ -530,6 +555,8 @@ button.tipbtn{background:none;cursor:pointer}
         <a class="hcard" href="#recits" style="--c:#9b48cc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M9 8.5h6M9 12h6"/></svg><b>Suivre un récit guidé</b><span>Les Rois maudits, la guerre de Cent Ans, l’État bourguignon, pas à pas.</span></a>
         <a class="hcard" href="#annee/1328" style="--c:#16a085"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18"/><path d="M6 9v6M11 7v10M16 9v6M20 10.5v3"/></svg><b>Remonter le temps</b><span>Choisissez une année&nbsp;: qui règne en France, en Angleterre, en Navarre, dans l’Empire&nbsp;?</span></a>
         <a class="hcard" href="#et-si/1328/parfemmes" style="--c:#b03a6a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V9a4 4 0 0 1 4-4h8"/><path d="M15 2l3 3-3 3"/><path d="M6 13h6a4 4 0 0 1 4 4v3"/></svg><b>Et si la règle avait changé&nbsp;?</b><span>Rejouez une succession avec une autre loi&nbsp;: qui aurait porté la couronne en 1328&nbsp;?</span></a>
+        <a class="hcard" href="#parcours" style="--c:#2e8b57"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.5V16c0 1.2 2.2 2.5 5 2.5s5-1.3 5-2.5v-4.5"/></svg><b>Parcours pour la classe</b><span>5e et 2de&nbsp;: des séances calées sur les programmes, avec questions.</span></a>
+        <a class="hcard" href="#rois-maudits" style="--c:#b03a2e"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3V4z"/><path d="M9 9h6M9 13h6"/></svg><b>Lire Les Rois maudits</b><span>Un compagnon tome par tome, sans divulgâcher. Puis&nbsp;: roman ou histoire&nbsp;?</span></a>
         <a class="hcard" href="#lieu/basilique-saint-denis" style="--c:#7a5c2e"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-10.5a6.5 6.5 0 0 1 13 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10.5" r="2.3"/></svg><b>Préparer une visite</b><span>Saint-Denis, Reims, Fontainebleau&nbsp;: qui y est né, sacré ou enterré.</span></a>
         <a class="hcard" href="#defi" style="--c:#e67e22"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.1 1-1.1 1.8"/><circle cx="12" cy="16.6" r=".6"/></svg><b>Se tester</b><span>Un quiz tiré de l’arbre, pour vérifier ce qu’on a retenu.</span></a>
       </div>
@@ -682,8 +709,31 @@ button.tipbtn{background:none;cursor:pointer}
 
   <section id="tab-stories" class="scroll" hidden>
     <div class="wrap">
+      <a class="drban" href="#rois-maudits"><span><b>Vous lisez Les Rois maudits ?</b> Un compagnon tome par tome, sans divulgâcher, et ce que Druon a inventé.</span><span class="btn">Ouvrir</span></a>
       <p class="lead">Douze récits pour démêler l’écheveau. <em>Chacun se joue sur l’arbre, étape par étape.</em></p>
       <div class="stories" id="storyList"></div>
+    </div>
+  </section>
+
+  <section id="tab-parcours" class="scroll" hidden>
+    <div class="eswrap">
+      <p class="kicker">En classe</p>
+      <h2 class="esh">Parcours calés sur les programmes</h2>
+      <p class="lead">Une séance prête à projeter : des étapes dans l’ordre, une vue à ouvrir, une question, sa réponse.</p>
+      <div class="esmoments" id="pcList"></div>
+      <div id="pcBody"></div>
+      <p class="hint esnote">Intitulés tirés des programmes en vigueur (Éduscol), vérifiés le 10 novembre 2026. Les parcours et les questions sont ceux de Lignages, pas des documents officiels ; ils n’ont pas encore été relus par un enseignant. Les liens de parenté et les lieux cités dans les réponses sont calculés par l’arbre.</p>
+    </div>
+  </section>
+
+  <section id="tab-druon" class="scroll" hidden>
+    <div class="eswrap">
+      <p class="kicker">Compagnon de lecture</p>
+      <h2 class="esh">Les Rois maudits, tome par tome</h2>
+      <p class="lead">Où en êtes-vous ? Chaque tome a sa page : qui est qui à la première ligne, sans rien dévoiler de la suite. Le tome fini, vous saurez ce que Druon a inventé.</p>
+      <div class="esmoments" id="drTomes"></div>
+      <div id="drBody"></div>
+      <p class="hint esnote">Textes rédigés pour Lignages, sans citation du roman. Les verdicts « roman ou histoire » résument l’état courant des connaissances ; ils n’ont pas encore été relus par un historien. Votre progression reste dans ce navigateur.</p>
     </div>
   </section>
 
@@ -777,6 +827,7 @@ button.tipbtn{background:none;cursor:pointer}
     </div>
   </section>
 </main>
+<button class="btn" id="pcBackBtn" hidden>← Retour au parcours</button>
 <dialog id="repDlg" aria-labelledby="repT">
   <form id="repForm" novalidate>
     <h3 id="repT">Signaler une erreur</h3>
@@ -2086,6 +2137,8 @@ function showTab(t){
   if(t==="map"&&typeof mapSet==="function")mapSet(mapYear);
   if(t==="etsi"&&typeof esRender==="function")esRender();
   if(t==="places"&&typeof lxRender==="function"){lxRender();return;}
+  if(t==="parcours"){document.getElementById("pcBackBtn").hidden=true;if(typeof pcRender==="function")pcRender();return;}
+  if(t==="druon"){const sb=document.querySelector('.tabs button[data-tab="stories"]');if(sb)sb.setAttribute("aria-selected","true");if(typeof drRender==="function")drRender();return;}
   if(t!=="tree"&&TABSLUG)setHash(TABSLUG[t]);
 }
 document.querySelector(".tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-tab]");if(b)showTab(b.dataset.tab);});
@@ -2475,7 +2528,7 @@ var SLUG={},UNSLUG={};function slugOf(id){return (SLUG&&SLUG[id])||id;}
 (function(){const base=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[’']/g,"-").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
   const cnt={};P.forEach(p=>{const b=base(p.n);cnt[b]=(cnt[b]||0)+1;});
   P.forEach(p=>{let s=base(p.n);if(cnt[s]>1)s+="-"+p.b;SLUG[p.id]=s;UNSLUG[s]=p.id;UNSLUG[p.id]=p.id;});})();
-var TABSLUG={places:"lieux",etsi:"et-si",home:"accueil",tree:"arbre",films:"films",stories:"recits",quiz:"defi",kings:"rois",map:"carte",lex:"lexique",about:"a-propos"};
+var TABSLUG={parcours:"parcours",druon:"rois-maudits",places:"lieux",etsi:"et-si",home:"accueil",tree:"arbre",films:"films",stories:"recits",quiz:"defi",kings:"rois",map:"carte",lex:"lexique",about:"a-propos"};
 var routing=false,hashT=null;
 function setHash(h){if(routing)return;clearTimeout(hashT);hashT=setTimeout(()=>{const n="#"+h;if(location.hash!==n)history.replaceState(null,"",n);},250);}
 function shareUrl(){return location.origin+location.pathname+location.hash;}
@@ -2491,6 +2544,8 @@ function route(){
     else if(k==="annee"&&+a){showTab("tree");drawerMode=null;setYear(Math.max(450,Math.min(2026,+a)));const ids=P.filter(p=>reignsAt(p,year)).map(p=>p.id);if(ids.length)fit(ids,{max:.9});}
     else if(k==="carte"){showTab("map");mapSet(+a||1328);}
     else if(k==="et-si"){const j=ES_MOMENTS.findIndex(m=>m[1]===+a);if(j>=0)esM=j;if(ES_RULES[b])esR=b;showTab("etsi");}
+    else if(k==="parcours"){pcSel=PARCOURS.find(x=>x.id===a)?a:null;showTab("parcours");}
+    else if(k==="rois-maudits"){drSel=+a>=1&&+a<=7?+a-1:Math.min(6,drDone);showTab("druon");}
     else if(k==="lieu"&&LX.P[a]){lxSel=a;showTab("places");}
     else if(k==="film"&&FILMS.find(f=>f.id===a)){showTab("tree");filmOpen(a);}
     else if(k==="recit"&&STORIES.find(s=>s.id===a)){storyPlay(a);}
@@ -2500,6 +2555,164 @@ function route(){
 }
 addEventListener("hashchange",()=>route());
 
+
+/* ============ Compagnon de lecture des Rois maudits ============ */
+// Résumés et verdicts rédigés pour Lignages. Aucune citation du roman.
+const DRUON=[
+ {t:"Le Roi de fer",y:1955,per:"1314",
+  pitch:"Philippe le Bel règne depuis vingt-neuf ans. Le royaume est riche, craint, tenu d’une main dure. Le procès des Templiers touche à sa fin. À la cour, trois fils mariés, une fille reine d’Angleterre, et une querelle d’héritage en Artois qui n’en finit pas.",
+  cast:[["philippe4","le roi"],["louis10","fils aîné, déjà roi de Navarre"],["philippe5","deuxième fils, comte de Poitiers"],["charles4","le cadet"],["isabelle","leur sœur, reine d’Angleterre"],["edward2","son mari, roi d’Angleterre"],["margbg","épouse de Louis"],["jeannebg","épouse de Philippe"],["blanchebg","épouse de Charles, sœur de Jeanne"],["mahaut","comtesse d’Artois, mère de Jeanne et de Blanche"],["robert3art","son neveu, qui lui dispute l’Artois"],["charlesval","frère du roi"],["louisevr","demi-frère du roi"]],
+  ext:[["Jacques de Molay","grand maître du Temple, prisonnier depuis 1307"],["Enguerrand de Marigny","principal ministre du roi"],["Guillaume de Nogaret","garde des Sceaux"],["Spinello Tolomei et Guccio Baglioni","un banquier siennois et son neveu"]],
+  rh:[["l","La malédiction de Jacques de Molay","Molay est bien brûlé en mars 1314, et le pape puis le roi meurent dans l’année. Mais l’appel devant Dieu, avec les noms et le délai, est une tradition formée plus tard."],
+      ["r","Nogaret vivant en 1314","Le vrai Nogaret est mort en 1313, avant le bûcher. Le roman le garde en vie pour que la malédiction le frappe aussi."],
+      ["h","Le scandale des brus","L’adultère de Marguerite et de Blanche, le supplice des frères d’Aunay à Pontoise, Jeanne mise hors de cause : tout cela est attesté en 1314."],
+      ["i","La tour de Nesle et la dénonciation","Le lieu n’apparaît que dans des récits postérieurs. Le rôle d’Isabelle est rapporté par des chroniques, sans certitude. Celui de Robert d’Artois est une invention."],
+      ["r","Guccio et Marie de Cressay","Leur histoire est romanesque. Les Tolomei, banquiers de Sienne, ont bien existé."]]},
+ {t:"La Reine étranglée",y:1955,per:"1314–1315",
+  pitch:"Philippe le Bel est mort. Son fils aîné devient Louis X. Il est roi, mais sa femme est en prison et il n’a pas d’héritier mâle. Les barons veulent leur revanche sur les ministres du feu roi.",
+  cast:[["louis10","le nouveau roi"],["margbg","sa femme, enfermée à Château-Gaillard"],["blanchebg","enfermée avec elle"],["jeannebg","tenue à l’écart, à Dourdan"],["jeanne2nav","fille de Louis et de Marguerite, bientôt trois ans"],["charlesval","oncle du roi, qui veut gouverner"],["philippe5","frère du roi"],["charles4","frère du roi"],["mahaut","comtesse d’Artois"],["robert3art","son neveu et adversaire"],["clemence","princesse de la maison d’Anjou, à Naples"]],
+  ext:[["Enguerrand de Marigny","ministre du feu roi, désormais sans protecteur"],["Hugues de Bouville","ancien chambellan de Philippe le Bel"],["Guccio Baglioni et Marie de Cressay",""]],
+  rh:[["i","La mort de Marguerite","Elle meurt à Château-Gaillard en 1315, au moment où le roi a besoin d’être veuf. Le meurtre a été soupçonné dès l’époque. Il n’a jamais été prouvé."],
+      ["h","La chute de Marigny","Procès expéditif, pendaison à Montfaucon le 30 avril 1315. Charles de Valois en est bien l’artisan."],
+      ["h","Le remariage","Louis X épouse Clémence de Hongrie en août 1315, quelques mois après la mort de Marguerite."]]},
+ {t:"Les Poisons de la couronne",y:1956,per:"1315–1316",
+  pitch:"Louis X est remarié. Il lui faut un fils et une victoire. La Flandre résiste, l’Artois se soulève contre sa comtesse, et les caisses sont vides.",
+  cast:[["louis10","le roi"],["clemence","la nouvelle reine"],["philippe5","frère du roi"],["jeannebg","revenue auprès de Philippe"],["mahaut","comtesse d’Artois, contestée par ses barons"],["robert3art","qui soutient la révolte"],["charlesval","oncle du roi"],["charles4","frère du roi"],["jeanne2nav","fille du premier lit"]],
+  ext:[["Béatrice d’Hirson","demoiselle de la maison de Mahaut"],["Guccio Baglioni et Marie de Cressay",""]],
+  rh:[["h","L’ost boueux","La campagne de Flandre de 1315 s’enlise bien sous la pluie, sans bataille."],
+      ["l","Le roi empoisonné","Louis X meurt à Vincennes en juin 1316, après une partie de paume et du vin bu glacé. Mahaut a été accusée, puis innocentée en 1317. Rien n’établit le poison."],
+      ["r","Béatrice d’Hirson empoisonneuse","Le nom vient de l’entourage réel de Mahaut. Le rôle est une invention."]]},
+ {t:"La Loi des mâles",y:1957,per:"1316–1317",
+  pitch:"Le roi est mort sans fils, mais la reine attend un enfant. Qui gouverne en attendant ? Et si c’est une fille ? Pour la première fois depuis Hugues Capet, la couronne n’a pas d’héritier évident. Pendant ce temps, l’Église n’a plus de pape depuis deux ans.",
+  cast:[["clemence","reine veuve, enceinte"],["philippe5","frère du feu roi, retenu à Lyon"],["charlesval","oncle du feu roi, candidat à la régence"],["charles4","le dernier frère"],["jeanne2nav","fille de Louis X, quatre ans"],["eudes4","duc de Bourgogne, oncle de la petite Jeanne"],["mahaut","belle-mère de Philippe"],["jeannebg","épouse de Philippe"],["robert3art","toujours en guerre pour l’Artois"]],
+  ext:[["Jacques Duèze","cardinal, natif de Cahors"],["Hugues de Bouville","chargé de veiller sur la reine"],["Guccio Baglioni et Marie de Cressay",""]],
+  rh:[["h","Les cardinaux enfermés","À Lyon, en 1316, Philippe fait bien murer les cardinaux dans le couvent des Jacobins. Jacques Duèze en sort pape : Jean XXII."],
+      ["h","Jean Ier, roi cinq jours","L’enfant naît en novembre 1316 et meurt presque aussitôt. Sa mort a fait jaser, parce qu’elle profitait à son oncle."],
+      ["r","L’aiguille et l’échange d’enfants","Le meurtre par Mahaut et la substitution sont du roman. Il s’appuie sur un fait réel et plus tardif : un marchand siennois, Giannino, s’est prétendu Jean Ier vers 1354."],
+      ["h","Les femmes écartées","L’assemblée de 1317 pose que femme ne succède pas à la couronne. Mais personne n’invoque encore la « loi salique » : le texte ne sera exhumé que vers 1358."]]},
+ {t:"La Louve de France",y:1959,per:"1323–1327",
+  pitch:"Le roman saute six ans. Philippe V a régné et il est mort sans fils : la règle qu’il avait fait adopter s’est retournée contre ses filles. Charles IV, le dernier frère, porte la couronne. L’action passe en Angleterre, où la sœur du roi de France est une reine humiliée.",
+  cast:[["charles4","roi de France"],["isabelle","sa sœur, reine d’Angleterre"],["edward2","roi d’Angleterre, gouverné par ses favoris"],["edward3","leur fils, onze ans"],["charlesval","oncle du roi, vieillissant"],["philippe6","son fils"],["robert3art","toujours à la poursuite de l’Artois"],["mahaut","toujours comtesse"],["jeannebg","reine veuve"],["blanchebg","toujours enfermée"],["guillhain","comte de Hainaut"],["philippa","sa fille"]],
+  ext:[["Roger Mortimer","baron des Marches galloises, prisonnier à la Tour de Londres"],["Hugues le Despenser","favori d’Édouard II"]],
+  rh:[["h","L’évasion de Mortimer","Il s’échappe bien de la Tour de Londres en août 1323 et gagne la France."],
+      ["h","La reine et son amant","La liaison d’Isabelle et de Mortimer est admise par la plupart des historiens. L’invasion de 1326, partie du Hainaut, renverse Édouard II."],
+      ["l","Le fer rouge","Édouard II meurt à Berkeley en 1327. Le supplice n’apparaît que dans des chroniques écrites une génération plus tard. La cause de la mort reste inconnue."],
+      ["l","« La Louve »","Le surnom est tardif. Shakespeare l’emploie pour une autre reine ; un poète anglais l’applique à Isabelle en 1757."]]},
+ {t:"Le Lis et le Lion",y:1960,per:"1328–1343",
+  pitch:"Charles IV meurt à son tour sans fils. Les trois frères ont régné quatorze ans à eux trois, et la lignée directe s’éteint. Il faut choisir un roi parmi les cousins. L’un d’eux règne déjà, à Londres.",
+  cast:[["philippe6","cousin germain du feu roi, régent"],["jeanneboit","sa femme"],["jean2","leur fils, neuf ans"],["edward3","roi d’Angleterre, petit-fils de Philippe le Bel par sa mère"],["isabelle","sa mère"],["philippa","sa femme"],["jeanneevr","veuve de Charles IV, enceinte"],["jeanne2nav","fille de Louis X"],["philevr","son mari"],["eudes4","duc de Bourgogne"],["robert3art","beau-frère du régent, plus puissant que jamais"],["mahaut","comtesse d’Artois"],["jeannebg","sa fille, reine veuve"]],
+  ext:[["Béatrice d’Hirson",""],["Jeanne de Divion","une femme d’Artois qui dit détenir des papiers"],["Roger Mortimer","qui gouverne l’Angleterre avec Isabelle"]],
+  rh:[["h","Le choix de 1328","Philippe de Valois est préféré à Édouard III : on refuse qu’un droit passe par une femme. Édouard prête hommage en 1329, puis réclame la couronne en 1337."],
+      ["h","Les faux de Robert d’Artois","Les pièces fabriquées, Jeanne de Divion brûlée en 1331, le bannissement de 1332, la fuite en Angleterre : c’est l’histoire."],
+      ["i","Mahaut et Jeanne empoisonnées","Elles meurent coup sur coup, en 1329 et 1330. Les contemporains ont soupçonné Robert. Aucune preuve."],
+      ["l","Le vœu du héron","La scène vient d’un poème satirique composé vers 1346, pas d’un témoignage."],
+      ["h","Giannino, « roi de France »","L’épilogue suit un personnage réel : un marchand de Sienne persuadé d’être Jean Ier, mort prisonnier à Naples vers 1362. Sa naissance royale, elle, relève du roman."]]},
+ {t:"Quand un roi perd la France",y:1977,per:"1356",
+  pitch:"Les années ont passé. La guerre avec l’Angleterre est ouverte, la peste est venue, Crécy a été perdu. Jean II règne. Le roman change de forme : un seul homme parle, un cardinal en route pour une mission de paix, qui raconte ce qu’il a vu.",
+  cast:[["jean2","roi de France depuis 1350"],["charles5","son fils aîné, dauphin et duc de Normandie"],["charlesmauv","roi de Navarre, gendre du roi, petit-fils de Louis X"],["edward3","roi d’Angleterre"]],
+  ext:[["Hélie de Talleyrand-Périgord","cardinal, légat du pape, le narrateur"],["Édouard de Woodstock, le Prince Noir","fils aîné d’Édouard III, qui ravage le Midi"]],
+  rh:[["h","Le cardinal de Périgord","Il a existé, et il a bien tenté une médiation la veille de Poitiers. Sa voix, ses jugements, sont de Druon."],
+      ["h","Le banquet de Rouen","En avril 1356, Jean II arrête lui-même Charles de Navarre à la table du dauphin et fait décapiter plusieurs de ses compagnons."],
+      ["h","Poitiers","Le 19 septembre 1356, l’armée française est battue et le roi est pris."],
+      ["i","Un roi incapable ?","Le portrait est à charge. Les historiens d’aujourd’hui sont plus nuancés sur Jean II, sans nier ses fautes."]]}
+];
+const DRV={h:["Histoire","#2e8b57"],r:["Roman","#b0603a"],l:["Légende","#8a6fb0"],i:["Incertain","#8a8f9c"]};
+let drSel=0,drDone=0,drForce={};
+try{drDone=Math.max(0,Math.min(7,+localStorage.getItem("lignages.druon")||0));}catch(_){}
+function drRender(){
+  const el=document.getElementById("drBody"),v=DRUON[drSel],n=drSel+1,read=n<=drDone,ahead=n>drDone+1&&!drForce[n];
+  document.getElementById("drTomes").innerHTML=DRUON.map((d,i)=>`<button class="chip${i===drSel?" on":""}" data-tome="${i}">${i+1}. ${d.t}${i<drDone?" ✓":""}</button>`).join("");
+  let h=`<div class="drcard"><p class="kicker">Tome ${n} · ${v.per} · paru en ${v.y}</p><h3>${v.t}</h3>`;
+  if(ahead)h+=`<p class="lead">Ce tome commence après la fin du tome ${n-1}. Sa présentation en révèle l’issue.</p><p><button class="btn" data-force="${n}">Je l’ai lu, afficher</button></p></div>`;
+  else{
+    h+=`<h4>Avant de lire</h4><p class="lead">${v.pitch}</p><h4>Qui est qui, à la première page</h4><ul class="drcast">${v.cast.filter(([id])=>byId[id]).map(([id,r])=>`<li style="--c:${col(byId[id])}"><i></i><span><b>${read?`<button data-go="${id}">${byId[id].n}</button>`:byId[id].n}</b>${r?" · "+r:""}</span></li>`).join("")}</ul>
+     ${v.ext.length?`<h4>Hors de l’arbre</h4><ul class="drext">${v.ext.map(([a,r])=>`<li><b>${a}</b>${r?" · "+r:""}</li>`).join("")}</ul>`:""}
+     ${read?"":`<p class="hint">Les noms ne sont pas cliquables : une fiche donne les dates de mort. Ils le deviennent quand vous avez fini le tome.</p>`}
+     <h4>Roman ou histoire ?</h4>`;
+    if(read)h+=`<ul class="drrh">${v.rh.map(([k,t,x])=>`<li><span class="drv" style="--c:${DRV[k][1]}">${DRV[k][0]}</span><div><b>${t}</b><p>${x}</p></div></li>`).join("")}</ul><p><button class="btn ghost" data-unread="${n}">Marquer ce tome comme non lu</button></p>`;
+    else h+=`<p class="lead">${v.rh.length} points passés au crible, cachés pour ne rien dévoiler.</p><p><button class="btn" data-read="${n}">J’ai fini ce tome</button></p>`;
+    h+=`</div>`;
+  }
+  el.innerHTML=h;setHash("rois-maudits/"+n);
+}
+(function(){
+  const tab=document.getElementById("tab-druon");
+  const save=()=>{try{localStorage.setItem("lignages.druon",drDone);}catch(_){}};
+  tab.addEventListener("click",e=>{
+    const t=e.target.closest("[data-tome]");if(t){drSel=+t.dataset.tome;drRender();return;}
+    const f=e.target.closest("[data-force]");if(f){drForce[+f.dataset.force]=1;drRender();return;}
+    const r=e.target.closest("[data-read]");if(r){drDone=Math.max(drDone,+r.dataset.read);save();drRender();return;}
+    const u=e.target.closest("[data-unread]");if(u){drDone=+u.dataset.unread-1;save();drRender();return;}
+    const g=e.target.closest("[data-go]");if(g){showTab("tree");select(g.dataset.go);}
+  });
+})();
+
+/* ============ Parcours calés sur les programmes ============ */
+// Intitulés des programmes : Éduscol, cycle 4 (5e) et seconde générale, vérifiés le 10 novembre 2026.
+// Dans une réponse, {kin:[a,b]} est calculé par l'arbre ; {lieu:[slug,"b"|"d"|"t"|"s"]} vient des lieux.
+const PARCOURS=[
+ {id:"5e-etat",niv:"5e",c:"#4f7fd1",t:"L’affirmation de l’État monarchique",
+  prog:"Thème 2 : Société, Église et pouvoir politique dans l’occident féodal (XIe-XVe siècles). Sous-thème : « L’affirmation de l’État monarchique dans le Royaume des Capétiens et des Valois ».",
+  rep:"Repères du programme : 987, 1214, 1337-1453.",
+  steps:[
+   {t:"987 : un roi élu",go:"fiche/hugues-capet",x:"Hugues Capet est choisi par les grands du royaume. Rien ne dit que son fils régnera après lui.",q:"Ouvrez la fiche de son fils, Robert II. En quelle année est-il sacré ? Que remarquez-vous ?",r:["Robert II est sacré dès 987, à Orléans, du vivant de son père. Hugues Capet associe son fils au trône pour que la couronne reste dans la famille. Ses successeurs feront de même pendant deux siècles."]},
+   {t:"1160 : un vassal plus puissant que le roi",go:"carte/1160",x:"Sur la carte, regardez ce que tient le roi d’Angleterre sur le continent.",q:"Qui tient l’Aquitaine en 1160 ? Comment l’a-t-il obtenue ?",r:["Henri II Plantagenêt, par son mariage avec Aliénor d’Aquitaine en 1152. Aliénor avait d’abord été l’épouse du roi de France Louis VII."]},
+   {t:"1214 : Bouvines",go:"fiche/philippe-auguste",x:"Philippe Auguste bat une coalition formée autour de l’empereur et du roi d’Angleterre.",q:"Son grand adversaire est Jean sans Terre. Quel est le lien de Jean avec Aliénor d’Aquitaine ? Que lui prend Philippe Auguste ?",r:[{kin:["alienor","jeanssterre"]}," À partir de 1204, Philippe Auguste lui prend la Normandie, l’Anjou et la Touraine. Il reste aux rois d’Angleterre l’Aquitaine. La carte de Lignages, trop large, ne montre pas ce détail."]},
+   {t:"Saint Louis, le roi justicier",go:"fiche/saint-louis",x:"Louis IX règne quarante-quatre ans. Il rend la justice, crée une monnaie royale, part deux fois en croisade.",q:"Où meurt-il ? Où repose-t-il ?",r:[{lieu:["louis9","d"]}," ",{lieu:["louis9","t"]}," Il est canonisé en 1297."]},
+   {t:"Philippe le Bel et ses légistes",go:"fiche/philippe-iv-le-bel",x:"Le roi s’entoure de juristes et tient tête au pape. Il agrandit aussi le royaume par son mariage.",q:"Qui épouse-t-il ? Qu’apporte ce mariage ?",r:["Jeanne Ire de Navarre, en 1284. Elle est reine de Navarre et comtesse de Champagne. La Champagne entre ainsi dans le domaine royal."]},
+   {t:"1328 : qui doit régner ?",go:"et-si/1328/parfemmes",x:"Les trois fils de Philippe le Bel meurent sans fils. Deux candidats : un cousin par les hommes, un neveu par sa mère.",q:"Qui serait roi si les droits passaient par les femmes ? Quel est son lien avec Philippe VI ?",r:["Édouard III, roi d’Angleterre. ",{kin:["philippe6","edward3"]}," Les barons choisissent Philippe de Valois. C’est une des origines de la guerre de Cent Ans (1337-1453)."]},
+   {t:"1429 : un sacre en pleine guerre",go:"lieu/cathedrale-notre-dame-de-reims",x:"Charles VII est roi depuis 1422, mais une partie du royaume reconnaît le roi d’Angleterre.",q:"En quelle année Charles VII est-il sacré à Reims ? Pourquoi si tard ?",r:["En 1429. Reims était tenue par ses adversaires. Après la levée du siège d’Orléans, Jeanne d’Arc le conduit jusqu’à la ville du sacre. Le sacre fait de lui le roi légitime aux yeux de tous."]}]},
+ {id:"5e-prince",niv:"5e",c:"#b0603a",t:"Du Prince de la Renaissance au roi absolu",
+  prog:"Thème 3 : Transformations de l’Europe et ouverture sur le monde aux XVIe et XVIIe siècles. Sous-thème : « Du Prince de la Renaissance au roi absolu (François Ier, Henri IV, Louis XIV) ».",
+  rep:"Trois rois, trois façons de gouverner.",
+  steps:[
+   {t:"François Ier, un roi inattendu",go:"lien/louis-xii/francois-ier",x:"Louis XII meurt sans fils en 1515.",q:"Quel est le lien de parenté entre Louis XII et son successeur ? Qui François Ier a-t-il épousé ?",r:[{kin:["louis12","francois1"]}," Il a épousé Claude de France, la fille de Louis XII : il est à la fois son cousin et son gendre."]},
+   {t:"1519 : la France encerclée",go:"carte/1519",x:"Charles Quint hérite de quatre grands-parents à la fois.",q:"Sur la carte, quels territoires tient Charles Quint autour du royaume de France ?",r:["L’Espagne (Castille et Aragon), les Pays-Bas avec la Flandre et l’Artois, la Franche-Comté, Naples et la Sicile. Il est élu empereur en 1519. François Ier passe son règne à lutter contre lui."]},
+   {t:"1589 : un roi protestant",go:"lien/henri-iii/henri-iv",x:"Henri III est assassiné. Il n’a pas d’enfant, et ses frères sont morts.",q:"Jusqu’à quel ancêtre faut-il remonter pour relier Henri III et Henri IV par les hommes ?",r:["Jusqu’à Saint Louis, mort en 1270. Henri IV descend de son dernier fils, Robert de Clermont. Il est protestant : il doit se convertir en 1593 et se faire sacrer à Chartres en 1594 pour être accepté."]},
+   {t:"Henri IV rétablit la paix",go:"fiche/henri-iv",x:"En 1598, l’édit de Nantes met fin à plus de trente ans de guerres de Religion.",q:"Où est né Henri IV ? Où est-il mort ?",r:[{lieu:["henri4","b"]}," ",{lieu:["henri4","d"]}," Il est assassiné par Ravaillac en 1610."]},
+   {t:"Louis XIV, le roi absolu",go:"fiche/louis-xiv",x:"Roi à quatre ans, il gouverne seul à partir de 1661 et règne soixante-douze ans.",q:"Qui lui succède en 1715 ? Quel est leur lien ?",r:[{kin:["louis14","louis15"]}," Son fils et son petit-fils sont morts avant lui."]},
+   {t:"Versailles",go:"lieu/chateau-de-versailles",x:"Le roi y installe la cour et le gouvernement en 1682.",q:"Quels personnages de l’arbre sont nés au château ? Lesquels y sont morts ?",r:[{lieu:["chateau-de-versailles","B"]}," ",{lieu:["chateau-de-versailles","D"]}]}]},
+ {id:"2de-etat",niv:"2de",c:"#c9a227",t:"L’affirmation de l’État dans le royaume de France",
+  prog:"Thème 3 : L’État à l’époque moderne : France et Angleterre. Chapitre 1 : « L’affirmation de l’État dans le royaume de France ».",
+  rep:"Points de passage et d’ouverture : l’ordonnance de Villers-Cotterêts (1539), l’édit de Nantes et sa révocation, Colbert, Versailles et la société de cour.",
+  steps:[
+   {t:"Un territoire qui s’agrandit par les mariages",go:"carte/1491",x:"L’État s’affirme d’abord en réunissant des terres à la couronne.",q:"Comment la Bretagne entre-t-elle dans le royaume ? Suivez Anne de Bretagne et sa fille.",r:["Anne de Bretagne épouse deux rois de France : Charles VIII en 1491, puis Louis XII en 1499. Claude, fille d’Anne et de Louis XII, épouse François Ier. L’union du duché au royaume est proclamée en 1532."]},
+   {t:"1539 : Villers-Cotterêts",go:"fiche/francois-ier",x:"L’ordonnance impose le français dans les actes de justice et demande aux curés de tenir des registres de baptêmes.",q:"Pourquoi cette ordonnance intéresse-t-elle aussi les généalogistes ?",r:["Les registres paroissiaux sont l’ancêtre de l’état civil. À partir d’eux, on peut suivre la filiation de familles ordinaires, et plus seulement celle des princes."]},
+   {t:"1589 : l’État survit à la crise",go:"et-si/1589/salique",x:"Les guerres de Religion menacent la monarchie. La règle de succession désigne un héritier que beaucoup refusent.",q:"Quelle règle fait d’Henri de Navarre l’héritier ? Pourquoi est-il contesté ?",r:["La succession par les hommes seulement, dite loi salique. Elle désigne un cousin très éloigné, et protestant. La Ligue catholique lui oppose d’autres candidats. Il abjure en 1593."]},
+   {t:"L’édit de Nantes et sa révocation",go:"lien/henri-iv/louis-xiv",x:"1598 : Henri IV accorde aux protestants la liberté de culte dans des lieux précis. 1685 : l’édit de Fontainebleau la supprime.",q:"Quel lien de parenté unit le roi qui signe l’édit et celui qui le révoque ?",r:[{kin:["henri4","louis14"]}," Entre les deux, l’idée s’est imposée qu’un royaume doit n’avoir qu’une foi."]},
+   {t:"Versailles et la société de cour",go:"lieu/chateau-de-versailles",x:"À Versailles, la noblesse vit sous le regard du roi.",q:"Qui meurt à Versailles ? Que nous apprend la liste des naissances ?",r:[{lieu:["chateau-de-versailles","D"]}," ",{lieu:["chateau-de-versailles","B"]}," Après 1682, la famille royale naît et meurt au château : la cour ne bouge plus."]},
+   {t:"1700 : un Bourbon en Espagne",go:"fiche/philippe-v-d-espagne",x:"La puissance de l’État se joue aussi hors des frontières.",q:"Quel est le lien entre Louis XIV et Philippe V d’Espagne ? À quoi Philippe doit-il renoncer ?",r:[{kin:["louis14","philippe5esp"]}," Le roi d’Espagne Charles II, sans enfant, en fait son héritier. Après une longue guerre, les traités d’Utrecht (1713) lui laissent l’Espagne, mais il renonce à la couronne de France."]}],
+  note:"Colbert, autre point de passage du programme, n’est pas dans l’arbre : c’est un ministre, pas un prince."}
+];
+let pcSel=null,pcBack=null;
+function pcPart(x){
+  if(typeof x==="string")return x;
+  if(x.kin){const r=blood(x.kin[0],x.kin[1]);return r?kinSentence(byId[x.kin[0]],byId[x.kin[1]],r):"";}
+  if(x.lieu){const [a,k]=x.lieu;
+    if(k==="B"||k==="D"){const ids=(LXI[a]||{})[k.toLowerCase()]||[];return ids.length?(k==="B"?"Nés au château : ":"Morts au château : ")+ids.map(i=>byId[i].n).join(" ; ")+".":"";}
+    const w=LX.W[a]||[],sl=w[{b:0,d:1,t:2}[k]];if(!sl||!LX.P[sl])return "";const n=LX.P[sl][0];
+    return k==="b"?`Il est né ici : ${n}.`:k==="d"?`Il meurt ici : ${n}.`:`Il repose ici : ${n}.`;}
+  return "";
+}
+function pcRender(){
+  const el=document.getElementById("pcBody"),p=PARCOURS.find(x=>x.id===pcSel);
+  document.getElementById("pcList").innerHTML=PARCOURS.map(x=>`<button class="chip${x.id===pcSel?" on":""}" data-pc="${x.id}">${x.niv} · ${x.t}</button>`).join("");
+  if(!p){el.innerHTML=`<div class="pcgrid">${PARCOURS.map(x=>`<button class="pccard" data-pc="${x.id}" style="--c:${x.c}"><span class="kicker">${x.niv}</span><b>${x.t}</b><span>${x.steps.length} étapes, une question à chacune.</span></button>`).join("")}</div>`;setHash(TABSLUG.parcours);return;}
+  el.innerHTML=`<div class="pchead" style="--c:${p.c}"><p class="kicker">Classe de ${p.niv}</p><h3>${p.t}</h3><p class="hint">${p.prog}</p><p class="hint">${p.rep}</p>
+    <div class="row"><button class="btn ghost" data-share>🔗 Copier le lien</button><button class="btn ghost" data-print>🖨 Fiche élève (questions)</button><button class="btn ghost" id="pcAll">Afficher toutes les réponses</button></div></div>
+   <ol class="pcsteps">${p.steps.map((s,i)=>`<li style="--c:${p.c}"><h4>${s.t}</h4><p>${s.x}</p><p><a class="btn" href="#${s.go}" data-pcgo="${p.id}">Ouvrir la vue</a></p><p class="pcq"><b>Question.</b> ${s.q}</p><details><summary>Voir la réponse</summary><p>${s.r.map(pcPart).join("")}</p></details></li>`).join("")}</ol>
+   ${p.note?`<p class="hint">${p.note}</p>`:""}`;
+  setHash("parcours/"+p.id);
+}
+(function(){
+  const tab=document.getElementById("tab-parcours"),back=document.getElementById("pcBackBtn");
+  tab.addEventListener("click",e=>{
+    const c=e.target.closest("[data-pc]");if(c){pcSel=pcSel===c.dataset.pc&&c.classList.contains("chip")?null:c.dataset.pc;pcRender();tab.scrollTo&&tab.scrollTo({top:0});return;}
+    if(e.target.closest("#pcAll")){const d=[...tab.querySelectorAll("details")],o=d.some(x=>!x.open);d.forEach(x=>x.open=o);e.target.closest("#pcAll").textContent=o?"Masquer les réponses":"Afficher toutes les réponses";return;}
+    const g=e.target.closest("[data-pcgo]");if(g){pcBack=g.dataset.pcgo;back.hidden=false;}
+  });
+  back.addEventListener("click",()=>{back.hidden=true;pcSel=pcBack;showTab("parcours");});
+})();
 
 /* ============ Signaler une erreur : formulaire ============ */
 let repT0=0,repWho=null;

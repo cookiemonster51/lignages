@@ -12,7 +12,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
     houses:Object.fromEntries(Object.entries(H).map(([k,v])=>[k,{n:v.n,c:v.c}])),
     kings:KINGS.map(k=>({n:k[0],a:k[1],z:k[2],h:k[3],id:k[4],x:k[5],solo:!!k[4]&&!/^(Les |Derniers |République)/.test(k[0])})),
     stories:STORIES.map(s=>({id:s.id,t:s.t,per:s.per,ids:[...new Set(s.steps.flatMap(e=>e.f||[]))]})),
-    maudits:[...MAUDITS],lx:LX}));
+    maudits:[...MAUDITS],lx:LX,druon:DRUON.map(d=>({t:d.t,y:d.y,per:d.per,pitch:d.pitch,cast:d.cast,ext:d.ext,n:d.rh.length})),parcours:PARCOURS.map(p=>({id:p.id,niv:p.niv,t:p.t,prog:p.prog,rep:p.rep,c:p.c,steps:p.steps.map(s=>({t:s.t,x:s.x,q:s.q,go:s.go}))}))}));
   D.kings.forEach((k,i)=>{k.kin='';const q=D.kings[i-1];});
   const kin=await pg.evaluate(ks=>ks.map((k,i)=>{const q=ks[i-1];if(!q||!q.solo||!k.solo)return '';const r=blood(q.id,k.id);return r?kinSentence(byId[q.id],byId[k.id],r):(alliance(q.id,k.id)||'')}),D.kings);
   D.kings.forEach((k,i)=>k.kin=kin[i].replace(/<[^>]+>/g,''));
@@ -37,7 +37,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="article"><meta property="og:url" content="${SITE}${canon}"><meta property="og:image" content="${SITE}${img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Lignages"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/pages.css">${extra}</head><body>
 <header class="top"><a class="brand" href="/">Lignages</a><span>Rois de France et maisons d’Europe</span><a class="cta" href="/">Ouvrir l’arbre interactif</a></header><main>`;
-  const foot=`</main><footer><p>Lignages est un site gratuit, sans publicité ni inscription. <a href="/#a-propos">Méthode et limites</a> · <a href="/personnages/">Tous les personnages</a> · <a href="/rois/">Liste des rois</a> · <a href="/lieux/">Lieux</a> · <a href="/data/lignages.json">Données ouvertes</a> · <a data-sig href="mailto:contact@lignages.org">Signaler une erreur</a></p></footer><script src="/pages.js" defer></script></body></html>`;
+  const foot=`</main><footer><p>Lignages est un site gratuit, sans publicité ni inscription. <a href="/#a-propos">Méthode et limites</a> · <a href="/personnages/">Tous les personnages</a> · <a href="/rois/">Liste des rois</a> · <a href="/lieux/">Lieux</a> · <a href="/rois-maudits/">Les Rois maudits</a> · <a href="/parcours/">Parcours 5e et 2de</a> · <a href="/data/lignages.json">Données ouvertes</a> · <a data-sig href="mailto:contact@lignages.org">Signaler une erreur</a></p></footer><script src="/pages.js" defer></script></body></html>`;
   let n=0;
   for(const p of D.people){
     const H=D.houses[p.h],par=p.p.map(i=>by[i]),sp=p.sp.map(i=>by[i]).filter(Boolean),ch=kids(p);
@@ -111,6 +111,26 @@ ${LK.map(([k,t])=>{const a=LXI[sl][k].slice().sort((x,y)=>yr(k,x)-yr(k,y));retur
   fs.writeFileSync(path.join(ROOT,'lieux','index.html'),head(`Les lieux des rois de France : naissances, sacres, sépultures | Lignages`,`${lsl.length} lieux où les personnages de Lignages sont nés, ont été sacrés, sont morts ou reposent : Saint-Denis, Reims, Fontainebleau, Westminster, l’Escorial…`,'/lieux/')+
    `<nav class="crumb"><a href="/">Lignages</a> › Lieux</nav><article><h1>Les lieux</h1><p class="bio">${lsl.length} lieux de naissance, de sacre, de mort et de sépulture.</p><p><a class="btn" href="/#lieux">Ouvrir le mode visite</a></p>
 <ul class="titles">${lsl.map(sl=>`<li><span>${lxLink(sl)}</span><span class="y">${lxN(sl)}</span></li>`).join('')}</ul></article>`+foot);
+  // compagnon de lecture : seul le tome 1 est présenté, pour ne rien dévoiler
+  { const d1=D.druon[0];fs.mkdirSync(path.join(ROOT,'rois-maudits'),{recursive:true});
+    fs.writeFileSync(path.join(ROOT,'rois-maudits','index.html'),head('Les Rois maudits : compagnon de lecture tome par tome, sans divulgâcher | Lignages','Un compagnon pour lire Les Rois maudits de Maurice Druon : qui est qui au début de chaque tome, sans rien dévoiler, puis ce qui relève du roman et ce qui relève de l’histoire.','/rois-maudits/')+
+    `<nav class="crumb"><a href="/">Lignages</a> › Les Rois maudits</nav><article style="--c:#b03a2e"><p class="house">Compagnon de lecture</p><h1>Les Rois maudits, tome par tome</h1>
+<p class="bio">Sept romans de Maurice Druon, parus de 1955 à 1977. Pour chacun : qui est qui à la première page, sans rien dévoiler de la suite. Le tome fini : ce que Druon a inventé, et ce que disent les historiens.</p>
+<p><a class="btn" href="/#rois-maudits">Ouvrir le compagnon</a></p>
+<h2>Les sept tomes</h2><ul class="titles">${D.druon.map((d,i)=>`<li><span><a href="/#rois-maudits/${i+1}">${i+1}. ${esc(d.t)}</a></span><span class="y">${d.per} · paru en ${d.y}</span></li>`).join('')}</ul>
+<h2>Tome 1 : ${esc(d1.t)}</h2><p class="bio">${esc(d1.pitch)}</p>
+<h2>Qui est qui, à la première page</h2><ul class="rel">${d1.cast.map(([id,r])=>`<li><b>${esc(by[id].n)}</b> · ${esc(r)}</li>`).join('')}${d1.ext.map(([a,r])=>`<li><b>${esc(a)}</b>${r?' · '+esc(r):''}</li>`).join('')}</ul>
+<p class="y">Les noms ne mènent pas aux fiches : elles donnent les dates de mort. Les tomes suivants s’ouvrent dans le compagnon, qui les garde masqués tant que vous n’y êtes pas.</p>
+<h2>Roman ou histoire ?</h2><p>${D.druon.reduce((a,d)=>a+d.n,0)} points passés au crible, répartis sur les sept tomes : la malédiction des Templiers, la tour de Nesle, les poisons, le fer rouge… Ils s’affichent quand vous marquez un tome comme lu.</p>
+<p class="y">Textes rédigés pour Lignages, sans citation du roman.</p></article>`+foot); }
+  // parcours pour la classe
+  { fs.mkdirSync(path.join(ROOT,'parcours'),{recursive:true});
+    fs.writeFileSync(path.join(ROOT,'parcours','index.html'),head('Parcours d’histoire 5e et 2de : rois de France, État monarchique, séances prêtes à projeter | Lignages','Trois parcours calés sur les programmes d’histoire de 5e et de seconde : l’affirmation de l’État monarchique, du Prince de la Renaissance au roi absolu, l’État à l’époque moderne. Des étapes, une vue interactive, une question.','/parcours/')+
+    `<nav class="crumb"><a href="/">Lignages</a> › Parcours</nav><article><p class="house">En classe</p><h1>Parcours calés sur les programmes</h1>
+<p class="bio">Des séances prêtes à projeter. À chaque étape : une vue de l’arbre ou de la carte à ouvrir, et une question. Les réponses sont dans la version interactive.</p>
+<p><a class="btn" href="/#parcours">Ouvrir les parcours</a></p>
+${D.parcours.map(p=>`<section style="--c:${p.c}"><h2>${esc(p.niv)} · ${esc(p.t)}</h2><p class="y">${esc(p.prog)} ${esc(p.rep)}</p><ol class="kings">${p.steps.map(s=>`<li style="--c:${p.c}"><b>${esc(s.t)}</b><p>${esc(s.x)}</p><p class="kin">${esc(s.q)}</p><p><a href="/#${s.go}">Ouvrir la vue</a></p></li>`).join('')}</ol><p><a href="/#parcours/${p.id}">Voir ce parcours avec les réponses</a></p></section>`).join('')}
+<p class="y">Intitulés tirés des programmes en vigueur (Éduscol). Les parcours et les questions sont ceux de Lignages, pas des documents officiels.</p></article>`+foot); }
   // liste des rois
   fs.mkdirSync(path.join(ROOT,'rois'),{recursive:true});
   const kld={"@context":"https://schema.org","@type":"ItemList",name:"Rois de France",itemListElement:D.kings.filter(k=>k.solo).map((k,i)=>({"@type":"ListItem",position:i+1,name:k.n,url:SITE+url(by[k.id])}))};
@@ -135,7 +155,7 @@ ${LK.map(([k,t])=>{const a=LXI[sl][k].slice().sort((x,y)=>yr(k,x)-yr(k,y));retur
   }
   await b.close();
   // plan du site, robots, données ouvertes
-  const urls=['/','/personnages/','/rois/','/lieux/',...lsl.filter(lxPage).map(sl=>`/lieu/${sl}/`),...groups.map(g=>hurl(g[2])),...D.people.map(url)];
+  const urls=['/','/personnages/','/rois/','/lieux/','/rois-maudits/','/parcours/',...lsl.filter(lxPage).map(sl=>`/lieu/${sl}/`),...groups.map(g=>hurl(g[2])),...D.people.map(url)];
   fs.writeFileSync(path.join(ROOT,'sitemap.xml'),`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map(u=>`<url><loc>${SITE}${u}</loc><lastmod>${today}</lastmod></url>`).join('\n')}\n</urlset>\n`);
   fs.writeFileSync(path.join(ROOT,'robots.txt'),`User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
   fs.mkdirSync(path.join(ROOT,'data'),{recursive:true});
