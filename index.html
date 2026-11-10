@@ -313,6 +313,10 @@ details.fold[open] summary::after{content:" −"}
 .mbg{fill:var(--chip);stroke:var(--line);stroke-width:2}
 #mapRegs path{fill:url(#hatch);stroke:var(--panel);stroke-width:3;stroke-linejoin:round;transition:fill .6s ease;cursor:pointer}
 #mapRegs path:not(.none){fill-opacity:.85}
+#mapRegs path.sub{stroke-width:2}
+#mapRegs path.sub.quiet{fill:none!important;stroke:none;pointer-events:none}
+#mapRegs path.sub.none:not(.quiet){fill:var(--line);fill-opacity:1}
+.mlabs g.sub .rn{font-size:27px}.mlabs g.sub.quiet{display:none}
 #mapRegs path:hover{fill-opacity:1;stroke:var(--ink)}
 #mapRegs path.pulse{animation:mpulse 1.2s ease}
 @keyframes mpulse{0%{stroke:var(--hi);stroke-width:14}100%{stroke:var(--panel);stroke-width:3}}
@@ -2467,10 +2471,23 @@ const MREG=[
  ["dauphine","Dauphiné",["Dauphiné"],1349],["provence","Provence",["Provence"],1481],
  ["navarre","Navarre",["Navarre"]],["castille","Castille",["Castille","Espagne"]],["aragon","Aragon",["Aragon","Espagne"]],
  ["naples","Naples",["Naples"]],["sicile","Sicile",["Sicile"]],["italie","Italie",["Italie","Empire"]],
- ["empire","Saint-Empire",["Empire","Germanie"]],["boheme","Bohême",["Bohême"]],["hongrie","Hongrie",["Hongrie"]]];
-const MOMENTS=[[511,"Mort de Clovis"],[768,"Charlemagne"],[843,"Verdun"],[987,"Hugues Capet"],[1160,"Empire Plantagenêt"],[1214,"Bouvines"],[1285,"Philippe le Bel"],[1328,"Les Valois"],[1360,"Brétigny"],[1429,"Jeanne d’Arc"],[1467,"Charles le Téméraire"],[1477,"Mort du Téméraire"],[1491,"Bretagne"],[1519,"Charles Quint"],[1589,"Henri IV"],[1700,"Un Bourbon en Espagne"]];
+ ["empire","Saint-Empire",["Empire","Germanie"]],["boheme","Bohême",["Bohême"]],["hongrie","Hongrie",["Hongrie"]],
+ // Sous-régions : [id, nom, [], null, règles [de, à, terre suivie ou null], terre par défaut, région du dessous]
+ ["normandie","Normandie",[],null,[[1066,1204,"Angleterre"],[1417,1450,"Angleterre"]],"France","france"],
+ ["anjou","Anjou, Maine, Touraine",[],null,[[1154,1204,"Angleterre"]],"France","france"],
+ ["poitou","Poitou",[],null,[[1137,1224,"Aquitaine"],[1360,1372,"Aquitaine"]],"France","aquitaine"],
+ ["limousin","Limousin, Périgord",[],null,[[1137,1224,"Aquitaine"],[1360,1370,"Aquitaine"]],"France","aquitaine"],
+ ["toulouse","Comté de Toulouse",[],null,[[950,1271,null]],"France","france"],
+ ["picardie","Somme",[],null,[[1435,1477,"Duché de Bourgogne"]],"France","france"],
+ ["brabant","Brabant",[],null,[[1430,9999,"Flandre"]],null,"empire"],
+ ["hollande","Hollande",[],null,[[1299,9999,"Hainaut"]],null,"empire"],
+ ["luxembourg","Luxembourg",[],null,[[1310,1437,"Bohême"],[1443,9999,"Flandre"]],null,"empire"]];
+const MSUB={"R":{"normandie":"M-505,-78 -497,-71 -466,-74 -458,-81 -446,-60 -419,-68 -414,-51 -385,-34 -385,-50 -370,-60 -380,-87 -358,-98 -347,-94 -333,-106 -329,-114 -332,-126 -319,-129 -311,-149 -306,-148 -310,-166 -305,-175 -309,-177 -311,-192 -307,-196 -311,-197 -305,-205 -309,-219 -330,-240 -345,-229 -387,-220 -418,-205 -425,-182 -409,-177 -397,-180 -412,-175 -451,-161 -464,-169 -502,-178 -511,-179 -515,-174 -526,-198 -520,-205 -522,-213 -532,-216 -547,-211 -569,-221 -564,-209 -568,-199 -565,-183 -557,-179 -553,-163 -547,-163 -552,-163 -553,-149 -552,-140 -546,-141 -555,-121 -550,-104 -540,-97 -557,-99 -553,-86 -547,-78 -534,-85 -521,-79Z","anjou":"M-390,126 -382,126 -373,98 -361,98 -351,84 -357,72 -369,65 -372,32 -384,32 -386,23 -403,20 -392,10 -384,-8 -386,-20 -377,-28 -385,-34 -414,-51 -419,-68 -446,-60 -458,-81 -466,-74 -497,-71 -505,-78 -521,-79 -523,-24 -533,-20 -540,-4 -536,15 -525,22 -538,26 -523,33 -520,44 -552,49 -542,60 -546,73 -541,83 -526,88 -502,90 -494,82 -474,81 -462,85 -448,77 -431,91 -430,102 -412,102 -411,96 -404,101Z","poitou":"M-470,294 -449,284 -446,270 -434,264 -416,240 -404,231 -401,218 -392,213 -401,194 -400,184 -370,168 -372,153 -388,141 -390,126 -404,101 -411,96 -412,102 -430,102 -431,91 -448,77 -462,85 -474,81 -494,82 -502,90 -526,88 -541,83 -550,77 -564,91 -566,81 -571,81 -569,97 -573,99 -586,95 -604,76 -617,93 -599,121 -596,137 -595,133 -555,165 -546,163 -554,178 -543,194 -548,195 -546,208 -553,212 -542,229 -554,218 -560,219 -562,228 -532,253 -524,275 -514,273 -503,283 -501,294 -484,303 -473,302Z","limousin":"M-416,240 -434,264 -446,270 -449,284 -470,294 -473,302 -466,309 -474,331 -459,336 -454,330 -448,332 -452,340 -445,356 -410,354 -408,364 -398,361 -390,369 -396,373 -392,390 -388,389 -387,397 -369,409 -360,403 -353,409 -352,402 -347,405 -327,398 -330,382 -300,368 -310,328 -304,327 -298,301 -285,289 -285,282 -274,283 -272,246 -279,236 -263,220 -264,201 -287,169 -324,163 -327,169 -343,166 -352,173 -357,168 -370,168 -400,184 -401,194 -392,213 -401,218 -404,231Z","toulouse":"M-348,517 -347,526 -328,538 -327,562 -337,568 -312,587 -299,580 -296,566 -269,569 -256,560 -241,569 -238,548 -223,528 -201,521 -165,494 -153,493 -145,503 -125,489 -123,478 -112,477 -109,458 -92,443 -102,434 -107,412 -118,406 -126,411 -132,406 -139,412 -155,407 -159,392 -168,359 -186,345 -199,350 -206,335 -228,342 -239,368 -243,353 -258,335 -279,364 -300,368 -330,382 -327,398 -347,405 -352,402 -353,409 -360,403 -369,409 -387,397 -388,389 -392,390 -405,390 -402,401 -407,415 -414,415 -420,423 -412,427 -419,437 -410,440 -410,455 -405,455 -389,481 -399,485 -404,503 -421,496 -451,525 -442,532 -445,540 -438,537 -436,546 -451,557 -452,574 -437,576 -436,559 -420,563 -421,552 -407,544 -407,534 -400,527 -386,534 -382,531 -388,525 -374,519 -380,514 -378,510 -370,521 -363,512 -354,519Z","picardie":"M-305,-205 -298,-197 -266,-194 -242,-180 -224,-195 -207,-194 -211,-203 -201,-223 -212,-235 -224,-229 -226,-235 -232,-232 -234,-242 -236,-236 -245,-243 -257,-239 -251,-250 -255,-253 -278,-252 -288,-267 -314,-273 -317,-263 -308,-253 -319,-256 -330,-240 -309,-219Z","brabant":"M-119,-376 -121,-376 -116,-354 -127,-346 -123,-339 -129,-327 -134,-328 -136,-312 -149,-304 -134,-303 -134,-295 -128,-298 -118,-284 -105,-282 -94,-286 -94,-291 -72,-294 -69,-306 -63,-302 -57,-323 -67,-328 -61,-339 -71,-338 -52,-350 -53,-362 -35,-366 -27,-359 -23,-369 -5,-376 -11,-397 3,-397 -3,-413 -25,-425 -41,-425 -46,-417 -60,-416 -68,-426 -124,-406 -125,-404 -124,-401 -122,-393 -120,-384Z","hollande":"M-177,-363 -166,-368 -144,-358 -127,-368 -124,-376 -140,-381 -150,-374 -172,-383 -184,-378 -183,-366ZM-120,-384 -131,-385 -137,-394 -147,-397 -148,-404 -177,-397 -171,-387 -151,-379 -142,-386 -122,-382 -121,-376 -119,-376ZM-124,-401 -139,-401 -122,-393ZM-124,-406 -68,-426 -56,-441 -61,-445 -76,-439 -82,-448 -77,-453 -83,-459 -78,-464 -84,-470 -64,-476 -65,-464 -56,-465 -50,-476 -43,-476 -61,-485 -55,-493 -61,-510 -43,-521 -42,-533 -55,-557 -73,-546 -85,-552 -101,-483 -127,-447 -136,-445 -132,-429 -147,-426 -135,-422 -126,-411 -130,-407 -125,-404Z","luxembourg":"M2,-239 -1,-259 -10,-261 -9,-253 -20,-252 -20,-262 -42,-270 -47,-257 -43,-255 -57,-247 -53,-235 -67,-237 -73,-226 -63,-214 -74,-200 -60,-188 -53,-188 -39,-167 -15,-171 -3,-160 18,-166 25,-162 29,-184 36,-190 36,-200 21,-206 9,-222 7,-239Z"},"C":{"normandie":[-437,-137],"anjou":[-451,22],"poitou":[-493,189],"limousin":[-368,286],"toulouse":[-272,461],"picardie":[-265,-226],"brabant":[-73,-354],"hollande":[-94,-480],"luxembourg":[-19,-215]}};Object.assign(MAP.R,MSUB.R);Object.assign(MAP.C,MSUB.C);
+const MOMENTS=[[511,"Mort de Clovis"],[768,"Charlemagne"],[843,"Verdun"],[987,"Hugues Capet"],[1160,"Empire Plantagenêt"],[1180,"Philippe Auguste"],[1214,"Bouvines"],[1285,"Philippe le Bel"],[1328,"Les Valois"],[1360,"Brétigny"],[1429,"Jeanne d’Arc"],[1467,"Charles le Téméraire"],[1477,"Mort du Téméraire"],[1491,"Bretagne"],[1519,"Charles Quint"],[1589,"Henri IV"],[1700,"Un Bourbon en Espagne"]];
 let mapYear=1328,mapT=null,mapSpeed=1,mapPrev={},mapLog=[],mapBuilt=false;
 function regionHolders(r,y){
+  if(r[4]){const ru=r[4].find(x=>y>=x[0]&&y<x[1]),land=ru?ru[2]:r[5];if(!land)return {hs:[],sub:1,indep:!!ru};
+    const hs=holdersAt(land,y);return {hs,land,sub:1,merged:land==="France"};}
   for(const l of r[2]){if(l==="Espagne"&&y<1700)continue;const hs=holdersAt(l,y);if(hs.length)return {hs,land:l};}
   if(r[3]&&y>=r[3]){const hs=holdersAt("France",y);if(hs.length)return {hs,land:"France",merged:true};}
   return {hs:[]};
@@ -2480,9 +2497,9 @@ function buildMap(){
   if(mapBuilt)return;mapBuilt=true;
   const g=document.getElementById("mapRegs"),lab=document.getElementById("mapLabs");
   document.getElementById("mapBg").setAttribute("d",MAP.B);
-  g.innerHTML=MREG.map(r=>`<path id="mr-${r[0]}" data-r="${r[0]}" d="${MAP.R[r[0]]}"><title></title></path>`).join("");
+  g.innerHTML=MREG.map(r=>`<path id="mr-${r[0]}"${r[4]?' class="sub"':""} data-r="${r[0]}" d="${MAP.R[r[0]]}"><title></title></path>`).join("");
   const OFF={france:[-230,235],flandre:[-250,-400],artois:[-400,-300],hainaut:[-40,-290],bgduc:[-130,45],bgcomte:[110,100],champagne:[-150,-95],dauphine:[-40,330],provence:[20,500],navarre:[-640,535],bretagne:[-640,-40]};
-  lab.innerHTML=MREG.map(r=>{const [x,y]=OFF[r[0]]||MAP.C[r[0]];return `<g id="ml-${r[0]}" transform="translate(${x},${y})"><text class="rn" y="-6">${r[1]}</text><text class="hn" y="38"></text></g>`;}).join("");
+  lab.innerHTML=MREG.map(r=>{const [x,y]=OFF[r[0]]||MAP.C[r[0]];return `<g id="ml-${r[0]}"${r[4]?' class="sub"':""} transform="translate(${x},${y})"><text class="rn" y="-6">${r[1]}</text><text class="hn" y="38"></text></g>`;}).join("");
   MREG.forEach(r=>{const b=document.getElementById("mr-"+r[0]).getBBox();r.area=b.width*b.height;});
   document.getElementById("mapMoments").innerHTML=MOMENTS.map(([y,t])=>`<button class="chip" data-my="${y}"><b>${y}</b> ${t}</button>`).join("");
 }
@@ -2495,20 +2512,22 @@ function mapSet(y,fromPlay){
   MREG.map((r,i)=>[r,i]).sort((a,b)=>(b[0].area||0)-(a[0].area||0)).forEach(([r,i])=>{const h=H0[i].hs[0];if(h&&!shown.has(h.id)){shown.add(h.id);showName[r[0]]=1;}});
   MREG.forEach((r,i)=>{
     const {hs,merged}=H0[i],el=document.getElementById("mr-"+r[0]),lb=document.getElementById("ml-"+r[0]);
-    const key=hs.map(p=>p.id).join(",");
+    let key=hs.map(p=>p.id).join(",");
+    if(r[4]){const bi=MREG.findIndex(x=>x[0]===r[6]),quiet=key===H0[bi].hs.map(p=>p.id).join(",")&&(hs.length||!H0[i].indep);
+      el.classList.toggle("quiet",quiet);lb.classList.toggle("quiet",quiet);if(quiet)key="=";}
     el.style.fill=hs.length?col(hs[0]):"";el.classList.toggle("none",!hs.length);
     const nm=hs.length?hs[0].n+(hs.length>1?` +${hs.length-1}`:""):"";
     lb.querySelector(".rn").textContent=regName(r,y);lb.querySelector(".hn").textContent=showName[r[0]]?nm:"";lb.classList.toggle("none",!hs.length);
     el.querySelector("title").textContent=regName(r,y)+" — "+(hs.length?hs.map(p=>p.n).join(", ")+(merged?" (uni à la couronne)":""):"titulaire hors de l’arbre");
     if(fromPlay&&mapPrev[r[0]]!==undefined&&mapPrev[r[0]]!==key&&hs.length){changes.push([y,r,hs[0]]);el.classList.remove("pulse");void el.getBBox();el.classList.add("pulse");}
     mapPrev[r[0]]=key;
-    if(hs.length)rows.push([r,hs,merged]);
+    if(hs.length&&key!=="=")rows.push([r,hs,merged]);
   });
   changes.forEach(c=>mapLog.unshift(c));mapLog=mapLog.slice(0,6);
   // regrouper par titulaire : qui tient quoi
   const by=new Map();rows.forEach(([r,hs])=>{const k=hs[0].id;if(!by.has(k))by.set(k,[]);by.get(k).push(regName(r,y));});
   const list=[...by].sort((a,b)=>b[1].length-a[1].length).map(([id,regs])=>`<div class="mrow" style="--c:${col(byId[id])}"><a data-go="${id}">${byId[id].n}</a><span>${regs.join(" · ")}</span></div>`).join("");
-  document.getElementById("mapPanel").innerHTML=`<h3>${y}</h3>${eraFacts(y)}<h4>Qui tient quoi</h4>${list||'<p class="hint">Aucun titulaire dans l’arbre cette année-là.</p>'}${mapLog.length?`<h4>Derniers changements</h4><ul class="mlog">${mapLog.map(([yy,r,p])=>`<li><b>${yy}</b> ${regName(r,yy)} → <a data-go="${p.id}">${p.n}</a></li>`).join("")}</ul>`:""}<p class="hint mnote">Carte schématique : les grands royaumes et principautés, dessinés sur leurs contours approximatifs, pas leurs frontières exactes à chaque date. Une région grise a un titulaire absent de l’arbre.</p>`;
+  document.getElementById("mapPanel").innerHTML=`<h3>${y}</h3>${eraFacts(y)}<h4>Qui tient quoi</h4>${list||'<p class="hint">Aucun titulaire dans l’arbre cette année-là.</p>'}${mapLog.length?`<h4>Derniers changements</h4><ul class="mlog">${mapLog.map(([yy,r,p])=>`<li><b>${yy}</b> ${regName(r,yy)} → <a data-go="${p.id}">${p.n}</a></li>`).join("")}</ul>`:""}<p class="hint mnote">Carte schématique : les grands royaumes et principautés, dessinés sur leurs contours approximatifs, pas leurs frontières exactes à chaque date. Une région grise a un titulaire absent de l’arbre. La Normandie, l’Anjou, le Poitou, le Limousin, le comté de Toulouse, la Somme, le Brabant, la Hollande et le Luxembourg n’apparaissent que lorsqu’ils ne suivent pas le sort de leurs voisins ; leurs contours sont ceux de départements actuels, et leurs dates sont simplifiées.</p>`;
   if(!fromPlay)setHash("carte/"+y);
 }
 function mapStop(){if(mapT){clearInterval(mapT);mapT=null;}const b=document.getElementById("mPlay");if(b){b.textContent="▶";b.setAttribute("aria-label","Lire");}}
