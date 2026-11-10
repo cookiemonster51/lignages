@@ -37,7 +37,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
 <meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:type" content="article"><meta property="og:url" content="${SITE}${canon}"><meta property="og:image" content="${SITE}${img}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:site_name" content="Lignages"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg"><link rel="stylesheet" href="/pages.css">${extra}</head><body>
 <header class="top"><a class="brand" href="/">Lignages</a><span>Rois de France et maisons d’Europe</span><a class="cta" href="/">Ouvrir l’arbre interactif</a></header><main>`;
-  const foot=`</main><footer><p>Lignages est un site gratuit, sans publicité ni inscription. <a href="/#a-propos">Méthode et limites</a> · <a href="/personnages/">Tous les personnages</a> · <a href="/rois/">Liste des rois</a> · <a href="/lieux/">Lieux</a> · <a href="/data/lignages.json">Données ouvertes</a> · <a href="mailto:contact@lignages.org">Signaler une erreur</a></p></footer></body></html>`;
+  const foot=`</main><footer><p>Lignages est un site gratuit, sans publicité ni inscription. <a href="/#a-propos">Méthode et limites</a> · <a href="/personnages/">Tous les personnages</a> · <a href="/rois/">Liste des rois</a> · <a href="/lieux/">Lieux</a> · <a href="/data/lignages.json">Données ouvertes</a> · <a data-sig href="mailto:contact@lignages.org">Signaler une erreur</a></p></footer><script src="/pages.js" defer></script></body></html>`;
   let n=0;
   for(const p of D.people){
     const H=D.houses[p.h],par=p.p.map(i=>by[i]),sp=p.sp.map(i=>by[i]).filter(Boolean),ch=kids(p);
@@ -73,6 +73,7 @@ ${p.facts.length?`<h2>Faits marquants</h2><ol class="facts">${p.facts.map(([y,t]
 ${p.R.length?`<h2>Titres</h2><ul class="titles">${p.R.map(([l,a,z])=>`<li><span>${esc(l)}</span><span class="y">${a}–${z>=2026?'':z}</span></li>`).join('')}</ul>`:''}
 ${succ}${lieux}${list('Parents',parents)}${list(sp.length>1?'Conjoints':'Conjoint',sp)}${list('Enfants',ch)}${list('Frères et sœurs',sib)}${recits}
 <h2>Sources et vérification</h2><ul class="rel">${p.wiki?`<li><a href="${ld.sameAs[0]}" rel="noopener">Wikipédia : ${esc(p.wiki)}</a></li>`:''}<li>Filiation et mariages comparés à Wikidata le 8 novembre 2026. <a href="/#a-propos">Méthode et limites</a></li></ul>
+<p><a class="sigbtn" data-sig href="mailto:contact@lignages.org?subject=${encodeURIComponent('Lignages – erreur sur « '+p.n+' »')}">✉ Signaler une erreur sur cette fiche</a></p>
 </article>`+foot;
     const dir=path.join(ROOT,'personnage',p.slug);fs.mkdirSync(dir,{recursive:true});fs.writeFileSync(path.join(dir,'index.html'),html);n++;
   }

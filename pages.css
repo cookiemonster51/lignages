@@ -34,3 +34,13 @@ h2 a{text-decoration:none}
 .kings li{border-left:5px solid var(--c);padding:6px 0 6px 14px;margin:0 0 10px}
 .kings p{margin:2px 0 0;font-size:15.5px;color:var(--muted)}
 .kings .kin{color:var(--ink);font-style:italic}
+#sig{border:1px solid var(--line);border-radius:16px;background:var(--panel);color:var(--ink);padding:20px 20px 10px;width:min(520px,calc(100vw - 24px));max-height:calc(100dvh - 24px)}
+#sig::backdrop{background:rgba(8,14,34,.6)}
+#sig h2{margin:0 0 2px;font-style:normal;font-size:27px}
+#sig label{display:block;font-weight:700;font-size:15px;margin:12px 0 5px}#sig label span{font-weight:400;color:var(--muted)}
+#sig textarea,#sig input{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:9px 11px}
+#sig textarea{resize:vertical;min-height:110px}
+#sig .btn{border:0;cursor:pointer;font:inherit;font-weight:700}#sig .btn.alt{background:none;color:var(--ink);border:1px solid var(--line)}
+#sigO{font-weight:700;min-height:1.2em;margin:12px 0 0}#sigO.err{color:#c0392b}#sigO.ok{color:#2e8b57}
+.sigx{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sigbtn{display:inline-block;margin-top:26px;border:1px solid var(--line);border-radius:12px;padding:9px 14px;text-decoration:none;font-weight:700;font-size:15px}
