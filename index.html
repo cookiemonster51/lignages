@@ -429,6 +429,26 @@ button.tipbtn{background:none;cursor:pointer}
   .printfoot{display:block;margin-top:14px;padding-top:8px;border-top:1px solid #c9d1df;font-size:11px;color:#4a5270}
   @page{margin:14mm}
 }
+
+.eswrap{max-width:980px;margin:0 auto}
+.esh{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:clamp(30px,4.4vw,48px);line-height:1.08;margin:0 0 12px}
+.est{font-family:'IM Fell English',Georgia,serif;font-style:italic;font-weight:400;font-size:22px;margin:26px 0 10px}
+.esmoments{display:flex;flex-wrap:wrap;gap:8px}
+.esmoments .chip{cursor:pointer;font-size:14.5px;padding:8px 13px}
+.esmoments .chip.on{background:var(--ink);color:var(--panel);border-color:var(--ink)}
+.esrules{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:10px}
+.esrule{text-align:left;display:grid;gap:3px;align-content:start;background:var(--panel);border:2px solid var(--line);border-radius:14px;padding:13px 14px}
+.esrule.on{border-color:#b03a6a;box-shadow:var(--shadow)}
+.esrule b{font-size:16.5px;line-height:1.25}.esrule em{font-style:normal;font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--hi);font-weight:700}.esrule span{font-size:14px;color:var(--muted);line-height:1.4}
+.escards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.escard{display:grid;gap:3px;align-content:start;background:var(--panel);border:1px solid var(--line);border-left:6px solid var(--c,var(--line));border-radius:14px;padding:15px 17px}
+.escard b{font-family:'IM Fell English',Georgia,serif;font-weight:400;font-size:26px;line-height:1.12}
+.escard em{font-style:normal;font-size:14px;color:var(--muted)}.escard a{font-size:14px;font-weight:700;color:inherit;margin-top:4px}
+.esverdict{font-size:19px;margin:16px 0 6px}
+.esn{font-size:16px;line-height:1.5;color:var(--muted);margin:0 0 14px;max-width:46em}
+.esres .row{display:flex;flex-wrap:wrap;gap:8px}.esres .row .btn{text-decoration:none}
+.esnote{margin-top:22px;max-width:52em}
+@media (max-width:700px){.escards{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -437,6 +457,7 @@ button.tipbtn{background:none;cursor:pointer}
   <nav class="tabs" role="tablist" aria-label="Sections">
     <button role="tab" data-tab="tree" aria-selected="true">L’arbre</button>
     <button role="tab" data-tab="map" aria-selected="false">Carte</button>
+    <button role="tab" data-tab="etsi" aria-selected="false">Et si ?</button>
     <button role="tab" data-tab="films" aria-selected="false">Films</button>
     <button role="tab" data-tab="stories" aria-selected="false">Récits</button>
     <button role="tab" data-tab="quiz" aria-selected="false">Défi</button>
@@ -479,6 +500,7 @@ button.tipbtn{background:none;cursor:pointer}
         <a class="hcard" href="#films" style="--c:#c0392b"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 8.5v7l6-3.5z"/></svg><b>Regarder un film</b><span>Les familles naissent, se marient, s’éteignent. La couronne passe sous vos yeux.</span></a>
         <a class="hcard" href="#recits" style="--c:#9b48cc"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h10a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M9 8.5h6M9 12h6"/></svg><b>Suivre un récit guidé</b><span>Les Rois maudits, la guerre de Cent Ans, l’État bourguignon, pas à pas.</span></a>
         <a class="hcard" href="#annee/1328" style="--c:#16a085"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h18"/><path d="M6 9v6M11 7v10M16 9v6M20 10.5v3"/></svg><b>Remonter le temps</b><span>Choisissez une année&nbsp;: qui règne en France, en Angleterre, en Navarre, dans l’Empire&nbsp;?</span></a>
+        <a class="hcard" href="#et-si/1328/parfemmes" style="--c:#b03a6a"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 20V9a4 4 0 0 1 4-4h8"/><path d="M15 2l3 3-3 3"/><path d="M6 13h6a4 4 0 0 1 4 4v3"/></svg><b>Et si la règle avait changé&nbsp;?</b><span>Rejouez une succession avec une autre loi&nbsp;: qui aurait porté la couronne en 1328&nbsp;?</span></a>
         <a class="hcard" href="#defi" style="--c:#e67e22"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.6 2.2c-.7.4-1.1 1-1.1 1.8"/><circle cx="12" cy="16.6" r=".6"/></svg><b>Se tester</b><span>Un quiz tiré de l’arbre, pour vérifier ce qu’on a retenu.</span></a>
       </div>
 
@@ -582,6 +604,20 @@ button.tipbtn{background:none;cursor:pointer}
         <div class="chips mmoments" id="mapMoments"></div>
         <div class="mappanel panel" id="mapPanel"></div>
       </aside>
+    </div>
+  </section>
+
+  <section id="tab-etsi" class="scroll" hidden>
+    <div class="eswrap">
+      <p class="kicker">Jeu de l’esprit</p>
+      <h2 class="esh">Et si la règle avait été différente ?</h2>
+      <p class="lead">La France écarte les femmes du trône en 1316, presque par accident, et en fait ensuite une loi. Choisissez une succession et changez la règle : qui aurait porté la couronne ?</p>
+      <h3 class="est">1. Une succession</h3>
+      <div class="esmoments" id="esMoments"></div>
+      <h3 class="est">2. Une règle</h3>
+      <div class="esrules" id="esRules"></div>
+      <div class="esres" id="esRes"></div>
+      <p class="hint esnote">Ce calcul applique la règle une seule fois, au moment choisi, aux personnes qui existaient alors. Il ne refait pas l’histoire : une autre règle aurait changé les mariages, les alliances et les naissances. Quelques héritiers, absents de l’arbre, sont signalés « hors de l’arbre ».</p>
     </div>
   </section>
 
@@ -1982,6 +2018,7 @@ function showTab(t){
   if(t==="kings")requestAnimationFrame(centerKing);
   if(t!=="map"&&typeof mapStop==="function")mapStop();
   if(t==="map"&&typeof mapSet==="function")mapSet(mapYear);
+  if(t==="etsi"&&typeof esRender==="function")esRender();
   if(t!=="tree"&&TABSLUG)setHash(TABSLUG[t]);
 }
 document.querySelector(".tabs").addEventListener("click",e=>{const b=e.target.closest("button[data-tab]");if(b)showTab(b.dataset.tab);});
@@ -2371,7 +2408,7 @@ var SLUG={},UNSLUG={};function slugOf(id){return (SLUG&&SLUG[id])||id;}
 (function(){const base=s=>s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().replace(/[’']/g,"-").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
   const cnt={};P.forEach(p=>{const b=base(p.n);cnt[b]=(cnt[b]||0)+1;});
   P.forEach(p=>{let s=base(p.n);if(cnt[s]>1)s+="-"+p.b;SLUG[p.id]=s;UNSLUG[s]=p.id;UNSLUG[p.id]=p.id;});})();
-var TABSLUG={home:"accueil",tree:"arbre",films:"films",stories:"recits",quiz:"defi",kings:"rois",map:"carte",lex:"lexique",about:"a-propos"};
+var TABSLUG={etsi:"et-si",home:"accueil",tree:"arbre",films:"films",stories:"recits",quiz:"defi",kings:"rois",map:"carte",lex:"lexique",about:"a-propos"};
 var routing=false,hashT=null;
 function setHash(h){if(routing)return;clearTimeout(hashT);hashT=setTimeout(()=>{const n="#"+h;if(location.hash!==n)history.replaceState(null,"",n);},250);}
 function shareUrl(){return location.origin+location.pathname+location.hash;}
@@ -2386,6 +2423,7 @@ function route(){
     else if(k==="lien"&&UNSLUG[a]&&UNSLUG[b]){showTab("tree");selA.value=UNSLUG[a];selB.value=UNSLUG[b];explain(UNSLUG[a],UNSLUG[b]);if(!wide())tools.classList.add("open");}
     else if(k==="annee"&&+a){showTab("tree");drawerMode=null;setYear(Math.max(450,Math.min(2026,+a)));const ids=P.filter(p=>reignsAt(p,year)).map(p=>p.id);if(ids.length)fit(ids,{max:.9});}
     else if(k==="carte"){showTab("map");mapSet(+a||1328);}
+    else if(k==="et-si"){const j=ES_MOMENTS.findIndex(m=>m[1]===+a);if(j>=0)esM=j;if(ES_RULES[b])esR=b;showTab("etsi");}
     else if(k==="film"&&FILMS.find(f=>f.id===a)){showTab("tree");filmOpen(a);}
     else if(k==="recit"&&STORIES.find(s=>s.id===a)){storyPlay(a);}
     else{const t=Object.keys(TABSLUG).find(t=>TABSLUG[t]===k);if(t){showTab(t);if(t==="map")mapSet(mapYear);}else ok=false;}
@@ -2448,6 +2486,73 @@ var qrcode=function(){var t=function(t,r){var e=t,n=g[r],o=null,i=0,a=null,u=[],
    <a class="hdcard" href="#fiche/${slugOf(p.id)}" style="--c:${col(p)}"><span class="hdk">Le personnage du jour</span><b>${p.n}</b><em>${yrs(p)}${p.t?" · "+p.t:""}</em><span>${first(p.bio)}</span></a>
    <a class="hdcard" href="#lien/${slugOf(a)}/${slugOf(b)}" style="--c:var(--hi)"><span class="hdk">Le lien surprenant du jour</span><b>${A.n} et ${B.n}</b><span>${w||"Quel est leur lien de parenté ? Le chemin se trace sous vos yeux."}</span></a>`;
 })();
+
+/* ============ Et si ? : moteur de succession ============ */
+const ES_ROOT="huguescapet";
+const ES_RULES={
+ salique:{n:"Loi salique",who:"La règle appliquée en France",d:"Seuls les hommes règnent, et seulement par les hommes. Une fille n’hérite pas et ne transmet rien."},
+ parfemmes:{n:"Par les femmes, sans qu’elles règnent",who:"La thèse d’Édouard III d’Angleterre",d:"Seuls les hommes règnent, mais une fille transmet ses droits à ses fils."},
+ preference:{n:"Les filles à défaut de fils",who:"Angleterre, Castille, Navarre",d:"Les fils d’abord. S’il n’y en a pas, la fille aînée hérite et règne."},
+ absolue:{n:"L’aîné, fille ou garçon",who:"Suède depuis 1980",d:"L’enfant le plus âgé hérite, quel que soit son sexe."}};
+/* Héritiers nécessaires au calcul mais absents de l'arbre */
+const ES_X=[
+ {id:"x_philbg",n:"Philippe de Bourgogne, dit Philippe Monsieur",b:1323,d:1346,s:"m",p:["jeanne3","eudes4"],ext:1},
+ {id:"x_mariefr",n:"Marie de France",b:1326,d:1341,s:"f",p:["charles4","jeanneevr"],ext:1},
+ {id:"x_isabelle",n:"Isabelle-Claire-Eugénie, infante d’Espagne",b:1566,d:1633,s:"f",p:["elisabethval","philippe2esp"],ext:1},
+ {id:"x_catmich",n:"Catherine-Michelle, infante d’Espagne",b:1567,d:1597,s:"f",p:["elisabethval","philippe2esp"],ext:1},
+ {id:"x_philsav",n:"Philippe-Emmanuel de Savoie",b:1586,d:1605,s:"m",p:["x_catmich"],ext:1}];
+const esAll=P.concat(ES_X),esBy={};esAll.forEach(p=>esBy[p.id]=p);
+const esKids=x=>esAll.filter(p=>p.p.includes(x.id)).sort((a,b)=>a.b-b.b);
+const esDesc=new Set();(function w(x){esDesc.add(x.id);esKids(x).forEach(w);})(byId[ES_ROOT]);
+function esOrder(x,rule){const k=esKids(x);
+  if(rule==="salique")return x.s==="m"?k.filter(c=>c.s==="m"):[];
+  if(rule==="absolue")return k;
+  return k.filter(c=>c.s==="m").concat(k.filter(c=>c.s!=="m"));}
+const esAlive=(c,y)=>c.b<=y&&(c.d>y||(c.d===y&&c.b===y));
+const esOk=(c,rule)=>rule==="preference"||rule==="absolue"||c.s==="m";
+function esHeir(h,y,rule){
+  const seen=new Set([h.id]);
+  const dfs=x=>{for(const c of esOrder(x,rule)){if(seen.has(c.id))continue;seen.add(c.id);if(esAlive(c,y)&&esOk(c,rule))return c;const r=dfs(c);if(r)return r;}return null;};
+  let r=dfs(h);if(r)return r;
+  let cur=h;
+  while(cur.id!==ES_ROOT){
+    const ps=cur.p.map(i=>esBy[i]).filter(p=>esDesc.has(p.id));
+    const par=ps.find(p=>p.s==="m")||ps[0];if(!par)break;
+    if(rule==="salique"&&par.s!=="m")break;
+    r=dfs(par);if(r)return r;seen.add(par.id);cur=par;
+  }
+  return null;
+}
+/* Rois de France successifs, d'après les titres datés */
+function esKings(){const a=[];P.forEach(p=>p.R.forEach(([l,s,e])=>{if(l==="France"&&s>=987)a.push({p,s,e});}));return a.sort((x,y)=>x.s-y.s||x.e-y.e);}
+
+const ES_MOMENTS=[["jean1",1316,"Mort de Jean Ier, roi cinq jours"],["philippe5",1322,"Mort de Philippe V"],["charles4",1328,"Mort de Charles IV, dernier Capétien direct"],["louis12",1515,"Mort de Louis XII"],["henri3",1589,"Assassinat d’Henri III"]];
+const ES_NOTES={
+ "1316/preference":"Jeanne a quatre ans. C’est la thèse que défend son oncle maternel, le duc Eudes IV de Bourgogne. Philippe de Poitiers l’écarte et se fait sacrer : le précédent est créé.",
+ "1316/parfemmes":"Jeanne n’a pas encore de fils à qui transmettre ses droits : la couronne va à son oncle Philippe, comme dans la réalité.",
+ "1322/preference":"Jeanne, fille aînée de Philippe V, a quatorze ans. Elle est mariée au duc Eudes IV de Bourgogne : France et Bourgogne auraient été réunies. Philippe V est pris à son propre piège : la règle qui l’a fait roi écarte ses filles.",
+ "1322/parfemmes":"Aucune des filles de Philippe V n’a encore de fils : son frère Charles hérite, comme dans la réalité.",
+ "1328/preference":"Marie, fille de Charles IV, a deux ans. La reine est enceinte : ce sera encore une fille, Blanche.",
+ "1328/parfemmes":"Un enfant de cinq ans, petit-fils de Philippe V par sa mère. Édouard III d’Angleterre, lui, se disait le plus proche parent du roi mort : son neveu. Selon la façon de compter, la même règle désigne deux héritiers. Et dès 1332 naît Charles de Navarre, petit-fils de Louis X, qui les aurait devancés tous les deux.",
+ "1515/preference":"Claude a quinze ans. Elle vient d’épouser l’héritier mâle, François d’Angoulême : le mariage réunit les deux droits, et la Bretagne avec.",
+ "1589/preference":"L’infante a vingt-trois ans. C’est exactement ce que réclame son père Philippe II d’Espagne : il la propose comme reine aux États généraux de la Ligue, en 1593.",
+ "1589/parfemmes":"Un prince de Savoie de trois ans, arrière-petit-fils d’Henri II par les femmes. Henri de Navarre, lui, n’est parent du roi mort que par Saint Louis : onze générations en remontant, dix en redescendant."};
+ES_NOTES["1316/absolue"]=ES_NOTES["1316/preference"];ES_NOTES["1322/absolue"]=ES_NOTES["1322/preference"];ES_NOTES["1328/absolue"]=ES_NOTES["1328/preference"];ES_NOTES["1515/absolue"]=ES_NOTES["1515/preference"];ES_NOTES["1589/absolue"]=ES_NOTES["1589/preference"];
+let esM=2,esR="parfemmes";
+function esCard(p,y,lab,c){const inTree=!p.ext;return `<div class="escard" style="--c:${c}"><span class="hdk">${lab}</span><b>${p.n}</b><em>${y-p.b<1?"nouveau-né":(y-p.b)+" ans en "+y}${inTree?"":" · hors de l’arbre"}</em>${inTree?`<a href="#fiche/${slugOf(p.id)}">Ouvrir sa fiche</a>`:""}</div>`;}
+function esRender(){
+  const [id,y]=ES_MOMENTS[esM],h=byId[id],K=esKings(),i=K.findIndex(k=>k.p.id===id&&k.e===y),real=K[i+1].p,alt=esHeir(h,y,esR);
+  document.getElementById("esMoments").innerHTML=ES_MOMENTS.map(([pid,yy,t],j)=>`<button class="chip${j===esM?" on":""}" data-esm="${j}"><b>${yy}</b> ${t}</button>`).join("");
+  document.getElementById("esRules").innerHTML=Object.entries(ES_RULES).map(([k,r])=>`<button class="esrule${k===esR?" on":""}" data-esr="${k}" aria-pressed="${k===esR}"><b>${r.n}</b><em>${r.who}</em><span>${r.d}</span></button>`).join("");
+  const same=alt&&alt.id===real.id,note=ES_NOTES[y+"/"+esR]||"";
+  document.getElementById("esRes").innerHTML=`<h3 class="est">3. Le résultat</h3>
+   <div class="escards">${esCard(real,y,"Dans la réalité",col(real))}${alt?esCard(alt,y,"Avec cette règle",same?col(real):"#b03a6a"):`<div class="escard"><span class="hdk">Avec cette règle</span><b>Aucun héritier dans l’arbre</b></div>`}</div>
+   <p class="esverdict">${same?(esR==="salique"?"C’est la règle qui a été appliquée : "+real.n+" hérite.":"Rien ne change : "+real.n+" hérite aussi avec cette règle."):alt?"La couronne ne va pas à "+real.n+", mais à <b>"+alt.n+"</b>.":""}</p>
+   ${note&&!(same&&esR==="salique")?`<p class="esn">${note}</p>`:""}
+   <div class="row">${alt&&!alt.ext&&!same?`<a class="btn" href="#lien/${slugOf(h.id)}/${slugOf(alt.id)}">Voir leur lien dans l’arbre</a>`:""}<a class="btn ghost" href="#lien/${slugOf(h.id)}/${slugOf(real.id)}">Le lien avec ${real.n}</a><button class="btn ghost" data-share>🔗 Copier le lien</button></div>`;
+  setHash("et-si/"+y+"/"+esR);
+}
+document.getElementById("tab-etsi").addEventListener("click",e=>{const m=e.target.closest("[data-esm]"),r=e.target.closest("[data-esr]");if(m){esM=+m.dataset.esm;esRender();}else if(r){esR=r.dataset.esr;esRender();}});
 
 /* ============ Lancement ============ */
 fitText();
