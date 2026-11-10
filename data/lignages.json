@@ -1,0 +1,8784 @@
+{
+ "source": "https://lignages.org",
+ "licence": "CC BY-SA 4.0",
+ "genere": "2026-11-10",
+ "maisons": {
+  "mero": {
+   "n": "Mérovingiens",
+   "c": "#8d6e4f"
+  },
+  "caro": {
+   "n": "Carolingiens",
+   "c": "#3d5a80"
+  },
+  "robert": {
+   "n": "Robertiens",
+   "c": "#4a6fa5"
+  },
+  "saxe": {
+   "n": "Ottoniens (Saxe)",
+   "c": "#7a8b99"
+  },
+  "autres": {
+   "n": "Autres maisons",
+   "c": "#8a8a8a"
+  },
+  "capet": {
+   "n": "Capétiens directs",
+   "c": "#2f5cb8"
+  },
+  "valois": {
+   "n": "Valois",
+   "c": "#3f9bd6"
+  },
+  "valorl": {
+   "n": "Valois-Orléans",
+   "c": "#4bb39a"
+  },
+  "valang": {
+   "n": "Valois-Angoulême",
+   "c": "#93b4e8"
+  },
+  "valanj": {
+   "n": "Valois-Anjou",
+   "c": "#d98f3b"
+  },
+  "bourbon": {
+   "n": "Bourbon",
+   "c": "#6c63d9"
+  },
+  "evreux": {
+   "n": "Évreux-Navarre",
+   "c": "#a073cf"
+  },
+  "navarre": {
+   "n": "Champagne-Navarre",
+   "c": "#b8925a"
+  },
+  "albret": {
+   "n": "Albret",
+   "c": "#c47a8f"
+  },
+  "bgduc": {
+   "n": "Ducs de Bourgogne capétiens",
+   "c": "#d69a22"
+  },
+  "bgcomte": {
+   "n": "Comtes palatins de Bourgogne",
+   "c": "#9e6a38"
+  },
+  "artois": {
+   "n": "Artois",
+   "c": "#c8392f"
+  },
+  "anjou": {
+   "n": "Anjou-Sicile",
+   "c": "#e8692e"
+  },
+  "provence": {
+   "n": "Barcelone-Provence",
+   "c": "#e88fa0"
+  },
+  "aquitaine": {
+   "n": "Aquitaine",
+   "c": "#6aa84f"
+  },
+  "aragon": {
+   "n": "Aragon et Castille",
+   "c": "#c9a52e"
+  },
+  "plant": {
+   "n": "Plantagenêt et Lancastre",
+   "c": "#b03a6a"
+  },
+  "tudor": {
+   "n": "Tudor",
+   "c": "#d1495b"
+  },
+  "stuart": {
+   "n": "Stuart",
+   "c": "#3f7f5f"
+  },
+  "hainaut": {
+   "n": "Hainaut",
+   "c": "#2fb37a"
+  },
+  "witt": {
+   "n": "Wittelsbach",
+   "c": "#27b3bb"
+  },
+  "lux": {
+   "n": "Luxembourg",
+   "c": "#c46fb4"
+  },
+  "flandre": {
+   "n": "Flandre",
+   "c": "#7c8a2e"
+  },
+  "valbg": {
+   "n": "Valois-Bourgogne",
+   "c": "#9b48cc"
+  },
+  "habs": {
+   "n": "Habsbourg",
+   "c": "#e0605c"
+  },
+  "bourbonesp": {
+   "n": "Bourbons d’Espagne",
+   "c": "#b5843a"
+  },
+  "italie": {
+   "n": "Visconti et Médicis",
+   "c": "#b5873a"
+  },
+  "savoie": {
+   "n": "Savoie, Bretagne, Lorraine",
+   "c": "#8a9aab"
+  },
+  "kiev": {
+   "n": "Rurikides",
+   "c": "#a8a04a"
+  }
+ },
+ "personnages": [
+  {
+   "id": "childeric1",
+   "slug": "childeric-ier",
+   "nom": "Childéric Ier",
+   "naissance": 440,
+   "mort": 481,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs saliens",
+   "parents": [],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     457,
+     481
+    ]
+   ],
+   "faits": [
+    [
+     457,
+     "Chef des Francs saliens, installé à Tournai"
+    ],
+    [
+     481,
+     "Meurt ; son tombeau, retrouvé à Tournai en 1653, livre un trésor orné d’abeilles d’or"
+    ]
+   ],
+   "wikipedia": "Childéric Ier"
+  },
+  {
+   "id": "clovis",
+   "slug": "clovis",
+   "nom": "Clovis",
+   "naissance": 466,
+   "mort": 511,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs (481–511)",
+   "parents": [
+    "childeric1"
+   ],
+   "conjoints": [
+    "clotilde"
+   ],
+   "titres": [
+    [
+     "France",
+     481,
+     511
+    ]
+   ],
+   "faits": [
+    [
+     486,
+     "Bat Syagrius à Soissons, dernier pouvoir romain en Gaule (épisode du vase)"
+    ],
+    [
+     493,
+     "Épouse Clotilde, princesse burgonde catholique"
+    ],
+    [
+     496,
+     "Vers cette date (débattue, jusqu’à 508) : baptême à Reims par saint Remi"
+    ],
+    [
+     507,
+     "Victoire de Vouillé sur les Wisigoths d’Alaric II"
+    ],
+    [
+     511,
+     "Concile d’Orléans ; à sa mort, le royaume est partagé entre ses quatre fils"
+    ]
+   ],
+   "wikipedia": "Clovis Ier"
+  },
+  {
+   "id": "clotilde",
+   "slug": "clotilde",
+   "nom": "Clotilde",
+   "naissance": 474,
+   "mort": 545,
+   "approximatif": true,
+   "maison": "autres",
+   "sexe": "f",
+   "titre": "Reine des Francs",
+   "parents": [],
+   "conjoints": [
+    "clovis"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     493,
+     "Épouse Clovis ; on lui attribue sa conversion au catholicisme"
+    ],
+    [
+     511,
+     "Veuve, se retire à Tours auprès du tombeau de saint Martin"
+    ]
+   ],
+   "wikipedia": "Clotilde (épouse de Clovis Ier)"
+  },
+  {
+   "id": "clotaire1",
+   "slug": "clotaire-ier",
+   "nom": "Clotaire Ier",
+   "naissance": 497,
+   "mort": 561,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs (511–561)",
+   "parents": [
+    "clovis",
+    "clotilde"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     511,
+     561
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Clotaire Ier"
+  },
+  {
+   "id": "sigebert1",
+   "slug": "sigebert-ier",
+   "nom": "Sigebert Ier",
+   "naissance": 535,
+   "mort": 575,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi d’Austrasie (561–575)",
+   "parents": [
+    "clotaire1"
+   ],
+   "conjoints": [
+    "brunehaut"
+   ],
+   "titres": [
+    [
+     "France",
+     561,
+     575
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Sigebert Ier"
+  },
+  {
+   "id": "brunehaut",
+   "slug": "brunehaut",
+   "nom": "Brunehaut",
+   "naissance": 543,
+   "mort": 613,
+   "approximatif": true,
+   "maison": "autres",
+   "sexe": "f",
+   "titre": "Reine d’Austrasie",
+   "parents": [],
+   "conjoints": [
+    "sigebert1"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     567,
+     "Princesse wisigothe, épouse Sigebert Ier, roi d’Austrasie"
+    ],
+    [
+     575,
+     "Sigebert est assassiné, sans doute sur ordre de Frédégonde"
+    ],
+    [
+     613,
+     "Livrée à Clotaire II, elle est suppliciée, attachée à un cheval"
+    ]
+   ],
+   "wikipedia": "Brunehaut (reine)"
+  },
+  {
+   "id": "chilperic1",
+   "slug": "chilperic-ier",
+   "nom": "Chilpéric Ier",
+   "naissance": 539,
+   "mort": 584,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi de Neustrie (561–584)",
+   "parents": [
+    "clotaire1"
+   ],
+   "conjoints": [
+    "fredegonde"
+   ],
+   "titres": [
+    [
+     "France",
+     561,
+     584
+    ]
+   ],
+   "faits": [
+    [
+     561,
+     "Reçoit la Neustrie au partage du royaume de Clotaire Ier"
+    ],
+    [
+     584,
+     "Assassiné à Chelles au retour d’une chasse"
+    ]
+   ],
+   "wikipedia": "Chilpéric Ier (roi des Francs)"
+  },
+  {
+   "id": "fredegonde",
+   "slug": "fredegonde",
+   "nom": "Frédégonde",
+   "naissance": 545,
+   "mort": 597,
+   "approximatif": true,
+   "maison": "autres",
+   "sexe": "f",
+   "titre": "Reine de Neustrie",
+   "parents": [],
+   "conjoints": [
+    "chilperic1"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     568,
+     "Galswinthe, épouse de Chilpéric et sœur de Brunehaut, est étranglée ; Frédégonde est soupçonnée"
+    ],
+    [
+     584,
+     "Chilpéric est assassiné ; elle gouverne pour son fils Clotaire II"
+    ]
+   ],
+   "wikipedia": "Frédégonde"
+  },
+  {
+   "id": "childebert2",
+   "slug": "childebert-ii",
+   "nom": "Childebert II",
+   "naissance": 570,
+   "mort": 596,
+   "approximatif": false,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi d’Austrasie (575–596)",
+   "parents": [
+    "sigebert1",
+    "brunehaut"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     575,
+     596
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Childebert II"
+  },
+  {
+   "id": "clotaire2",
+   "slug": "clotaire-ii",
+   "nom": "Clotaire II",
+   "naissance": 584,
+   "mort": 629,
+   "approximatif": false,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs (584–629)",
+   "parents": [
+    "chilperic1",
+    "fredegonde"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     584,
+     629
+    ]
+   ],
+   "faits": [
+    [
+     613,
+     "Seul roi des Francs après l’élimination de Brunehaut"
+    ],
+    [
+     614,
+     "Édit de Paris, qui reconnaît le pouvoir des grands du royaume"
+    ]
+   ],
+   "wikipedia": "Clotaire II"
+  },
+  {
+   "id": "dagobert1",
+   "slug": "dagobert-ier",
+   "nom": "Dagobert Ier",
+   "naissance": 603,
+   "mort": 639,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs (629–639)",
+   "parents": [
+    "clotaire2"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     629,
+     639
+    ]
+   ],
+   "faits": [
+    [
+     629,
+     "Roi de tous les Francs, conseillé par saint Éloi"
+    ],
+    [
+     639,
+     "Inhumé à Saint-Denis, abbaye qu’il a richement dotée"
+    ]
+   ],
+   "wikipedia": "Dagobert Ier"
+  },
+  {
+   "id": "clovis2",
+   "slug": "clovis-ii",
+   "nom": "Clovis II",
+   "naissance": 633,
+   "mort": 657,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi de Neustrie et de Bourgogne",
+   "parents": [
+    "dagobert1"
+   ],
+   "conjoints": [
+    "bathilde"
+   ],
+   "titres": [
+    [
+     "France",
+     639,
+     657
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Clovis II"
+  },
+  {
+   "id": "bathilde",
+   "slug": "bathilde",
+   "nom": "Bathilde",
+   "naissance": 626,
+   "mort": 680,
+   "approximatif": true,
+   "maison": "autres",
+   "sexe": "f",
+   "titre": "Reine des Francs, régente",
+   "parents": [],
+   "conjoints": [
+    "clovis2"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     648,
+     "Esclave anglo-saxonne, devient l’épouse de Clovis II"
+    ],
+    [
+     657,
+     "Régente ; fonde les abbayes de Corbie et de Chelles"
+    ]
+   ],
+   "wikipedia": "Bathilde"
+  },
+  {
+   "id": "thierry3",
+   "slug": "thierry-iii",
+   "nom": "Thierry III",
+   "naissance": 651,
+   "mort": 691,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs",
+   "parents": [
+    "clovis2",
+    "bathilde"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     675,
+     691
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Thierry III"
+  },
+  {
+   "id": "childebert3",
+   "slug": "childebert-iii",
+   "nom": "Childebert III",
+   "naissance": 678,
+   "mort": 711,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs",
+   "parents": [
+    "thierry3"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     694,
+     711
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Childebert IV"
+  },
+  {
+   "id": "dagobert3",
+   "slug": "dagobert-iii",
+   "nom": "Dagobert III",
+   "naissance": 699,
+   "mort": 715,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs",
+   "parents": [
+    "childebert3"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     711,
+     715
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Dagobert III"
+  },
+  {
+   "id": "thierry4",
+   "slug": "thierry-iv",
+   "nom": "Thierry IV",
+   "naissance": 712,
+   "mort": 737,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Roi des Francs",
+   "parents": [
+    "dagobert3"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     721,
+     737
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Thierry IV"
+  },
+  {
+   "id": "childeric3",
+   "slug": "childeric-iii",
+   "nom": "Childéric III",
+   "naissance": 720,
+   "mort": 755,
+   "approximatif": true,
+   "maison": "mero",
+   "sexe": "m",
+   "titre": "Dernier roi mérovingien",
+   "parents": [],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     743,
+     751
+    ]
+   ],
+   "faits": [
+    [
+     743,
+     "Placé sur le trône par les maires du palais Pépin et Carloman"
+    ],
+    [
+     751,
+     "Déposé et tondu, envoyé au monastère de Saint-Bertin : fin des Mérovingiens"
+    ]
+   ],
+   "wikipedia": "Childéric III"
+  },
+  {
+   "id": "pepinherstal",
+   "slug": "pepin-de-herstal",
+   "nom": "Pépin de Herstal",
+   "naissance": 635,
+   "mort": 714,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Maire du palais",
+   "parents": [],
+   "conjoints": [],
+   "titres": [
+    [
+     "Maire du palais",
+     680,
+     714
+    ]
+   ],
+   "faits": [
+    [
+     687,
+     "Victoire de Tertry : maître de toute la Francie"
+    ]
+   ],
+   "wikipedia": "Pépin de Herstal"
+  },
+  {
+   "id": "martel",
+   "slug": "charles-martel",
+   "nom": "Charles Martel",
+   "naissance": 688,
+   "mort": 741,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Maire du palais",
+   "parents": [
+    "pepinherstal"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Maire du palais",
+     718,
+     741
+    ]
+   ],
+   "faits": [
+    [
+     732,
+     "Vainc l’armée omeyyade près de Poitiers (date parfois placée en 733)"
+    ],
+    [
+     737,
+     "Gouverne sans roi à la mort de Thierry IV"
+    ]
+   ],
+   "wikipedia": "Charles Martel"
+  },
+  {
+   "id": "pepinbref",
+   "slug": "pepin-le-bref",
+   "nom": "Pépin le Bref",
+   "naissance": 714,
+   "mort": 768,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi des Francs (751–768)",
+   "parents": [
+    "martel"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Maire du palais",
+     741,
+     751
+    ],
+    [
+     "France",
+     751,
+     768
+    ]
+   ],
+   "faits": [
+    [
+     751,
+     "Élu roi des Francs à Soissons ; Childéric III est déposé"
+    ],
+    [
+     754,
+     "Sacré à Saint-Denis par le pape Étienne II"
+    ],
+    [
+     756,
+     "Donne au pape des terres d’Italie : naissance des États pontificaux"
+    ]
+   ],
+   "wikipedia": "Pépin le Bref"
+  },
+  {
+   "id": "carloman1",
+   "slug": "carloman-ier",
+   "nom": "Carloman Ier",
+   "naissance": 751,
+   "mort": 771,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi des Francs (768–771)",
+   "parents": [
+    "pepinbref"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     768,
+     771
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Carloman Ier"
+  },
+  {
+   "id": "charlemagne",
+   "slug": "charlemagne",
+   "nom": "Charlemagne",
+   "naissance": 747,
+   "mort": 814,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi des Francs, empereur (800)",
+   "parents": [
+    "pepinbref"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     768,
+     814
+    ],
+    [
+     "Empire",
+     800,
+     814
+    ]
+   ],
+   "faits": [
+    [
+     774,
+     "Prend Pavie et devient roi des Lombards"
+    ],
+    [
+     778,
+     "Désastre de Roncevaux, matière de la Chanson de Roland"
+    ],
+    [
+     800,
+     "Couronné empereur à Rome le jour de Noël"
+    ],
+    [
+     814,
+     "Meurt à Aix-la-Chapelle"
+    ]
+   ],
+   "wikipedia": "Charlemagne"
+  },
+  {
+   "id": "pepinitalie",
+   "slug": "pepin-d-italie",
+   "nom": "Pépin d’Italie",
+   "naissance": 777,
+   "mort": 810,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi d’Italie (781–810)",
+   "parents": [
+    "charlemagne"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Italie",
+     781,
+     810
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Pépin d'Italie"
+  },
+  {
+   "id": "bernarditalie",
+   "slug": "bernard-d-italie",
+   "nom": "Bernard d’Italie",
+   "naissance": 797,
+   "mort": 818,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi d’Italie",
+   "parents": [
+    "pepinitalie"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Italie",
+     812,
+     817
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Bernard d'Italie"
+  },
+  {
+   "id": "pepinvermandois",
+   "slug": "pepin-de-vermandois",
+   "nom": "Pépin de Vermandois",
+   "naissance": 815,
+   "mort": 850,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Seigneur en Vermandois",
+   "parents": [
+    "bernarditalie"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Pépin (Herbertien)"
+  },
+  {
+   "id": "herbert1",
+   "slug": "herbert-ier-de-vermandois",
+   "nom": "Herbert Ier de Vermandois",
+   "naissance": 850,
+   "mort": 907,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Comte de Vermandois",
+   "parents": [
+    "pepinvermandois"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Herbert Ier de Vermandois"
+  },
+  {
+   "id": "louispieux",
+   "slug": "louis-le-pieux",
+   "nom": "Louis le Pieux",
+   "naissance": 778,
+   "mort": 840,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Empereur (814–840)",
+   "parents": [
+    "charlemagne"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     814,
+     840
+    ],
+    [
+     "Empire",
+     814,
+     840
+    ]
+   ],
+   "faits": [
+    [
+     814,
+     "Empereur à la mort de Charlemagne"
+    ],
+    [
+     817,
+     "Ordinatio imperii : règle le partage entre ses fils"
+    ],
+    [
+     833,
+     "Déposé par ses fils au « Champ du mensonge », rétabli l’année suivante"
+    ]
+   ],
+   "wikipedia": "Louis le Pieux"
+  },
+  {
+   "id": "lothaire1",
+   "slug": "lothaire-ier",
+   "nom": "Lothaire Ier",
+   "naissance": 795,
+   "mort": 855,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Empereur (840–855)",
+   "parents": [
+    "louispieux"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Empire",
+     840,
+     855
+    ]
+   ],
+   "faits": [
+    [
+     843,
+     "Traité de Verdun : reçoit la Francie médiane et le titre impérial"
+    ]
+   ],
+   "wikipedia": "Lothaire Ier"
+  },
+  {
+   "id": "louisgermanique",
+   "slug": "louis-le-germanique",
+   "nom": "Louis le Germanique",
+   "naissance": 806,
+   "mort": 876,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi de Francie orientale",
+   "parents": [
+    "louispieux"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Germanie",
+     843,
+     876
+    ]
+   ],
+   "faits": [
+    [
+     842,
+     "Serments de Strasbourg, premier texte en langue romane et germanique"
+    ],
+    [
+     843,
+     "Traité de Verdun : reçoit la Francie orientale"
+    ]
+   ],
+   "wikipedia": "Louis le Germanique"
+  },
+  {
+   "id": "charleschauve",
+   "slug": "charles-le-chauve",
+   "nom": "Charles le Chauve",
+   "naissance": 823,
+   "mort": 877,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale (843–877)",
+   "parents": [
+    "louispieux"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     843,
+     877
+    ],
+    [
+     "Empire",
+     875,
+     877
+    ]
+   ],
+   "faits": [
+    [
+     842,
+     "Serments de Strasbourg avec Louis le Germanique contre Lothaire"
+    ],
+    [
+     843,
+     "Traité de Verdun : reçoit la Francie occidentale, ancêtre de la France"
+    ],
+    [
+     875,
+     "Couronné empereur à Rome"
+    ],
+    [
+     877,
+     "Capitulaire de Quierzy, étape vers l’hérédité des fiefs"
+    ]
+   ],
+   "wikipedia": "Charles II le Chauve"
+  },
+  {
+   "id": "louisbegue",
+   "slug": "louis-le-begue",
+   "nom": "Louis le Bègue",
+   "naissance": 846,
+   "mort": 879,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale",
+   "parents": [
+    "charleschauve"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     877,
+     879
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Louis II le Bègue"
+  },
+  {
+   "id": "louis3",
+   "slug": "louis-iii",
+   "nom": "Louis III",
+   "naissance": 863,
+   "mort": 882,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale",
+   "parents": [
+    "louisbegue"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     879,
+     882
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Louis III (roi des Francs)"
+  },
+  {
+   "id": "carloman2",
+   "slug": "carloman-ii",
+   "nom": "Carloman II",
+   "naissance": 866,
+   "mort": 884,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale",
+   "parents": [
+    "louisbegue"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     879,
+     884
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Carloman II"
+  },
+  {
+   "id": "charlesgros",
+   "slug": "charles-le-gros",
+   "nom": "Charles le Gros",
+   "naissance": 839,
+   "mort": 888,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Empereur, roi de Francie occidentale",
+   "parents": [
+    "louisgermanique"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Empire",
+     881,
+     888
+    ],
+    [
+     "France",
+     884,
+     887
+    ]
+   ],
+   "faits": [
+    [
+     885,
+     "Siège de Paris par les Vikings ; il achète leur départ (886)"
+    ],
+    [
+     887,
+     "Déposé ; l’empire carolingien ne sera plus réuni"
+    ]
+   ],
+   "wikipedia": "Charles III le Gros"
+  },
+  {
+   "id": "charlessimple",
+   "slug": "charles-le-simple",
+   "nom": "Charles le Simple",
+   "naissance": 879,
+   "mort": 929,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale (898–922)",
+   "parents": [
+    "louisbegue"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     898,
+     922
+    ]
+   ],
+   "faits": [
+    [
+     911,
+     "Traité de Saint-Clair-sur-Epte : cède à Rollon ce qui deviendra la Normandie"
+    ],
+    [
+     922,
+     "Déposé par les grands"
+    ],
+    [
+     929,
+     "Meurt prisonnier à Péronne"
+    ]
+   ],
+   "wikipedia": "Charles III le Simple"
+  },
+  {
+   "id": "louis4",
+   "slug": "louis-iv-d-outremer",
+   "nom": "Louis IV d’Outremer",
+   "naissance": 920,
+   "mort": 954,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale (936–954)",
+   "parents": [
+    "charlessimple"
+   ],
+   "conjoints": [
+    "gerberge"
+   ],
+   "titres": [
+    [
+     "France",
+     936,
+     954
+    ]
+   ],
+   "faits": [
+    [
+     936,
+     "Rappelé d’Angleterre pour être roi, d’où son surnom d’Outremer"
+    ]
+   ],
+   "wikipedia": "Louis IV d'Outremer"
+  },
+  {
+   "id": "lothaire",
+   "slug": "lothaire",
+   "nom": "Lothaire",
+   "naissance": 941,
+   "mort": 986,
+   "approximatif": false,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale (954–986)",
+   "parents": [
+    "louis4",
+    "gerberge"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     954,
+     986
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Lothaire (roi de France)"
+  },
+  {
+   "id": "louis5",
+   "slug": "louis-v-le-faineant",
+   "nom": "Louis V le Fainéant",
+   "naissance": 967,
+   "mort": 987,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Dernier roi carolingien",
+   "parents": [
+    "lothaire"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     986,
+     987
+    ]
+   ],
+   "faits": [
+    [
+     987,
+     "Meurt d’une chute de chasse : dernier roi carolingien"
+    ]
+   ],
+   "wikipedia": "Louis V (roi de France)"
+  },
+  {
+   "id": "charleslorraine",
+   "slug": "charles-de-basse-lorraine",
+   "nom": "Charles de Basse-Lorraine",
+   "naissance": 953,
+   "mort": 991,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "m",
+   "titre": "Duc de Basse-Lorraine",
+   "parents": [
+    "louis4",
+    "gerberge"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Charles de Basse-Lotharingie"
+  },
+  {
+   "id": "robertlefort",
+   "slug": "robert-le-fort",
+   "nom": "Robert le Fort",
+   "naissance": 830,
+   "mort": 866,
+   "approximatif": true,
+   "maison": "robert",
+   "sexe": "m",
+   "titre": "Marquis de Neustrie",
+   "parents": [],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     866,
+     "Tué à Brissarthe en combattant les Vikings ; ancêtre des Capétiens"
+    ]
+   ],
+   "wikipedia": "Robert le Fort"
+  },
+  {
+   "id": "eudes",
+   "slug": "eudes",
+   "nom": "Eudes",
+   "naissance": 856,
+   "mort": 898,
+   "approximatif": true,
+   "maison": "robert",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale (888–898)",
+   "parents": [
+    "robertlefort"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     888,
+     898
+    ]
+   ],
+   "faits": [
+    [
+     885,
+     "Comte de Paris, défend la ville contre les Vikings"
+    ],
+    [
+     888,
+     "Élu roi : premier Robertien sur le trône"
+    ]
+   ],
+   "wikipedia": "Eudes (roi des Francs)"
+  },
+  {
+   "id": "robert1",
+   "slug": "robert-ier",
+   "nom": "Robert Ier",
+   "naissance": 866,
+   "mort": 923,
+   "approximatif": true,
+   "maison": "robert",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale (922–923)",
+   "parents": [
+    "robertlefort"
+   ],
+   "conjoints": [
+    "beatrice"
+   ],
+   "titres": [
+    [
+     "France",
+     922,
+     923
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Robert Ier (roi des Francs)"
+  },
+  {
+   "id": "beatrice",
+   "slug": "beatrice-de-vermandois",
+   "nom": "Béatrice de Vermandois",
+   "naissance": 880,
+   "mort": 931,
+   "approximatif": true,
+   "maison": "caro",
+   "sexe": "f",
+   "titre": "Reine",
+   "parents": [
+    "herbert1"
+   ],
+   "conjoints": [
+    "robert1"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Béatrice de Vermandois"
+  },
+  {
+   "id": "emma",
+   "slug": "emma-de-france",
+   "nom": "Emma de France",
+   "naissance": 894,
+   "mort": 934,
+   "approximatif": true,
+   "maison": "robert",
+   "sexe": "f",
+   "titre": "Reine",
+   "parents": [
+    "robert1",
+    "beatrice"
+   ],
+   "conjoints": [
+    "raoul"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Emma de France (894-934)"
+  },
+  {
+   "id": "raoul",
+   "slug": "raoul",
+   "nom": "Raoul",
+   "naissance": 890,
+   "mort": 936,
+   "approximatif": true,
+   "maison": "autres",
+   "sexe": "m",
+   "titre": "Roi de Francie occidentale (923–936)",
+   "parents": [],
+   "conjoints": [
+    "emma"
+   ],
+   "titres": [
+    [
+     "France",
+     923,
+     936
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Raoul (roi des Francs)"
+  },
+  {
+   "id": "hugueslegrand",
+   "slug": "hugues-le-grand",
+   "nom": "Hugues le Grand",
+   "naissance": 898,
+   "mort": 956,
+   "approximatif": true,
+   "maison": "robert",
+   "sexe": "m",
+   "titre": "Duc des Francs",
+   "parents": [
+    "robert1",
+    "beatrice"
+   ],
+   "conjoints": [
+    "hedwige"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     936,
+     "Duc des Francs, fait rappeler Louis IV d’Outremer"
+    ],
+    [
+     956,
+     "Meurt ; son fils Hugues sera roi"
+    ]
+   ],
+   "wikipedia": "Hugues le Grand (duc des Francs)"
+  },
+  {
+   "id": "henrioiseleur",
+   "slug": "henri-l-oiseleur",
+   "nom": "Henri l’Oiseleur",
+   "naissance": 876,
+   "mort": 936,
+   "approximatif": true,
+   "maison": "saxe",
+   "sexe": "m",
+   "titre": "Roi de Germanie (919–936)",
+   "parents": [],
+   "conjoints": [],
+   "titres": [
+    [
+     "Germanie",
+     919,
+     936
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Henri Ier de Germanie"
+  },
+  {
+   "id": "otton1",
+   "slug": "otton-ier-le-grand",
+   "nom": "Otton Ier le Grand",
+   "naissance": 912,
+   "mort": 973,
+   "approximatif": false,
+   "maison": "saxe",
+   "sexe": "m",
+   "titre": "Empereur (962–973)",
+   "parents": [
+    "henrioiseleur"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Germanie",
+     936,
+     973
+    ],
+    [
+     "Empire",
+     962,
+     973
+    ]
+   ],
+   "faits": [
+    [
+     955,
+     "Victoire du Lechfeld sur les Hongrois"
+    ],
+    [
+     962,
+     "Couronné empereur : naissance du Saint-Empire"
+    ]
+   ],
+   "wikipedia": "Otton Ier du Saint-Empire"
+  },
+  {
+   "id": "hedwige",
+   "slug": "hedwige-de-saxe",
+   "nom": "Hedwige de Saxe",
+   "naissance": 910,
+   "mort": 965,
+   "approximatif": true,
+   "maison": "saxe",
+   "sexe": "f",
+   "titre": "Duchesse des Francs",
+   "parents": [
+    "henrioiseleur"
+   ],
+   "conjoints": [
+    "hugueslegrand"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Hedwige de Saxe"
+  },
+  {
+   "id": "gerberge",
+   "slug": "gerberge-de-saxe",
+   "nom": "Gerberge de Saxe",
+   "naissance": 913,
+   "mort": 969,
+   "approximatif": true,
+   "maison": "saxe",
+   "sexe": "f",
+   "titre": "Reine de Francie occidentale",
+   "parents": [
+    "henrioiseleur"
+   ],
+   "conjoints": [
+    "louis4"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Gerberge de Saxe"
+  },
+  {
+   "id": "huguescapet",
+   "slug": "hugues-capet",
+   "nom": "Hugues Capet",
+   "naissance": 941,
+   "mort": 996,
+   "approximatif": true,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi des Francs (987–996)",
+   "parents": [
+    "hugueslegrand",
+    "hedwige"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     987,
+     996
+    ]
+   ],
+   "faits": [
+    [
+     987,
+     "Élu roi à Senlis, sacré à Noyon"
+    ],
+    [
+     987,
+     "Fait sacrer son fils Robert dès décembre pour assurer la succession"
+    ]
+   ],
+   "wikipedia": "Hugues Capet"
+  },
+  {
+   "id": "robert2",
+   "slug": "robert-ii-le-pieux",
+   "nom": "Robert II le Pieux",
+   "naissance": 972,
+   "mort": 1031,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi des Francs (996–1031)",
+   "parents": [
+    "huguescapet"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     996,
+     1031
+    ]
+   ],
+   "faits": [
+    [
+     996,
+     "Épouse sa cousine Berthe de Bourgogne et est excommunié"
+    ],
+    [
+     1003,
+     "Se sépare de Berthe et épouse Constance d’Arles"
+    ]
+   ],
+   "wikipedia": "Robert II le Pieux"
+  },
+  {
+   "id": "henri1",
+   "slug": "henri-ier",
+   "nom": "Henri Ier",
+   "naissance": 1008,
+   "mort": 1060,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi des Francs (1031–1060)",
+   "parents": [
+    "robert2"
+   ],
+   "conjoints": [
+    "annekiev"
+   ],
+   "titres": [
+    [
+     "France",
+     1031,
+     1060
+    ]
+   ],
+   "faits": [
+    [
+     1051,
+     "Épouse Anne de Kiev, princesse de la Rus’"
+    ]
+   ],
+   "wikipedia": "Henri Ier (roi des Francs)"
+  },
+  {
+   "id": "robert1bg",
+   "slug": "robert-ier-de-bourgogne",
+   "nom": "Robert Ier de Bourgogne",
+   "naissance": 1011,
+   "mort": 1076,
+   "approximatif": false,
+   "maison": "bgduc",
+   "sexe": "m",
+   "titre": "Duc de Bourgogne (1032–1076)",
+   "parents": [
+    "robert2"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Duché de Bourgogne",
+     1032,
+     1076
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Robert Ier de Bourgogne"
+  },
+  {
+   "id": "annekiev",
+   "slug": "anne-de-kiev",
+   "nom": "Anne de Kiev",
+   "naissance": 1030,
+   "mort": 1075,
+   "approximatif": true,
+   "maison": "kiev",
+   "sexe": "f",
+   "titre": "Reine des Francs",
+   "parents": [],
+   "conjoints": [
+    "henri1"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1051,
+     "Épouse Henri Ier à Reims"
+    ],
+    [
+     1063,
+     "Signe un acte royal en caractères cyrilliques"
+    ]
+   ],
+   "wikipedia": "Anne de Kiev"
+  },
+  {
+   "id": "philippe1",
+   "slug": "philippe-ier",
+   "nom": "Philippe Ier",
+   "naissance": 1052,
+   "mort": 1108,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi des Francs (1060–1108)",
+   "parents": [
+    "henri1",
+    "annekiev"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1060,
+     1108
+    ]
+   ],
+   "faits": [
+    [
+     1092,
+     "Enlève Bertrade de Montfort ; sera excommunié"
+    ],
+    [
+     1095,
+     "Le pape prêche la première croisade à Clermont, sous son règne"
+    ]
+   ],
+   "wikipedia": "Philippe Ier (roi des Francs)"
+  },
+  {
+   "id": "louis6",
+   "slug": "louis-vi-le-gros",
+   "nom": "Louis VI le Gros",
+   "naissance": 1081,
+   "mort": 1137,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi des Francs (1108–1137)",
+   "parents": [
+    "philippe1"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1108,
+     1137
+    ]
+   ],
+   "faits": [
+    [
+     1124,
+     "Lève l’oriflamme de Saint-Denis contre l’empereur Henri V"
+    ],
+    [
+     1137,
+     "Marie son fils à Aliénor d’Aquitaine"
+    ]
+   ],
+   "wikipedia": "Louis VI le Gros"
+  },
+  {
+   "id": "louis7",
+   "slug": "louis-vii-le-jeune",
+   "nom": "Louis VII le Jeune",
+   "naissance": 1120,
+   "mort": 1180,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi des Francs (1137–1180)",
+   "parents": [
+    "louis6"
+   ],
+   "conjoints": [
+    "alienor",
+    "adelechamp"
+   ],
+   "titres": [
+    [
+     "France",
+     1137,
+     1180
+    ],
+    [
+     "Aquitaine",
+     1137,
+     1152
+    ]
+   ],
+   "faits": [
+    [
+     1137,
+     "Épouse Aliénor d’Aquitaine"
+    ],
+    [
+     1147,
+     "Part pour la deuxième croisade"
+    ],
+    [
+     1152,
+     "Mariage annulé à Beaugency ; l’Aquitaine passe aux Plantagenêts"
+    ]
+   ],
+   "wikipedia": "Louis VII le Jeune"
+  },
+  {
+   "id": "alienor",
+   "slug": "alienor-d-aquitaine",
+   "nom": "Aliénor d’Aquitaine",
+   "naissance": 1122,
+   "mort": 1204,
+   "approximatif": true,
+   "maison": "aquitaine",
+   "sexe": "f",
+   "titre": "Duchesse d’Aquitaine, reine de France puis d’Angleterre",
+   "parents": [],
+   "conjoints": [
+    "louis7",
+    "henri2plant"
+   ],
+   "titres": [
+    [
+     "Aquitaine",
+     1137,
+     1204
+    ]
+   ],
+   "faits": [
+    [
+     1137,
+     "Duchesse d’Aquitaine, épouse Louis VII"
+    ],
+    [
+     1152,
+     "Épouse Henri Plantagenêt deux mois après l’annulation"
+    ],
+    [
+     1173,
+     "Soutient la révolte de ses fils ; captive de son mari pendant quinze ans"
+    ],
+    [
+     1204,
+     "Meurt ; gisant à Fontevraud"
+    ]
+   ],
+   "wikipedia": "Aliénor d'Aquitaine"
+  },
+  {
+   "id": "henri2plant",
+   "slug": "henri-ii-plantagenet",
+   "nom": "Henri II Plantagenêt",
+   "naissance": 1133,
+   "mort": 1189,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1154–1189)",
+   "parents": [],
+   "conjoints": [
+    "alienor"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1154,
+     1189
+    ],
+    [
+     "Aquitaine",
+     1152,
+     1189
+    ]
+   ],
+   "faits": [
+    [
+     1152,
+     "Épouse Aliénor : son domaine en France dépasse celui du roi"
+    ],
+    [
+     1154,
+     "Roi d’Angleterre"
+    ],
+    [
+     1170,
+     "Assassinat de Thomas Becket dans sa cathédrale"
+    ]
+   ],
+   "wikipedia": "Henri II d'Angleterre"
+  },
+  {
+   "id": "adelechamp",
+   "slug": "adele-de-champagne",
+   "nom": "Adèle de Champagne",
+   "naissance": 1140,
+   "mort": 1206,
+   "approximatif": true,
+   "maison": "navarre",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [],
+   "conjoints": [
+    "louis7"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1160,
+     "Épouse Louis VII"
+    ],
+    [
+     1165,
+     "Donne naissance à Philippe Auguste"
+    ],
+    [
+     1190,
+     "Régente pendant la croisade de son fils"
+    ]
+   ],
+   "wikipedia": "Adèle de Champagne"
+  },
+  {
+   "id": "henri1champ",
+   "slug": "henri-le-liberal",
+   "nom": "Henri le Libéral",
+   "naissance": 1127,
+   "mort": 1181,
+   "approximatif": false,
+   "maison": "navarre",
+   "sexe": "m",
+   "titre": "Comte de Champagne",
+   "parents": [],
+   "conjoints": [
+    "mariefr"
+   ],
+   "titres": [
+    [
+     "Champagne",
+     1152,
+     1181
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Henri Ier de Champagne"
+  },
+  {
+   "id": "mariefr",
+   "slug": "marie-de-france",
+   "nom": "Marie de France",
+   "naissance": 1145,
+   "mort": 1198,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "f",
+   "titre": "Comtesse de Champagne",
+   "parents": [
+    "louis7",
+    "alienor"
+   ],
+   "conjoints": [
+    "henri1champ"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1159,
+     "Fille de Louis VII et d’Aliénor, épouse Henri de Champagne"
+    ],
+    [
+     1170,
+     "Protectrice de Chrétien de Troyes"
+    ]
+   ],
+   "wikipedia": "Marie de France (1145-1198)"
+  },
+  {
+   "id": "alphonse8",
+   "slug": "alphonse-viii-de-castille",
+   "nom": "Alphonse VIII de Castille",
+   "naissance": 1155,
+   "mort": 1214,
+   "approximatif": false,
+   "maison": "aragon",
+   "sexe": "m",
+   "titre": "Roi de Castille (1158–1214)",
+   "parents": [],
+   "conjoints": [
+    "alienorang"
+   ],
+   "titres": [
+    [
+     "Castille",
+     1158,
+     1214
+    ]
+   ],
+   "faits": [
+    [
+     1212,
+     "Victoire de Las Navas de Tolosa sur les Almohades"
+    ]
+   ],
+   "wikipedia": "Alphonse VIII de Castille"
+  },
+  {
+   "id": "alienorang",
+   "slug": "alienor-d-angleterre",
+   "nom": "Aliénor d’Angleterre",
+   "naissance": 1162,
+   "mort": 1214,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "f",
+   "titre": "Reine de Castille",
+   "parents": [
+    "henri2plant",
+    "alienor"
+   ],
+   "conjoints": [
+    "alphonse8"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1170,
+     "Épouse Alphonse VIII de Castille ; mère de Blanche de Castille"
+    ]
+   ],
+   "wikipedia": "Aliénor d'Angleterre (1162-1214)"
+  },
+  {
+   "id": "richard1",
+   "slug": "richard-c-ur-de-lion",
+   "nom": "Richard Cœur de Lion",
+   "naissance": 1157,
+   "mort": 1199,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1189–1199)",
+   "parents": [
+    "henri2plant",
+    "alienor"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Angleterre",
+     1189,
+     1199
+    ],
+    [
+     "Aquitaine",
+     1189,
+     1199
+    ]
+   ],
+   "faits": [
+    [
+     1189,
+     "Roi d’Angleterre"
+    ],
+    [
+     1191,
+     "Prend Acre pendant la troisième croisade"
+    ],
+    [
+     1192,
+     "Captif de l’empereur au retour ; libéré contre rançon en 1194"
+    ],
+    [
+     1199,
+     "Meurt d’un carreau d’arbalète devant Châlus"
+    ]
+   ],
+   "wikipedia": "Richard Cœur de Lion"
+  },
+  {
+   "id": "jeanssterre",
+   "slug": "jean-sans-terre",
+   "nom": "Jean sans Terre",
+   "naissance": 1166,
+   "mort": 1216,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1199–1216)",
+   "parents": [
+    "henri2plant",
+    "alienor"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Angleterre",
+     1199,
+     1216
+    ],
+    [
+     "Aquitaine",
+     1204,
+     1216
+    ]
+   ],
+   "faits": [
+    [
+     1204,
+     "Perd la Normandie face à Philippe Auguste"
+    ],
+    [
+     1214,
+     "Défait à La Roche-aux-Moines ; ses alliés battus à Bouvines"
+    ],
+    [
+     1215,
+     "Contraint de signer la Magna Carta"
+    ]
+   ],
+   "wikipedia": "Jean sans Terre"
+  },
+  {
+   "id": "philippe2",
+   "slug": "philippe-auguste",
+   "nom": "Philippe Auguste",
+   "naissance": 1165,
+   "mort": 1223,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi de France (1180–1223)",
+   "parents": [
+    "louis7",
+    "adelechamp"
+   ],
+   "conjoints": [
+    "isabhain"
+   ],
+   "titres": [
+    [
+     "France",
+     1180,
+     1223
+    ]
+   ],
+   "faits": [
+    [
+     1180,
+     "Roi à 15 ans ; épouse Isabelle de Hainaut"
+    ],
+    [
+     1191,
+     "Prend Acre avec Richard Cœur de Lion"
+    ],
+    [
+     1204,
+     "Conquiert la Normandie après la chute de Château-Gaillard"
+    ],
+    [
+     1214,
+     "Victoire de Bouvines"
+    ]
+   ],
+   "wikipedia": "Philippe II Auguste"
+  },
+  {
+   "id": "isabhain",
+   "slug": "isabelle-de-hainaut",
+   "nom": "Isabelle de Hainaut",
+   "naissance": 1170,
+   "mort": 1190,
+   "approximatif": false,
+   "maison": "hainaut",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [],
+   "conjoints": [
+    "philippe2"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1180,
+     "Épouse Philippe Auguste, apportant des droits sur l’Artois"
+    ],
+    [
+     1187,
+     "Mère du futur Louis VIII"
+    ]
+   ],
+   "wikipedia": "Isabelle de Hainaut"
+  },
+  {
+   "id": "thibaut3",
+   "slug": "thibaut-iii-de-champagne",
+   "nom": "Thibaut III de Champagne",
+   "naissance": 1179,
+   "mort": 1201,
+   "approximatif": false,
+   "maison": "navarre",
+   "sexe": "m",
+   "titre": "Comte de Champagne",
+   "parents": [
+    "henri1champ",
+    "mariefr"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Champagne",
+     1197,
+     1201
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Thibaut III de Champagne"
+  },
+  {
+   "id": "thibaut4",
+   "slug": "thibaut-le-chansonnier",
+   "nom": "Thibaut le Chansonnier",
+   "naissance": 1201,
+   "mort": 1253,
+   "approximatif": false,
+   "maison": "navarre",
+   "sexe": "m",
+   "titre": "Comte de Champagne, roi de Navarre (1234–1253)",
+   "parents": [
+    "thibaut3"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Champagne",
+     1201,
+     1253
+    ],
+    [
+     "Navarre",
+     1234,
+     1253
+    ]
+   ],
+   "faits": [
+    [
+     1234,
+     "Roi de Navarre par héritage de sa mère"
+    ],
+    [
+     1239,
+     "Mène la croisade des barons ; trouvère célèbre"
+    ]
+   ],
+   "wikipedia": "Thibaut IV de Champagne"
+  },
+  {
+   "id": "henri1nav",
+   "slug": "henri-ier-de-navarre",
+   "nom": "Henri Ier de Navarre",
+   "naissance": 1244,
+   "mort": 1274,
+   "approximatif": true,
+   "maison": "navarre",
+   "sexe": "m",
+   "titre": "Roi de Navarre (1270–1274)",
+   "parents": [
+    "thibaut4"
+   ],
+   "conjoints": [
+    "blanchedart"
+   ],
+   "titres": [
+    [
+     "Navarre",
+     1270,
+     1274
+    ],
+    [
+     "Champagne",
+     1270,
+     1274
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Henri Ier de Navarre"
+  },
+  {
+   "id": "blanchedart",
+   "slug": "blanche-d-artois",
+   "nom": "Blanche d’Artois",
+   "naissance": 1248,
+   "mort": 1302,
+   "approximatif": false,
+   "maison": "artois",
+   "sexe": "f",
+   "titre": "Reine de Navarre",
+   "parents": [
+    "robert1art"
+   ],
+   "conjoints": [
+    "henri1nav"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Blanche d'Artois"
+  },
+  {
+   "id": "louis8",
+   "slug": "louis-viii",
+   "nom": "Louis VIII",
+   "naissance": 1187,
+   "mort": 1226,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi de France (1223–1226)",
+   "parents": [
+    "philippe2",
+    "isabhain"
+   ],
+   "conjoints": [
+    "blanche"
+   ],
+   "titres": [
+    [
+     "France",
+     1223,
+     1226
+    ]
+   ],
+   "faits": [
+    [
+     1216,
+     "Débarque en Angleterre et est proclamé roi à Londres"
+    ],
+    [
+     1226,
+     "Croisade contre les Albigeois ; meurt au retour"
+    ]
+   ],
+   "wikipedia": "Louis VIII le Lion"
+  },
+  {
+   "id": "blanche",
+   "slug": "blanche-de-castille",
+   "nom": "Blanche de Castille",
+   "naissance": 1188,
+   "mort": 1252,
+   "approximatif": false,
+   "maison": "aragon",
+   "sexe": "f",
+   "titre": "Reine de France, deux fois régente",
+   "parents": [
+    "alphonse8",
+    "alienorang"
+   ],
+   "conjoints": [
+    "louis8"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1200,
+     "Épouse le futur Louis VIII"
+    ],
+    [
+     1226,
+     "Régente pour Louis IX, 12 ans"
+    ],
+    [
+     1248,
+     "Régente de nouveau pendant la croisade de son fils"
+    ]
+   ],
+   "wikipedia": "Blanche de Castille"
+  },
+  {
+   "id": "raymondbp",
+   "slug": "raymond-berenger-de-provence",
+   "nom": "Raymond-Bérenger de Provence",
+   "naissance": 1198,
+   "mort": 1245,
+   "approximatif": false,
+   "maison": "provence",
+   "sexe": "m",
+   "titre": "Comte de Provence",
+   "parents": [],
+   "conjoints": [],
+   "titres": [
+    [
+     "Provence",
+     1209,
+     1245
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Raimond-Bérenger IV de Provence"
+  },
+  {
+   "id": "louis9",
+   "slug": "saint-louis",
+   "nom": "Saint Louis",
+   "naissance": 1214,
+   "mort": 1270,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Louis IX, roi de France (1226–1270)",
+   "parents": [
+    "louis8",
+    "blanche"
+   ],
+   "conjoints": [
+    "margprov"
+   ],
+   "titres": [
+    [
+     "France",
+     1226,
+     1270
+    ]
+   ],
+   "faits": [
+    [
+     1226,
+     "Roi à 12 ans sous la régence de sa mère"
+    ],
+    [
+     1248,
+     "Sainte-Chapelle consacrée ; part en croisade"
+    ],
+    [
+     1250,
+     "Capturé en Égypte, libéré contre rançon"
+    ],
+    [
+     1259,
+     "Traité de Paris avec Henri III d’Angleterre"
+    ],
+    [
+     1270,
+     "Meurt devant Tunis"
+    ],
+    [
+     1297,
+     "Canonisé"
+    ]
+   ],
+   "wikipedia": "Louis IX"
+  },
+  {
+   "id": "margprov",
+   "slug": "marguerite-de-provence",
+   "nom": "Marguerite de Provence",
+   "naissance": 1221,
+   "mort": 1295,
+   "approximatif": false,
+   "maison": "provence",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [
+    "raymondbp"
+   ],
+   "conjoints": [
+    "louis9"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1234,
+     "Épouse Louis IX"
+    ],
+    [
+     1250,
+     "Négocie la rançon du roi à Damiette"
+    ]
+   ],
+   "wikipedia": "Marguerite de Provence"
+  },
+  {
+   "id": "eleonoreprov",
+   "slug": "eleonore-de-provence",
+   "nom": "Éléonore de Provence",
+   "naissance": 1223,
+   "mort": 1291,
+   "approximatif": false,
+   "maison": "provence",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre",
+   "parents": [
+    "raymondbp"
+   ],
+   "conjoints": [
+    "henri3ang"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1236,
+     "Épouse Henri III : les quatre sœurs de Provence deviennent reines"
+    ]
+   ],
+   "wikipedia": "Éléonore de Provence"
+  },
+  {
+   "id": "beatriceprov",
+   "slug": "beatrice-de-provence",
+   "nom": "Béatrice de Provence",
+   "naissance": 1231,
+   "mort": 1267,
+   "approximatif": true,
+   "maison": "provence",
+   "sexe": "f",
+   "titre": "Comtesse de Provence, reine de Sicile",
+   "parents": [
+    "raymondbp"
+   ],
+   "conjoints": [
+    "charles1anj"
+   ],
+   "titres": [
+    [
+     "Provence",
+     1245,
+     1267
+    ]
+   ],
+   "faits": [
+    [
+     1246,
+     "Héritière de Provence, épouse Charles d’Anjou"
+    ]
+   ],
+   "wikipedia": "Béatrice de Provence"
+  },
+  {
+   "id": "henri3ang",
+   "slug": "henri-iii-d-angleterre",
+   "nom": "Henri III d’Angleterre",
+   "naissance": 1207,
+   "mort": 1272,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1216–1272)",
+   "parents": [
+    "jeanssterre"
+   ],
+   "conjoints": [
+    "eleonoreprov"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1216,
+     1272
+    ],
+    [
+     "Aquitaine",
+     1216,
+     1272
+    ]
+   ],
+   "faits": [
+    [
+     1259,
+     "Traité de Paris : renonce à la Normandie, garde la Guyenne"
+    ]
+   ],
+   "wikipedia": "Henri III d'Angleterre"
+  },
+  {
+   "id": "robert1art",
+   "slug": "robert-ier-d-artois",
+   "nom": "Robert Ier d’Artois",
+   "naissance": 1216,
+   "mort": 1250,
+   "approximatif": false,
+   "maison": "artois",
+   "sexe": "m",
+   "titre": "Comte d’Artois",
+   "parents": [
+    "louis8",
+    "blanche"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Artois",
+     1237,
+     1250
+    ]
+   ],
+   "faits": [
+    [
+     1237,
+     "Reçoit l’Artois en apanage"
+    ],
+    [
+     1250,
+     "Tué à Mansourah en Égypte"
+    ]
+   ],
+   "wikipedia": "Robert Ier d'Artois"
+  },
+  {
+   "id": "charles1anj",
+   "slug": "charles-ier-d-anjou",
+   "nom": "Charles Ier d’Anjou",
+   "naissance": 1227,
+   "mort": 1285,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "m",
+   "titre": "Roi de Sicile (1266–1285)",
+   "parents": [
+    "louis8",
+    "blanche"
+   ],
+   "conjoints": [
+    "beatriceprov"
+   ],
+   "titres": [
+    [
+     "Naples",
+     1266,
+     1285
+    ],
+    [
+     "Sicile",
+     1266,
+     1282
+    ],
+    [
+     "Provence",
+     1246,
+     1285
+    ]
+   ],
+   "faits": [
+    [
+     1266,
+     "Victoire de Bénévent : roi de Sicile"
+    ],
+    [
+     1268,
+     "Fait exécuter Conradin, dernier Hohenstaufen"
+    ],
+    [
+     1282,
+     "Vêpres siciliennes : perd la Sicile"
+    ]
+   ],
+   "wikipedia": "Charles Ier d'Anjou"
+  },
+  {
+   "id": "philippe3",
+   "slug": "philippe-iii-le-hardi",
+   "nom": "Philippe III le Hardi",
+   "naissance": 1245,
+   "mort": 1285,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi de France (1270–1285)",
+   "parents": [
+    "louis9",
+    "margprov"
+   ],
+   "conjoints": [
+    "isabellear"
+   ],
+   "titres": [
+    [
+     "France",
+     1270,
+     1285
+    ]
+   ],
+   "faits": [
+    [
+     1271,
+     "Rentre de Tunis avec les dépouilles de sa famille"
+    ],
+    [
+     1285,
+     "Croisade d’Aragon ; meurt à Perpignan"
+    ]
+   ],
+   "wikipedia": "Philippe III le Hardi"
+  },
+  {
+   "id": "isabellear",
+   "slug": "isabelle-d-aragon",
+   "nom": "Isabelle d’Aragon",
+   "naissance": 1247,
+   "mort": 1271,
+   "approximatif": false,
+   "maison": "aragon",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [],
+   "conjoints": [
+    "philippe3"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Isabelle d'Aragon (1247-1271)"
+  },
+  {
+   "id": "robclermont",
+   "slug": "robert-de-clermont",
+   "nom": "Robert de Clermont",
+   "naissance": 1256,
+   "mort": 1317,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Comte de Clermont, sire de Bourbon",
+   "parents": [
+    "louis9",
+    "margprov"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     1272,
+     "Épouse Béatrice de Bourbon : naissance de la maison de Bourbon"
+    ],
+    [
+     1279,
+     "Blessé à la tête dans un tournoi, en garde des séquelles"
+    ]
+   ],
+   "wikipedia": "Robert de Clermont"
+  },
+  {
+   "id": "agnes",
+   "slug": "agnes-de-france",
+   "nom": "Agnès de France",
+   "naissance": 1260,
+   "mort": 1327,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "f",
+   "titre": "Duchesse de Bourgogne",
+   "parents": [
+    "louis9",
+    "margprov"
+   ],
+   "conjoints": [
+    "robert2bg"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1279,
+     "Épouse Robert II de Bourgogne"
+    ],
+    [
+     1306,
+     "Régente du duché"
+    ]
+   ],
+   "wikipedia": "Agnès de France (1260-1325)"
+  },
+  {
+   "id": "robert2bg",
+   "slug": "robert-ii-de-bourgogne",
+   "nom": "Robert II de Bourgogne",
+   "naissance": 1248,
+   "mort": 1306,
+   "approximatif": false,
+   "maison": "bgduc",
+   "sexe": "m",
+   "titre": "Duc de Bourgogne (1272–1306)",
+   "parents": [],
+   "conjoints": [
+    "agnes"
+   ],
+   "titres": [
+    [
+     "Duché de Bourgogne",
+     1272,
+     1306
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Robert II de Bourgogne"
+  },
+  {
+   "id": "robert2art",
+   "slug": "robert-ii-d-artois",
+   "nom": "Robert II d’Artois",
+   "naissance": 1250,
+   "mort": 1302,
+   "approximatif": false,
+   "maison": "artois",
+   "sexe": "m",
+   "titre": "Comte d’Artois",
+   "parents": [
+    "robert1art"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Artois",
+     1250,
+     1302
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Robert II d'Artois"
+  },
+  {
+   "id": "charles2anj",
+   "slug": "charles-ii-d-anjou",
+   "nom": "Charles II d’Anjou",
+   "naissance": 1254,
+   "mort": 1309,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "m",
+   "titre": "Roi de Naples (1285–1309)",
+   "parents": [
+    "charles1anj",
+    "beatriceprov"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Naples",
+     1285,
+     1309
+    ],
+    [
+     "Provence",
+     1285,
+     1309
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Charles II d'Anjou"
+  },
+  {
+   "id": "pierre3ar",
+   "slug": "pierre-iii-d-aragon",
+   "nom": "Pierre III d’Aragon",
+   "naissance": 1239,
+   "mort": 1285,
+   "approximatif": false,
+   "maison": "aragon",
+   "sexe": "m",
+   "titre": "Roi d’Aragon, roi de Sicile (1282)",
+   "parents": [],
+   "conjoints": [],
+   "titres": [
+    [
+     "Aragon",
+     1276,
+     1285
+    ],
+    [
+     "Sicile",
+     1282,
+     1285
+    ]
+   ],
+   "faits": [
+    [
+     1282,
+     "Roi de Sicile après les Vêpres siciliennes"
+    ],
+    [
+     1285,
+     "Repousse la croisade de Philippe III"
+    ]
+   ],
+   "wikipedia": "Pierre III d'Aragon"
+  },
+  {
+   "id": "edward1",
+   "slug": "edouard-ier",
+   "nom": "Édouard Ier",
+   "naissance": 1239,
+   "mort": 1307,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1272–1307)",
+   "parents": [
+    "henri3ang",
+    "eleonoreprov"
+   ],
+   "conjoints": [
+    "margfr3"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1272,
+     1307
+    ],
+    [
+     "Aquitaine",
+     1272,
+     1307
+    ]
+   ],
+   "faits": [
+    [
+     1294,
+     "Guerre de Guyenne contre Philippe le Bel"
+    ],
+    [
+     1299,
+     "Épouse Marguerite de France, sœur du roi"
+    ]
+   ],
+   "wikipedia": "Édouard Ier d'Angleterre"
+  },
+  {
+   "id": "margfr3",
+   "slug": "marguerite-de-france-1279",
+   "nom": "Marguerite de France",
+   "naissance": 1279,
+   "mort": 1318,
+   "approximatif": true,
+   "maison": "capet",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre",
+   "parents": [
+    "philippe3"
+   ],
+   "conjoints": [
+    "edward1"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Marguerite de France (1279-1318)"
+  },
+  {
+   "id": "philippe4",
+   "slug": "philippe-iv-le-bel",
+   "nom": "Philippe IV le Bel",
+   "naissance": 1268,
+   "mort": 1314,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi de France (1285–1314)",
+   "parents": [
+    "philippe3",
+    "isabellear"
+   ],
+   "conjoints": [
+    "jeanne1nav"
+   ],
+   "titres": [
+    [
+     "France",
+     1285,
+     1314
+    ],
+    [
+     "Navarre",
+     1284,
+     1305
+    ],
+    [
+     "Champagne",
+     1284,
+     1314
+    ]
+   ],
+   "faits": [
+    [
+     1284,
+     "Épouse Jeanne de Navarre"
+    ],
+    [
+     1302,
+     "Défaite de Courtrai face aux Flamands"
+    ],
+    [
+     1303,
+     "Attentat d’Anagni contre le pape Boniface VIII"
+    ],
+    [
+     1307,
+     "Fait arrêter les Templiers"
+    ],
+    [
+     1314,
+     "Scandale de la tour de Nesle ; mort du roi"
+    ]
+   ],
+   "wikipedia": "Philippe IV le Bel"
+  },
+  {
+   "id": "jeanne1nav",
+   "slug": "jeanne-ire-de-navarre",
+   "nom": "Jeanne Ire de Navarre",
+   "naissance": 1273,
+   "mort": 1305,
+   "approximatif": false,
+   "maison": "navarre",
+   "sexe": "f",
+   "titre": "Reine de Navarre, comtesse de Champagne",
+   "parents": [
+    "henri1nav",
+    "blanchedart"
+   ],
+   "conjoints": [
+    "philippe4"
+   ],
+   "titres": [
+    [
+     "Navarre",
+     1274,
+     1305
+    ],
+    [
+     "Champagne",
+     1274,
+     1305
+    ]
+   ],
+   "faits": [
+    [
+     1284,
+     "Épouse Philippe le Bel"
+    ],
+    [
+     1305,
+     "Fonde le collège de Navarre à Paris ; meurt"
+    ]
+   ],
+   "wikipedia": "Jeanne Ire de Navarre"
+  },
+  {
+   "id": "charlesval",
+   "slug": "charles-de-valois",
+   "nom": "Charles de Valois",
+   "naissance": 1270,
+   "mort": 1325,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "m",
+   "titre": "Comte de Valois, d’Anjou et du Maine",
+   "parents": [
+    "philippe3",
+    "isabellear"
+   ],
+   "conjoints": [
+    "marganj"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1301,
+     "Intervient à Florence pour le pape"
+    ],
+    [
+     1324,
+     "Commande l’armée en Guyenne"
+    ],
+    [
+     1325,
+     "Meurt : fils, frère, oncle et père de roi, jamais roi"
+    ]
+   ],
+   "wikipedia": "Charles de Valois"
+  },
+  {
+   "id": "louisevr",
+   "slug": "louis-d-evreux",
+   "nom": "Louis d’Évreux",
+   "naissance": 1276,
+   "mort": 1319,
+   "approximatif": false,
+   "maison": "evreux",
+   "sexe": "m",
+   "titre": "Comte d’Évreux",
+   "parents": [
+    "philippe3"
+   ],
+   "conjoints": [
+    "margart"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1307,
+     "Comte d’Évreux, demi-frère de Philippe le Bel"
+    ]
+   ],
+   "wikipedia": "Louis d'Évreux"
+  },
+  {
+   "id": "margart",
+   "slug": "marguerite-d-artois",
+   "nom": "Marguerite d’Artois",
+   "naissance": 1285,
+   "mort": 1311,
+   "approximatif": false,
+   "maison": "artois",
+   "sexe": "f",
+   "titre": "Comtesse d’Évreux",
+   "parents": [
+    "philart"
+   ],
+   "conjoints": [
+    "louisevr"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Marguerite d'Artois"
+  },
+  {
+   "id": "mahaut",
+   "slug": "mahaut-d-artois",
+   "nom": "Mahaut d’Artois",
+   "naissance": 1268,
+   "mort": 1329,
+   "approximatif": false,
+   "maison": "artois",
+   "sexe": "f",
+   "titre": "Comtesse d’Artois",
+   "parents": [
+    "robert2art"
+   ],
+   "conjoints": [
+    "othon4"
+   ],
+   "titres": [
+    [
+     "Artois",
+     1302,
+     1329
+    ]
+   ],
+   "faits": [
+    [
+     1302,
+     "Hérite de l’Artois à la mort de son père à Courtrai"
+    ],
+    [
+     1309,
+     "Gagne son procès contre son neveu Robert"
+    ],
+    [
+     1314,
+     "Ses filles sont compromises dans l’affaire de la tour de Nesle"
+    ],
+    [
+     1316,
+     "Druon en fait l’empoisonneuse de Louis X (rumeur jamais prouvée)"
+    ]
+   ],
+   "wikipedia": "Mahaut d'Artois"
+  },
+  {
+   "id": "philart",
+   "slug": "philippe-d-artois",
+   "nom": "Philippe d’Artois",
+   "naissance": 1269,
+   "mort": 1298,
+   "approximatif": false,
+   "maison": "artois",
+   "sexe": "m",
+   "titre": "Seigneur de Conches",
+   "parents": [
+    "robert2art"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Philippe d'Artois (1269-1298)"
+  },
+  {
+   "id": "othon4",
+   "slug": "othon-iv-de-bourgogne",
+   "nom": "Othon IV de Bourgogne",
+   "naissance": 1248,
+   "mort": 1303,
+   "approximatif": true,
+   "maison": "bgcomte",
+   "sexe": "m",
+   "titre": "Comte palatin de Bourgogne",
+   "parents": [],
+   "conjoints": [
+    "mahaut"
+   ],
+   "titres": [
+    [
+     "Comté de Bourgogne",
+     1279,
+     1303
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Othon IV de Bourgogne"
+  },
+  {
+   "id": "jeannebg",
+   "slug": "jeanne-de-bourgogne-1292",
+   "nom": "Jeanne de Bourgogne",
+   "naissance": 1292,
+   "mort": 1330,
+   "approximatif": false,
+   "maison": "bgcomte",
+   "sexe": "f",
+   "titre": "Reine de France, comtesse de Bourgogne et d’Artois",
+   "parents": [
+    "othon4",
+    "mahaut"
+   ],
+   "conjoints": [
+    "philippe5"
+   ],
+   "titres": [
+    [
+     "Comté de Bourgogne",
+     1303,
+     1330
+    ],
+    [
+     "Artois",
+     1329,
+     1330
+    ]
+   ],
+   "faits": [
+    [
+     1314,
+     "Enfermée à Dourdan dans l’affaire de la tour de Nesle"
+    ],
+    [
+     1315,
+     "Reconnue innocente, retrouve son mari"
+    ],
+    [
+     1316,
+     "Reine de France"
+    ]
+   ],
+   "wikipedia": "Jeanne II de Bourgogne"
+  },
+  {
+   "id": "blanchebg",
+   "slug": "blanche-de-bourgogne",
+   "nom": "Blanche de Bourgogne",
+   "naissance": 1296,
+   "mort": 1326,
+   "approximatif": false,
+   "maison": "bgcomte",
+   "sexe": "f",
+   "titre": "Épouse de Charles IV",
+   "parents": [
+    "othon4",
+    "mahaut"
+   ],
+   "conjoints": [
+    "charles4"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1314,
+     "Condamnée dans l’affaire de la tour de Nesle, enfermée à Château-Gaillard"
+    ],
+    [
+     1322,
+     "Mariage annulé ; finit religieuse à Maubuisson"
+    ]
+   ],
+   "wikipedia": "Blanche de Bourgogne (v. 1296-1326)"
+  },
+  {
+   "id": "robert3art",
+   "slug": "robert-iii-d-artois",
+   "nom": "Robert III d’Artois",
+   "naissance": 1287,
+   "mort": 1342,
+   "approximatif": false,
+   "maison": "artois",
+   "sexe": "m",
+   "titre": "Comte de Beaumont-le-Roger",
+   "parents": [
+    "philart"
+   ],
+   "conjoints": [
+    "jeannevalA"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1309,
+     "Perd son procès pour l’Artois face à sa tante Mahaut"
+    ],
+    [
+     1331,
+     "Convaincu d’avoir produit de faux actes"
+    ],
+    [
+     1336,
+     "Réfugié auprès d’Édouard III, l’encourage à revendiquer la France"
+    ],
+    [
+     1342,
+     "Meurt de ses blessures après le siège de Vannes"
+    ]
+   ],
+   "wikipedia": "Robert III d'Artois"
+  },
+  {
+   "id": "margbg",
+   "slug": "marguerite-de-bourgogne-1290",
+   "nom": "Marguerite de Bourgogne",
+   "naissance": 1290,
+   "mort": 1315,
+   "approximatif": false,
+   "maison": "bgduc",
+   "sexe": "f",
+   "titre": "Reine de Navarre, épouse de Louis X",
+   "parents": [
+    "robert2bg",
+    "agnes"
+   ],
+   "conjoints": [
+    "louis10"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1314,
+     "Condamnée dans l’affaire de la tour de Nesle"
+    ],
+    [
+     1315,
+     "Meurt à Château-Gaillard"
+    ]
+   ],
+   "wikipedia": "Marguerite de Bourgogne (1290-1315)"
+  },
+  {
+   "id": "jeanneboit",
+   "slug": "jeanne-de-bourgogne-1293",
+   "nom": "Jeanne de Bourgogne",
+   "naissance": 1293,
+   "mort": 1349,
+   "approximatif": false,
+   "maison": "bgduc",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [
+    "robert2bg",
+    "agnes"
+   ],
+   "conjoints": [
+    "philippe6"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1313,
+     "Épouse Philippe de Valois"
+    ],
+    [
+     1328,
+     "Reine de France, associée au gouvernement du royaume"
+    ]
+   ],
+   "wikipedia": "Jeanne de Bourgogne (v. 1293-1349)"
+  },
+  {
+   "id": "eudes4",
+   "slug": "eudes-iv-de-bourgogne",
+   "nom": "Eudes IV de Bourgogne",
+   "naissance": 1295,
+   "mort": 1349,
+   "approximatif": false,
+   "maison": "bgduc",
+   "sexe": "m",
+   "titre": "Duc de Bourgogne (1315–1349)",
+   "parents": [
+    "robert2bg",
+    "agnes"
+   ],
+   "conjoints": [
+    "jeanne3"
+   ],
+   "titres": [
+    [
+     "Duché de Bourgogne",
+     1315,
+     1349
+    ],
+    [
+     "Artois",
+     1330,
+     1347
+    ],
+    [
+     "Comté de Bourgogne",
+     1330,
+     1347
+    ]
+   ],
+   "faits": [
+    [
+     1318,
+     "Épouse Jeanne, fille de Philippe V et héritière de l’Artois"
+    ]
+   ],
+   "wikipedia": "Eudes IV de Bourgogne"
+  },
+  {
+   "id": "jeanne3",
+   "slug": "jeanne-iii-de-bourgogne",
+   "nom": "Jeanne III de Bourgogne",
+   "naissance": 1308,
+   "mort": 1347,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "f",
+   "titre": "Duchesse de Bourgogne, comtesse d’Artois",
+   "parents": [
+    "philippe5",
+    "jeannebg"
+   ],
+   "conjoints": [
+    "eudes4"
+   ],
+   "titres": [
+    [
+     "Artois",
+     1330,
+     1347
+    ],
+    [
+     "Comté de Bourgogne",
+     1330,
+     1347
+    ]
+   ],
+   "faits": [
+    [
+     1330,
+     "Hérite de l’Artois et de la Franche-Comté"
+    ]
+   ],
+   "wikipedia": "Jeanne III de Bourgogne"
+  },
+  {
+   "id": "isabellefr5",
+   "slug": "isabelle-de-france-1312",
+   "nom": "Isabelle de France",
+   "naissance": 1312,
+   "mort": 1348,
+   "approximatif": true,
+   "maison": "capet",
+   "sexe": "f",
+   "titre": "Dauphine de Viennois",
+   "parents": [
+    "philippe5",
+    "jeannebg"
+   ],
+   "conjoints": [
+    "guigues8"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1316,
+     "Promise enfant au petit Guigues de Viennois"
+    ],
+    [
+     1323,
+     "Mariage célébré"
+    ]
+   ],
+   "wikipedia": "Isabelle de France (1312-1348)"
+  },
+  {
+   "id": "guigues8",
+   "slug": "guigues-viii-de-viennois",
+   "nom": "Guigues VIII de Viennois",
+   "naissance": 1309,
+   "mort": 1333,
+   "approximatif": false,
+   "maison": "savoie",
+   "sexe": "m",
+   "titre": "Dauphin de Viennois (1319–1333)",
+   "parents": [],
+   "conjoints": [
+    "isabellefr5"
+   ],
+   "titres": [
+    [
+     "Dauphiné",
+     1319,
+     1333
+    ]
+   ],
+   "faits": [
+    [
+     1319,
+     "Dauphin de Viennois à dix ans"
+    ],
+    [
+     1333,
+     "Tué au siège de La Perrière"
+    ]
+   ],
+   "wikipedia": "Guigues VIII de Viennois"
+  },
+  {
+   "id": "charlesmartel",
+   "slug": "charles-martel-d-anjou",
+   "nom": "Charles Martel d’Anjou",
+   "naissance": 1271,
+   "mort": 1295,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "m",
+   "titre": "Roi titulaire de Hongrie",
+   "parents": [
+    "charles2anj"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Hongrie",
+     1290,
+     1295
+    ]
+   ],
+   "faits": [
+    [
+     1290,
+     "Couronné roi de Hongrie par le pape, sans régner sur place"
+    ]
+   ],
+   "wikipedia": "Charles Martel (roi de Hongrie)"
+  },
+  {
+   "id": "marganj",
+   "slug": "marguerite-d-anjou-sicile",
+   "nom": "Marguerite d’Anjou-Sicile",
+   "naissance": 1273,
+   "mort": 1299,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "f",
+   "titre": "Comtesse d’Anjou et du Maine",
+   "parents": [
+    "charles2anj"
+   ],
+   "conjoints": [
+    "charlesval"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Marguerite d'Anjou (1273-1299)"
+  },
+  {
+   "id": "robertnap",
+   "slug": "robert-le-sage",
+   "nom": "Robert le Sage",
+   "naissance": 1277,
+   "mort": 1343,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "m",
+   "titre": "Roi de Naples (1309–1343)",
+   "parents": [
+    "charles2anj"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Naples",
+     1309,
+     1343
+    ],
+    [
+     "Provence",
+     1309,
+     1343
+    ]
+   ],
+   "faits": [
+    [
+     1309,
+     "Roi de Naples ; protecteur de Pétrarque et de Giotto"
+    ]
+   ],
+   "wikipedia": "Robert Ier de Naples"
+  },
+  {
+   "id": "charlescal",
+   "slug": "charles-de-calabre",
+   "nom": "Charles de Calabre",
+   "naissance": 1298,
+   "mort": 1328,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "m",
+   "titre": "Duc de Calabre",
+   "parents": [
+    "robertnap"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Charles de Calabre"
+  },
+  {
+   "id": "jeanne1nap",
+   "slug": "jeanne-ire-de-naples",
+   "nom": "Jeanne Ire de Naples",
+   "naissance": 1326,
+   "mort": 1382,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "f",
+   "titre": "Reine de Naples (1343–1382)",
+   "parents": [
+    "charlescal"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Naples",
+     1343,
+     1382
+    ],
+    [
+     "Provence",
+     1343,
+     1382
+    ]
+   ],
+   "faits": [
+    [
+     1348,
+     "Vend Avignon au pape"
+    ],
+    [
+     1382,
+     "Assassinée"
+    ]
+   ],
+   "wikipedia": "Jeanne Ire de Naples"
+  },
+  {
+   "id": "charobert",
+   "slug": "carobert",
+   "nom": "Carobert",
+   "naissance": 1288,
+   "mort": 1342,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "m",
+   "titre": "Roi de Hongrie (1308–1342)",
+   "parents": [
+    "charlesmartel"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Hongrie",
+     1308,
+     1342
+    ]
+   ],
+   "faits": [
+    [
+     1308,
+     "Roi de Hongrie, fonde la lignée angevine de Hongrie"
+    ]
+   ],
+   "wikipedia": "Charles Ier Robert"
+  },
+  {
+   "id": "clemence",
+   "slug": "clemence-de-hongrie",
+   "nom": "Clémence de Hongrie",
+   "naissance": 1293,
+   "mort": 1328,
+   "approximatif": false,
+   "maison": "anjou",
+   "sexe": "f",
+   "titre": "Reine de France (1315–1316)",
+   "parents": [
+    "charlesmartel"
+   ],
+   "conjoints": [
+    "louis10"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1315,
+     "Épouse Louis X après la mort de Marguerite"
+    ],
+    [
+     1316,
+     "Met au monde Jean Ier, qui vit cinq jours"
+    ]
+   ],
+   "wikipedia": "Clémence de Hongrie"
+  },
+  {
+   "id": "louis10",
+   "slug": "louis-x-le-hutin",
+   "nom": "Louis X le Hutin",
+   "naissance": 1289,
+   "mort": 1316,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi de France (1314–1316)",
+   "parents": [
+    "philippe4",
+    "jeanne1nav"
+   ],
+   "conjoints": [
+    "margbg",
+    "clemence"
+   ],
+   "titres": [
+    [
+     "France",
+     1314,
+     1316
+    ],
+    [
+     "Champagne",
+     1314,
+     1316
+    ],
+    [
+     "Navarre",
+     1305,
+     1316
+    ]
+   ],
+   "faits": [
+    [
+     1315,
+     "Fait pendre Enguerrand de Marigny ; ordonnance d’affranchissement des serfs du domaine"
+    ],
+    [
+     1316,
+     "Meurt après une partie de jeu de paume, peut-être empoisonné"
+    ]
+   ],
+   "wikipedia": "Louis X le Hutin"
+  },
+  {
+   "id": "jean1",
+   "slug": "jean-ier-le-posthume",
+   "nom": "Jean Ier le Posthume",
+   "naissance": 1316,
+   "mort": 1316,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Roi de France, cinq jours de novembre 1316",
+   "parents": [
+    "louis10",
+    "clemence"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1316,
+     1316
+    ],
+    [
+     "Navarre",
+     1316,
+     1316
+    ]
+   ],
+   "faits": [
+    [
+     1316,
+     "Né roi, meurt cinq jours plus tard"
+    ]
+   ],
+   "wikipedia": "Jean Ier le Posthume"
+  },
+  {
+   "id": "philippe5",
+   "slug": "philippe-v-le-long",
+   "nom": "Philippe V le Long",
+   "naissance": 1293,
+   "mort": 1322,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Comte de Poitiers, puis roi de France (1316–1322)",
+   "parents": [
+    "philippe4",
+    "jeanne1nav"
+   ],
+   "conjoints": [
+    "jeannebg"
+   ],
+   "titres": [
+    [
+     "France",
+     1316,
+     1322
+    ],
+    [
+     "Navarre",
+     1316,
+     1322
+    ],
+    [
+     "Champagne",
+     1316,
+     1322
+    ]
+   ],
+   "faits": [
+    [
+     1316,
+     "Régent, puis roi en écartant sa nièce Jeanne"
+    ],
+    [
+     1317,
+     "Une assemblée déclare que les femmes ne succèdent pas au trône"
+    ],
+    [
+     1322,
+     "Meurt sans fils"
+    ]
+   ],
+   "wikipedia": "Philippe V le Long"
+  },
+  {
+   "id": "charles4",
+   "slug": "charles-iv-le-bel",
+   "nom": "Charles IV le Bel",
+   "naissance": 1294,
+   "mort": 1328,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "m",
+   "titre": "Comte de la Marche, puis roi de France (1322–1328)",
+   "parents": [
+    "philippe4",
+    "jeanne1nav"
+   ],
+   "conjoints": [
+    "blanchebg",
+    "marielux",
+    "jeanneevr"
+   ],
+   "titres": [
+    [
+     "France",
+     1322,
+     1328
+    ],
+    [
+     "Navarre",
+     1322,
+     1328
+    ],
+    [
+     "Champagne",
+     1322,
+     1328
+    ]
+   ],
+   "faits": [
+    [
+     1322,
+     "Fait annuler son mariage avec Blanche"
+    ],
+    [
+     1324,
+     "Guerre de Saint-Sardos en Guyenne"
+    ],
+    [
+     1328,
+     "Meurt sans fils : fin des Capétiens directs"
+    ]
+   ],
+   "wikipedia": "Charles IV le Bel"
+  },
+  {
+   "id": "isabelle",
+   "slug": "isabelle-de-france-1295",
+   "nom": "Isabelle de France",
+   "naissance": 1295,
+   "mort": 1358,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre",
+   "parents": [
+    "philippe4",
+    "jeanne1nav"
+   ],
+   "conjoints": [
+    "edward2"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1308,
+     "Épouse Édouard II"
+    ],
+    [
+     1314,
+     "Dénonce ses belles-sœurs : affaire de la tour de Nesle"
+    ],
+    [
+     1326,
+     "Débarque en Angleterre avec Mortimer"
+    ],
+    [
+     1327,
+     "Édouard II est déposé, puis tué"
+    ],
+    [
+     1330,
+     "Écartée par son fils Édouard III"
+    ]
+   ],
+   "wikipedia": "Isabelle de France (1295-1358)"
+  },
+  {
+   "id": "edward2",
+   "slug": "edouard-ii",
+   "nom": "Édouard II",
+   "naissance": 1284,
+   "mort": 1327,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1307–1327)",
+   "parents": [
+    "edward1"
+   ],
+   "conjoints": [
+    "isabelle"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1307,
+     1327
+    ],
+    [
+     "Aquitaine",
+     1307,
+     1327
+    ]
+   ],
+   "faits": [
+    [
+     1308,
+     "Épouse Isabelle de France"
+    ],
+    [
+     1314,
+     "Écrasé par les Écossais à Bannockburn"
+    ],
+    [
+     1327,
+     "Déposé"
+    ]
+   ],
+   "wikipedia": "Édouard II d'Angleterre"
+  },
+  {
+   "id": "edward3",
+   "slug": "edouard-iii",
+   "nom": "Édouard III",
+   "naissance": 1312,
+   "mort": 1377,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1327–1377)",
+   "parents": [
+    "edward2",
+    "isabelle"
+   ],
+   "conjoints": [
+    "philippa"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1327,
+     1377
+    ],
+    [
+     "Aquitaine",
+     1327,
+     1377
+    ]
+   ],
+   "faits": [
+    [
+     1328,
+     "Revendique la couronne de France"
+    ],
+    [
+     1340,
+     "Prend le titre de roi de France ; victoire navale de L’Écluse"
+    ],
+    [
+     1346,
+     "Victoire de Crécy"
+    ],
+    [
+     1347,
+     "Prend Calais"
+    ],
+    [
+     1360,
+     "Traité de Brétigny"
+    ]
+   ],
+   "wikipedia": "Édouard III d'Angleterre"
+  },
+  {
+   "id": "philippa",
+   "slug": "philippa-de-hainaut",
+   "nom": "Philippa de Hainaut",
+   "naissance": 1314,
+   "mort": 1369,
+   "approximatif": true,
+   "maison": "hainaut",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre",
+   "parents": [
+    "guillhain",
+    "jeannevalH"
+   ],
+   "conjoints": [
+    "edward3"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1328,
+     "Épouse Édouard III"
+    ],
+    [
+     1347,
+     "Obtient la grâce des bourgeois de Calais"
+    ]
+   ],
+   "wikipedia": "Philippa de Hainaut"
+  },
+  {
+   "id": "guillhain",
+   "slug": "guillaume-de-hainaut",
+   "nom": "Guillaume de Hainaut",
+   "naissance": 1286,
+   "mort": 1337,
+   "approximatif": true,
+   "maison": "hainaut",
+   "sexe": "m",
+   "titre": "Comte de Hainaut, de Hollande et de Zélande",
+   "parents": [],
+   "conjoints": [
+    "jeannevalH"
+   ],
+   "titres": [
+    [
+     "Hainaut",
+     1304,
+     1337
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Guillaume Ier de Hainaut"
+  },
+  {
+   "id": "jeannevalH",
+   "slug": "jeanne-de-valois-1294",
+   "nom": "Jeanne de Valois",
+   "naissance": 1294,
+   "mort": 1342,
+   "approximatif": true,
+   "maison": "valois",
+   "sexe": "f",
+   "titre": "Comtesse de Hainaut",
+   "parents": [
+    "charlesval",
+    "marganj"
+   ],
+   "conjoints": [
+    "guillhain"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Jeanne de Valois (1294-1342)"
+  },
+  {
+   "id": "jeannevalA",
+   "slug": "jeanne-de-valois-1304",
+   "nom": "Jeanne de Valois",
+   "naissance": 1304,
+   "mort": 1363,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "f",
+   "titre": "Comtesse de Beaumont-le-Roger",
+   "parents": [
+    "charlesval"
+   ],
+   "conjoints": [
+    "robert3art"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Jeanne de Valois (1304-1363)"
+  },
+  {
+   "id": "margHain",
+   "slug": "marguerite-de-hainaut",
+   "nom": "Marguerite de Hainaut",
+   "naissance": 1311,
+   "mort": 1356,
+   "approximatif": false,
+   "maison": "hainaut",
+   "sexe": "f",
+   "titre": "Impératrice, comtesse de Hainaut",
+   "parents": [
+    "guillhain",
+    "jeannevalH"
+   ],
+   "conjoints": [
+    "louisbav"
+   ],
+   "titres": [
+    [
+     "Hainaut",
+     1345,
+     1356
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Marguerite II de Hainaut"
+  },
+  {
+   "id": "louisbav",
+   "slug": "louis-iv-de-baviere",
+   "nom": "Louis IV de Bavière",
+   "naissance": 1282,
+   "mort": 1347,
+   "approximatif": false,
+   "maison": "witt",
+   "sexe": "m",
+   "titre": "Roi des Romains (1314), empereur (1328)",
+   "parents": [],
+   "conjoints": [
+    "margHain"
+   ],
+   "titres": [
+    [
+     "Empire",
+     1314,
+     1347
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Louis IV du Saint-Empire"
+  },
+  {
+   "id": "etienne2",
+   "slug": "etienne-ii-de-baviere",
+   "nom": "Étienne II de Bavière",
+   "naissance": 1319,
+   "mort": 1375,
+   "approximatif": false,
+   "maison": "witt",
+   "sexe": "m",
+   "titre": "Duc de Bavière",
+   "parents": [
+    "louisbav"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Étienne II de Bavière"
+  },
+  {
+   "id": "etienne3",
+   "slug": "etienne-iii-de-baviere",
+   "nom": "Étienne III de Bavière",
+   "naissance": 1337,
+   "mort": 1413,
+   "approximatif": false,
+   "maison": "witt",
+   "sexe": "m",
+   "titre": "Duc de Bavière-Ingolstadt",
+   "parents": [
+    "etienne2"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Étienne III de Bavière"
+  },
+  {
+   "id": "isabeau",
+   "slug": "isabeau-de-baviere",
+   "nom": "Isabeau de Bavière",
+   "naissance": 1370,
+   "mort": 1435,
+   "approximatif": true,
+   "maison": "witt",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [
+    "etienne3"
+   ],
+   "conjoints": [
+    "charles6"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1385,
+     "Épouse Charles VI"
+    ],
+    [
+     1420,
+     "Signe le traité de Troyes"
+    ]
+   ],
+   "wikipedia": "Isabeau de Bavière"
+  },
+  {
+   "id": "albert1",
+   "slug": "albert-de-baviere",
+   "nom": "Albert de Bavière",
+   "naissance": 1336,
+   "mort": 1404,
+   "approximatif": false,
+   "maison": "witt",
+   "sexe": "m",
+   "titre": "Comte de Hainaut et de Hollande",
+   "parents": [
+    "louisbav",
+    "margHain"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Hainaut",
+     1358,
+     1404
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Albert Ier de Bavière"
+  },
+  {
+   "id": "guill2",
+   "slug": "guillaume-de-baviere",
+   "nom": "Guillaume de Bavière",
+   "naissance": 1365,
+   "mort": 1417,
+   "approximatif": false,
+   "maison": "witt",
+   "sexe": "m",
+   "titre": "Comte de Hainaut et de Hollande",
+   "parents": [
+    "albert1"
+   ],
+   "conjoints": [
+    "margbg2"
+   ],
+   "titres": [
+    [
+     "Hainaut",
+     1404,
+     1417
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Guillaume IV de Hainaut"
+  },
+  {
+   "id": "margbav",
+   "slug": "marguerite-de-baviere",
+   "nom": "Marguerite de Bavière",
+   "naissance": 1363,
+   "mort": 1424,
+   "approximatif": false,
+   "maison": "witt",
+   "sexe": "f",
+   "titre": "Duchesse de Bourgogne",
+   "parents": [
+    "albert1"
+   ],
+   "conjoints": [
+    "jeansp"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Marguerite de Bavière (1363-1424)"
+  },
+  {
+   "id": "margbg2",
+   "slug": "marguerite-de-bourgogne-1374",
+   "nom": "Marguerite de Bourgogne",
+   "naissance": 1374,
+   "mort": 1441,
+   "approximatif": false,
+   "maison": "valbg",
+   "sexe": "f",
+   "titre": "Comtesse de Hainaut",
+   "parents": [
+    "philhardi",
+    "margmale"
+   ],
+   "conjoints": [
+    "guill2"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Marguerite de Bourgogne (1374-1441)"
+  },
+  {
+   "id": "jacqueline",
+   "slug": "jacqueline-de-baviere",
+   "nom": "Jacqueline de Bavière",
+   "naissance": 1401,
+   "mort": 1436,
+   "approximatif": false,
+   "maison": "witt",
+   "sexe": "f",
+   "titre": "Comtesse de Hainaut et de Hollande",
+   "parents": [
+    "guill2",
+    "margbg2"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Hainaut",
+     1417,
+     1433
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Jacqueline de Hainaut"
+  },
+  {
+   "id": "henri7",
+   "slug": "henri-vii-de-luxembourg",
+   "nom": "Henri VII de Luxembourg",
+   "naissance": 1275,
+   "mort": 1313,
+   "approximatif": true,
+   "maison": "lux",
+   "sexe": "m",
+   "titre": "Roi des Romains (1308), empereur (1312)",
+   "parents": [],
+   "conjoints": [],
+   "titres": [
+    [
+     "Empire",
+     1308,
+     1313
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Henri VII du Saint-Empire"
+  },
+  {
+   "id": "jeanaveugle",
+   "slug": "jean-l-aveugle",
+   "nom": "Jean l’Aveugle",
+   "naissance": 1296,
+   "mort": 1346,
+   "approximatif": false,
+   "maison": "lux",
+   "sexe": "m",
+   "titre": "Roi de Bohême (1310–1346)",
+   "parents": [
+    "henri7"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Bohême",
+     1310,
+     1346
+    ]
+   ],
+   "faits": [
+    [
+     1346,
+     "Aveugle, se fait conduire au combat à Crécy, où il est tué"
+    ]
+   ],
+   "wikipedia": "Jean Ier de Bohême"
+  },
+  {
+   "id": "marielux",
+   "slug": "marie-de-luxembourg",
+   "nom": "Marie de Luxembourg",
+   "naissance": 1304,
+   "mort": 1324,
+   "approximatif": false,
+   "maison": "lux",
+   "sexe": "f",
+   "titre": "Reine de France (1322–1324)",
+   "parents": [
+    "henri7"
+   ],
+   "conjoints": [
+    "charles4"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Marie de Luxembourg (1305-1324)"
+  },
+  {
+   "id": "bonnelux",
+   "slug": "bonne-de-luxembourg",
+   "nom": "Bonne de Luxembourg",
+   "naissance": 1315,
+   "mort": 1349,
+   "approximatif": false,
+   "maison": "lux",
+   "sexe": "f",
+   "titre": "Duchesse de Normandie",
+   "parents": [
+    "jeanaveugle"
+   ],
+   "conjoints": [
+    "jean2"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1332,
+     "Épouse le futur Jean II"
+    ],
+    [
+     1349,
+     "Emportée par la Peste noire"
+    ]
+   ],
+   "wikipedia": "Bonne de Luxembourg"
+  },
+  {
+   "id": "charles4emp",
+   "slug": "charles-iv-empereur",
+   "nom": "Charles IV, empereur",
+   "naissance": 1316,
+   "mort": 1378,
+   "approximatif": false,
+   "maison": "lux",
+   "sexe": "m",
+   "titre": "Roi de Bohême, empereur (1355)",
+   "parents": [
+    "jeanaveugle"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Bohême",
+     1346,
+     1378
+    ],
+    [
+     "Empire",
+     1346,
+     1378
+    ]
+   ],
+   "faits": [
+    [
+     1356,
+     "Bulle d’or : règle l’élection impériale"
+    ],
+    [
+     1378,
+     "Visite son neveu Charles V à Paris"
+    ]
+   ],
+   "wikipedia": "Charles IV du Saint-Empire"
+  },
+  {
+   "id": "philevr",
+   "slug": "philippe-d-evreux",
+   "nom": "Philippe d’Évreux",
+   "naissance": 1305,
+   "mort": 1343,
+   "approximatif": false,
+   "maison": "evreux",
+   "sexe": "m",
+   "titre": "Roi de Navarre (1328–1343)",
+   "parents": [
+    "louisevr",
+    "margart"
+   ],
+   "conjoints": [
+    "jeanne2nav"
+   ],
+   "titres": [
+    [
+     "Navarre",
+     1328,
+     1343
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Philippe III de Navarre"
+  },
+  {
+   "id": "jeanne2nav",
+   "slug": "jeanne-ii-de-navarre",
+   "nom": "Jeanne II de Navarre",
+   "naissance": 1312,
+   "mort": 1349,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "f",
+   "titre": "Reine de Navarre (1328–1349)",
+   "parents": [
+    "louis10",
+    "margbg"
+   ],
+   "conjoints": [
+    "philevr"
+   ],
+   "titres": [
+    [
+     "Navarre",
+     1328,
+     1349
+    ]
+   ],
+   "faits": [
+    [
+     1316,
+     "Écartée du trône de France"
+    ],
+    [
+     1328,
+     "Reine de Navarre"
+    ]
+   ],
+   "wikipedia": "Jeanne II de Navarre"
+  },
+  {
+   "id": "charlesmauv",
+   "slug": "charles-le-mauvais",
+   "nom": "Charles le Mauvais",
+   "naissance": 1332,
+   "mort": 1387,
+   "approximatif": false,
+   "maison": "evreux",
+   "sexe": "m",
+   "titre": "Roi de Navarre (1349–1387)",
+   "parents": [
+    "philevr",
+    "jeanne2nav"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Navarre",
+     1349,
+     1387
+    ]
+   ],
+   "faits": [
+    [
+     1354,
+     "Fait assassiner le connétable Charles de La Cerda"
+    ],
+    [
+     1356,
+     "Arrêté à Rouen par Jean II"
+    ],
+    [
+     1358,
+     "Écrase la Jacquerie"
+    ]
+   ],
+   "wikipedia": "Charles II de Navarre"
+  },
+  {
+   "id": "jeanneevr",
+   "slug": "jeanne-d-evreux",
+   "nom": "Jeanne d’Évreux",
+   "naissance": 1310,
+   "mort": 1371,
+   "approximatif": false,
+   "maison": "evreux",
+   "sexe": "f",
+   "titre": "Reine de France (1325–1328)",
+   "parents": [
+    "louisevr",
+    "margart"
+   ],
+   "conjoints": [
+    "charles4"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Jeanne d'Évreux"
+  },
+  {
+   "id": "philippe6",
+   "slug": "philippe-vi-de-valois",
+   "nom": "Philippe VI de Valois",
+   "naissance": 1293,
+   "mort": 1350,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "m",
+   "titre": "Roi de France (1328–1350)",
+   "parents": [
+    "charlesval",
+    "marganj"
+   ],
+   "conjoints": [
+    "jeanneboit"
+   ],
+   "titres": [
+    [
+     "France",
+     1328,
+     1350
+    ]
+   ],
+   "faits": [
+    [
+     1328,
+     "Choisi roi par les barons : premier Valois"
+    ],
+    [
+     1328,
+     "Victoire de Cassel sur les Flamands"
+    ],
+    [
+     1346,
+     "Défaite de Crécy"
+    ],
+    [
+     1349,
+     "Achète le Dauphiné"
+    ]
+   ],
+   "wikipedia": "Philippe VI de Valois"
+  },
+  {
+   "id": "jean2",
+   "slug": "jean-ii-le-bon",
+   "nom": "Jean II le Bon",
+   "naissance": 1319,
+   "mort": 1364,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "m",
+   "titre": "Roi de France (1350–1364)",
+   "parents": [
+    "philippe6",
+    "jeanneboit"
+   ],
+   "conjoints": [
+    "bonnelux"
+   ],
+   "titres": [
+    [
+     "France",
+     1350,
+     1364
+    ],
+    [
+     "Duché de Bourgogne",
+     1361,
+     1363
+    ]
+   ],
+   "faits": [
+    [
+     1350,
+     "Roi"
+    ],
+    [
+     1356,
+     "Capturé à Poitiers"
+    ],
+    [
+     1360,
+     "Traité de Brétigny ; création du franc pour sa rançon"
+    ],
+    [
+     1364,
+     "Meurt captif à Londres"
+    ]
+   ],
+   "wikipedia": "Jean II le Bon"
+  },
+  {
+   "id": "louis1anj",
+   "slug": "louis-ier-d-anjou",
+   "nom": "Louis Ier d’Anjou",
+   "naissance": 1339,
+   "mort": 1384,
+   "approximatif": false,
+   "maison": "valanj",
+   "sexe": "m",
+   "titre": "Duc d’Anjou, roi titulaire de Naples",
+   "parents": [
+    "jean2",
+    "bonnelux"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Provence",
+     1382,
+     1384
+    ],
+    [
+     "Naples",
+     1382,
+     1384
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Louis Ier d'Anjou"
+  },
+  {
+   "id": "louis2anj",
+   "slug": "louis-ii-d-anjou",
+   "nom": "Louis II d’Anjou",
+   "naissance": 1377,
+   "mort": 1417,
+   "approximatif": false,
+   "maison": "valanj",
+   "sexe": "m",
+   "titre": "Duc d’Anjou, roi de Naples contesté",
+   "parents": [
+    "louis1anj"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Naples",
+     1389,
+     1399
+    ],
+    [
+     "Provence",
+     1384,
+     1417
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Louis II d'Anjou"
+  },
+  {
+   "id": "rene",
+   "slug": "rene-d-anjou",
+   "nom": "René d’Anjou",
+   "naissance": 1409,
+   "mort": 1480,
+   "approximatif": false,
+   "maison": "valanj",
+   "sexe": "m",
+   "titre": "Le bon roi René",
+   "parents": [
+    "louis2anj"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Naples",
+     1435,
+     1442
+    ],
+    [
+     "Provence",
+     1434,
+     1480
+    ]
+   ],
+   "faits": [
+    [
+     1431,
+     "Prisonnier du duc de Bourgogne jusqu’en 1437"
+    ],
+    [
+     1434,
+     "Duc d’Anjou, comte de Provence : le « bon roi René »"
+    ]
+   ],
+   "wikipedia": "René d'Anjou"
+  },
+  {
+   "id": "marieanj",
+   "slug": "marie-d-anjou",
+   "nom": "Marie d’Anjou",
+   "naissance": 1404,
+   "mort": 1463,
+   "approximatif": false,
+   "maison": "valanj",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [
+    "louis2anj"
+   ],
+   "conjoints": [
+    "charles7"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1422,
+     "Épouse Charles VII"
+    ]
+   ],
+   "wikipedia": "Marie d'Anjou"
+  },
+  {
+   "id": "margarethanj",
+   "slug": "marguerite-d-anjou",
+   "nom": "Marguerite d’Anjou",
+   "naissance": 1430,
+   "mort": 1482,
+   "approximatif": false,
+   "maison": "valanj",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre",
+   "parents": [
+    "rene"
+   ],
+   "conjoints": [
+    "henry6"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1445,
+     "Épouse Henri VI d’Angleterre"
+    ],
+    [
+     1471,
+     "Vaincue à Tewkesbury"
+    ]
+   ],
+   "wikipedia": "Marguerite d'Anjou (1430-1482)"
+  },
+  {
+   "id": "charles5",
+   "slug": "charles-v-le-sage",
+   "nom": "Charles V le Sage",
+   "naissance": 1338,
+   "mort": 1380,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "m",
+   "titre": "Roi de France (1364–1380)",
+   "parents": [
+    "jean2",
+    "bonnelux"
+   ],
+   "conjoints": [
+    "jeannebourbon"
+   ],
+   "titres": [
+    [
+     "France",
+     1364,
+     1380
+    ]
+   ],
+   "faits": [
+    [
+     1358,
+     "Dauphin, affronte Étienne Marcel"
+    ],
+    [
+     1364,
+     "Roi ; victoire de Cocherel par Du Guesclin"
+    ],
+    [
+     1368,
+     "Fonde la librairie royale du Louvre"
+    ],
+    [
+     1380,
+     "Meurt après avoir repris presque tout le terrain perdu"
+    ]
+   ],
+   "wikipedia": "Charles V le Sage"
+  },
+  {
+   "id": "louis1bourbon",
+   "slug": "louis-ier-de-bourbon",
+   "nom": "Louis Ier de Bourbon",
+   "naissance": 1279,
+   "mort": 1342,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Premier duc de Bourbon (1327)",
+   "parents": [
+    "robclermont"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Louis Ier de Bourbon"
+  },
+  {
+   "id": "pierre1bourbon",
+   "slug": "pierre-ier-de-bourbon",
+   "nom": "Pierre Ier de Bourbon",
+   "naissance": 1311,
+   "mort": 1356,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Duc de Bourbon",
+   "parents": [
+    "louis1bourbon"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Pierre Ier de Bourbon"
+  },
+  {
+   "id": "jeannebourbon",
+   "slug": "jeanne-de-bourbon",
+   "nom": "Jeanne de Bourbon",
+   "naissance": 1338,
+   "mort": 1378,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [
+    "pierre1bourbon"
+   ],
+   "conjoints": [
+    "charles5"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1350,
+     "Épouse le futur Charles V"
+    ]
+   ],
+   "wikipedia": "Jeanne de Bourbon (1338-1378)"
+  },
+  {
+   "id": "jacques1marche",
+   "slug": "jacques-de-la-marche",
+   "nom": "Jacques de La Marche",
+   "naissance": 1319,
+   "mort": 1362,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Comte de La Marche, connétable",
+   "parents": [
+    "louis1bourbon"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Jacques Ier de Bourbon-La Marche"
+  },
+  {
+   "id": "jean1marche",
+   "slug": "jean-de-la-marche",
+   "nom": "Jean de La Marche",
+   "naissance": 1344,
+   "mort": 1393,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Comte de La Marche et de Vendôme",
+   "parents": [
+    "jacques1marche"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Jean Ier de Bourbon-La Marche"
+  },
+  {
+   "id": "louisvendome",
+   "slug": "louis-de-vendome",
+   "nom": "Louis de Vendôme",
+   "naissance": 1376,
+   "mort": 1446,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Comte de Vendôme",
+   "parents": [
+    "jean1marche"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Louis Ier de Bourbon-Vendôme"
+  },
+  {
+   "id": "jean2vendome",
+   "slug": "jean-de-vendome",
+   "nom": "Jean de Vendôme",
+   "naissance": 1428,
+   "mort": 1478,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Comte de Vendôme",
+   "parents": [
+    "louisvendome"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Jean VIII de Bourbon-Vendôme"
+  },
+  {
+   "id": "francoisvendome",
+   "slug": "francois-de-vendome",
+   "nom": "François de Vendôme",
+   "naissance": 1470,
+   "mort": 1495,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Comte de Vendôme",
+   "parents": [
+    "jean2vendome"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "François de Bourbon-Vendôme"
+  },
+  {
+   "id": "charlesvendome",
+   "slug": "charles-de-bourbon-vendome",
+   "nom": "Charles de Bourbon-Vendôme",
+   "naissance": 1489,
+   "mort": 1537,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Duc de Vendôme",
+   "parents": [
+    "francoisvendome"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Charles IV de Bourbon"
+  },
+  {
+   "id": "antoine",
+   "slug": "antoine-de-bourbon",
+   "nom": "Antoine de Bourbon",
+   "naissance": 1518,
+   "mort": 1562,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi de Navarre par mariage",
+   "parents": [
+    "charlesvendome"
+   ],
+   "conjoints": [
+    "jeannealbret"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1548,
+     "Épouse Jeanne d’Albret"
+    ],
+    [
+     1562,
+     "Tué au siège de Rouen"
+    ]
+   ],
+   "wikipedia": "Antoine de Bourbon"
+  },
+  {
+   "id": "henri2albret",
+   "slug": "henri-ii-d-albret",
+   "nom": "Henri II d’Albret",
+   "naissance": 1503,
+   "mort": 1555,
+   "approximatif": false,
+   "maison": "albret",
+   "sexe": "m",
+   "titre": "Roi de Navarre (1517–1555)",
+   "parents": [],
+   "conjoints": [
+    "margang"
+   ],
+   "titres": [
+    [
+     "Navarre",
+     1517,
+     1555
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Henri II de Navarre"
+  },
+  {
+   "id": "margang",
+   "slug": "marguerite-de-navarre",
+   "nom": "Marguerite de Navarre",
+   "naissance": 1492,
+   "mort": 1549,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "f",
+   "titre": "Reine de Navarre, écrivain",
+   "parents": [
+    "charlesang",
+    "louisesav"
+   ],
+   "conjoints": [
+    "henri2albret"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1527,
+     "Épouse Henri d’Albret, roi de Navarre"
+    ],
+    [
+     1559,
+     "L’Heptaméron paraît après sa mort"
+    ]
+   ],
+   "wikipedia": "Marguerite de Valois-Angoulême"
+  },
+  {
+   "id": "jeannealbret",
+   "slug": "jeanne-d-albret",
+   "nom": "Jeanne d’Albret",
+   "naissance": 1528,
+   "mort": 1572,
+   "approximatif": false,
+   "maison": "albret",
+   "sexe": "f",
+   "titre": "Reine de Navarre (1555–1572)",
+   "parents": [
+    "henri2albret",
+    "margang"
+   ],
+   "conjoints": [
+    "antoine"
+   ],
+   "titres": [
+    [
+     "Navarre",
+     1555,
+     1572
+    ]
+   ],
+   "faits": [
+    [
+     1560,
+     "Se convertit au calvinisme"
+    ],
+    [
+     1572,
+     "Meurt à Paris avant les noces de son fils"
+    ]
+   ],
+   "wikipedia": "Jeanne d'Albret"
+  },
+  {
+   "id": "henri4",
+   "slug": "henri-iv",
+   "nom": "Henri IV",
+   "naissance": 1553,
+   "mort": 1610,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi de Navarre, roi de France (1589–1610)",
+   "parents": [
+    "antoine",
+    "jeannealbret"
+   ],
+   "conjoints": [
+    "margot",
+    "mariemedicis"
+   ],
+   "titres": [
+    [
+     "Navarre",
+     1572,
+     1610
+    ],
+    [
+     "France",
+     1589,
+     1610
+    ]
+   ],
+   "faits": [
+    [
+     1572,
+     "Épouse Marguerite de Valois"
+    ],
+    [
+     1589,
+     "Roi de France à la mort d’Henri III"
+    ],
+    [
+     1593,
+     "Abjure le protestantisme à Saint-Denis"
+    ],
+    [
+     1598,
+     "Édit de Nantes"
+    ],
+    [
+     1610,
+     "Assassiné par Ravaillac"
+    ]
+   ],
+   "wikipedia": "Henri IV (roi de France)"
+  },
+  {
+   "id": "charles6",
+   "slug": "charles-vi-le-fol",
+   "nom": "Charles VI le Fol",
+   "naissance": 1368,
+   "mort": 1422,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "m",
+   "titre": "Roi de France (1380–1422)",
+   "parents": [
+    "charles5",
+    "jeannebourbon"
+   ],
+   "conjoints": [
+    "isabeau"
+   ],
+   "titres": [
+    [
+     "France",
+     1380,
+     1422
+    ]
+   ],
+   "faits": [
+    [
+     1380,
+     "Roi à 11 ans"
+    ],
+    [
+     1392,
+     "Première crise de folie, en forêt du Mans"
+    ],
+    [
+     1393,
+     "Bal des ardents"
+    ],
+    [
+     1415,
+     "Désastre d’Azincourt"
+    ],
+    [
+     1420,
+     "Traité de Troyes : déshérite son fils"
+    ]
+   ],
+   "wikipedia": "Charles VI (roi de France)"
+  },
+  {
+   "id": "louisorl",
+   "slug": "louis-d-orleans",
+   "nom": "Louis d’Orléans",
+   "naissance": 1372,
+   "mort": 1407,
+   "approximatif": false,
+   "maison": "valorl",
+   "sexe": "m",
+   "titre": "Duc d’Orléans",
+   "parents": [
+    "charles5",
+    "jeannebourbon"
+   ],
+   "conjoints": [
+    "valentine"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1407,
+     "Assassiné rue Vieille-du-Temple par les hommes de Jean sans Peur"
+    ]
+   ],
+   "wikipedia": "Louis Ier d'Orléans"
+  },
+  {
+   "id": "valentine",
+   "slug": "valentine-visconti",
+   "nom": "Valentine Visconti",
+   "naissance": 1371,
+   "mort": 1408,
+   "approximatif": true,
+   "maison": "italie",
+   "sexe": "f",
+   "titre": "Duchesse d’Orléans",
+   "parents": [],
+   "conjoints": [
+    "louisorl"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1389,
+     "Épouse Louis d’Orléans ; ses droits sur Milan mèneront aux guerres d’Italie"
+    ]
+   ],
+   "wikipedia": "Valentine Visconti (1368-1408)"
+  },
+  {
+   "id": "charlesorl",
+   "slug": "charles-d-orleans",
+   "nom": "Charles d’Orléans",
+   "naissance": 1394,
+   "mort": 1465,
+   "approximatif": false,
+   "maison": "valorl",
+   "sexe": "m",
+   "titre": "Duc d’Orléans, poète",
+   "parents": [
+    "louisorl",
+    "valentine"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     1415,
+     "Capturé à Azincourt, 25 ans de captivité en Angleterre"
+    ],
+    [
+     1440,
+     "Libéré ; poète de Blois"
+    ]
+   ],
+   "wikipedia": "Charles Ier d'Orléans"
+  },
+  {
+   "id": "jeanang",
+   "slug": "jean-d-angouleme",
+   "nom": "Jean d’Angoulême",
+   "naissance": 1399,
+   "mort": 1467,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "m",
+   "titre": "Comte d’Angoulême",
+   "parents": [
+    "louisorl",
+    "valentine"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Jean d'Orléans (1399-1467)"
+  },
+  {
+   "id": "charles7",
+   "slug": "charles-vii",
+   "nom": "Charles VII",
+   "naissance": 1403,
+   "mort": 1461,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "m",
+   "titre": "Roi de France (1422–1461)",
+   "parents": [
+    "charles6",
+    "isabeau"
+   ],
+   "conjoints": [
+    "marieanj"
+   ],
+   "titres": [
+    [
+     "France",
+     1422,
+     1461
+    ]
+   ],
+   "faits": [
+    [
+     1422,
+     "« Roi de Bourges », contesté"
+    ],
+    [
+     1429,
+     "Jeanne d’Arc délivre Orléans ; sacre à Reims"
+    ],
+    [
+     1435,
+     "Paix d’Arras avec la Bourgogne"
+    ],
+    [
+     1453,
+     "Victoire de Castillon, fin de la guerre de Cent Ans"
+    ]
+   ],
+   "wikipedia": "Charles VII (roi de France)"
+  },
+  {
+   "id": "louis11",
+   "slug": "louis-xi",
+   "nom": "Louis XI",
+   "naissance": 1423,
+   "mort": 1483,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "m",
+   "titre": "Roi de France (1461–1483)",
+   "parents": [
+    "charles7",
+    "marieanj"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1461,
+     1483
+    ],
+    [
+     "Duché de Bourgogne",
+     1477,
+     1483
+    ],
+    [
+     "Provence",
+     1481,
+     1483
+    ]
+   ],
+   "faits": [
+    [
+     1465,
+     "Affronte la ligue du Bien public"
+    ],
+    [
+     1468,
+     "Retenu à Péronne par Charles le Téméraire"
+    ],
+    [
+     1475,
+     "Traité de Picquigny"
+    ],
+    [
+     1477,
+     "S’empare de la Bourgogne"
+    ]
+   ],
+   "wikipedia": "Louis XI"
+  },
+  {
+   "id": "charles8",
+   "slug": "charles-viii",
+   "nom": "Charles VIII",
+   "naissance": 1470,
+   "mort": 1498,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "m",
+   "titre": "Roi de France (1483–1498)",
+   "parents": [
+    "louis11"
+   ],
+   "conjoints": [
+    "annebret"
+   ],
+   "titres": [
+    [
+     "France",
+     1483,
+     1498
+    ],
+    [
+     "Bretagne",
+     1491,
+     1498
+    ]
+   ],
+   "faits": [
+    [
+     1491,
+     "Épouse Anne de Bretagne"
+    ],
+    [
+     1494,
+     "Part conquérir Naples"
+    ],
+    [
+     1498,
+     "Meurt après s’être heurté à un linteau à Amboise"
+    ]
+   ],
+   "wikipedia": "Charles VIII (roi de France)"
+  },
+  {
+   "id": "louis12",
+   "slug": "louis-xii",
+   "nom": "Louis XII",
+   "naissance": 1462,
+   "mort": 1515,
+   "approximatif": false,
+   "maison": "valorl",
+   "sexe": "m",
+   "titre": "Roi de France (1498–1515)",
+   "parents": [
+    "charlesorl"
+   ],
+   "conjoints": [
+    "annebret"
+   ],
+   "titres": [
+    [
+     "France",
+     1498,
+     1515
+    ],
+    [
+     "Bretagne",
+     1499,
+     1514
+    ]
+   ],
+   "faits": [
+    [
+     1498,
+     "Fait annuler son mariage et épouse Anne de Bretagne"
+    ],
+    [
+     1499,
+     "Conquiert le Milanais"
+    ],
+    [
+     1506,
+     "Surnommé « Père du peuple »"
+    ]
+   ],
+   "wikipedia": "Louis XII"
+  },
+  {
+   "id": "francois2bret",
+   "slug": "francois-ii-de-bretagne",
+   "nom": "François II de Bretagne",
+   "naissance": 1435,
+   "mort": 1488,
+   "approximatif": false,
+   "maison": "savoie",
+   "sexe": "m",
+   "titre": "Duc de Bretagne",
+   "parents": [],
+   "conjoints": [],
+   "titres": [
+    [
+     "Bretagne",
+     1458,
+     1488
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "François II de Bretagne"
+  },
+  {
+   "id": "annebret",
+   "slug": "anne-de-bretagne",
+   "nom": "Anne de Bretagne",
+   "naissance": 1477,
+   "mort": 1514,
+   "approximatif": false,
+   "maison": "savoie",
+   "sexe": "f",
+   "titre": "Duchesse de Bretagne, deux fois reine de France",
+   "parents": [
+    "francois2bret"
+   ],
+   "conjoints": [
+    "charles8",
+    "louis12"
+   ],
+   "titres": [
+    [
+     "Bretagne",
+     1488,
+     1514
+    ]
+   ],
+   "faits": [
+    [
+     1491,
+     "Épouse Charles VIII"
+    ],
+    [
+     1499,
+     "Épouse Louis XII : deux fois reine"
+    ]
+   ],
+   "wikipedia": "Anne de Bretagne"
+  },
+  {
+   "id": "claude",
+   "slug": "claude-de-france",
+   "nom": "Claude de France",
+   "naissance": 1499,
+   "mort": 1524,
+   "approximatif": false,
+   "maison": "valorl",
+   "sexe": "f",
+   "titre": "Reine de France, duchesse de Bretagne",
+   "parents": [
+    "louis12",
+    "annebret"
+   ],
+   "conjoints": [
+    "francois1"
+   ],
+   "titres": [
+    [
+     "Bretagne",
+     1514,
+     1524
+    ]
+   ],
+   "faits": [
+    [
+     1514,
+     "Épouse François d’Angoulême"
+    ],
+    [
+     1515,
+     "Reine ; la prune « reine-claude » porte son nom"
+    ]
+   ],
+   "wikipedia": "Claude de France (1499-1524)"
+  },
+  {
+   "id": "charlesang",
+   "slug": "charles-d-angouleme",
+   "nom": "Charles d’Angoulême",
+   "naissance": 1459,
+   "mort": 1496,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "m",
+   "titre": "Comte d’Angoulême",
+   "parents": [
+    "jeanang"
+   ],
+   "conjoints": [
+    "louisesav"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Charles d'Orléans (1459-1496)"
+  },
+  {
+   "id": "louisesav",
+   "slug": "louise-de-savoie",
+   "nom": "Louise de Savoie",
+   "naissance": 1476,
+   "mort": 1531,
+   "approximatif": false,
+   "maison": "savoie",
+   "sexe": "f",
+   "titre": "Régente de France",
+   "parents": [],
+   "conjoints": [
+    "charlesang"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1515,
+     "Régente pendant Marignan"
+    ],
+    [
+     1525,
+     "Régente pendant la captivité du roi"
+    ],
+    [
+     1529,
+     "Négocie la paix des Dames"
+    ]
+   ],
+   "wikipedia": "Louise de Savoie"
+  },
+  {
+   "id": "francois1",
+   "slug": "francois-ier",
+   "nom": "François Ier",
+   "naissance": 1494,
+   "mort": 1547,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "m",
+   "titre": "Roi de France (1515–1547)",
+   "parents": [
+    "charlesang",
+    "louisesav"
+   ],
+   "conjoints": [
+    "claude",
+    "eleonoreaut"
+   ],
+   "titres": [
+    [
+     "France",
+     1515,
+     1547
+    ]
+   ],
+   "faits": [
+    [
+     1515,
+     "Victoire de Marignan"
+    ],
+    [
+     1520,
+     "Camp du Drap d’or"
+    ],
+    [
+     1525,
+     "Capturé à Pavie"
+    ],
+    [
+     1539,
+     "Ordonnance de Villers-Cotterêts : le français dans les actes"
+    ]
+   ],
+   "wikipedia": "François Ier (roi de France)"
+  },
+  {
+   "id": "henri2",
+   "slug": "henri-ii",
+   "nom": "Henri II",
+   "naissance": 1519,
+   "mort": 1559,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "m",
+   "titre": "Roi de France (1547–1559)",
+   "parents": [
+    "francois1",
+    "claude"
+   ],
+   "conjoints": [
+    "catmedicis"
+   ],
+   "titres": [
+    [
+     "France",
+     1547,
+     1559
+    ]
+   ],
+   "faits": [
+    [
+     1533,
+     "Épouse Catherine de Médicis"
+    ],
+    [
+     1552,
+     "Prend Metz, Toul et Verdun"
+    ],
+    [
+     1559,
+     "Paix du Cateau-Cambrésis ; blessé à mort en tournoi"
+    ]
+   ],
+   "wikipedia": "Henri II (roi de France)"
+  },
+  {
+   "id": "catmedicis",
+   "slug": "catherine-de-medicis",
+   "nom": "Catherine de Médicis",
+   "naissance": 1519,
+   "mort": 1589,
+   "approximatif": false,
+   "maison": "italie",
+   "sexe": "f",
+   "titre": "Reine de France, régente",
+   "parents": [],
+   "conjoints": [
+    "henri2"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1533,
+     "Épouse le futur Henri II"
+    ],
+    [
+     1560,
+     "Régente pour Charles IX"
+    ],
+    [
+     1572,
+     "Massacre de la Saint-Barthélemy"
+    ]
+   ],
+   "wikipedia": "Catherine de Médicis"
+  },
+  {
+   "id": "eleonoreaut",
+   "slug": "eleonore-d-autriche",
+   "nom": "Éléonore d’Autriche",
+   "naissance": 1498,
+   "mort": 1558,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "f",
+   "titre": "Reine de Portugal, puis de France",
+   "parents": [
+    "philbeau",
+    "jeannefolle"
+   ],
+   "conjoints": [
+    "francois1"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Éléonore de Habsbourg"
+  },
+  {
+   "id": "francois2",
+   "slug": "francois-ii",
+   "nom": "François II",
+   "naissance": 1544,
+   "mort": 1560,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "m",
+   "titre": "Roi de France (1559–1560)",
+   "parents": [
+    "henri2",
+    "catmedicis"
+   ],
+   "conjoints": [
+    "mariestuart"
+   ],
+   "titres": [
+    [
+     "France",
+     1559,
+     1560
+    ]
+   ],
+   "faits": [
+    [
+     1558,
+     "Épouse Marie Stuart"
+    ],
+    [
+     1560,
+     "Conjuration d’Amboise ; meurt à 16 ans"
+    ]
+   ],
+   "wikipedia": "François II (roi de France)"
+  },
+  {
+   "id": "elisabethval",
+   "slug": "elisabeth-de-valois",
+   "nom": "Élisabeth de Valois",
+   "naissance": 1545,
+   "mort": 1568,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "f",
+   "titre": "Reine d’Espagne",
+   "parents": [
+    "henri2",
+    "catmedicis"
+   ],
+   "conjoints": [
+    "philippe2esp"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1559,
+     "Épouse Philippe II d’Espagne"
+    ]
+   ],
+   "wikipedia": "Élisabeth de France (1545-1568)"
+  },
+  {
+   "id": "charles9",
+   "slug": "charles-ix",
+   "nom": "Charles IX",
+   "naissance": 1550,
+   "mort": 1574,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "m",
+   "titre": "Roi de France (1560–1574)",
+   "parents": [
+    "henri2",
+    "catmedicis"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1560,
+     1574
+    ]
+   ],
+   "faits": [
+    [
+     1562,
+     "Début des guerres de Religion"
+    ],
+    [
+     1572,
+     "Massacre de la Saint-Barthélemy"
+    ]
+   ],
+   "wikipedia": "Charles IX (roi de France)"
+  },
+  {
+   "id": "henri3",
+   "slug": "henri-iii",
+   "nom": "Henri III",
+   "naissance": 1551,
+   "mort": 1589,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "m",
+   "titre": "Roi de France (1574–1589), roi de Pologne",
+   "parents": [
+    "henri2",
+    "catmedicis"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1574,
+     1589
+    ]
+   ],
+   "faits": [
+    [
+     1573,
+     "Élu roi de Pologne"
+    ],
+    [
+     1588,
+     "Fait assassiner le duc de Guise à Blois"
+    ],
+    [
+     1589,
+     "Assassiné par Jacques Clément"
+    ]
+   ],
+   "wikipedia": "Henri III (roi de France)"
+  },
+  {
+   "id": "margot",
+   "slug": "marguerite-de-valois",
+   "nom": "Marguerite de Valois",
+   "naissance": 1553,
+   "mort": 1615,
+   "approximatif": false,
+   "maison": "valang",
+   "sexe": "f",
+   "titre": "La reine Margot",
+   "parents": [
+    "henri2",
+    "catmedicis"
+   ],
+   "conjoints": [
+    "henri4"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1572,
+     "Épouse Henri de Navarre, six jours avant la Saint-Barthélemy"
+    ],
+    [
+     1599,
+     "Mariage annulé"
+    ]
+   ],
+   "wikipedia": "Marguerite de France (1553-1615)"
+  },
+  {
+   "id": "mariemedicis",
+   "slug": "marie-de-medicis",
+   "nom": "Marie de Médicis",
+   "naissance": 1575,
+   "mort": 1642,
+   "approximatif": false,
+   "maison": "italie",
+   "sexe": "f",
+   "titre": "Reine de France, régente",
+   "parents": [],
+   "conjoints": [
+    "henri4"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1600,
+     "Épouse Henri IV"
+    ],
+    [
+     1610,
+     "Régente"
+    ],
+    [
+     1630,
+     "Journée des Dupes, puis exil"
+    ]
+   ],
+   "wikipedia": "Marie de Médicis"
+  },
+  {
+   "id": "louis13",
+   "slug": "louis-xiii",
+   "nom": "Louis XIII",
+   "naissance": 1601,
+   "mort": 1643,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi de France (1610–1643)",
+   "parents": [
+    "henri4",
+    "mariemedicis"
+   ],
+   "conjoints": [
+    "anneaut"
+   ],
+   "titres": [
+    [
+     "France",
+     1610,
+     1643
+    ],
+    [
+     "Navarre",
+     1610,
+     1643
+    ]
+   ],
+   "faits": [
+    [
+     1617,
+     "Fait assassiner Concini et prend le pouvoir"
+    ],
+    [
+     1624,
+     "Appelle Richelieu"
+    ],
+    [
+     1628,
+     "Siège de La Rochelle"
+    ]
+   ],
+   "wikipedia": "Louis XIII"
+  },
+  {
+   "id": "elisabethfr",
+   "slug": "elisabeth-de-france",
+   "nom": "Élisabeth de France",
+   "naissance": 1602,
+   "mort": 1644,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "f",
+   "titre": "Reine d’Espagne",
+   "parents": [
+    "henri4",
+    "mariemedicis"
+   ],
+   "conjoints": [
+    "philippe4esp"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Élisabeth de France (1602-1644)"
+  },
+  {
+   "id": "anneaut",
+   "slug": "anne-d-autriche",
+   "nom": "Anne d’Autriche",
+   "naissance": 1601,
+   "mort": 1666,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "f",
+   "titre": "Reine de France, régente",
+   "parents": [
+    "philippe3esp"
+   ],
+   "conjoints": [
+    "louis13"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1615,
+     "Épouse Louis XIII"
+    ],
+    [
+     1638,
+     "Naissance de Louis XIV"
+    ],
+    [
+     1643,
+     "Régente avec Mazarin"
+    ],
+    [
+     1648,
+     "La Fronde éclate"
+    ]
+   ],
+   "wikipedia": "Anne d'Autriche (1601-1666)"
+  },
+  {
+   "id": "louis14",
+   "slug": "louis-xiv",
+   "nom": "Louis XIV",
+   "naissance": 1638,
+   "mort": 1715,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi de France (1643–1715)",
+   "parents": [
+    "louis13",
+    "anneaut"
+   ],
+   "conjoints": [
+    "mariethe"
+   ],
+   "titres": [
+    [
+     "France",
+     1643,
+     1715
+    ],
+    [
+     "Navarre",
+     1643,
+     1715
+    ]
+   ],
+   "faits": [
+    [
+     1643,
+     "Roi à 4 ans"
+    ],
+    [
+     1660,
+     "Épouse Marie-Thérèse d’Autriche"
+    ],
+    [
+     1661,
+     "Gouverne seul"
+    ],
+    [
+     1682,
+     "S’installe à Versailles"
+    ],
+    [
+     1685,
+     "Révoque l’édit de Nantes"
+    ],
+    [
+     1700,
+     "Son petit-fils devient roi d’Espagne"
+    ]
+   ],
+   "wikipedia": "Louis XIV"
+  },
+  {
+   "id": "mariethe",
+   "slug": "marie-therese-d-autriche",
+   "nom": "Marie-Thérèse d’Autriche",
+   "naissance": 1638,
+   "mort": 1683,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "f",
+   "titre": "Reine de France",
+   "parents": [
+    "philippe4esp",
+    "elisabethfr"
+   ],
+   "conjoints": [
+    "louis14"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1660,
+     "Épouse Louis XIV à Saint-Jean-de-Luz"
+    ]
+   ],
+   "wikipedia": "Marie-Thérèse d'Autriche (1638-1683)"
+  },
+  {
+   "id": "philorl",
+   "slug": "philippe-d-orleans",
+   "nom": "Philippe d’Orléans",
+   "naissance": 1640,
+   "mort": 1701,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Monsieur, frère du roi",
+   "parents": [
+    "louis13",
+    "anneaut"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     1661,
+     "Épouse Henriette d’Angleterre ; « Monsieur », frère du roi"
+    ]
+   ],
+   "wikipedia": "Philippe d'Orléans (1640-1701)"
+  },
+  {
+   "id": "grandauphin",
+   "slug": "louis-le-grand-dauphin",
+   "nom": "Louis, le Grand Dauphin",
+   "naissance": 1661,
+   "mort": 1711,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Dauphin, fils de Louis XIV",
+   "parents": [
+    "louis14",
+    "mariethe"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     1711,
+     "Meurt de la variole avant son père"
+    ]
+   ],
+   "wikipedia": "Louis de France (1661-1711)"
+  },
+  {
+   "id": "ducbourgogne",
+   "slug": "louis-duc-de-bourgogne",
+   "nom": "Louis, duc de Bourgogne",
+   "naissance": 1682,
+   "mort": 1712,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Dauphin (1711–1712)",
+   "parents": [
+    "grandauphin"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     1712,
+     "Meurt de la rougeole, avec sa femme et son fils aîné"
+    ]
+   ],
+   "wikipedia": "Louis de France (1682-1712)"
+  },
+  {
+   "id": "philippe5esp",
+   "slug": "philippe-v-d-espagne",
+   "nom": "Philippe V d’Espagne",
+   "naissance": 1683,
+   "mort": 1746,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1700–1746)",
+   "parents": [
+    "grandauphin"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Espagne",
+     1700,
+     1746
+    ]
+   ],
+   "faits": [
+    [
+     1700,
+     "Roi d’Espagne par testament de Charles II"
+    ],
+    [
+     1713,
+     "Traité d’Utrecht : renonce au trône de France"
+    ]
+   ],
+   "wikipedia": "Philippe V (roi d'Espagne)"
+  },
+  {
+   "id": "louis15",
+   "slug": "louis-xv",
+   "nom": "Louis XV",
+   "naissance": 1710,
+   "mort": 1774,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi de France (1715–1774)",
+   "parents": [
+    "ducbourgogne"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1715,
+     1774
+    ],
+    [
+     "Navarre",
+     1715,
+     1774
+    ]
+   ],
+   "faits": [
+    [
+     1715,
+     "Roi à 5 ans"
+    ],
+    [
+     1763,
+     "Traité de Paris : perte du Canada"
+    ],
+    [
+     1768,
+     "Rattachement de la Corse"
+    ]
+   ],
+   "wikipedia": "Louis XV"
+  },
+  {
+   "id": "dauphinlouis",
+   "slug": "louis-dauphin-de-france",
+   "nom": "Louis, dauphin de France",
+   "naissance": 1729,
+   "mort": 1765,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Dauphin, fils de Louis XV",
+   "parents": [
+    "louis15"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Louis de France (1729-1765)"
+  },
+  {
+   "id": "louis16",
+   "slug": "louis-xvi",
+   "nom": "Louis XVI",
+   "naissance": 1754,
+   "mort": 1793,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi de France (1774–1792)",
+   "parents": [
+    "dauphinlouis"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1774,
+     1792
+    ],
+    [
+     "Navarre",
+     1774,
+     1792
+    ]
+   ],
+   "faits": [
+    [
+     1770,
+     "Épouse Marie-Antoinette"
+    ],
+    [
+     1789,
+     "Réunit les États généraux"
+    ],
+    [
+     1791,
+     "Fuite à Varennes"
+    ],
+    [
+     1793,
+     "Guillotiné"
+    ]
+   ],
+   "wikipedia": "Louis XVI"
+  },
+  {
+   "id": "louis18",
+   "slug": "louis-xviii",
+   "nom": "Louis XVIII",
+   "naissance": 1755,
+   "mort": 1824,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi de France (1814–1824)",
+   "parents": [
+    "dauphinlouis"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1814,
+     1824
+    ],
+    [
+     "Navarre",
+     1814,
+     1824
+    ]
+   ],
+   "faits": [
+    [
+     1814,
+     "Restauration ; octroie la Charte"
+    ],
+    [
+     1815,
+     "S’enfuit à Gand pendant les Cent-Jours"
+    ]
+   ],
+   "wikipedia": "Louis XVIII"
+  },
+  {
+   "id": "charles10",
+   "slug": "charles-x",
+   "nom": "Charles X",
+   "naissance": 1757,
+   "mort": 1836,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi de France (1824–1830)",
+   "parents": [
+    "dauphinlouis"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1824,
+     1830
+    ],
+    [
+     "Navarre",
+     1824,
+     1830
+    ],
+    [
+     "Prétendant légitimiste",
+     1830,
+     1836
+    ]
+   ],
+   "faits": [
+    [
+     1825,
+     "Sacré à Reims"
+    ],
+    [
+     1830,
+     "Prise d’Alger ; révolution de Juillet et abdication"
+    ]
+   ],
+   "wikipedia": "Charles X (roi de France)"
+  },
+  {
+   "id": "regent",
+   "slug": "philippe-d-orleans-le-regent",
+   "nom": "Philippe d’Orléans, le Régent",
+   "naissance": 1674,
+   "mort": 1723,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Régent de France (1715–1723)",
+   "parents": [
+    "philorl"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     1715,
+     "Régent pour Louis XV"
+    ],
+    [
+     1720,
+     "Faillite du système de Law"
+    ]
+   ],
+   "wikipedia": "Philippe d'Orléans (1674-1723)"
+  },
+  {
+   "id": "louisorl2",
+   "slug": "louis-d-orleans-le-pieux",
+   "nom": "Louis d’Orléans, le Pieux",
+   "naissance": 1703,
+   "mort": 1752,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Duc d’Orléans",
+   "parents": [
+    "regent"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Louis d'Orléans (1703-1752)"
+  },
+  {
+   "id": "lpgros",
+   "slug": "louis-philippe-d-orleans-le-gros",
+   "nom": "Louis-Philippe d’Orléans, le Gros",
+   "naissance": 1725,
+   "mort": 1785,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Duc d’Orléans",
+   "parents": [
+    "louisorl2"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Louis-Philippe d'Orléans (1725-1785)"
+  },
+  {
+   "id": "egalite",
+   "slug": "philippe-egalite",
+   "nom": "Philippe Égalité",
+   "naissance": 1747,
+   "mort": 1793,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Duc d’Orléans",
+   "parents": [
+    "lpgros"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     1793,
+     "Vote la mort de son cousin Louis XVI ; guillotiné à son tour"
+    ]
+   ],
+   "wikipedia": "Louis-Philippe d'Orléans (1747-1793)"
+  },
+  {
+   "id": "louisphilippe",
+   "slug": "louis-philippe-ier",
+   "nom": "Louis-Philippe Ier",
+   "naissance": 1773,
+   "mort": 1850,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Roi des Français (1830–1848)",
+   "parents": [
+    "egalite"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "France",
+     1830,
+     1848
+    ]
+   ],
+   "faits": [
+    [
+     1830,
+     "Roi des Français"
+    ],
+    [
+     1848,
+     "Abdique et s’exile"
+    ]
+   ],
+   "wikipedia": "Louis-Philippe Ier"
+  },
+  {
+   "id": "charles3esp",
+   "slug": "charles-iii-d-espagne",
+   "nom": "Charles III d’Espagne",
+   "naissance": 1716,
+   "mort": 1788,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Roi de Naples, puis d’Espagne",
+   "parents": [
+    "philippe5esp"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Naples",
+     1734,
+     1759
+    ],
+    [
+     "Sicile",
+     1734,
+     1759
+    ],
+    [
+     "Espagne",
+     1759,
+     1788
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Charles III (roi d'Espagne)"
+  },
+  {
+   "id": "charles4esp",
+   "slug": "charles-iv-d-espagne",
+   "nom": "Charles IV d’Espagne",
+   "naissance": 1748,
+   "mort": 1819,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1788–1808)",
+   "parents": [
+    "charles3esp"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Espagne",
+     1788,
+     1808
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Charles IV (roi d'Espagne)"
+  },
+  {
+   "id": "ferdinand7",
+   "slug": "ferdinand-vii",
+   "nom": "Ferdinand VII",
+   "naissance": 1784,
+   "mort": 1833,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Roi d’Espagne",
+   "parents": [
+    "charles4esp"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Espagne",
+     1813,
+     1833
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Ferdinand VII"
+  },
+  {
+   "id": "francoisdepaule",
+   "slug": "francois-de-paule-de-bourbon",
+   "nom": "François de Paule de Bourbon",
+   "naissance": 1794,
+   "mort": 1865,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Infant d’Espagne",
+   "parents": [
+    "charles4esp"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "François de Paule de Bourbon (1794-1865)"
+  },
+  {
+   "id": "isabelle2",
+   "slug": "isabelle-ii",
+   "nom": "Isabelle II",
+   "naissance": 1830,
+   "mort": 1904,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "f",
+   "titre": "Reine d’Espagne (1833–1868)",
+   "parents": [
+    "ferdinand7"
+   ],
+   "conjoints": [
+    "francoisassise"
+   ],
+   "titres": [
+    [
+     "Espagne",
+     1833,
+     1868
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Isabelle II"
+  },
+  {
+   "id": "francoisassise",
+   "slug": "francois-d-assise-de-bourbon",
+   "nom": "François d’Assise de Bourbon",
+   "naissance": 1822,
+   "mort": 1902,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Roi consort d’Espagne",
+   "parents": [
+    "francoisdepaule"
+   ],
+   "conjoints": [
+    "isabelle2"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "François d'Assise de Bourbon"
+  },
+  {
+   "id": "alphonse12",
+   "slug": "alphonse-xii",
+   "nom": "Alphonse XII",
+   "naissance": 1857,
+   "mort": 1885,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1874–1885)",
+   "parents": [
+    "isabelle2",
+    "francoisassise"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Espagne",
+     1874,
+     1885
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Alphonse XII"
+  },
+  {
+   "id": "alphonse13",
+   "slug": "alphonse-xiii",
+   "nom": "Alphonse XIII",
+   "naissance": 1886,
+   "mort": 1941,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1886–1931)",
+   "parents": [
+    "alphonse12"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Espagne",
+     1886,
+     1931
+    ],
+    [
+     "Prétendant légitimiste",
+     1936,
+     1941
+    ]
+   ],
+   "faits": [
+    [
+     1931,
+     "Quitte l’Espagne à la proclamation de la République"
+    ],
+    [
+     1936,
+     "Devient l’aîné des Capétiens pour les légitimistes"
+    ]
+   ],
+   "wikipedia": "Alphonse XIII"
+  },
+  {
+   "id": "jacquessegovie",
+   "slug": "jacques-de-bourbon-duc-de-segovie",
+   "nom": "Jacques de Bourbon, duc de Ségovie",
+   "naissance": 1908,
+   "mort": 1975,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Aîné des Capétiens",
+   "parents": [
+    "alphonse13"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant légitimiste",
+     1941,
+     1975
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Jacques-Henri de Bourbon"
+  },
+  {
+   "id": "jeanbarcelone",
+   "slug": "jean-de-bourbon-comte-de-barcelone",
+   "nom": "Jean de Bourbon, comte de Barcelone",
+   "naissance": 1913,
+   "mort": 1993,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Héritier d’Alphonse XIII",
+   "parents": [
+    "alphonse13"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Jean de Bourbon (1913-1993)"
+  },
+  {
+   "id": "alphonsecadix",
+   "slug": "alphonse-de-bourbon-duc-de-cadix",
+   "nom": "Alphonse de Bourbon, duc de Cadix",
+   "naissance": 1936,
+   "mort": 1989,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Prétendant légitimiste",
+   "parents": [
+    "jacquessegovie"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant légitimiste",
+     1975,
+     1989
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Alphonse de Bourbon (1936-1989)"
+  },
+  {
+   "id": "louisxx",
+   "slug": "louis-de-bourbon",
+   "nom": "Louis de Bourbon",
+   "naissance": 1974,
+   "mort": null,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Prétendant légitimiste, « Louis XX »",
+   "parents": [
+    "alphonsecadix"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant légitimiste",
+     1989,
+     2026
+    ]
+   ],
+   "faits": [
+    [
+     1989,
+     "Aîné des Capétiens selon les légitimistes"
+    ]
+   ],
+   "wikipedia": "Louis de Bourbon (1974)"
+  },
+  {
+   "id": "juancarlos",
+   "slug": "juan-carlos-ier",
+   "nom": "Juan Carlos Ier",
+   "naissance": 1938,
+   "mort": null,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1975–2014)",
+   "parents": [
+    "jeanbarcelone"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Espagne",
+     1975,
+     2014
+    ]
+   ],
+   "faits": [
+    [
+     1975,
+     "Roi à la mort de Franco"
+    ],
+    [
+     1981,
+     "Fait échouer un coup d’État"
+    ],
+    [
+     2014,
+     "Abdique"
+    ]
+   ],
+   "wikipedia": "Juan Carlos Ier"
+  },
+  {
+   "id": "felipe6",
+   "slug": "felipe-vi",
+   "nom": "Felipe VI",
+   "naissance": 1968,
+   "mort": null,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "m",
+   "titre": "Roi d’Espagne depuis 2014",
+   "parents": [
+    "juancarlos"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Espagne",
+     2014,
+     2026
+    ]
+   ],
+   "faits": [
+    [
+     2014,
+     "Roi d’Espagne"
+    ]
+   ],
+   "wikipedia": "Felipe VI"
+  },
+  {
+   "id": "leonor",
+   "slug": "leonor",
+   "nom": "Leonor",
+   "naissance": 2005,
+   "mort": null,
+   "approximatif": false,
+   "maison": "bourbonesp",
+   "sexe": "f",
+   "titre": "Princesse des Asturies, héritière d’Espagne",
+   "parents": [
+    "felipe6"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Leonor de Borbón"
+  },
+  {
+   "id": "angouleme",
+   "slug": "louis-antoine-duc-d-angouleme",
+   "nom": "Louis-Antoine, duc d’Angoulême",
+   "naissance": 1775,
+   "mort": 1844,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Dauphin, « Louis XIX »",
+   "parents": [
+    "charles10"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant légitimiste",
+     1836,
+     1844
+    ]
+   ],
+   "faits": [
+    [
+     1830,
+     "Roi en titre quelques minutes, entre l’abdication de son père et la sienne"
+    ]
+   ],
+   "wikipedia": "Louis-Antoine d'Artois"
+  },
+  {
+   "id": "berry",
+   "slug": "charles-ferdinand-duc-de-berry",
+   "nom": "Charles-Ferdinand, duc de Berry",
+   "naissance": 1778,
+   "mort": 1820,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Fils de Charles X",
+   "parents": [
+    "charles10"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [
+    [
+     1820,
+     "Assassiné par Louvel à la sortie de l’Opéra"
+    ]
+   ],
+   "wikipedia": "Charles-Ferdinand d'Artois"
+  },
+  {
+   "id": "chambord",
+   "slug": "henri-comte-de-chambord",
+   "nom": "Henri, comte de Chambord",
+   "naissance": 1820,
+   "mort": 1883,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prétendant légitimiste, « Henri V »",
+   "parents": [
+    "berry"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant légitimiste",
+     1844,
+     1883
+    ]
+   ],
+   "faits": [
+    [
+     1820,
+     "« L’enfant du miracle », né après l’assassinat de son père"
+    ],
+    [
+     1873,
+     "Refuse le drapeau tricolore : la restauration échoue"
+    ]
+   ],
+   "wikipedia": "Henri d'Artois"
+  },
+  {
+   "id": "ferdinandphilippe",
+   "slug": "ferdinand-philippe-d-orleans",
+   "nom": "Ferdinand-Philippe d’Orléans",
+   "naissance": 1810,
+   "mort": 1842,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prince royal",
+   "parents": [
+    "louisphilippe"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Ferdinand-Philippe d'Orléans"
+  },
+  {
+   "id": "philippecp",
+   "slug": "philippe-comte-de-paris",
+   "nom": "Philippe, comte de Paris",
+   "naissance": 1838,
+   "mort": 1894,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prétendant orléaniste, « Philippe VII »",
+   "parents": [
+    "ferdinandphilippe"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant orléaniste",
+     1850,
+     1894
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Philippe d'Orléans (1838-1894)"
+  },
+  {
+   "id": "philippe8",
+   "slug": "philippe-duc-d-orleans",
+   "nom": "Philippe, duc d’Orléans",
+   "naissance": 1869,
+   "mort": 1926,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prétendant orléaniste, « Philippe VIII »",
+   "parents": [
+    "philippecp"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant orléaniste",
+     1894,
+     1926
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Philippe d'Orléans (1869-1926)"
+  },
+  {
+   "id": "isabelleorl",
+   "slug": "isabelle-d-orleans",
+   "nom": "Isabelle d’Orléans",
+   "naissance": 1878,
+   "mort": 1961,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "f",
+   "titre": "Duchesse de Guise",
+   "parents": [
+    "philippecp"
+   ],
+   "conjoints": [
+    "jeanguise"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Isabelle d'Orléans (1878-1961)"
+  },
+  {
+   "id": "robertchartres",
+   "slug": "robert-duc-de-chartres",
+   "nom": "Robert, duc de Chartres",
+   "naissance": 1840,
+   "mort": 1910,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prince d’Orléans",
+   "parents": [
+    "ferdinandphilippe"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Robert d'Orléans (1840-1910)"
+  },
+  {
+   "id": "jeanguise",
+   "slug": "jean-duc-de-guise",
+   "nom": "Jean, duc de Guise",
+   "naissance": 1874,
+   "mort": 1940,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prétendant orléaniste, « Jean III »",
+   "parents": [
+    "robertchartres"
+   ],
+   "conjoints": [
+    "isabelleorl"
+   ],
+   "titres": [
+    [
+     "Prétendant orléaniste",
+     1926,
+     1940
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Jean d'Orléans (1874-1940)"
+  },
+  {
+   "id": "henri1908",
+   "slug": "henri-comte-de-paris-1908",
+   "nom": "Henri, comte de Paris",
+   "naissance": 1908,
+   "mort": 1999,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prétendant orléaniste, « Henri VI »",
+   "parents": [
+    "jeanguise",
+    "isabelleorl"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant orléaniste",
+     1940,
+     1999
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Henri d'Orléans (1908-1999)"
+  },
+  {
+   "id": "henri1933",
+   "slug": "henri-comte-de-paris-1933",
+   "nom": "Henri, comte de Paris",
+   "naissance": 1933,
+   "mort": 2019,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prétendant orléaniste, « Henri VII »",
+   "parents": [
+    "henri1908"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant orléaniste",
+     1999,
+     2019
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Henri d'Orléans (1933-2019)"
+  },
+  {
+   "id": "jean1965",
+   "slug": "jean-comte-de-paris",
+   "nom": "Jean, comte de Paris",
+   "naissance": 1965,
+   "mort": null,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Prétendant orléaniste, « Jean IV »",
+   "parents": [
+    "henri1933"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Prétendant orléaniste",
+     2019,
+     2026
+    ]
+   ],
+   "faits": [
+    [
+     2019,
+     "Chef de la maison d’Orléans"
+    ]
+   ],
+   "wikipedia": "Jean d'Orléans (1965)"
+  },
+  {
+   "id": "gaston",
+   "slug": "gaston-d-orleans",
+   "nom": "Gaston d’Orléans",
+   "naissance": 2009,
+   "mort": null,
+   "approximatif": false,
+   "maison": "bourbon",
+   "sexe": "m",
+   "titre": "Dauphin des orléanistes",
+   "parents": [
+    "jean1965"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Gaston d'Orléans (2009)"
+  },
+  {
+   "id": "henry5",
+   "slug": "henri-v",
+   "nom": "Henri V",
+   "naissance": 1386,
+   "mort": 1422,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1413–1422)",
+   "parents": [],
+   "conjoints": [
+    "catherine"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1413,
+     1422
+    ],
+    [
+     "Aquitaine",
+     1413,
+     1422
+    ]
+   ],
+   "faits": [
+    [
+     1415,
+     "Victoire d’Azincourt"
+    ],
+    [
+     1420,
+     "Traité de Troyes ; épouse Catherine de France"
+    ]
+   ],
+   "wikipedia": "Henri V (roi d'Angleterre)"
+  },
+  {
+   "id": "catherine",
+   "slug": "catherine-de-valois",
+   "nom": "Catherine de Valois",
+   "naissance": 1401,
+   "mort": 1437,
+   "approximatif": false,
+   "maison": "valois",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre",
+   "parents": [
+    "charles6",
+    "isabeau"
+   ],
+   "conjoints": [
+    "henry5",
+    "owentudor"
+   ],
+   "titres": [],
+   "faits": [
+    [
+     1420,
+     "Épouse Henri V"
+    ],
+    [
+     1430,
+     "Remariée vers cette date à Owen Tudor ; grand-mère d’Henri VII"
+    ]
+   ],
+   "wikipedia": "Catherine de France (1401-1437)"
+  },
+  {
+   "id": "henry6",
+   "slug": "henri-vi",
+   "nom": "Henri VI",
+   "naissance": 1421,
+   "mort": 1471,
+   "approximatif": false,
+   "maison": "plant",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre, roi de France contesté",
+   "parents": [
+    "henry5",
+    "catherine"
+   ],
+   "conjoints": [
+    "margarethanj"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1422,
+     1461
+    ],
+    [
+     "France",
+     1422,
+     1453
+    ],
+    [
+     "Aquitaine",
+     1422,
+     1453
+    ]
+   ],
+   "faits": [
+    [
+     1431,
+     "Couronné roi de France à Notre-Dame de Paris"
+    ],
+    [
+     1461,
+     "Déposé pendant la guerre des Deux-Roses"
+    ]
+   ],
+   "wikipedia": "Henri VI (roi d'Angleterre)"
+  },
+  {
+   "id": "owentudor",
+   "slug": "owen-tudor",
+   "nom": "Owen Tudor",
+   "naissance": 1400,
+   "mort": 1461,
+   "approximatif": true,
+   "maison": "tudor",
+   "sexe": "m",
+   "titre": "Écuyer gallois",
+   "parents": [],
+   "conjoints": [
+    "catherine"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Owen Tudor"
+  },
+  {
+   "id": "edmundtudor",
+   "slug": "edmond-tudor",
+   "nom": "Edmond Tudor",
+   "naissance": 1430,
+   "mort": 1456,
+   "approximatif": true,
+   "maison": "tudor",
+   "sexe": "m",
+   "titre": "Comte de Richmond",
+   "parents": [
+    "owentudor",
+    "catherine"
+   ],
+   "conjoints": [],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Edmond Tudor (1er comte de Richmond)"
+  },
+  {
+   "id": "henry7",
+   "slug": "henri-vii",
+   "nom": "Henri VII",
+   "naissance": 1457,
+   "mort": 1509,
+   "approximatif": false,
+   "maison": "tudor",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1485–1509)",
+   "parents": [
+    "edmundtudor"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Angleterre",
+     1485,
+     1509
+    ]
+   ],
+   "faits": [
+    [
+     1485,
+     "Victoire de Bosworth : premier roi Tudor"
+    ]
+   ],
+   "wikipedia": "Henri VII (roi d'Angleterre)"
+  },
+  {
+   "id": "henry8",
+   "slug": "henri-viii",
+   "nom": "Henri VIII",
+   "naissance": 1491,
+   "mort": 1547,
+   "approximatif": false,
+   "maison": "tudor",
+   "sexe": "m",
+   "titre": "Roi d’Angleterre (1509–1547)",
+   "parents": [
+    "henry7"
+   ],
+   "conjoints": [
+    "catherinear"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1509,
+     1547
+    ]
+   ],
+   "faits": [
+    [
+     1520,
+     "Camp du Drap d’or"
+    ],
+    [
+     1534,
+     "Rompt avec Rome, chef de l’Église d’Angleterre"
+    ]
+   ],
+   "wikipedia": "Henri VIII"
+  },
+  {
+   "id": "catherinear",
+   "slug": "catherine-d-aragon",
+   "nom": "Catherine d’Aragon",
+   "naissance": 1485,
+   "mort": 1536,
+   "approximatif": false,
+   "maison": "aragon",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre",
+   "parents": [
+    "ferdinandar",
+    "isabellecast"
+   ],
+   "conjoints": [
+    "henry8"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Catherine d'Aragon"
+  },
+  {
+   "id": "marytudor",
+   "slug": "marie-tudor",
+   "nom": "Marie Tudor",
+   "naissance": 1516,
+   "mort": 1558,
+   "approximatif": false,
+   "maison": "tudor",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre (1553–1558)",
+   "parents": [
+    "henry8",
+    "catherinear"
+   ],
+   "conjoints": [
+    "philippe2esp"
+   ],
+   "titres": [
+    [
+     "Angleterre",
+     1553,
+     1558
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Marie Ire (reine d'Angleterre)"
+  },
+  {
+   "id": "elizabeth1",
+   "slug": "elisabeth-ire",
+   "nom": "Élisabeth Ire",
+   "naissance": 1533,
+   "mort": 1603,
+   "approximatif": false,
+   "maison": "tudor",
+   "sexe": "f",
+   "titre": "Reine d’Angleterre (1558–1603)",
+   "parents": [
+    "henry8"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Angleterre",
+     1558,
+     1603
+    ]
+   ],
+   "faits": [
+    [
+     1558,
+     "Reine d’Angleterre"
+    ],
+    [
+     1587,
+     "Fait exécuter Marie Stuart"
+    ],
+    [
+     1588,
+     "Défaite de l’Invincible Armada"
+    ]
+   ],
+   "wikipedia": "Élisabeth Ire (reine d'Angleterre)"
+  },
+  {
+   "id": "margarettudor",
+   "slug": "marguerite-tudor",
+   "nom": "Marguerite Tudor",
+   "naissance": 1489,
+   "mort": 1541,
+   "approximatif": false,
+   "maison": "tudor",
+   "sexe": "f",
+   "titre": "Reine d’Écosse",
+   "parents": [
+    "henry7"
+   ],
+   "conjoints": [
+    "jacques4"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Marguerite Tudor"
+  },
+  {
+   "id": "jacques4",
+   "slug": "jacques-iv-d-ecosse",
+   "nom": "Jacques IV d’Écosse",
+   "naissance": 1473,
+   "mort": 1513,
+   "approximatif": false,
+   "maison": "stuart",
+   "sexe": "m",
+   "titre": "Roi d’Écosse (1488–1513)",
+   "parents": [],
+   "conjoints": [
+    "margarettudor"
+   ],
+   "titres": [
+    [
+     "Écosse",
+     1488,
+     1513
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Jacques IV (roi d'Écosse)"
+  },
+  {
+   "id": "jacques5",
+   "slug": "jacques-v-d-ecosse",
+   "nom": "Jacques V d’Écosse",
+   "naissance": 1512,
+   "mort": 1542,
+   "approximatif": false,
+   "maison": "stuart",
+   "sexe": "m",
+   "titre": "Roi d’Écosse (1513–1542)",
+   "parents": [
+    "jacques4",
+    "margarettudor"
+   ],
+   "conjoints": [
+    "marieguise"
+   ],
+   "titres": [
+    [
+     "Écosse",
+     1513,
+     1542
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Jacques V"
+  },
+  {
+   "id": "marieguise",
+   "slug": "marie-de-guise",
+   "nom": "Marie de Guise",
+   "naissance": 1515,
+   "mort": 1560,
+   "approximatif": false,
+   "maison": "savoie",
+   "sexe": "f",
+   "titre": "Reine d’Écosse, régente",
+   "parents": [],
+   "conjoints": [
+    "jacques5"
+   ],
+   "titres": [],
+   "faits": [],
+   "wikipedia": "Marie de Guise (1515-1560)"
+  },
+  {
+   "id": "mariestuart",
+   "slug": "marie-stuart",
+   "nom": "Marie Stuart",
+   "naissance": 1542,
+   "mort": 1587,
+   "approximatif": false,
+   "maison": "stuart",
+   "sexe": "f",
+   "titre": "Reine d’Écosse, reine de France (1559–1560)",
+   "parents": [
+    "jacques5",
+    "marieguise"
+   ],
+   "conjoints": [
+    "francois2"
+   ],
+   "titres": [
+    [
+     "Écosse",
+     1542,
+     1567
+    ]
+   ],
+   "faits": [
+    [
+     1558,
+     "Épouse le dauphin François"
+    ],
+    [
+     1567,
+     "Contrainte d’abdiquer"
+    ],
+    [
+     1587,
+     "Exécutée à Fotheringhay"
+    ]
+   ],
+   "wikipedia": "Marie Stuart"
+  },
+  {
+   "id": "jacques6",
+   "slug": "jacques-vi-et-ier",
+   "nom": "Jacques VI et Ier",
+   "naissance": 1566,
+   "mort": 1625,
+   "approximatif": false,
+   "maison": "stuart",
+   "sexe": "m",
+   "titre": "Roi d’Écosse, puis d’Angleterre (1603)",
+   "parents": [
+    "mariestuart"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Écosse",
+     1567,
+     1625
+    ],
+    [
+     "Angleterre",
+     1603,
+     1625
+    ]
+   ],
+   "faits": [
+    [
+     1603,
+     "Union des couronnes d’Écosse et d’Angleterre"
+    ]
+   ],
+   "wikipedia": "Jacques Ier (roi d'Angleterre)"
+  },
+  {
+   "id": "louisnevers",
+   "slug": "louis-de-nevers",
+   "nom": "Louis de Nevers",
+   "naissance": 1304,
+   "mort": 1346,
+   "approximatif": true,
+   "maison": "flandre",
+   "sexe": "m",
+   "titre": "Comte de Flandre (1322–1346)",
+   "parents": [],
+   "conjoints": [
+    "margfr"
+   ],
+   "titres": [
+    [
+     "Flandre",
+     1322,
+     1346
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Louis Ier de Flandre"
+  },
+  {
+   "id": "margfr",
+   "slug": "marguerite-de-france-1310",
+   "nom": "Marguerite de France",
+   "naissance": 1310,
+   "mort": 1382,
+   "approximatif": false,
+   "maison": "capet",
+   "sexe": "f",
+   "titre": "Comtesse de Flandre, d’Artois et de Bourgogne",
+   "parents": [
+    "philippe5",
+    "jeannebg"
+   ],
+   "conjoints": [
+    "louisnevers"
+   ],
+   "titres": [
+    [
+     "Artois",
+     1361,
+     1382
+    ],
+    [
+     "Comté de Bourgogne",
+     1361,
+     1382
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Marguerite de France (1310-1382)"
+  },
+  {
+   "id": "louismale",
+   "slug": "louis-de-male",
+   "nom": "Louis de Male",
+   "naissance": 1330,
+   "mort": 1384,
+   "approximatif": false,
+   "maison": "flandre",
+   "sexe": "m",
+   "titre": "Comte de Flandre",
+   "parents": [
+    "louisnevers",
+    "margfr"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Flandre",
+     1346,
+     1384
+    ],
+    [
+     "Artois",
+     1382,
+     1384
+    ],
+    [
+     "Comté de Bourgogne",
+     1382,
+     1384
+    ]
+   ],
+   "faits": [
+    [
+     1382,
+     "Les Flamands révoltés sont écrasés à Roosebeke"
+    ]
+   ],
+   "wikipedia": "Louis de Male"
+  },
+  {
+   "id": "margmale",
+   "slug": "marguerite-de-male",
+   "nom": "Marguerite de Male",
+   "naissance": 1350,
+   "mort": 1405,
+   "approximatif": false,
+   "maison": "flandre",
+   "sexe": "f",
+   "titre": "Comtesse de Flandre, d’Artois, de Bourgogne",
+   "parents": [
+    "louismale"
+   ],
+   "conjoints": [
+    "philhardi"
+   ],
+   "titres": [
+    [
+     "Flandre",
+     1384,
+     1405
+    ],
+    [
+     "Artois",
+     1384,
+     1405
+    ],
+    [
+     "Comté de Bourgogne",
+     1384,
+     1405
+    ]
+   ],
+   "faits": [
+    [
+     1369,
+     "Épouse Philippe le Hardi"
+    ],
+    [
+     1384,
+     "Hérite de la Flandre et de l’Artois"
+    ]
+   ],
+   "wikipedia": "Marguerite III de Flandre"
+  },
+  {
+   "id": "philhardi",
+   "slug": "philippe-le-hardi",
+   "nom": "Philippe le Hardi",
+   "naissance": 1342,
+   "mort": 1404,
+   "approximatif": false,
+   "maison": "valbg",
+   "sexe": "m",
+   "titre": "Duc de Bourgogne (1363–1404)",
+   "parents": [
+    "jean2",
+    "bonnelux"
+   ],
+   "conjoints": [
+    "margmale"
+   ],
+   "titres": [
+    [
+     "Duché de Bourgogne",
+     1363,
+     1404
+    ],
+    [
+     "Flandre",
+     1384,
+     1404
+    ],
+    [
+     "Artois",
+     1384,
+     1404
+    ],
+    [
+     "Comté de Bourgogne",
+     1384,
+     1404
+    ]
+   ],
+   "faits": [
+    [
+     1356,
+     "À Poitiers, aux côtés de son père : « Père, gardez-vous à droite ! »"
+    ],
+    [
+     1363,
+     "Reçoit la Bourgogne"
+    ],
+    [
+     1369,
+     "Épouse Marguerite de Male"
+    ]
+   ],
+   "wikipedia": "Philippe II de Bourgogne"
+  },
+  {
+   "id": "jeansp",
+   "slug": "jean-sans-peur",
+   "nom": "Jean sans Peur",
+   "naissance": 1371,
+   "mort": 1419,
+   "approximatif": false,
+   "maison": "valbg",
+   "sexe": "m",
+   "titre": "Duc de Bourgogne (1404–1419)",
+   "parents": [
+    "philhardi",
+    "margmale"
+   ],
+   "conjoints": [
+    "margbav"
+   ],
+   "titres": [
+    [
+     "Duché de Bourgogne",
+     1404,
+     1419
+    ],
+    [
+     "Flandre",
+     1404,
+     1419
+    ],
+    [
+     "Artois",
+     1404,
+     1419
+    ],
+    [
+     "Comté de Bourgogne",
+     1404,
+     1419
+    ]
+   ],
+   "faits": [
+    [
+     1396,
+     "Croisade de Nicopolis, capturé par les Ottomans"
+    ],
+    [
+     1407,
+     "Fait assassiner Louis d’Orléans"
+    ],
+    [
+     1419,
+     "Assassiné sur le pont de Montereau"
+    ]
+   ],
+   "wikipedia": "Jean sans Peur"
+  },
+  {
+   "id": "philbon",
+   "slug": "philippe-le-bon",
+   "nom": "Philippe le Bon",
+   "naissance": 1396,
+   "mort": 1467,
+   "approximatif": false,
+   "maison": "valbg",
+   "sexe": "m",
+   "titre": "Duc de Bourgogne (1419–1467)",
+   "parents": [
+    "jeansp",
+    "margbav"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Duché de Bourgogne",
+     1419,
+     1467
+    ],
+    [
+     "Flandre",
+     1419,
+     1467
+    ],
+    [
+     "Artois",
+     1419,
+     1467
+    ],
+    [
+     "Comté de Bourgogne",
+     1419,
+     1467
+    ],
+    [
+     "Hainaut",
+     1433,
+     1467
+    ]
+   ],
+   "faits": [
+    [
+     1420,
+     "S’allie aux Anglais par le traité de Troyes"
+    ],
+    [
+     1430,
+     "Fonde l’ordre de la Toison d’or"
+    ],
+    [
+     1435,
+     "Paix d’Arras avec Charles VII"
+    ]
+   ],
+   "wikipedia": "Philippe le Bon"
+  },
+  {
+   "id": "charlestem",
+   "slug": "charles-le-temeraire",
+   "nom": "Charles le Téméraire",
+   "naissance": 1433,
+   "mort": 1477,
+   "approximatif": false,
+   "maison": "valbg",
+   "sexe": "m",
+   "titre": "Duc de Bourgogne (1467–1477)",
+   "parents": [
+    "philbon"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Duché de Bourgogne",
+     1467,
+     1477
+    ],
+    [
+     "Flandre",
+     1467,
+     1477
+    ],
+    [
+     "Artois",
+     1467,
+     1477
+    ],
+    [
+     "Comté de Bourgogne",
+     1467,
+     1477
+    ],
+    [
+     "Hainaut",
+     1467,
+     1477
+    ]
+   ],
+   "faits": [
+    [
+     1468,
+     "Retient Louis XI à Péronne"
+    ],
+    [
+     1476,
+     "Battu par les Suisses à Grandson et Morat"
+    ],
+    [
+     1477,
+     "Tué devant Nancy"
+    ]
+   ],
+   "wikipedia": "Charles le Téméraire"
+  },
+  {
+   "id": "mariebg",
+   "slug": "marie-de-bourgogne",
+   "nom": "Marie de Bourgogne",
+   "naissance": 1457,
+   "mort": 1482,
+   "approximatif": false,
+   "maison": "valbg",
+   "sexe": "f",
+   "titre": "Duchesse de Bourgogne",
+   "parents": [
+    "charlestem"
+   ],
+   "conjoints": [
+    "maximilien"
+   ],
+   "titres": [
+    [
+     "Flandre",
+     1477,
+     1482
+    ],
+    [
+     "Artois",
+     1477,
+     1482
+    ],
+    [
+     "Comté de Bourgogne",
+     1477,
+     1482
+    ],
+    [
+     "Hainaut",
+     1477,
+     1482
+    ]
+   ],
+   "faits": [
+    [
+     1477,
+     "Épouse Maximilien de Habsbourg"
+    ],
+    [
+     1482,
+     "Meurt d’une chute de cheval"
+    ]
+   ],
+   "wikipedia": "Marie de Bourgogne"
+  },
+  {
+   "id": "maximilien",
+   "slug": "maximilien-ier",
+   "nom": "Maximilien Ier",
+   "naissance": 1459,
+   "mort": 1519,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "m",
+   "titre": "Empereur (1508)",
+   "parents": [],
+   "conjoints": [
+    "mariebg"
+   ],
+   "titres": [
+    [
+     "Empire",
+     1493,
+     1519
+    ]
+   ],
+   "faits": [
+    [
+     1477,
+     "Épouse Marie de Bourgogne"
+    ],
+    [
+     1493,
+     "Empereur"
+    ]
+   ],
+   "wikipedia": "Maximilien Ier (empereur du Saint-Empire)"
+  },
+  {
+   "id": "philbeau",
+   "slug": "philippe-le-beau",
+   "nom": "Philippe le Beau",
+   "naissance": 1478,
+   "mort": 1506,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "m",
+   "titre": "Roi de Castille (1506)",
+   "parents": [
+    "maximilien",
+    "mariebg"
+   ],
+   "conjoints": [
+    "jeannefolle"
+   ],
+   "titres": [
+    [
+     "Flandre",
+     1482,
+     1506
+    ],
+    [
+     "Artois",
+     1482,
+     1506
+    ],
+    [
+     "Comté de Bourgogne",
+     1482,
+     1506
+    ],
+    [
+     "Hainaut",
+     1482,
+     1506
+    ],
+    [
+     "Castille",
+     1506,
+     1506
+    ]
+   ],
+   "faits": [
+    [
+     1496,
+     "Épouse Jeanne de Castille"
+    ],
+    [
+     1506,
+     "Meurt à Burgos"
+    ]
+   ],
+   "wikipedia": "Philippe Ier le Beau"
+  },
+  {
+   "id": "ferdinandar",
+   "slug": "ferdinand-d-aragon",
+   "nom": "Ferdinand d’Aragon",
+   "naissance": 1452,
+   "mort": 1516,
+   "approximatif": false,
+   "maison": "aragon",
+   "sexe": "m",
+   "titre": "Roi d’Aragon, roi catholique",
+   "parents": [],
+   "conjoints": [
+    "isabellecast"
+   ],
+   "titres": [
+    [
+     "Aragon",
+     1479,
+     1516
+    ],
+    [
+     "Sicile",
+     1468,
+     1516
+    ],
+    [
+     "Naples",
+     1504,
+     1516
+    ],
+    [
+     "Castille",
+     1474,
+     1504
+    ]
+   ],
+   "faits": [
+    [
+     1492,
+     "Prise de Grenade"
+    ]
+   ],
+   "wikipedia": "Ferdinand II d'Aragon"
+  },
+  {
+   "id": "isabellecast",
+   "slug": "isabelle-la-catholique",
+   "nom": "Isabelle la Catholique",
+   "naissance": 1451,
+   "mort": 1504,
+   "approximatif": false,
+   "maison": "aragon",
+   "sexe": "f",
+   "titre": "Reine de Castille (1474–1504)",
+   "parents": [],
+   "conjoints": [
+    "ferdinandar"
+   ],
+   "titres": [
+    [
+     "Castille",
+     1474,
+     1504
+    ]
+   ],
+   "faits": [
+    [
+     1469,
+     "Épouse Ferdinand d’Aragon"
+    ],
+    [
+     1492,
+     "Prise de Grenade ; premier voyage de Colomb"
+    ]
+   ],
+   "wikipedia": "Isabelle Ire de Castille"
+  },
+  {
+   "id": "jeannefolle",
+   "slug": "jeanne-ire-de-castille",
+   "nom": "Jeanne Ire de Castille",
+   "naissance": 1479,
+   "mort": 1555,
+   "approximatif": false,
+   "maison": "aragon",
+   "sexe": "f",
+   "titre": "Reine de Castille et d’Aragon",
+   "parents": [
+    "ferdinandar",
+    "isabellecast"
+   ],
+   "conjoints": [
+    "philbeau"
+   ],
+   "titres": [
+    [
+     "Castille",
+     1504,
+     1555
+    ],
+    [
+     "Aragon",
+     1516,
+     1555
+    ],
+    [
+     "Naples",
+     1516,
+     1555
+    ],
+    [
+     "Sicile",
+     1516,
+     1555
+    ]
+   ],
+   "faits": [
+    [
+     1506,
+     "Veuve de Philippe le Beau"
+    ],
+    [
+     1509,
+     "Enfermée à Tordesillas jusqu’à sa mort"
+    ]
+   ],
+   "wikipedia": "Jeanne Ire de Castille"
+  },
+  {
+   "id": "charlesquint",
+   "slug": "charles-quint",
+   "nom": "Charles Quint",
+   "naissance": 1500,
+   "mort": 1558,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1516), empereur (1519–1556)",
+   "parents": [
+    "philbeau",
+    "jeannefolle"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Flandre",
+     1506,
+     1555
+    ],
+    [
+     "Artois",
+     1506,
+     1555
+    ],
+    [
+     "Comté de Bourgogne",
+     1506,
+     1555
+    ],
+    [
+     "Hainaut",
+     1506,
+     1555
+    ],
+    [
+     "Castille",
+     1516,
+     1556
+    ],
+    [
+     "Aragon",
+     1516,
+     1556
+    ],
+    [
+     "Naples",
+     1516,
+     1554
+    ],
+    [
+     "Sicile",
+     1516,
+     1554
+    ],
+    [
+     "Empire",
+     1519,
+     1556
+    ]
+   ],
+   "faits": [
+    [
+     1516,
+     "Roi d’Espagne"
+    ],
+    [
+     1519,
+     "Élu empereur"
+    ],
+    [
+     1525,
+     "Capture François Ier à Pavie"
+    ],
+    [
+     1556,
+     "Abdique"
+    ]
+   ],
+   "wikipedia": "Charles Quint"
+  },
+  {
+   "id": "ferdinand1",
+   "slug": "ferdinand-ier",
+   "nom": "Ferdinand Ier",
+   "naissance": 1503,
+   "mort": 1564,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "m",
+   "titre": "Empereur (1556–1564)",
+   "parents": [
+    "philbeau",
+    "jeannefolle"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Bohême",
+     1526,
+     1564
+    ],
+    [
+     "Hongrie",
+     1526,
+     1564
+    ],
+    [
+     "Empire",
+     1556,
+     1564
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Ferdinand Ier (empereur du Saint-Empire)"
+  },
+  {
+   "id": "philippe2esp",
+   "slug": "philippe-ii",
+   "nom": "Philippe II",
+   "naissance": 1527,
+   "mort": 1598,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1556–1598)",
+   "parents": [
+    "charlesquint"
+   ],
+   "conjoints": [
+    "marytudor",
+    "elisabethval"
+   ],
+   "titres": [
+    [
+     "Castille",
+     1556,
+     1598
+    ],
+    [
+     "Aragon",
+     1556,
+     1598
+    ],
+    [
+     "Naples",
+     1554,
+     1598
+    ],
+    [
+     "Sicile",
+     1554,
+     1598
+    ],
+    [
+     "Flandre",
+     1555,
+     1598
+    ],
+    [
+     "Artois",
+     1555,
+     1598
+    ],
+    [
+     "Comté de Bourgogne",
+     1555,
+     1598
+    ],
+    [
+     "Hainaut",
+     1555,
+     1598
+    ],
+    [
+     "Angleterre",
+     1554,
+     1558
+    ]
+   ],
+   "faits": [
+    [
+     1559,
+     "Épouse Élisabeth de Valois"
+    ],
+    [
+     1571,
+     "Victoire de Lépante"
+    ],
+    [
+     1588,
+     "Échec de l’Invincible Armada"
+    ]
+   ],
+   "wikipedia": "Philippe II (roi d'Espagne)"
+  },
+  {
+   "id": "philippe3esp",
+   "slug": "philippe-iii",
+   "nom": "Philippe III",
+   "naissance": 1578,
+   "mort": 1621,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1598–1621)",
+   "parents": [
+    "philippe2esp"
+   ],
+   "conjoints": [],
+   "titres": [
+    [
+     "Castille",
+     1598,
+     1621
+    ],
+    [
+     "Aragon",
+     1598,
+     1621
+    ],
+    [
+     "Naples",
+     1598,
+     1621
+    ],
+    [
+     "Sicile",
+     1598,
+     1621
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Philippe III (roi d'Espagne)"
+  },
+  {
+   "id": "philippe4esp",
+   "slug": "philippe-iv",
+   "nom": "Philippe IV",
+   "naissance": 1605,
+   "mort": 1665,
+   "approximatif": false,
+   "maison": "habs",
+   "sexe": "m",
+   "titre": "Roi d’Espagne (1621–1665)",
+   "parents": [
+    "philippe3esp"
+   ],
+   "conjoints": [
+    "elisabethfr"
+   ],
+   "titres": [
+    [
+     "Castille",
+     1621,
+     1665
+    ],
+    [
+     "Aragon",
+     1621,
+     1665
+    ],
+    [
+     "Naples",
+     1621,
+     1665
+    ],
+    [
+     "Sicile",
+     1621,
+     1665
+    ]
+   ],
+   "faits": [],
+   "wikipedia": "Philippe IV (roi d'Espagne)"
+  }
+ ]
+}

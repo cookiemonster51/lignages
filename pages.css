@@ -1,0 +1,30 @@
+:root{color-scheme:light dark;--bg:#e6eaf2;--panel:#f8fafd;--ink:#172040;--muted:#56607a;--line:#c9d1df;--hi:#b07d0c}
+@media (prefers-color-scheme:dark){:root{--bg:#0c1631;--panel:#121f48;--ink:#ece7da;--muted:#a3adc9;--line:#2a3970;--hi:#efc45a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 'Gill Sans','Trebuchet MS',system-ui,sans-serif}
+a{color:inherit}
+.top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding:12px 20px;background:var(--panel);border-bottom:1px solid var(--line)}
+.brand{font:400 28px Georgia,'Times New Roman',serif;text-decoration:none}
+.top span{font:italic 15px Georgia,serif;color:var(--muted)}
+.cta{margin-left:auto;font-weight:700;font-size:15px;text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px}
+main{max-width:760px;margin:0 auto;padding:18px 20px 40px}
+.crumb{font-size:14px;color:var(--muted);margin-bottom:18px}
+article,section{border-left:5px solid var(--c,transparent);padding-left:18px}
+article section{margin-top:26px}
+.house{font-size:13px;letter-spacing:.09em;text-transform:uppercase;font-weight:700;color:var(--hi);margin:0}
+h1{font:400 clamp(34px,6vw,52px)/1.05 Georgia,'Times New Roman',serif;margin:4px 0 6px}
+h2{font:italic 400 23px Georgia,serif;margin:28px 0 8px}
+.dates{color:var(--muted);margin:0 0 4px;font-size:18px}
+.al{color:var(--muted);font-size:15px;margin:0}
+.bio{font-size:19px;line-height:1.5;margin:16px 0}
+.btn{display:inline-block;background:var(--ink);color:var(--panel);font-weight:700;text-decoration:none;border-radius:12px;padding:11px 18px}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{display:grid;grid-template-columns:56px 1fr;gap:10px;padding:5px 0;border-bottom:1px solid var(--line)}
+.facts b{color:var(--hi);font-variant-numeric:tabular-nums}
+.titles,.rel{list-style:none;margin:0;padding:0}
+.titles li{display:flex;justify-content:space-between;gap:12px;padding:4px 0;border-bottom:1px solid var(--line)}
+.rel li{padding:3px 0}
+.rel.cols{columns:2 260px;column-gap:28px}
+.y{color:var(--muted);font-size:14.5px;font-variant-numeric:tabular-nums}
+footer{max-width:760px;margin:0 auto;padding:18px 20px 40px;border-top:1px solid var(--line);font-size:14.5px;color:var(--muted)}
+@media print{.cta,.btn{display:none}body{background:#fff}}
